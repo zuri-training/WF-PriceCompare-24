@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;700;800&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Sora", sans-serif;
+  color: #000000;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  /* background-color: #222; */
+  /* background-color: #60b347; */
+}
+
+.grid-tv {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 4.8rem;
+}
+
+.slider-tv {
+  position: relative;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+img {
+  width: 100%;
+}
+
+/* LAYOUT */
+.component-tv {
+  margin: auto 0;
+  padding: 2rem;
+  background-color: #e8e8e8;
+  width: 72.1rem;
+  height: 48.4rem;
+  overflow-y: hidden;
+  -ms-overflow-style: none; /* IE and Edge */
+  scrollbar-width: none; /* Firefox */
+  position: relative;
+}
+
+/* Hide scrollbar for Chrome, Safari and Opera */
+.component-tv::-webkit-scrollbar {
+  display: none;
+}
+
+.container-tv {
+  width: 24rem;
+}
+
+.tv-img {
+  width: 20rem;
+  overflow: hidden;
+}
+
+.tv-img img {
+  transition: all 0.3s;
+}
+
+.tv-img img:hover {
+  transform: scale(1.05);
+  cursor: pointer;
+}
+
+/* ELEMENT STYLES */
+.component-heading-tv {
+  font-weight: 700;
+  font-size: 2rem;
+  margin-bottom: 2.2rem;
+  position: sticky;
+  top: 0;
+  left: 0;
+}
+
+.tv-text {
+  margin-top: 2rem;
+  padding: 1.2rem 0.8rem 0.6rem 0.8rem;
+  padding-bottom: 0.6rem;
+  background-color: #fff;
+}
+
+.tv-text-name {
+  font-size: 1.4rem;
+  font-weight: 700;
+  line-height: 120%;
+}
+
+.tv-text-price {
+  font-size: 1.2rem;
+  font-weight: 400;
+  line-height: 110%;
+  margin-top: 1.4rem;
+}
+
+.see-more-tv {
+  display: block;
+  width: 9rem;
+  position: sticky;
+  left: 62rem;
+  top: 62rem;
+  /* right: 10.8rem;
+        bottom: 12rem; */
+  font-size: 1.2rem;
+  cursor: pointer;
+  /* display: none; */
+}
+/* 
+      .backward-icon {
+        position: absolute;
+        left: 0;
+        top: 50%;
+        width: fit-content;
+        height: 24px;
+        stroke: #fff;
+        background-color: #948db4;
+        transform: translate(-50%, -50%);
+      } */
+
+/* .forward-icon {
+        position: absolute;
+        right: 0;
+        top: 50%;
+        width: fit-content;
+        height: 24px;
+        transform: translate(50%, -50%);
+      } */

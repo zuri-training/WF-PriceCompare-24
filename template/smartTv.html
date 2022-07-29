@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/smart_tv.css" />
+  </head>
+  <body>
+    <main class="component-tv">
+      <div class="component-heading-tv">
+        <h3 class="heading-3">Smart Televisions</h3>
+      </div>
+
+      <div class="grid-tv slider-tv">
+        <section class="smart-tv">
+          <div class="container-tv">
+            <div class="tv-img">
+              <img
+                src="/images/infinix32.jpg"
+                alt="infinix 32-inch android smart tv"
+              />
+            </div>
+
+            <div class="tv-text">
+              <h6 class="tv-text-name">Infinix 32’ Inch Smart Tv</h6>
+              <p class="tv-text-price">₦ 96,000</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="smart-tv">
+          <div class="container-tv">
+            <div class="tv-img">
+              <img
+                src="/images/hisense55.jpg"
+                alt="Hisense 55-inch UHD smart tv"
+              />
+            </div>
+
+            <div class="tv-text">
+              <h6 class="tv-text-name">Hisense 55’ UHD</h6>
+              <p class="tv-text-price">₦ 200,000</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="smart-tv">
+          <div class="container-tv">
+            <div class="tv-img">
+              <img
+                src="/images/Polystar55.jpg"
+                alt="Polystar 55-inch Curved smart tv"
+              />
+            </div>
+
+            <div class="tv-text">
+              <h6 class="tv-text-name">Polystar 55’ Curved Smart Tv</h6>
+              <p class="tv-text-price">₦ 350,000</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="smart-tv">
+          <div class="container-tv">
+            <div class="tv-img">
+              <img src="/images/maxi58.jpg" alt="Maxi 58-inch smart tv" />
+            </div>
+
+            <div class="tv-text">
+              <h6 class="tv-text-name">Maxi 58" 4K UHD Smart LED TV</h6>
+              <p class="tv-text-price">₦ 300,000</p>
+            </div>
+          </div>
+        </section>
+
+        <section class="smart-tv">
+          <div class="container-tv">
+            <div class="tv-img">
+              <img
+                src="/images/vision55.jpg"
+                alt="Vision 55-inch Curved smart tv"
+              />
+            </div>
+
+            <div class="tv-text">
+              <h6 class="tv-text-name">Vision 55" INCHES SMART UHD 4K TV</h6>
+              <p class="tv-text-price">₦ 196,990</p>
+            </div>
+          </div>
+        </section>
+      </div>
+
+      <p class="see-more-tv">See more...</p>
+    </main>
+    <script>
+      const seeMoreBtn = document.querySelector(".see-more-tv");
+      const slider = document.querySelector(".slider-tv");
+      let leftPosition = 0;
+
+      seeMoreBtn.onclick = () => {
+        leftPosition -= 40;
+        console.log(leftPosition);
+        slider.style.left = `${leftPosition}rem`;
+        if (leftPosition == -80) {
+          seeMoreBtn.style.display = "none";
+        }
+      };
+    </script>
+  </body>
+</html>
