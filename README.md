@@ -9,3 +9,4 @@ An online platform that compares the prices of products across other platforms
 - [Research Report](https://bit.ly/Team24_PriceCompare_Research)
 - [Figma Board](https://bit.ly/Team24_PriceCompare_FigmaBoard)
 - [Slides](https://www.canva.com/design/DAFHbeze7Nw/n6F3XGAqUlZkHroeOl9C8g/edit?utm_content=DAFHbeze7Nw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Task Sheet](https://bit.ly/Team24_PriceCompare_TaskSheet)
