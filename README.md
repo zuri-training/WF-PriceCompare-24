@@ -49,11 +49,11 @@ We will be accessible on all devices, Desktops, Mobile, Tablets.
 - Bootstrap
 
 ## Important Links
-- [Design brief](https://bit.ly/Team24_PriceCompare_Brief)
-- [DataBase Schema](https://bit.ly/Team24_PriceCompare_DataBaseSchema)
-- [Frontend Documentation](https://bit.ly/Team24_PriceCompare_FrontendDoc)
-- [Backend Documentation](https://bit.ly/Team24_PriceCompare_BE_Doc)
-- [Research Report](https://bit.ly/Team24_PriceCompare_Research)
-- [Figma Board](https://bit.ly/Team24_PriceCompare_FigmaBoard)
-- [Slides](https://www.canva.com/design/DAFHbeze7Nw/n6F3XGAqUlZkHroeOl9C8g/edit?utm_content=DAFHbeze7Nw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-- [Task Sheet](https://bit.ly/Team24_PriceCompare_TaskSheet)
+- [Team24_PriceCompare_brief](https://bit.ly/Team24_PriceCompare_Brief)
+- [Team24_PriceCompare_DataBaseSchema](https://bit.ly/Team24_PriceCompare_DataBaseSchema)
+- [Team24_PriceCompareFrontendDocumentation](https://bit.ly/Team24_PriceCompare_FrontendDoc)
+- [Team24_PriceCompare_Backend Documentation](https://bit.ly/Team24_PriceCompare_BE_Doc)
+- [Team24_PriceCompare_ResearchReport](https://bit.ly/Team24_PriceCompare_Research)
+- [Team24_PriceCompare_FigmaBoard](https://bit.ly/Team24_PriceCompare_FigmaBoard)
+- [Team24_PriceCompare_Slides](https://www.canva.com/design/DAFHbeze7Nw/n6F3XGAqUlZkHroeOl9C8g/edit?utm_content=DAFHbeze7Nw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Team24_PriceCompare_TaskSheet](https://bit.ly/Team24_PriceCompare_TaskSheet)
