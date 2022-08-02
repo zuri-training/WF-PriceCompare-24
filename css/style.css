@@ -297,3 +297,24 @@ section[bottom] .contact a{
     background-color: black;
     
 }
+
+/* hair home page additional style */
+.hair-preview {
+	justify-content: space-around !important;
+}
+
+.hair-page__box {
+	width: 211px;
+}
+
+.hair-page__box div {
+	text-align: center;
+}
+
+.hair-page__box img {
+	width: 144px !important;
+}
+
+.hot-deal-img img {
+	width: 183px !important;
+}
