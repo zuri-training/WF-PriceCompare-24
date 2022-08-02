@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     'django_extensions',
         #local apps
     #write apps created here
+    'aliexpress_api',
 ]
 
 MIDDLEWARE = [
