@@ -300,7 +300,7 @@ section[bottom] .contact a{
 
 /* hair home page additional style */
 .hair-preview {
-	justify-content: space-around;
+	justify-content: space-around !important;
 }
 
 .hair-page__box {
@@ -316,5 +316,5 @@ section[bottom] .contact a{
 }
 
 .hot-deal-img img {
-	width: 183px;
+	width: 183px !important;
 }
