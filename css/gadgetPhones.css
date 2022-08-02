@@ -5,11 +5,176 @@
     --load-color: #151F7F;
     --secondary-color: #949EFE;
 }
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
+.material-symbols-outlined {
+    color: var(--mainColor);
+}
+
+body {
+
+    margin: 0 auto;
+    max-width: max-content;
+    justify-content: center;
+    font-family: sora;
+
+}
+
+
+
+header .head_section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255);
+    padding: 1em;
+    align-items: center;
+}
+
+header .search_bar #search_bar {
+    height: 2.4em;
+    width: 23em;
+    border-radius: 3px;
+    outline: none;
+    border: .6px solid rgba(128, 128, 128, .5);
+    padding: 0 .5em;
+}
+
+header .head_section .logo img {
+    width: 70px;
+    height: 55px;
+    object-fit: contain;
+}
+
+div.login {
+    display: flex;
+
+    align-content: center;
+    width: 8em;
+    justify-content: space-between
+}
+
+div.login>div {
+    display: flex;
+
+
+}
+
+div.login>div button {
+    background: none;
+    border: none;
+}
+
+div.login>div a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 8px;
+
+
+}
+
+.nav-links ul li {
+    /* position: relative; */
+    text-decoration: none;
+}
+
+.nav-links ul li {
+    list-style: none;
+
+
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.nav-links ul div ul li a {
+    text-decoration: none;
+    width: 2rem;
+    color: var(--main-color);
+
+
+}
+
+.nav-links ul div ul li {
+    margin: 10px 0px;
+    border-bottom: 1px solid #7c84ce;
+}
+
+.nav-links ul div ul {
+    position: absolute;
+    top: .3rem;
+    left: -40px;
+    display: block;
+    width: 11rem;
+
+
+}
+
+.nav-links ul div {
+    display: none;
+    position: absolute;
+    width: 2rem;
+
+}
+
+.nav-links ul li:hover div {
+    display: block;
+
+}
+
+
+
+.navLinks ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+}
+
+section[heroSection] {
+    padding-top: 1em;
+}
+
+section[heroSection] div {
+    border: 2px solid rebeccapurple;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+img[pop1],
+img[pop2],
+img[pop3] {
+    padding: 1em;
+}
+
+img[pop3] {
+    height: 14em;
+}
+
+p#brand {
+    color: var(--load-color);
+    font-size: larger;
+    font-weight: 800;
+}
+
 main {
     display: grid;
     grid-template-areas:
@@ -22,33 +187,40 @@ main {
     font-family: 'Sora', sans-serif;
 
 }
+
 main .hero-section {
     grid-area: slider;
     display: flex;
     width: 100%;
 }
+
 main .hero-section img {
     width: 11em;
 }
+
 aside.filter {
     grid-area: filter;
     height: fit-content;
     width: 18em;
 }
+
 .filter h2 {
     color: var(--load-color);
     padding: 10px;
 }
+
 .filter p[search-text] {
     text-align: center;
     font-size: 13px;
     padding: 1.5em 0;
     color: var(--load-color);
 }
+
 .filter span {
     display: block;
     text-align: center;
 }
+
 .filter input[search] {
     padding: .9em;
     border-radius: 8px;
@@ -57,6 +229,7 @@ aside.filter {
     width: 100%;
     margin-bottom: .6em;
 }
+
 .filter div.amount input {
     width: 100px;
     text-align: center;
@@ -64,6 +237,7 @@ aside.filter {
     border-radius: 10px;
     border: 1px solid rgb(73, 70, 70);
 }
+
 .filter div.amount {
     display: flex;
     justify-content: center;
@@ -71,36 +245,44 @@ aside.filter {
     align-items: center;
     margin-bottom: .6em;
 }
+
 div[container] {
     grid-area: box;
     width: 100%;
 }
+
 section.reviews {
     grid-area: reviews;
 }
+
 h3 {
     background-color: var(--secondary-color);
     color: white;
     padding: 6px;
     border-radius: 8px;
 }
+
 .popular {
     margin-top: 1.4em;
 }
+
 .popular div a,
 .stores div a {
     text-decoration: none;
     color: black;
 }
+
 .popular div,
 .stores div {
     padding: 4px 15px;
 }
+
 .popular div:last-child,
 .stores div:last-child {
     width: 100%;
     text-align: right;
 }
+
 aside.filter div[load-more] {
     background-color: var(--load-color);
     width: 100%;
@@ -108,16 +290,17 @@ aside.filter div[load-more] {
     border-radius: 8px;
     text-align: center;
 }
+
 aside.filter div[load-more] a {
     color: white;
     text-decoration: none;
 }
+
 .preview .box div img {
-    width: 8em;
-margin: 0 auto;
-display: block;
+    /* width: 8em; */
+    margin: 0 auto;
+    display: block;
 }
-<<<<<<< HEAD
 
 div[preview] {
     display: flex;
@@ -136,13 +319,12 @@ div[preview] .news-one img,
     width: 100%;
 }
 
-=======
->>>>>>> 0a4eecbbb44285e32998f1029eaed58cee78ef9d
 .preview {
     display: flex;
     justify-content: space-between;
-    gap:1em;
+    gap: 1em;
 }
+
 .box {
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
@@ -150,6 +332,7 @@ div[preview] .news-one img,
     background-color: var(--main-color);
     border-radius: 8px;
 }
+
 .box h4 {
     color: var(--load-color);
     text-align: center;
@@ -157,11 +340,13 @@ div[preview] .news-one img,
     font-weight: bolder;
     padding-bottom: 1em;
 }
+
 .box p {
     text-align: center;
     padding-bottom: 1em;
     color: var(--secondary-color);
 }
+
 .iPhone,
 .samsung,
 .tecno,
@@ -170,11 +355,13 @@ div[preview] .news-one img,
     padding: 1.5rem 1rem;
     border-radius: 8px;
 }
+
 .samsung,
 .tecno,
 .hot-deals {
     margin-top: 3rem;
 }
+
 .iPhone h2,
 .samsung h2,
 .tecno h2,
@@ -185,17 +372,21 @@ div[preview] .news-one img,
     font-size: 1.6rem;
     font-weight: bolder;
 }
+
 .hot-deals .box {
     width: 100%;
 }
+
 .hot-deals .box img {
     display: block;
     margin: 0 auto;
 }
+
 div[see_more] {
     text-align: right;
     padding: 2em 0 1em;
 }
+
 div[see_more] a {
     text-decoration: none;
     color: var(--load-color);
@@ -252,4 +443,73 @@ p[hot-price] {
 .shoe-content p {
     padding-bottom: 1em;
     color: var(--secondary-color);
+}
+
+
+/*footer section*/
+
+footer .footerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.footLogo img {
+    width: 120px;
+}
+
+.Social_Icons div.Icons ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Social_Icons div.Icons ul li {
+    padding: 5px;
+}
+
+div.Icons ul li {
+    list-style: none;
+}
+
+section[categories] ul li,
+[gadgetBrands] ul li,
+[popularBrands] ul li,
+[about] ul li {
+    list-style: none;
+    padding-top: 10px
+}
+
+section[categories] ul li a,
+[gadgetBrands] ul li a,
+[popularBrands] ul li a,
+[about] ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+section[bottom] {
+    display: flex;
+    justify-content: space-between;
+}
+
+section[bottom] .contact {
+    display: flex;
+    align-items: center;
+}
+
+section[bottom] .contact a {
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.contact div.box {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+
+}
+
+hr[bottom] {
+    margin-bottom: 2em;
 }
