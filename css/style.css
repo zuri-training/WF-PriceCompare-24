@@ -166,6 +166,16 @@ img[pop3] {
     padding: 1em;
 }
 
+img[pop3] {
+    height: 16em;
+}
+
+p#brand {
+    color: var(--load-color);
+    font-size: larger;
+    font-weight: 800;
+}
+
 
 
 
