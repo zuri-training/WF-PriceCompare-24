@@ -123,7 +123,7 @@ div.login>div a {
 }
 
 .nav-links ul div ul {
-    position: absolute;
+    position: relative;
     top: .3rem;
     left: -40px;
     display: block;
@@ -136,13 +136,18 @@ div.login>div a {
     display: none;
     position: absolute;
     width: 2rem;
+    top: 5.7rem;
+
 
 }
 
-.nav-links ul li:hover div {
+.nav-links ul li:hover div,
+.nav-links ul li:active div {
     display: block;
 
 }
+
+
 
 
 
