@@ -38,10 +38,12 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # apps installed by team
-        #3rd party
+    'WalletFriendlyApp',
+    'accounts',
+    # 3rd party
     'django_extensions',
-        #local apps
-    #write apps created here
+    # local apps
+    # write apps created here
 ]
 
 MIDDLEWARE = [
