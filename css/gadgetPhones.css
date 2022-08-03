@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
 
 :root {
-    --main-color: #FEFEFE;
-    --load-color: #151F7F;
-    --secondary-color: #949EFE;
+    --main-color: #fefefe;
+    --load-color: #151f7f;
+    --secondary-color: #949efe;
 }
 
 * {
@@ -11,6 +11,12 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+
+body {
+    font-family: "Sora", sans-serif;
+}
+
 
 .material-symbols-outlined {
     color: var(--mainColor);
@@ -321,6 +327,7 @@ div[specs]>div {
     font-size: 16px;
 }
 
+
 main {
     display: grid;
     grid-template-areas:
@@ -332,22 +339,36 @@ main {
     justify-content: center;
     font-family: 'Sora', sans-serif;
 
+
+    display: grid;
+    grid-template-areas:
+        "slider slider slider slider slider"
+        "filter box box box box"
+        "reviews reviews reviews reviews reviews";
+    margin-top: 2rem;
+    gap: 3rem;
+    justify-content: center;
 }
 
 main .hero-section {
     grid-area: slider;
     display: flex;
     width: 100%;
+
 }
 
 main .hero-section img {
+
     width: 11em;
+
 }
 
 aside.filter {
+
     grid-area: filter;
     height: fit-content;
     width: 18em;
+
 }
 
 .filter h2 {
@@ -368,20 +389,22 @@ aside.filter {
 }
 
 .filter input[search] {
-    padding: .9em;
+    padding: 0.9em;
     border-radius: 8px;
     border: 1px solid rgb(73, 70, 70);
     outline: none;
     width: 100%;
-    margin-bottom: .6em;
+    margin-bottom: 0.6em;
 }
 
 .filter div.amount input {
+
     width: 100px;
     text-align: center;
     padding: .7em;
     border-radius: 10px;
     border: 1px solid rgb(73, 70, 70);
+
 }
 
 .filter div.amount {
@@ -389,7 +412,7 @@ aside.filter {
     justify-content: center;
     gap: 1em;
     align-items: center;
-    margin-bottom: .6em;
+    margin-bottom: 0.6em;
 }
 
 div[container] {
@@ -407,6 +430,7 @@ h3 {
     color: white;
     padding: 6px;
     border-radius: 8px;
+
 }
 
 .popular {
@@ -415,8 +439,11 @@ h3 {
 
 .popular div a,
 .stores div a {
+
+
     text-decoration: none;
     color: black;
+
 }
 
 .popular div,
@@ -439,11 +466,13 @@ aside.filter div[load-more] {
 }
 
 aside.filter div[load-more] a {
+
     color: white;
     text-decoration: none;
 }
 
 .preview .box div img {
+
     width: 10em;
     margin: 0 auto;
     display: block;
@@ -455,10 +484,8 @@ div[preview] {
 
 }
 
-div[preview] .news-one,
-.news-two {
-    text-align: center;
-    color: var(--secondary-color);
+.preview .box div img {
+    width: 13em;
 }
 
 div[preview] .news-one img,
@@ -467,25 +494,32 @@ div[preview] .news-one img,
 }
 
 .preview {
+
     display: flex;
     justify-content: space-between;
+
     gap: 1em;
+
 }
 
 .box {
+
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     width: 13.5rem;
     background-color: var(--main-color);
     border-radius: 8px;
+
 }
 
 .box h4 {
+
     color: var(--load-color);
     text-align: center;
     font-size: .9rem;
     font-weight: bolder;
     padding-bottom: 1em;
+
 }
 
 .box p {
@@ -506,7 +540,9 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
+
     margin-top: 3rem;
+
 }
 
 .iPhone h2,
@@ -532,12 +568,23 @@ div[preview] .news-one img,
 div[see_more] {
     text-align: right;
     padding: 2em 0 1em;
+
 }
 
 div[see_more] a {
+
     text-decoration: none;
     color: var(--load-color);
 }
+
+span[sub] {
+    color: var(--load-color);
+    /* color: #fff; */
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
 
 p[hot-price] {
     display: flex;
