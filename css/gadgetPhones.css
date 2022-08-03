@@ -151,12 +151,27 @@ section[heroSection] {
     padding-top: 1em;
 }
 
+section[heroSection] {
+
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
 section[heroSection] div {
-    border: 2px solid rebeccapurple;
+
     display: flex;
     justify-content: space-between;
     width: 100%;
 
+}
+
+div[firstBox],
+div[secondBox] {
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
 }
 
 img[pop1],
@@ -173,6 +188,137 @@ p#brand {
     color: var(--load-color);
     font-size: larger;
     font-weight: 800;
+}
+
+section[heroSection] div[firstBox],
+div[secondBox] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+section[heroSection] div[firstBox] #img1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+div[firstBox]>div {
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+section[heroSection] div[firstBox]>div {
+
+    padding: 1em;
+}
+
+div[secondBox] div p {
+    font-size: 13px;
+    width: 100%;
+}
+
+div[firstBox] div div p[cross] {
+    position: relative;
+}
+
+div[firstBox] div div p[cross]::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: .5em;
+    height: 2px;
+    background-color: red;
+}
+
+div[firstBox] h2 {
+    text-align: center;
+}
+
+div[firstBox]>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+
+}
+
+section[heroSection] div[secondBox] #image-one img,
+section[heroSection] div[secondBox] #image-two img {
+    width: 8rem;
+    margin: 0 auto;
+    /* margin-bottom: 5em; */
+}
+
+section[heroSection] div[secondBox] #image-one h5 {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+section[heroSection] div[secondBox] {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+
+    gap: 3rem;
+
+
+}
+
+
+
+div[secondBox] #image-two div {
+
+    display: block;
+}
+
+div[secondBox] #image-two img {
+    padding-bottom: 1.5em;
+}
+
+div[secondBox] #image-one,
+#image-two {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+
+
+
+}
+
+div[secondBox] #image-one {
+    padding-left: .2em;
+
+}
+
+#image-one div[specs] {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+div[specs]>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    justify-content: left;
+
+}
+
+#image-one div[specs] div h5 {
+    text-align: left;
+    justify-content: left;
+    font-size: 16px;
 }
 
 main {
@@ -249,6 +395,7 @@ aside.filter {
 div[container] {
     grid-area: box;
     width: 100%;
+
 }
 
 section.reviews {
@@ -297,7 +444,7 @@ aside.filter div[load-more] a {
 }
 
 .preview .box div img {
-    /* width: 8em; */
+    width: 10em;
     margin: 0 auto;
     display: block;
 }
