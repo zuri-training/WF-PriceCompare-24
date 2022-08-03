@@ -1,5 +1,6 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
 :root {
   --main-color: #fefefe;
   --load-color: #151f7f;
@@ -15,6 +16,316 @@
 
 body {
   font-family: "Sora", sans-serif;
+}
+
+
+.material-symbols-outlined {
+    color: var(--mainColor);
+}
+
+body {
+
+    margin: 0 auto;
+    max-width: max-content;
+    justify-content: center;
+    font-family: sora;
+
+}
+
+
+
+header .head_section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255);
+    padding: 1em;
+    align-items: center;
+}
+
+header .search_bar #search_bar {
+    height: 2.4em;
+    width: 23em;
+    border-radius: 3px;
+    outline: none;
+    border: .6px solid rgba(128, 128, 128, .5);
+    padding: 0 .5em;
+}
+
+header .head_section .logo img {
+    width: 70px;
+    height: 55px;
+    object-fit: contain;
+}
+
+div.login {
+    display: flex;
+
+    align-content: center;
+    width: 8em;
+    justify-content: space-between
+}
+
+div.login>div {
+    display: flex;
+
+
+}
+
+div.login>div button {
+    background: none;
+    border: none;
+}
+
+div.login>div a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 8px;
+
+
+}
+
+.nav-links ul li {
+    /* position: relative; */
+    text-decoration: none;
+}
+
+.nav-links ul li {
+    list-style: none;
+
+
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.nav-links ul div ul li a {
+    text-decoration: none;
+    width: 2rem;
+    color: var(--main-color);
+
+
+}
+
+.nav-links ul div ul li {
+    margin: 10px 0px;
+    border-bottom: 1px solid #7c84ce;
+}
+
+.nav-links ul div ul {
+    position: absolute;
+    top: .3rem;
+    left: -40px;
+    display: block;
+    width: 11rem;
+
+
+}
+
+.nav-links ul div {
+    display: none;
+    position: absolute;
+    width: 2rem;
+
+}
+
+.nav-links ul li:hover div {
+    display: block;
+
+}
+
+
+
+.navLinks ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+}
+
+section[heroSection] {
+    padding-top: 1em;
+}
+
+section[heroSection] {
+
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+section[heroSection] div {
+
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+
+}
+
+div[firstBox],
+div[secondBox] {
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
+}
+
+img[pop1],
+img[pop2],
+img[pop3] {
+    padding: 1em;
+}
+
+img[pop3] {
+    height: 14em;
+}
+
+p#brand {
+    color: var(--load-color);
+    font-size: larger;
+    font-weight: 800;
+}
+
+section[heroSection] div[firstBox],
+div[secondBox] {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+
+section[heroSection] div[firstBox] #img1 {
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    height: 100%;
+    object-fit: contain;
+
+}
+
+div[firstBox]>div {
+
+    justify-content: center;
+    align-items: center;
+
+}
+
+section[heroSection] div[firstBox]>div {
+
+    padding: 1em;
+}
+
+div[secondBox] div p {
+    font-size: 13px;
+    width: 100%;
+}
+
+div[firstBox] div div p[cross] {
+    position: relative;
+}
+
+div[firstBox] div div p[cross]::before {
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: .5em;
+    height: 2px;
+    background-color: red;
+}
+
+div[firstBox] h2 {
+    text-align: center;
+}
+
+div[firstBox]>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+
+}
+
+section[heroSection] div[secondBox] #image-one img,
+section[heroSection] div[secondBox] #image-two img {
+    width: 8rem;
+    margin: 0 auto;
+    /* margin-bottom: 5em; */
+}
+
+section[heroSection] div[secondBox] #image-one h5 {
+    font-size: 13px;
+    font-weight: bolder;
+}
+
+section[heroSection] div[secondBox] {
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+
+    gap: 3rem;
+
+
+}
+
+
+
+div[secondBox] #image-two div {
+
+    display: block;
+}
+
+div[secondBox] #image-two img {
+    padding-bottom: 1.5em;
+}
+
+div[secondBox] #image-one,
+#image-two {
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
+
+
+
+}
+
+div[secondBox] #image-one {
+    padding-left: .2em;
+
+}
+
+#image-one div[specs] {
+    display: flex;
+    justify-content: space-between;
+
+    width: 100%;
+}
+
+div[specs]>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    justify-content: left;
+
+}
+
+#image-one div[specs] div h5 {
+    text-align: left;
+    justify-content: left;
+    font-size: 16px;
 }
 
 
@@ -46,11 +357,13 @@ main .hero-section {
     width: 100%;
 
 }
+
 main .hero-section img {
 
     width: 11em;
 
 }
+
 aside.filter {
 
     grid-area: filter;
@@ -58,20 +371,24 @@ aside.filter {
     width: 18em;
 
 }
+
 .filter h2 {
   color: var(--load-color);
   padding: 10px;
 }
+
 .filter p[search-text] {
   text-align: center;
   font-size: 13px;
   padding: 1.5em 0;
   color: var(--load-color);
 }
+
 .filter span {
   display: block;
   text-align: center;
 }
+
 .filter input[search] {
   padding: 0.9em;
   border-radius: 8px;
@@ -80,6 +397,7 @@ aside.filter {
   width: 100%;
   margin-bottom: 0.6em;
 }
+
 .filter div.amount input {
 
     width: 100px;
@@ -89,6 +407,7 @@ aside.filter {
     border: 1px solid rgb(73, 70, 70);
 
 }
+
 .filter div.amount {
   display: flex;
   justify-content: center;
@@ -102,6 +421,7 @@ div[container] {
     width: 100%;
 
 }
+
 section.reviews {
   grid-area: reviews;
 }
@@ -113,9 +433,11 @@ h3 {
     border-radius: 8px;
 
 }
+
 .popular {
   margin-top: 1.4em;
 }
+
 .popular div a,
 .stores div a {
 
@@ -123,15 +445,18 @@ h3 {
     color: black;
 
 }
+
 .popular div,
 .stores div {
   padding: 4px 15px;
 }
+
 .popular div:last-child,
 .stores div:last-child {
   width: 100%;
   text-align: right;
 }
+
 aside.filter div[load-more] {
   background-color: var(--load-color);
   width: 100%;
@@ -139,24 +464,52 @@ aside.filter div[load-more] {
   border-radius: 8px;
   text-align: center;
 }
+
 aside.filter div[load-more] a {
 
     color: white;
     text-decoration: none;
 }
+
 .preview .box div img {
+
+    width: 10em;
+    margin: 0 auto;
+    display: block;
+}
+
+div[preview] {
+    display: flex;
+    flex-direction: column;
+
+}
+
+div[preview] .news-one,
+.news-two {
+    text-align: center;
+    color: var(--secondary-color);
+
     width: 8em;
 margin: 0 auto;
 display: block;
 
+2
 }
+
+div[preview] .news-one img,
+.news-two img {
+    width: 100%;
+}
+
 .preview {
 
     display: flex;
     justify-content: space-between;
-    gap:1em;
+
+    gap: 1em;
 
 }
+
 .box {
 
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
@@ -166,6 +519,7 @@ display: block;
     border-radius: 8px;
 
 }
+
 .box h4 {
 
     color: var(--load-color);
@@ -175,11 +529,13 @@ display: block;
     padding-bottom: 1em;
 
 }
+
 .box p {
   text-align: center;
   padding-bottom: 1em;
   color: var(--secondary-color);
 }
+
 .iPhone,
 .samsung,
 .tecno,
@@ -188,6 +544,7 @@ display: block;
   padding: 1.5rem 1rem;
   border-radius: 8px;
 }
+
 .samsung,
 .tecno,
 .hot-deals {
@@ -195,6 +552,7 @@ display: block;
     margin-top: 3rem;
 
 }
+
 .iPhone h2,
 .samsung h2,
 .tecno h2,
@@ -205,9 +563,11 @@ display: block;
   font-size: 1.6rem;
   font-weight: bolder;
 }
+
 .hot-deals .box {
   width: 100%;
 }
+
 .hot-deals .box img {
   display: block;
   margin: 0 auto;
@@ -218,6 +578,7 @@ div[see_more] {
     padding: 2em 0 1em;
 
 }
+
 div[see_more] a {
 
   text-decoration: none;
@@ -233,6 +594,14 @@ span[sub] {
 
     text-decoration: none;
     color: var(--load-color);
+}
+
+p[hot-price] {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--load-color);
+    font-weight: 800;
 }
 
 
@@ -280,3 +649,71 @@ span[sub] {
     color: var(--secondary-color);
 }
 
+
+/*footer section*/
+
+footer .footerContainer {
+    display: flex;
+    justify-content: space-between;
+}
+
+div.footLogo img {
+    width: 120px;
+}
+
+.Social_Icons div.Icons ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Social_Icons div.Icons ul li {
+    padding: 5px;
+}
+
+div.Icons ul li {
+    list-style: none;
+}
+
+section[categories] ul li,
+[gadgetBrands] ul li,
+[popularBrands] ul li,
+[about] ul li {
+    list-style: none;
+    padding-top: 10px
+}
+
+section[categories] ul li a,
+[gadgetBrands] ul li a,
+[popularBrands] ul li a,
+[about] ul li a {
+    text-decoration: none;
+    color: black;
+
+}
+
+section[bottom] {
+    display: flex;
+    justify-content: space-between;
+}
+
+section[bottom] .contact {
+    display: flex;
+    align-items: center;
+}
+
+section[bottom] .contact a {
+    padding: 0 10px;
+    text-decoration: none;
+}
+
+.contact div.box {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+
+}
+
+hr[bottom] {
+    margin-bottom: 2em;
+}
