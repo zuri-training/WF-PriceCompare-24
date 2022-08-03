@@ -1,21 +1,20 @@
-
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
 
 :root {
-  --main-color: #fefefe;
-  --load-color: #151f7f;
-  --secondary-color: #949efe;
+    --main-color: #fefefe;
+    --load-color: #151f7f;
+    --secondary-color: #949efe;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
 
 
 body {
-  font-family: "Sora", sans-serif;
+    font-family: "Sora", sans-serif;
 }
 
 
@@ -341,14 +340,14 @@ main {
     font-family: 'Sora', sans-serif;
 
 
-  display: grid;
-  grid-template-areas:
-    "slider slider slider slider slider"
-    "filter box box box box"
-    "reviews reviews reviews reviews reviews";
+    display: grid;
+    grid-template-areas:
+        "slider slider slider slider slider"
+        "filter box box box box"
+        "reviews reviews reviews reviews reviews";
     margin-top: 2rem;
-  gap: 3rem;
-  justify-content: center;
+    gap: 3rem;
+    justify-content: center;
 }
 
 main .hero-section {
@@ -373,29 +372,29 @@ aside.filter {
 }
 
 .filter h2 {
-  color: var(--load-color);
-  padding: 10px;
+    color: var(--load-color);
+    padding: 10px;
 }
 
 .filter p[search-text] {
-  text-align: center;
-  font-size: 13px;
-  padding: 1.5em 0;
-  color: var(--load-color);
+    text-align: center;
+    font-size: 13px;
+    padding: 1.5em 0;
+    color: var(--load-color);
 }
 
 .filter span {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 
 .filter input[search] {
-  padding: 0.9em;
-  border-radius: 8px;
-  border: 1px solid rgb(73, 70, 70);
-  outline: none;
-  width: 100%;
-  margin-bottom: 0.6em;
+    padding: 0.9em;
+    border-radius: 8px;
+    border: 1px solid rgb(73, 70, 70);
+    outline: none;
+    width: 100%;
+    margin-bottom: 0.6em;
 }
 
 .filter div.amount input {
@@ -409,11 +408,11 @@ aside.filter {
 }
 
 .filter div.amount {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  align-items: center;
-  margin-bottom: 0.6em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 0.6em;
 }
 
 div[container] {
@@ -423,7 +422,7 @@ div[container] {
 }
 
 section.reviews {
-  grid-area: reviews;
+    grid-area: reviews;
 }
 
 h3 {
@@ -435,11 +434,12 @@ h3 {
 }
 
 .popular {
-  margin-top: 1.4em;
+    margin-top: 1.4em;
 }
 
 .popular div a,
 .stores div a {
+
 
     text-decoration: none;
     color: black;
@@ -448,21 +448,21 @@ h3 {
 
 .popular div,
 .stores div {
-  padding: 4px 15px;
+    padding: 4px 15px;
 }
 
 .popular div:last-child,
 .stores div:last-child {
-  width: 100%;
-  text-align: right;
+    width: 100%;
+    text-align: right;
 }
 
 aside.filter div[load-more] {
-  background-color: var(--load-color);
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
+    background-color: var(--load-color);
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
 }
 
 aside.filter div[load-more] a {
@@ -484,16 +484,8 @@ div[preview] {
 
 }
 
-div[preview] .news-one,
-.news-two {
-    text-align: center;
-    color: var(--secondary-color);
-
-    width: 8em;
-margin: 0 auto;
-display: block;
-
-2
+.preview .box div img {
+    width: 13em;
 }
 
 div[preview] .news-one img,
@@ -531,18 +523,18 @@ div[preview] .news-one img,
 }
 
 .box p {
-  text-align: center;
-  padding-bottom: 1em;
-  color: var(--secondary-color);
+    text-align: center;
+    padding-bottom: 1em;
+    color: var(--secondary-color);
 }
 
 .iPhone,
 .samsung,
 .tecno,
 .hot-deals {
-  border: 1px solid var(--secondary-color);
-  padding: 1.5rem 1rem;
-  border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
 }
 
 .samsung,
@@ -557,20 +549,20 @@ div[preview] .news-one img,
 .samsung h2,
 .tecno h2,
 .hot-deals h2 {
-  margin-top: 0px;
-  margin-bottom: 1.4em;
-  color: var(--load-color);
-  font-size: 1.6rem;
-  font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 1.4em;
+    color: var(--load-color);
+    font-size: 1.6rem;
+    font-weight: bolder;
 }
 
 .hot-deals .box {
-  width: 100%;
+    width: 100%;
 }
 
 .hot-deals .box img {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 div[see_more] {
@@ -581,20 +573,20 @@ div[see_more] {
 
 div[see_more] a {
 
-  text-decoration: none;
-  color: var(--load-color);
-}
-
-span[sub] {
-  color: var(--load-color);
-  /* color: #fff; */
-  font-size: 16px;
-  font-weight: 400;
-}
-
     text-decoration: none;
     color: var(--load-color);
 }
+
+span[sub] {
+    color: var(--load-color);
+    /* color: #fff; */
+    font-size: 16px;
+    font-weight: 400;
+}
+
+
+
+
 
 p[hot-price] {
     display: flex;
