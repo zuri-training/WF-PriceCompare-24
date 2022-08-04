@@ -1,0 +1,91 @@
+.men-content {
+    border: 1px solid var(--secondary-color);
+    padding: 1rem;
+    border-radius: 8px;
+}
+
+.men-content h2 {
+    margin-top: 0px;
+    margin-bottom: 1em;
+    color: var(--load-color);
+    font-size: 1.6rem;
+    font-weight: bolder;
+}
+
+.men-preview {
+    display: flex;
+    gap: 1em;
+}
+
+.men-preview img {
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+.extra {
+    margin-top: 3rem;
+}
+
+.social-share {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+}
+
+.social-share a {
+    text-decoration: none;
+}
+
+.men-box {
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    width: 13.5rem;
+    background-color: var(--main-color);
+    border-radius: 8px;
+    padding: 0 1.5rem;
+
+}
+
+.men-box h4 {
+
+    color: var(--load-color);
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bolder;
+    padding: 1em 0;
+
+}
+
+.men-box p,
+.special-p {
+    text-align: center;
+    border: none;
+    width: 83%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: var(--main-color) !important;
+    font-size: small;
+    padding: 0.5rem 0;
+}
+
+.send-icon {
+    transform: rotate(-40deg);
+}
+
+.vendors {
+    margin-bottom: 1rem;
+}
+
+.vendors h6 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.shoes-box,
+.shoe-content {
+    align-items: center;
+}
