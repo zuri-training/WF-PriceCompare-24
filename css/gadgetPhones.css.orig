@@ -1,4 +1,9 @@
+<<<<<<< HEAD
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap");
+
+=======
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 :root {
   --main-color: #fefefe;
   --load-color: #151f7f;
@@ -20,14 +25,17 @@ body {
 }
 
 body {
+<<<<<<< HEAD
   margin: 0 auto;
   max-width: max-content;
   justify-content: center;
   font-family: sora;
-  margin: 0 auto;
-  max-width: max-content;
-  justify-content: center;
-  font-family: sora;
+=======
+    margin: 0 auto;
+    max-width: max-content;
+    justify-content: center;
+    font-family: sora;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 header .head_section {
@@ -54,6 +62,7 @@ header .head_section .logo img {
 }
 
 div.login {
+<<<<<<< HEAD
   display: flex;
 
   align-content: center;
@@ -63,14 +72,16 @@ div.login {
 
 div.login > div {
   display: flex;
-  display: flex;
-  align-content: center;
-  width: 8em;
-  justify-content: space-between;
+=======
+    display: flex;
+    align-content: center;
+    width: 8em;
+    justify-content: space-between
 }
 
-div.login > div {
-  display: flex;
+div.login>div {
+    display: flex;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 div.login > div button {
@@ -86,16 +97,19 @@ div.login > div a {
 }
 
 .nav-links ul {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-around;
   background-color: var(--secondary-color);
   padding: 10px;
   border-radius: 8px;
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--secondary-color);
-  padding: 10px;
-  border-radius: 8px;
+=======
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 8px;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .nav-links ul li {
@@ -105,8 +119,11 @@ div.login > div a {
 }
 
 .nav-links ul li {
+<<<<<<< HEAD
   list-style: none;
-  list-style: none;
+=======
+    list-style: none;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .nav-links ul li a {
@@ -115,12 +132,15 @@ div.login > div a {
 }
 
 .nav-links ul div ul li a {
+<<<<<<< HEAD
   text-decoration: none;
   width: 2rem;
   color: var(--main-color);
-  text-decoration: none;
-  width: 2rem;
-  color: var(--main-color);
+=======
+    text-decoration: none;
+    width: 2rem;
+    color: var(--main-color);
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .nav-links ul div ul li {
@@ -129,6 +149,7 @@ div.login > div a {
 }
 
 .nav-links ul div ul {
+<<<<<<< HEAD
   position: absolute;
   top: 0.3rem;
   left: -40px;
@@ -144,21 +165,23 @@ div.login > div a {
 
 .nav-links ul li:hover div {
   display: block;
-  position: absolute;
-  top: 0.3rem;
-  left: -40px;
-  display: block;
-  width: 11rem;
+=======
+    position: absolute;
+    top: .3rem;
+    left: -40px;
+    display: block;
+    width: 11rem;
 }
 
 .nav-links ul div {
-  display: none;
-  position: absolute;
-  width: 2rem;
+    display: none;
+    position: absolute;
+    width: 2rem;
 }
 
 .nav-links ul li:hover div {
-  display: block;
+    display: block;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .navLinks ul li {
@@ -184,6 +207,7 @@ section[heroSection] {
 }
 
 section[heroSection] {
+<<<<<<< HEAD
   display: flex;
   gap: 3rem;
   justify-content: space-between;
@@ -194,16 +218,18 @@ section[heroSection] div {
   display: flex;
   justify-content: space-between;
   width: 100%;
-  display: flex;
-  gap: 3rem;
-  justify-content: space-between;
-  width: 100%;
+=======
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    width: 100%;
 }
 
 section[heroSection] div {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 div[firstBox],
@@ -230,6 +256,7 @@ p#brand {
 
 section[heroSection] div[firstBox],
 div[secondBox] {
+<<<<<<< HEAD
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -250,26 +277,28 @@ div[firstBox] > div {
 
 section[heroSection] div[firstBox] > div {
   padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
+=======
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
 section[heroSection] div[firstBox] #img1 {
-  width: 80%;
-  margin: 0 auto;
-  padding: 1em;
-  height: 100%;
-  object-fit: contain;
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    height: 100%;
+    object-fit: contain;
 }
 
-div[firstBox] > div {
-  justify-content: center;
-  align-items: center;
+div[firstBox]>div {
+    justify-content: center;
+    align-items: center;
 }
 
-section[heroSection] div[firstBox] > div {
-  padding: 1em;
+section[heroSection] div[firstBox]>div {
+    padding: 1em;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 div[secondBox] div p {
@@ -294,20 +323,21 @@ div[firstBox] h2 {
   text-align: center;
 }
 
+<<<<<<< HEAD
 div[firstBox] > div > div {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   max-width: fit-content;
-}
-
-div[firstBox] > div > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: fit-content;
+=======
+div[firstBox]>div>div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 section[heroSection] div[secondBox] #image-one img,
@@ -323,6 +353,7 @@ section[heroSection] div[secondBox] #image-one h5 {
 }
 
 section[heroSection] div[secondBox] {
+<<<<<<< HEAD
   display: flex;
   flex-direction: row;
   /* justify-content: space-around; */
@@ -332,14 +363,16 @@ section[heroSection] div[secondBox] {
 
 div[secondBox] #image-two div {
   display: block;
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-around; */
-  gap: 3rem;
+=======
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    gap: 3rem;
 }
 
 div[secondBox] #image-two div {
-  display: block;
+    display: block;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 div[secondBox] #image-two img {
@@ -348,6 +381,7 @@ div[secondBox] #image-two img {
 
 div[secondBox] #image-one,
 #image-two {
+<<<<<<< HEAD
   /* display: flex; */
   flex-direction: column;
   justify-content: center;
@@ -370,27 +404,29 @@ div[specs] > div {
   align-items: center;
   width: fit-content;
   justify-content: left;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
+=======
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
 }
 
 div[secondBox] #image-one {
-  padding-left: 0.2em;
+    padding-left: .2em;
 }
 
 #image-one div[specs] {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
-div[specs] > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  justify-content: left;
+div[specs]>div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    justify-content: left;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 #image-one div[specs] div h5 {
@@ -400,6 +436,7 @@ div[specs] > div {
 }
 
 main {
+<<<<<<< HEAD
   display: grid;
   grid-template-areas:
     "slider slider slider slider slider"
@@ -433,32 +470,34 @@ aside.filter {
   grid-area: filter;
   height: fit-content;
   width: 18em;
-  display: grid;
-  grid-template-areas: "slider slider slider slider slider" "filter box box box box" "reviews reviews reviews reviews reviews";
-  gap: 3rem;
-  justify-content: center;
-  font-family: "Sora", sans-serif;
-  display: grid;
-  grid-template-areas: "slider slider slider slider slider" "filter box box box box" "reviews reviews reviews reviews reviews";
-  margin-top: 2rem;
-  gap: 3rem;
-  justify-content: center;
+=======
+    display: grid;
+    grid-template-areas: 'slider slider slider slider slider' 'filter box box box box' 'reviews reviews reviews reviews reviews';
+    gap: 3rem;
+    justify-content: center;
+    font-family: 'Sora', sans-serif;
+    display: grid;
+    grid-template-areas: "slider slider slider slider slider" "filter box box box box" "reviews reviews reviews reviews reviews";
+    margin-top: 2rem;
+    gap: 3rem;
+    justify-content: center;
 }
 
 main .hero-section {
-  grid-area: slider;
-  display: flex;
-  width: 100%;
+    grid-area: slider;
+    display: flex;
+    width: 100%;
 }
 
 main .hero-section img {
-  width: 11em;
+    width: 11em;
 }
 
 aside.filter {
-  grid-area: filter;
-  height: fit-content;
-  width: 18em;
+    grid-area: filter;
+    height: fit-content;
+    width: 18em;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .filter h2 {
@@ -488,16 +527,19 @@ aside.filter {
 }
 
 .filter div.amount input {
+<<<<<<< HEAD
   width: 100px;
   text-align: center;
   padding: 0.7em;
   border-radius: 10px;
   border: 1px solid rgb(73, 70, 70);
-  width: 100px;
-  text-align: center;
-  padding: 0.7em;
-  border-radius: 10px;
-  border: 1px solid rgb(73, 70, 70);
+=======
+    width: 100px;
+    text-align: center;
+    padding: .7em;
+    border-radius: 10px;
+    border: 1px solid rgb(73, 70, 70);
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .filter div.amount {
@@ -509,10 +551,13 @@ aside.filter {
 }
 
 div[container] {
+<<<<<<< HEAD
   grid-area: box;
   width: 100%;
-  grid-area: box;
-  width: 100%;
+=======
+    grid-area: box;
+    width: 100%;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 section.reviews {
@@ -520,14 +565,17 @@ section.reviews {
 }
 
 h3 {
+<<<<<<< HEAD
   background-color: var(--secondary-color);
   color: white;
   padding: 6px;
   border-radius: 8px;
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 6px;
-  border-radius: 8px;
+=======
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 6px;
+    border-radius: 8px;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .popular {
@@ -536,10 +584,13 @@ h3 {
 
 .popular div a,
 .stores div a {
+<<<<<<< HEAD
   text-decoration: none;
   color: black;
-  text-decoration: none;
-  color: black;
+=======
+    text-decoration: none;
+    color: black;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .popular div,
@@ -562,6 +613,7 @@ aside.filter div[load-more] {
 }
 
 aside.filter div[load-more] a {
+<<<<<<< HEAD
   color: white;
   text-decoration: none;
 }
@@ -575,19 +627,21 @@ aside.filter div[load-more] a {
 div[preview] {
   display: flex;
   flex-direction: column;
-  color: white;
-  text-decoration: none;
+=======
+    color: white;
+    text-decoration: none;
 }
 
 .preview .box div img {
-  width: 10em;
-  margin: 0 auto;
-  display: block;
+    width: 10em;
+    margin: 0 auto;
+    display: block;
 }
 
 div[preview] {
-  display: flex;
-  flex-direction: column;
+    display: flex;
+    flex-direction: column;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .preview .box div img {
@@ -600,6 +654,7 @@ div[preview] .news-one img,
 }
 
 .preview {
+<<<<<<< HEAD
   display: flex;
   justify-content: space-between;
 
@@ -620,25 +675,27 @@ div[preview] .news-one img,
   font-size: 0.9rem;
   font-weight: bolder;
   padding-bottom: 1em;
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
+=======
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
 }
 
 .box {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  width: 13.5rem;
-  background-color: var(--main-color);
-  border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    width: 13.5rem;
+    background-color: var(--main-color);
+    border-radius: 8px;
 }
 
 .box h4 {
-  color: var(--load-color);
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: bolder;
-  padding-bottom: 1em;
+    color: var(--load-color);
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bolder;
+    padding-bottom: 1em;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .box p {
@@ -659,7 +716,11 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
+<<<<<<< HEAD
   margin-top: 3rem;
+=======
+    margin-top: 3rem;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 .iPhone h2,
@@ -683,6 +744,7 @@ div[preview] .news-one img,
 }
 
 div[see_more] {
+<<<<<<< HEAD
   text-align: right;
   padding: 2em 0 1em;
 }
@@ -690,13 +752,15 @@ div[see_more] {
 div[see_more] a {
   text-decoration: none;
   color: var(--load-color);
-  text-align: right;
-  padding: 2em 0 1em;
+=======
+    text-align: right;
+    padding: 2em 0 1em;
 }
 
 div[see_more] a {
-  text-decoration: none;
-  color: var(--load-color);
+    text-decoration: none;
+    color: var(--load-color);
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 span[sub] {
@@ -714,6 +778,10 @@ p[hot-price] {
   font-weight: 800;
 }
 
+<<<<<<< HEAD
+=======
+
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 /* fashion men  */
 
 .shoes-section {
@@ -794,8 +862,13 @@ section[categories] ul li a,
 [gadgetBrands] ul li a,
 [popularBrands] ul li a,
 [about] ul li a {
+<<<<<<< HEAD
   text-decoration: none;
   color: black;
+=======
+    text-decoration: none;
+    color: black;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 section[bottom] {
@@ -814,9 +887,15 @@ section[bottom] .contact a {
 }
 
 .contact div.box {
+<<<<<<< HEAD
   width: 8px;
   height: 8px;
   background-color: black;
+=======
+    width: 8px;
+    height: 8px;
+    background-color: black;
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
 }
 
 hr[bottom] {
@@ -826,6 +905,7 @@ hr[bottom] {
 /* hair home page additional style */
 
 .hair-preview {
+<<<<<<< HEAD
   justify-content: space-around !important;
 }
 
@@ -923,21 +1003,26 @@ button[return] {
   margin-bottom: calc(100% - 228px);
   cursor: pointer;
 }
+=======
+    justify-content: space-around !important;
+}
 
 .hair-page__box {
-  width: 211px;
+    width: 211px;
 }
 
 .hair-page__box div {
-  text-align: center;
+    text-align: center;
 }
 
 .hair-page__box img {
-  width: 144px !important;
+    width: 144px !important;
 }
 
 .hot-deal-img img {
-  width: 183px !important;
+    width: 183px !important;
 }
 
+
 /* Pc */
+>>>>>>> ad8ddff207ee9022fcc641a22214f66abef62b60
