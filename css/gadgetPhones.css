@@ -1,4 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap");
+
 :root {
   --main-color: #fefefe;
   --load-color: #151f7f;
@@ -20,10 +21,6 @@ body {
 }
 
 body {
-  margin: 0 auto;
-  max-width: max-content;
-  justify-content: center;
-  font-family: sora;
   margin: 0 auto;
   max-width: max-content;
   justify-content: center;
@@ -63,14 +60,6 @@ div.login {
 
 div.login > div {
   display: flex;
-  display: flex;
-  align-content: center;
-  width: 8em;
-  justify-content: space-between;
-}
-
-div.login > div {
-  display: flex;
 }
 
 div.login > div button {
@@ -91,11 +80,6 @@ div.login > div a {
   background-color: var(--secondary-color);
   padding: 10px;
   border-radius: 8px;
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--secondary-color);
-  padding: 10px;
-  border-radius: 8px;
 }
 
 .nav-links ul li {
@@ -105,7 +89,6 @@ div.login > div a {
 }
 
 .nav-links ul li {
-  list-style: none;
   list-style: none;
 }
 
@@ -118,9 +101,6 @@ div.login > div a {
   text-decoration: none;
   width: 2rem;
   color: var(--main-color);
-  text-decoration: none;
-  width: 2rem;
-  color: var(--main-color);
 }
 
 .nav-links ul div ul li {
@@ -129,21 +109,6 @@ div.login > div a {
 }
 
 .nav-links ul div ul {
-  position: absolute;
-  top: 0.3rem;
-  left: -40px;
-  display: block;
-  width: 11rem;
-}
-
-.nav-links ul div {
-  display: none;
-  position: absolute;
-  width: 2rem;
-}
-
-.nav-links ul li:hover div {
-  display: block;
   position: absolute;
   top: 0.3rem;
   left: -40px;
@@ -184,16 +149,6 @@ section[heroSection] {
 }
 
 section[heroSection] {
-  display: flex;
-  gap: 3rem;
-  justify-content: space-between;
-  width: 100%;
-}
-
-section[heroSection] div {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
   display: flex;
   gap: 3rem;
   justify-content: space-between;
@@ -250,26 +205,6 @@ div[firstBox] > div {
 
 section[heroSection] div[firstBox] > div {
   padding: 1em;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-section[heroSection] div[firstBox] #img1 {
-  width: 80%;
-  margin: 0 auto;
-  padding: 1em;
-  height: 100%;
-  object-fit: contain;
-}
-
-div[firstBox] > div {
-  justify-content: center;
-  align-items: center;
-}
-
-section[heroSection] div[firstBox] > div {
-  padding: 1em;
 }
 
 div[secondBox] div p {
@@ -302,14 +237,6 @@ div[firstBox] > div > div {
   max-width: fit-content;
 }
 
-div[firstBox] > div > div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: fit-content;
-}
-
 section[heroSection] div[secondBox] #image-one img,
 section[heroSection] div[secondBox] #image-two img {
   width: 8rem;
@@ -327,14 +254,6 @@ section[heroSection] div[secondBox] {
   flex-direction: row;
   /* justify-content: space-around; */
 
-  gap: 3rem;
-}
-
-div[secondBox] #image-two div {
-  display: block;
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-around; */
   gap: 3rem;
 }
 
@@ -370,27 +289,6 @@ div[specs] > div {
   align-items: center;
   width: fit-content;
   justify-content: left;
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
-}
-
-div[secondBox] #image-one {
-  padding-left: 0.2em;
-}
-
-#image-one div[specs] {
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-}
-
-div[specs] > div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  justify-content: left;
 }
 
 #image-one div[specs] div h5 {
@@ -414,32 +312,6 @@ main {
     "slider slider slider slider slider"
     "filter box box box box"
     "reviews reviews reviews reviews reviews";
-  margin-top: 2rem;
-  gap: 3rem;
-  justify-content: center;
-}
-
-main .hero-section {
-  grid-area: slider;
-  display: flex;
-  width: 100%;
-}
-
-main .hero-section img {
-  width: 11em;
-}
-
-aside.filter {
-  grid-area: filter;
-  height: fit-content;
-  width: 18em;
-  display: grid;
-  grid-template-areas: "slider slider slider slider slider" "filter box box box box" "reviews reviews reviews reviews reviews";
-  gap: 3rem;
-  justify-content: center;
-  font-family: "Sora", sans-serif;
-  display: grid;
-  grid-template-areas: "slider slider slider slider slider" "filter box box box box" "reviews reviews reviews reviews reviews";
   margin-top: 2rem;
   gap: 3rem;
   justify-content: center;
@@ -493,11 +365,6 @@ aside.filter {
   padding: 0.7em;
   border-radius: 10px;
   border: 1px solid rgb(73, 70, 70);
-  width: 100px;
-  text-align: center;
-  padding: 0.7em;
-  border-radius: 10px;
-  border: 1px solid rgb(73, 70, 70);
 }
 
 .filter div.amount {
@@ -511,8 +378,6 @@ aside.filter {
 div[container] {
   grid-area: box;
   width: 100%;
-  grid-area: box;
-  width: 100%;
 }
 
 section.reviews {
@@ -520,10 +385,6 @@ section.reviews {
 }
 
 h3 {
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 6px;
-  border-radius: 8px;
   background-color: var(--secondary-color);
   color: white;
   padding: 6px;
@@ -536,8 +397,6 @@ h3 {
 
 .popular div a,
 .stores div a {
-  text-decoration: none;
-  color: black;
   text-decoration: none;
   color: black;
 }
@@ -575,19 +434,6 @@ aside.filter div[load-more] a {
 div[preview] {
   display: flex;
   flex-direction: column;
-  color: white;
-  text-decoration: none;
-}
-
-.preview .box div img {
-  width: 10em;
-  margin: 0 auto;
-  display: block;
-}
-
-div[preview] {
-  display: flex;
-  flex-direction: column;
 }
 
 .preview .box div img {
@@ -603,25 +449,6 @@ div[preview] .news-one img,
   display: flex;
   justify-content: space-between;
 
-  gap: 1em;
-}
-
-.box {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  width: 13.5rem;
-  background-color: var(--main-color);
-  border-radius: 8px;
-}
-
-.box h4 {
-  color: var(--load-color);
-  text-align: center;
-  font-size: 0.9rem;
-  font-weight: bolder;
-  padding-bottom: 1em;
-  display: flex;
-  justify-content: space-between;
   gap: 1em;
 }
 
@@ -683,13 +510,6 @@ div[preview] .news-one img,
 }
 
 div[see_more] {
-  text-align: right;
-  padding: 2em 0 1em;
-}
-
-div[see_more] a {
-  text-decoration: none;
-  color: var(--load-color);
   text-align: right;
   padding: 2em 0 1em;
 }
@@ -824,7 +644,6 @@ hr[bottom] {
 }
 
 /* hair home page additional style */
-
 .hair-preview {
   justify-content: space-around !important;
 }
@@ -923,21 +742,3 @@ button[return] {
   margin-bottom: calc(100% - 228px);
   cursor: pointer;
 }
-
-.hair-page__box {
-  width: 211px;
-}
-
-.hair-page__box div {
-  text-align: center;
-}
-
-.hair-page__box img {
-  width: 144px !important;
-}
-
-.hot-deal-img img {
-  width: 183px !important;
-}
-
-/* Pc */
