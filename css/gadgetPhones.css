@@ -1,9 +1,9 @@
 @import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap");
 
 :root {
-    --main-color: #fefefe;
-    --load-color: #151f7f;
-    --secondary-color: #949efe;
+  --main-color: #fefefe;
+  --load-color: #151f7f;
+  --secondary-color: #949efe;
 
 }
 
@@ -19,7 +19,7 @@ body {
 
 
 body {
-    font-family: "Sora", sans-serif;
+  font-family: "Sora", sans-serif;
 }
 
 
@@ -65,16 +65,16 @@ div.login {
   justify-content: space-between;
 }
 
-div.login > div {
+div.login>div {
   display: flex;
 }
 
-div.login > div button {
+div.login>div button {
   background: none;
   border: none;
 }
 
-div.login > div a {
+div.login>div a {
   text-decoration: none;
   color: black;
   font-size: 14px;
@@ -205,12 +205,12 @@ section[heroSection] div[firstBox] #img1 {
   object-fit: contain;
 }
 
-div[firstBox] > div {
+div[firstBox]>div {
   justify-content: center;
   align-items: center;
 }
 
-section[heroSection] div[firstBox] > div {
+section[heroSection] div[firstBox]>div {
   padding: 1em;
 }
 
@@ -236,7 +236,7 @@ div[firstBox] h2 {
   text-align: center;
 }
 
-div[firstBox] > div > div {
+div[firstBox]>div>div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -290,7 +290,7 @@ div[secondBox] #image-one {
   width: 100%;
 }
 
-div[specs] > div {
+div[specs]>div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -341,45 +341,45 @@ aside.filter {
   height: fit-content;
   width: 18em;
 
-    display: grid;
-    grid-template-areas:
-        'slider slider slider slider slider'
-        'filter box box box box'
-        'reviews reviews reviews reviews reviews'
-    ;
-    gap: 3rem;
-    justify-content: center;
-    font-family: 'Sora', sans-serif;
+  display: grid;
+  grid-template-areas:
+    'slider slider slider slider slider'
+    'filter box box box box'
+    'reviews reviews reviews reviews reviews'
+  ;
+  gap: 3rem;
+  justify-content: center;
+  font-family: 'Sora', sans-serif;
 
 
-    display: grid;
-    grid-template-areas:
-        "slider slider slider slider slider"
-        "filter box box box box"
-        "reviews reviews reviews reviews reviews";
-    margin-top: 2rem;
-    gap: 3rem;
-    justify-content: center;
+  display: grid;
+  grid-template-areas:
+    "slider slider slider slider slider"
+    "filter box box box box"
+    "reviews reviews reviews reviews reviews";
+  margin-top: 2rem;
+  gap: 3rem;
+  justify-content: center;
 }
 
 main .hero-section {
-    grid-area: slider;
-    display: flex;
-    width: 100%;
+  grid-area: slider;
+  display: flex;
+  width: 100%;
 
 }
 
 main .hero-section img {
 
-    width: 11em;
+  width: 11em;
 
 }
 
 aside.filter {
 
-    grid-area: filter;
-    height: fit-content;
-    width: 18em;
+  grid-area: filter;
+  height: fit-content;
+  width: 18em;
 
 
 }
@@ -426,30 +426,30 @@ aside.filter {
   align-items: center;
   margin-bottom: 0.6em;
 
-    padding: 0.9em;
-    border-radius: 8px;
-    border: 1px solid rgb(73, 70, 70);
-    outline: none;
-    width: 100%;
-    margin-bottom: 0.6em;
+  padding: 0.9em;
+  border-radius: 8px;
+  border: 1px solid rgb(73, 70, 70);
+  outline: none;
+  width: 100%;
+  margin-bottom: 0.6em;
 }
 
 .filter div.amount input {
 
-    width: 100px;
-    text-align: center;
-    padding: .7em;
-    border-radius: 10px;
-    border: 1px solid rgb(73, 70, 70);
+  width: 100px;
+  text-align: center;
+  padding: .7em;
+  border-radius: 10px;
+  border: 1px solid rgb(73, 70, 70);
 
 }
 
 .filter div.amount {
-    display: flex;
-    justify-content: center;
-    gap: 1em;
-    align-items: center;
-    margin-bottom: 0.6em;
+  display: flex;
+  justify-content: center;
+  gap: 1em;
+  align-items: center;
+  margin-bottom: 0.6em;
 
 }
 
@@ -469,10 +469,10 @@ h3 {
   padding: 6px;
   border-radius: 8px;
 
-    background-color: var(--secondary-color);
-    color: white;
-    padding: 6px;
-    border-radius: 8px;
+  background-color: var(--secondary-color);
+  color: white;
+  padding: 6px;
+  border-radius: 8px;
 
 }
 
@@ -488,8 +488,8 @@ h3 {
 
 
 
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 
 
 }
@@ -525,15 +525,15 @@ aside.filter div[load-more] a {
   display: block;
 
 
-    color: white;
-    text-decoration: none;
+  color: white;
+  text-decoration: none;
 }
 
 .preview .box div img {
 
-    width: 10em;
-    margin: 0 auto;
-    display: block;
+  width: 10em;
+  margin: 0 auto;
+  display: block;
 
 }
 
@@ -546,7 +546,7 @@ div[preview] {
 
   width: 13em;
 
-    width: 13em;
+  width: 13em;
 
 }
 
@@ -579,30 +579,30 @@ div[preview] .news-one img,
   padding-bottom: 1em;
 
 
-    display: flex;
-    justify-content: space-between;
+  display: flex;
+  justify-content: space-between;
 
-    gap: 1em;
+  gap: 1em;
 
 }
 
 .box {
 
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    border: none;
-    width: 13.5rem;
-    background-color: var(--main-color);
-    border-radius: 8px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  border: none;
+  width: 13.5rem;
+  background-color: var(--main-color);
+  border-radius: 8px;
 
 }
 
 .box h4 {
 
-    color: var(--load-color);
-    text-align: center;
-    font-size: .9rem;
-    font-weight: bolder;
-    padding-bottom: 1em;
+  color: var(--load-color);
+  text-align: center;
+  font-size: .9rem;
+  font-weight: bolder;
+  padding-bottom: 1em;
 
 
 }
@@ -629,7 +629,7 @@ div[preview] .news-one img,
   margin-top: 3rem;
 
 
-    margin-top: 3rem;
+  margin-top: 3rem;
 
 
 }
@@ -671,22 +671,22 @@ span[sub] {
   font-size: 16px;
   font-weight: 400;
 
-    text-align: right;
-    padding: 2em 0 1em;
+  text-align: right;
+  padding: 2em 0 1em;
 
 }
 
 div[see_more] a {
 
-    text-decoration: none;
-    color: var(--load-color);
+  text-decoration: none;
+  color: var(--load-color);
 }
 
 span[sub] {
-    color: var(--load-color);
-    /* color: #fff; */
-    font-size: 16px;
-    font-weight: 400;
+  color: var(--load-color);
+  /* color: #fff; */
+  font-size: 16px;
+  font-weight: 400;
 }
 
 
@@ -694,11 +694,11 @@ span[sub] {
 
 
 p[hot-price] {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: var(--load-color);
-    font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--load-color);
+  font-weight: 800;
 
 }
 
@@ -850,6 +850,7 @@ hr[bottom] {
 div[forget-pass] ul {
   background-color: #1b29a9;
 }
+
 .forget-pass-form {
   display: grid;
   justify-content: center;
@@ -861,12 +862,14 @@ div[forget-pass] ul {
   text-align: center;
   margin-bottom: 32px;
 }
+
 .forget-pass-text h6 {
   color: #1b29a9;
   font-size: 18px;
   font-weight: 700;
   margin-bottom: 16px;
 }
+
 .forget-pass-text p {
   font-size: 16px;
   width: 500px;
@@ -874,17 +877,20 @@ div[forget-pass] ul {
   background-color: #f8f9fa;
   line-height: 1.4;
 }
+
 .forget-pass-fields {
   display: flex;
   flex-direction: column;
   width: 100%;
 }
+
 label[for="email"] {
   /* display: block; */
   font-size: 14px;
   width: 100%;
   padding: 8px 0 8px 0;
 }
+
 input[type="email"] {
   /* display: block; */
   width: 100%;
@@ -896,6 +902,7 @@ input[type="email"] {
   color: rgba(0, 0, 0, 0.5);
   margin-bottom: 16px;
 }
+
 button[submit],
 button[return] {
   padding: 32px 24px;
