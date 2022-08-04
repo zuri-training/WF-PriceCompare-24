@@ -736,3 +736,127 @@ hr[bottom] {
 .hot-deal-img img {
   width: 183px !important;
 }
+
+/* styles for Login Page */
+#login-body-content {
+   width: 100%;
+   max-width: 1200px;
+}
+
+#login-form {
+   padding: 70px 0 0;
+}
+
+.form__title {
+   font-weight: 700;
+   font-size: 18px;
+   color: #1B29A9;
+   padding: 0 0 40px;
+   text-align: center;
+}
+
+.login-label {
+   display: block;
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 18px;
+   width: 100%;
+   max-width: 590px;
+   margin: 0 auto;
+   padding: 8px 0 ;
+}
+
+.login__input-box {
+   padding: 0 0 32px;
+}
+
+#email-phone,
+#password {
+   display: block;
+   padding: 24px;
+   gap: 10px;
+   background: #FFFFFF;
+   border: 1px solid rgba(90, 90, 90, 0.5);
+   border-radius: 8px;
+   width: 100%;
+   max-width: 590px;
+   margin: 0 auto;
+}
+
+.password--link {
+   display: block;
+   width: 100%;
+   max-width: 590px;
+   margin: 0 auto;
+   text-align: right;
+   padding: 24px 0 0 ;
+}
+
+.password--link a {
+   font-size: 14px;
+   line-height: 18px;
+   text-decoration: none;
+   color: #1B29A9;
+}
+
+.login-btn {
+   display: block;
+   padding: 32px 24px;
+   background: #1B29A9;
+   border: none;
+   border-radius: 8px;
+   width: 100%;
+   max-width: 590px;
+   margin: 0 auto;
+   color: #fff;
+}
+
+.form__text {
+   padding: 16px 0;
+   font-weight: 400;
+   font-size: 12px;
+   text-align: center;
+}
+
+.login__option {
+   display: flex;
+   column-gap: 20px;
+   width: 100%;
+   max-width: 590px;
+   margin: 0 auto;
+}
+
+.login-option__link {
+   display: block;
+   padding: 10px;
+   border: 1px solid #1B29A9;
+   border-radius: 8px;
+   width: 100%;
+   text-align: center;
+   text-decoration: none;
+   color: #1B29A9;
+}
+
+.login__create-account {
+   padding: 92px 0 0;
+}
+
+.create-account__link {
+   padding: 32px 24px;
+   border: 1px solid #1B29A9;
+   border-radius: 8px;
+   width: 100%;
+   max-width: 590px;
+   margin: 0 auto;
+   text-align: center;
+}
+
+.create-account__link a{
+   font-weight: 700;
+   font-size: 16px;
+   color: #1B29A9;
+   text-decoration: none;
+}
+
+.nav-list ul{
+   background-color: #1B29A9 !important;
