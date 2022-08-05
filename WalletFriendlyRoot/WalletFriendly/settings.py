@@ -38,6 +38,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     # apps installed by team
+    'PriceCompare',
         #3rd party
     'django_extensions',
         #local apps
