@@ -1,0 +1,148 @@
+/* styles for compare Gadgets Page */
+.compare-drop {
+	padding: 56px 0 0;
+}
+
+.nav-links.compare {
+	max-width: 10rem ;
+}
+
+.nav-links.compare .title{
+   font-size: 25px;
+}
+
+.nav-links.compare ul {
+   justify-content: start;
+	background-color: white;
+   padding: 10px 0;
+}
+
+.nav-links.compare > ul >li{
+   padding-bottom: 1rem;
+}
+
+.nav-links.compare * {
+	color : black;
+}
+
+.linkPages.compare {
+	position: relative;
+	top: 7.2rem;
+	left: 0;
+	display: flex;
+	width: 10rem;
+	flex-direction: column;
+	row-gap: 16px;
+}
+
+.linkPages.compare li {
+   border: none !important;
+}
+
+.compare__product-box {
+   width: 100%;
+   display: flex;
+   justify-content: space-between;
+   padding: 22px 0 40px;
+}
+
+.product-box--main {
+   display: flex;
+   column-gap: 10px;
+   align-items: center;
+}
+
+.compare__checkbox {
+   width: 40px;
+   height: 40px;
+   border: 1px solid #000000;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 8px;
+}
+
+.product-box__text {
+   font-weight: 400;
+   font-size: 25px
+}
+
+.compare-product--title {
+   display: flex;
+   justify-content: space-between;
+   padding: 0 30px;
+}
+
+.compare__product-text {
+   font-weight: 700;
+   font-size: 32px;
+}
+
+.compare-product--content {
+   display: flex;
+   justify-content: space-between;
+   padding: 56px 0 39px;
+}
+
+.compare-product__box {
+   width: 100%;
+   max-width: 397px;
+/* height: 587px; */
+   background: #F8F9FA;
+   border: 1px solid #F8F9FA;
+   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+   border-radius: 16px;
+   text-align: center;
+}
+.compare-product__img-box {
+   width:100%;
+   max-width: 237px;
+   margin: 0 auto;
+}
+
+.compare-product__img-box img {
+   width:100%;
+}
+
+.compare__product__text {
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 33px;
+   padding: 16px 0 34.1px;
+}
+
+.compare-product__price-text {
+   font-weight: 400;
+   font-size: 22px;
+   line-height: 33px;
+   color: #E20C0C;
+   padding: 34.6px 0 53px;
+}
+
+.features-grid {
+   display: flex;
+   justify-content: space-between;
+}
+
+.features__container {
+   display: flex;
+   flex-direction: column;
+   row-gap: 16px;
+   width: 100%;
+   max-width: 576px;
+   background: #f6f6f6;
+}
+
+.features__content {
+   display: flex;
+   justify-content: space-between;
+   padding: 10px;
+   background: #FEFEFE;
+   /* background: #f6f6f6; */
+   border: 1px solid #d6d6d6;
+}
+
+.features__text {
+   font-weight: 400;
+   font-size: 14px;
+   line-height: 17px;
+   color: #080C33;
+}
