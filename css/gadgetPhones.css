@@ -192,7 +192,7 @@ img[pop3] {
 }
 
 img[pop3] {
-  height: 14em;
+  height: 16em;
 }
 
 p#brand {
@@ -456,25 +456,9 @@ h3 {
   padding: 4px 15px;
 }
 
-.popular div:last-child,
-.stores div:last-child {
-  width: 100%;
-  text-align: right;
-}
 
-aside.filter div[load-more] {
-  background-color: var(--load-color);
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-}
 
-aside.filter div[load-more] a {
 
-  color: white;
-  text-decoration: none;
-}
 
 .preview .box div img {
 
@@ -803,13 +787,14 @@ hr[bottom] {
 .login-btn {
   display: block;
   padding: 32px 24px;
-  background: #1B29A9;
+  background: var(--secondary-color);
   border: none;
   border-radius: 8px;
   width: 100%;
   max-width: 590px;
   margin: 0 auto;
   color: #fff;
+  cursor: pointer;
 }
 
 .form__text {
@@ -859,9 +844,7 @@ hr[bottom] {
   text-decoration: none;
 }
 
-.nav-list ul {
-  background-color: #1B29A9 !important;
-}
+
 
 
 
@@ -1018,4 +1001,18 @@ div.footLogo {
 
 .footerContainer section p {
   color: var(--load-color)
+}
+
+a.compare-btn {
+  text-decoration: none;
+  color: white;
+  background: var(--secondary-color);
+  padding: .5em 1em;
+  border-radius: 8px;
+
+}
+
+div.compare {
+  padding-bottom: 2.5rem;
+  text-align: center;
 }
