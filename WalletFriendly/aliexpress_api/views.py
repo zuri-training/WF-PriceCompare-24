@@ -1,5 +1,6 @@
 from django.shortcuts import render
 import requests
+import json
 # Create your views here.
 
 def aliexpress(request):
@@ -15,9 +16,10 @@ def aliexpress(request):
     }
 
     response = requests.request("GET", url, headers=headers, params=querystring)
+    py_data = json.loads(response)
     
     return render(request, '<page_name>.html', {
-        'product_name': response['docs']['product_title'],
-        'product_price' : response['docs']['app_sale_price']
+        'product_name': py_data['docs']['product_title'],
+        'product_price' : py_data['docs']['app_sale_price']
 
         })
