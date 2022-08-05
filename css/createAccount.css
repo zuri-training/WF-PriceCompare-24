@@ -34,7 +34,6 @@ header .head_section {
     font-weight: 700;
     color: var(--load-color);
   }
-  
   .head_section .logo span {
     color: black;
   }
@@ -188,7 +187,6 @@ div.login>div a {
     font-size: 12px;
     text-align: center;
  }
-
  .create-account-login {
     padding: 25px 0 0;
  }
