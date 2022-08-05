@@ -426,7 +426,7 @@ div[container] {
 
 }
 
-section.reviews {
+section[reviews] {
   grid-area: reviews;
 }
 
@@ -651,6 +651,7 @@ p[hot-price] {
 
 footer .footerContainer {
   display: flex;
+  margin-top: 5rem;
   justify-content: space-between;
 }
 
@@ -712,7 +713,7 @@ section[bottom] .contact a {
 }
 
 hr[bottom] {
-  margin-bottom: 2em;
+  margin: 3em 0;
 }
 
 
@@ -739,125 +740,282 @@ hr[bottom] {
 
 /* styles for Login Page */
 #login-body-content {
-   width: 100%;
-   max-width: 1200px;
+  width: 100%;
+  max-width: 1200px;
 }
 
 #login-form {
-   padding: 70px 0 0;
+  padding: 70px 0 0;
 }
 
 .form__title {
-   font-weight: 700;
-   font-size: 18px;
-   color: #1B29A9;
-   padding: 0 0 40px;
-   text-align: center;
+  font-weight: 700;
+  font-size: 18px;
+  color: #1B29A9;
+  padding: 0 0 40px;
+  text-align: center;
 }
 
 .login-label {
-   display: block;
-   font-weight: 400;
-   font-size: 14px;
-   line-height: 18px;
-   width: 100%;
-   max-width: 590px;
-   margin: 0 auto;
-   padding: 8px 0 ;
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  padding: 8px 0;
 }
 
 .login__input-box {
-   padding: 0 0 32px;
+  padding: 0 0 32px;
 }
 
 #email-phone,
 #password {
-   display: block;
-   padding: 24px;
-   gap: 10px;
-   background: #FFFFFF;
-   border: 1px solid rgba(90, 90, 90, 0.5);
-   border-radius: 8px;
-   width: 100%;
-   max-width: 590px;
-   margin: 0 auto;
+  display: block;
+  padding: 24px;
+  gap: 10px;
+  background: #FFFFFF;
+  border: 1px solid rgba(90, 90, 90, 0.5);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
 }
 
 .password--link {
-   display: block;
-   width: 100%;
-   max-width: 590px;
-   margin: 0 auto;
-   text-align: right;
-   padding: 24px 0 0 ;
+  display: block;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  text-align: right;
+  padding: 24px 0 0;
 }
 
 .password--link a {
-   font-size: 14px;
-   line-height: 18px;
-   text-decoration: none;
-   color: #1B29A9;
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #1B29A9;
 }
 
 .login-btn {
-   display: block;
-   padding: 32px 24px;
-   background: #1B29A9;
-   border: none;
-   border-radius: 8px;
-   width: 100%;
-   max-width: 590px;
-   margin: 0 auto;
-   color: #fff;
+  display: block;
+  padding: 32px 24px;
+  background: #1B29A9;
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  color: #fff;
 }
 
 .form__text {
-   padding: 16px 0;
-   font-weight: 400;
-   font-size: 12px;
-   text-align: center;
+  padding: 16px 0;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
 }
 
 .login__option {
-   display: flex;
-   column-gap: 20px;
-   width: 100%;
-   max-width: 590px;
-   margin: 0 auto;
+  display: flex;
+  column-gap: 20px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
 }
 
 .login-option__link {
-   display: block;
-   padding: 10px;
-   border: 1px solid #1B29A9;
-   border-radius: 8px;
-   width: 100%;
-   text-align: center;
-   text-decoration: none;
-   color: #1B29A9;
+  display: block;
+  padding: 10px;
+  border: 1px solid #1B29A9;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #1B29A9;
 }
 
 .login__create-account {
-   padding: 92px 0 0;
+  padding: 92px 0 0;
 }
 
 .create-account__link {
-   padding: 32px 24px;
-   border: 1px solid #1B29A9;
-   border-radius: 8px;
-   width: 100%;
-   max-width: 590px;
-   margin: 0 auto;
-   text-align: center;
+  padding: 32px 24px;
+  border: 1px solid #1B29A9;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  text-align: center;
 }
 
-.create-account__link a{
-   font-weight: 700;
-   font-size: 16px;
-   color: #1B29A9;
-   text-decoration: none;
+.create-account__link a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1B29A9;
+  text-decoration: none;
 }
 
-.nav-list ul{
-   background-color: #1B29A9 !important;
+.nav-list ul {
+  background-color: #1B29A9 !important;
+}
+
+
+
+footer {
+  margin-top: 5em;
+  border-top: 1px solid gray;
+}
+
+
+
+
+.progress-container {
+
+  height: 6em;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-top: 7px;
+
+  width: fit-content;
+}
+
+div.progress-bar {
+  height: 8px;
+  width: 16em;
+  background-color: var(--secondary-color);
+
+}
+
+section[reviews] {
+  border-top: 1px solid gray;
+  max-width: 100%;
+  margin-top: 2em;
+
+}
+
+div.progress-bar-fill {
+  height: inherit;
+  width: 60%;
+  background-color: var(--load-color);
+}
+
+div.first {
+  width: 100%;
+}
+
+div.second {
+  width: 80%;
+}
+
+div.third {
+  width: 60%;
+}
+
+div.fourth {
+  width: 40%;
+}
+
+div.fifth {
+  width: 20%;
+}
+
+.stars-container {
+
+  width: fit-content;
+
+}
+
+.stars-container .star {
+  display: flex;
+  justify-content: right;
+  gap: 5px;
+  padding-top: 5px;
+}
+
+div.review-section {
+  margin-top: 2em;
+}
+
+div.review-section div.overall-review {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+
+div.review-section div.overall-review .review-container div[contain] {
+  display: flex;
+
+
+}
+
+i.fas {
+  color: gold;
+  ;
+}
+
+
+div.profile-pic {
+  width: 2.3rem;
+  height: 2.3rem;
+  border-radius: 50%;
+
+}
+
+div.profile-pic img {
+  border-radius: 50%;
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+
+div.pro-contain {
+  display: flex;
+  padding-top: 1em;
+  gap: 1.4rem;
+  margin-top: 1.5em;
+
+}
+
+div.profile {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+div.profile h4 {
+  color: var(--load-color);
+}
+
+div.time p {
+  color: var(--secondary-color)
+}
+
+.head_section .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--load-color);
+}
+
+.head_section .logo span {
+  color: black;
+}
+
+div.footLogo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--load-color);
+}
+
+.footLogo span {
+  color: black;
+}
+
+.footerContainer section p {
+  color: var(--load-color)
 }
