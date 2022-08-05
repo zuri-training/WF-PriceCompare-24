@@ -300,31 +300,25 @@ main {
   }
 
   /*footer section*/
-
 footer .footerContainer {
     display: flex;
     margin-top: 5rem;
     justify-content: space-between;
   }
-  
   div.footLogo img {
     width: 120px;
   }
-  
   .Social_Icons div.Icons ul {
     display: flex;
     justify-content: space-between;
     padding: 10px;
   }
-  
   .Social_Icons div.Icons ul li {
     padding: 5px;
   }
-  
   div.Icons ul li {
     list-style: none;
   }
-  
   section[categories] ul li,
   [gadgetBrands] ul li,
   [popularBrands] ul li,
@@ -332,198 +326,142 @@ footer .footerContainer {
     list-style: none;
     padding-top: 10px
   }
-  
   section[categories] ul li a,
   [gadgetBrands] ul li a,
   [popularBrands] ul li a,
   [about] ul li a {
     text-decoration: none;
     color: black;
-  
   }
-  
   section[bottom] {
     display: flex;
     justify-content: space-between;
   }
-  
   section[bottom] .contact {
     display: flex;
     align-items: center;
   }
-  
   section[bottom] .contact a {
     padding: 0 10px;
     text-decoration: none;
   }
-  
   .contact div.box {
     width: 8px;
     height: 8px;
     background-color: black;
-  
   }
-  
   hr[bottom] {
     margin: 3em 0;
   }
-  
-  
-  
-  
-  
-  
   footer {
     margin-top: 5em;
     border-top: 1px solid gray;
   }
-  
-  
-  
-  
   .progress-container {
-  
     height: 6em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 7px;
-  
     width: fit-content;
   }
-  
   div.progress-bar {
     height: 8px;
     width: 16em;
     background-color: var(--secondary-color);
-  
   }
-  
   section[reviews] {
     border-top: 1px solid gray;
     max-width: 100%;
     margin-top: 2em;
-  
   }
-  
   div.progress-bar-fill {
     height: inherit;
     width: 60%;
     background-color: var(--load-color);
   }
-  
   div.first {
     width: 100%;
   }
-  
   div.second {
     width: 80%;
   }
-  
   div.third {
     width: 60%;
   }
-  
   div.fourth {
     width: 40%;
   }
-  
   div.fifth {
     width: 20%;
   }
-  
   .stars-container {
-  
     width: fit-content;
-  
   }
-  
   .stars-container .star {
     display: flex;
     justify-content: right;
     gap: 5px;
     padding-top: 5px;
   }
-  
   div.review-section {
     margin-top: 2em;
   }
-  
   div.review-section div.overall-review {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
-  
-  
   div.review-section div.overall-review .review-container div[contain] {
     display: flex;
-  
-  
   }
-  
   i.fas {
     color: gold;
-    ;
   }
-  
-  
   div.profile-pic {
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 50%;
-  
   }
-  
   div.profile-pic img {
     border-radius: 50%;
     object-fit: cover;
     width: 100%;
     height: 100%;
   }
-  
   div.pro-contain {
     display: flex;
     padding-top: 1em;
     gap: 1.4rem;
     margin-top: 1.5em;
-  
   }
-  
   div.profile {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
   }
-  
   div.profile h4 {
     color: var(--load-color);
   }
-  
   div.time p {
     color: var(--secondary-color)
   }
-  
   .head_section .logo {
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--load-color);
   }
-  
   .head_section .logo span {
     color: black;
   }
-  
   div.footLogo {
     font-size: 1.4rem;
     font-weight: 700;
     color: var(--load-color);
   }
-  
   .footLogo span {
     color: black;
   }
-  
   .footerContainer section p {
     color: var(--load-color)
   }
