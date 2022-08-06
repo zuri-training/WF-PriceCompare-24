@@ -30,7 +30,7 @@
 .social-share {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
 }
 
 .social-share a {
@@ -44,17 +44,14 @@
     background-color: var(--main-color);
     border-radius: 8px;
     padding: 0 1.5rem;
-
 }
 
 .men-box h4 {
-
     color: var(--load-color);
     text-align: center;
     font-size: .9rem;
     font-weight: bolder;
     padding: 1em 0;
-
 }
 
 .men-box p,
@@ -88,4 +85,12 @@
 .shoes-box,
 .shoe-content {
     align-items: center;
+}
+
+.compare {
+    margin-bottom: -22px;
+}
+
+.compare-btn {
+    font-size: 14px;
 }
