@@ -15,6 +15,7 @@
 
 body {
   font-family: "Sora", sans-serif;
+  position: relative;
 }
 
 
@@ -338,7 +339,6 @@ main {
   grid-template-areas:
     'slider slider slider slider slider'
     'filter box box box box'
-    'reviews reviews reviews reviews reviews'
   ;
   gap: 3rem;
   justify-content: center;
@@ -369,6 +369,8 @@ aside.filter {
   grid-area: filter;
   height: fit-content;
   width: 18em;
+  position: sticky;
+  top: 0;
 
 }
 

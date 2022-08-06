@@ -11,6 +11,7 @@
 }
 body {
   font-family: "Sora", sans-serif;
+  position: relative;
 }
 .material-symbols-outlined {
   color: var(--mainColor);
@@ -142,6 +143,8 @@ main {
     grid-area: filter;
     height: fit-content;
     width: 18em;
+    position: sticky;
+    top: 0;
   }
   .filter h2 {
     color: var(--load-color);
@@ -204,11 +207,7 @@ main {
   .stores div {
     padding: 4px 15px;
   }
-  .popular div:last-child,
-  .stores div:last-child {
-    width: 100%;
-    text-align: right;
-  }
+  
   aside.filter div[load-more] {
     background-color: var(--load-color);
     width: 100%;
