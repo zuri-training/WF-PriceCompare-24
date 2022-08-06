@@ -6,7 +6,9 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gadget PC</title>
+    <link rel="stylesheet" href="../css/swiper-bundle.min.css">
     <link rel="stylesheet" href="../css/gadgetPhones.css" />
+    <link rel="stylesheet" href="../css/gadgettv.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
@@ -110,13 +112,35 @@
     </header>
 
     <main>
-        <section class="hero-section">
-            <img src="../images/gadget and phones/Rectangle 9.jpg" alt="">
-            <img src="../images/gadget and phones/Rectangle 10.jpg" alt="">
-            <img src="../images/gadget and phones/Rectangle 11.jpg" alt="">
-            <img src="../images/gadget and phones/Rectangle 12.jpg" alt="">
-            <img src="../images/gadget and phones/Rectangle 13.jpg" alt="">
-            <img src="../images/gadget and phones/Rectangle 14.jpg" alt="">
+        <section class="hero-section swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 9.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 10.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 11.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 12.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 13.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 14.jpg" alt="">
+                </div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 9.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 10.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 11.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 12.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 13.jpg" alt=""></div>
+                <div class="swiper-slide">
+                    <img src="../images/gadget and phones/Rectangle 14.jpg" alt="">
+                </div>
+            </div>
         </section>
 
         <aside class="filter">
@@ -542,6 +566,19 @@
 
     </footer>
 
+
+
+    <script src="../swiper-bundle.min.js"></script>
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            watchSlidesProgress: true,
+            slidesPerView: 7,
+            autoplay: {
+                delay: 1000,
+                disableOnInteraction: false,
+            }
+        });
+    </script>
 </body>
 
 </html>
