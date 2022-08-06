@@ -30,7 +30,7 @@
 .social-share {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
 }
 
 .social-share a {
@@ -46,11 +46,9 @@
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-
 }
 
 .men-box h4 {
-
     color: var(--load-color);
     text-align: center;
     font-size: .9rem;
@@ -116,4 +114,9 @@
 .special-p:focus-visible {
     opacity: 0.8;
     transition: .3s;
+}
+
+main #GAD-tv {
+    background-image: url("../images/gadget and phones/SAMSUNG 1.png");
+    background-size: cover;
 }
