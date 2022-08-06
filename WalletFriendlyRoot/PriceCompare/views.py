@@ -21,6 +21,9 @@ def fashion(request):
 
 def fashionmen(request):
     return render(request, 'fashion/fashionMen.html')
+
+def fashionmenauth(request):
+    return render(request, 'fashion/fashionMenAuth.html')
     
 def fashionwomen(request):
     return render(request, 'fashion/fashionWomen.html')
@@ -45,6 +48,15 @@ def bonestraight(request):
 
 def accessories(request):
     return render(request, 'hair/hairAccessories.html')
-    
+
+def accessoriesauth(request):
+    return render(request, 'hair/hairAccessoriesAuth.html')
+
 def humanhair(request):
     return render(request, 'hair/humanHair.html')
+
+def humanhairauth(request):
+    return render(request, 'hair/humanhairAuth.html')
+
+def comparegadget(request):
+    return render(request, 'compare/compareGadget.html')
