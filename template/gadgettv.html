@@ -112,36 +112,6 @@
     </header>
 
     <main>
-        <section class="hero-section swiper mySwiper">
-            <div class="swiper-wrapper">
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 9.jpg" alt=""></div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 10.jpg" alt=""></div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 11.jpg" alt=""></div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 12.jpg" alt=""></div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 13.jpg" alt=""></div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 14.jpg" alt="">
-                </div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 9.jpg" alt=""></div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 10.jpg" alt=""></div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 11.jpg" alt=""></div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 12.jpg" alt=""></div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 13.jpg" alt=""></div>
-                <div class="swiper-slide">
-                    <img src="../images/gadget and phones/Rectangle 14.jpg" alt="">
-                </div>
-            </div>
-        </section>
 
         <aside class="filter">
             <h2>Filters</h2>
@@ -571,12 +541,13 @@
     <script src="../swiper-bundle.min.js"></script>
     <script>
         var swiper = new Swiper(".mySwiper", {
-            watchSlidesProgress: true,
-            slidesPerView: 7,
+            spaceBetween: 30,
+            centeredSlides: true,
             autoplay: {
-                delay: 1000,
+                delay: 2500,
                 disableOnInteraction: false,
-            }
+            },
+
         });
     </script>
 </body>
