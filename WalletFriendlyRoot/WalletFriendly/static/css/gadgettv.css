@@ -1,0 +1,34 @@
+body {
+    width: 100%;
+}
+
+header {
+    margin: 0 auto;
+    margin-bottom: 30px;
+    width: 80%;
+}
+
+section[reviews] {
+    margin: auto;
+    width: 80%;
+}
+
+footer {
+    margin: auto;
+    width: 80%;
+}
+
+main {
+    width: 80%;
+    margin: auto;
+    display: grid;
+    grid-template-areas: 'slider slider slider slider slider' 'filter box box box box' 'reviews reviews reviews reviews reviews';
+    gap: 3rem;
+    justify-content: center;
+}
+
+main .hero-section {
+    grid-area: slider;
+    display: flex;
+    width: 100%;
+}

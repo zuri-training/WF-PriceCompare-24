@@ -4,8 +4,14 @@ from django.shortcuts import render
 def index(request):
     return render(request, 'base.html')
 
-def login(request):
+def login_user(request):
     return render(request, 'registration/Login.html')
+
+def createaccount(request):
+    return render(request, 'registration/createAccount.html')
+
+def documentation(request):
+    return render(request, 'documentation.html')
 
 def forgotpassword(request):
     return render(request, 'registration/forgotPassword.html')
@@ -20,7 +26,7 @@ def fashionwomen(request):
     return render(request, 'fashion/fashionWomen.html')
 
 def gadgets(request):
-    return render(request, 'gadget/gadgetHompage.html')
+    return render(request, 'gadget/gadgetHomepage.html')
 
 def laptop(request):
     return render(request, 'gadget/gadgetLaptops.html')
