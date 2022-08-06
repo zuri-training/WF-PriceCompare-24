@@ -1011,3 +1011,8 @@ div.compare {
   padding-bottom: 2.5rem;
   text-align: center;
 }
+
+aside .filter {
+  position: sticky;
+  top: 0;
+}
