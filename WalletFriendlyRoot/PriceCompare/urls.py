@@ -12,6 +12,7 @@ urlpatterns = [
     path('gadget/laptops/', views.laptop, name='laptops.html'),
     path('gadget/phones/', views.phone, name='phones.html'),
     path('gadget/tv/', views.tv, name='tv.html'),
+    path('hair', views.hair, name='hairHomPage.html'),
     path('hair/humanhair', views.humanhair, name='humanhair.html'),
     path('hair/bonestraight/', views.bonestraight, name='bonestraight.html'),
     path('hair/accessories', views.accessories, name='hairaccessories.html'),
