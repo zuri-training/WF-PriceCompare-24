@@ -489,13 +489,11 @@ div[preview] .news-one img,
 }
 
 .box {
-
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   width: 13.5rem;
   background-color: var(--main-color);
   border-radius: 8px;
-
 }
 
 .box h4 {
@@ -1000,6 +998,7 @@ div.footLogo {
   color: var(--load-color)
 }
 
+/* This is the compare button*/
 a.compare-btn {
   text-decoration: none;
   color: white;
@@ -1012,4 +1011,9 @@ a.compare-btn {
 div.compare {
   padding-bottom: 2.5rem;
   text-align: center;
+}
+
+.box img:hover {
+  transform: scale(1.025, 1.025);
+  transition: transform 200ms ease-in-out;
 }
