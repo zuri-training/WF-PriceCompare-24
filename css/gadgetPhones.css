@@ -358,11 +358,11 @@ main .hero-section {
 
 }
 
-main .hero-section img {
+/* main .hero-section img {
 
   width: 11em;
 
-}
+} */
 
 aside.filter {
 
@@ -1016,4 +1016,28 @@ div.compare {
 .box img:hover {
   transform: scale(1.025, 1.025);
   transition: transform 200ms ease-in-out;
+}
+
+.hero-section .display {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+main .hero-section {
+  margin-bottom: -11em;
+  position: relative;
+}
+
+div.search_bar {
+  position: absolute;
+  z-index: 1;
+  top: 30%;
+  left: 35%;
+  /* transform: translateX(-10%); */
+}
+
+#search_bar {
+  padding: 1em 5em;
+  border-radius: 8px;
 }

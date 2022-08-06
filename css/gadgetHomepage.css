@@ -161,9 +161,9 @@ main .hero-section {
   width: 100%;
 }
 
-main .hero-section img {
+/* main .hero-section img {
   width: 11em;
-}
+} */
 
 aside.filter {
   grid-area: filter;
