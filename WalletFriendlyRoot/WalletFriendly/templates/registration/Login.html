@@ -101,7 +101,8 @@
       </nav>
     </header>
 
-    <form action="" id="login-form">
+    <form action="" id="login-form" method="POST">
+      {% csrf_token %}
       <h2 class="form__title">Login</h2>
       <div class="login__input-box">
         <label class="login-label" for="email-phone"
