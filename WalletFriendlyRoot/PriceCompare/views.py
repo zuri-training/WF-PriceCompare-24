@@ -1,11 +1,16 @@
 from django.shortcuts import render
+from django.contrib.auth import authenticate, login, logout
+from django.contrib import messages 
 
 # Create your views here.
 def index(request):
     return render(request, 'base.html')
 
-def login(request):
-    return render(request, 'registration/Login.html')
+def login_user(request):
+    return render(request, 'registration/Login.html', {})
+
+def signup_user(request):
+    return render(request, 'registration/Signup.html', {})
 
 def forgotpassword(request):
     return render(request, 'registration/forgotPassword.html')
