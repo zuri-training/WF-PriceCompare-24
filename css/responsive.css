@@ -1,0 +1,70 @@
+@media screen and (max-width: 768px) {
+
+    html body {
+        max-width: 90%;
+    }
+
+    header {
+        max-width: 100%;
+
+        padding: 1em;
+    }
+
+    .head_section .logo {
+        font-size: 1rem;
+        padding-right: 1em;
+    }
+
+    header .search_bar #search_bar {
+        width: 7rem;
+        padding-right: 1em;
+
+    }
+
+    main .hero-section img {
+        width: 6em;
+    }
+
+    main .hero-section {
+        justify-content: center;
+    }
+
+
+    aside {
+        display: none;
+    }
+
+    main {
+        grid-template-areas: "slider slider slider slider slider"
+            "box box box box box"
+            "reviews reviews reviews reviews reviews";
+
+    }
+
+    .preview {
+        justify-content: center;
+
+    }
+
+    .iPhone,
+    .samsung,
+    .tecno,
+    .hot-deals {
+        max-width: 70%;
+        margin: 0 auto;
+
+    }
+
+    .samsung,
+    .tecno,
+    .hot-deals {
+        margin-top: 1em;
+    }
+
+    .preview .box div img {
+        width: 8em;
+    }
+
+
+
+}

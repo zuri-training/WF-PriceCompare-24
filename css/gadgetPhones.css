@@ -50,11 +50,11 @@ header .search_bar #search_bar {
   padding: 0 .5em;
 }
 
-header .head_section .logo img {
+/* header .head_section .logo img {
   width: 70px;
   height: 55px;
   object-fit: contain;
-}
+} */
 
 div.login {
   display: flex;
@@ -345,11 +345,7 @@ main {
   font-family: 'Sora', sans-serif;
 
 
-  display: grid;
-  grid-template-areas:
-    "slider slider slider slider slider"
-    "filter box box box box"
-    "reviews reviews reviews reviews reviews";
+
   margin-top: 2rem;
   gap: 3rem;
   justify-content: center;
@@ -486,7 +482,6 @@ div[preview] .news-one img,
 
   display: flex;
   justify-content: space-between;
-
   gap: 1em;
 
 }
