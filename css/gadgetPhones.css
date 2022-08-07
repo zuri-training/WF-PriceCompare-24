@@ -1,55 +1,60 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
-
 :root {
-  --main-color: #fefefe;
-  --load-color: #151f7f;
-  --secondary-color: #949efe;
+    --main-color: #fefefe;
+    --load-color: #151f7f;
+    --secondary-color: #949efe;
 }
 
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
 }
-
 
 body {
-  font-family: "Sora", sans-serif;
-  position: relative;
+    font-family: "Sora", sans-serif;
+    position: relative;
 }
-
 
 .material-symbols-outlined {
-  color: var(--mainColor);
+    color: var(--mainColor);
 }
 
 body {
-
-  margin: 0 auto;
-  max-width: max-content;
-  justify-content: center;
-  font-family: sora;
-
+    margin: 0 auto;
+    max-width: max-content;
+    justify-content: center;
+    font-family: sora;
 }
 
-
-
 header .head_section {
-  display: flex;
-  justify-content: space-evenly;
-  background-color: rgba(255, 255, 255);
-  padding: 1em;
-  align-items: center;
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255);
+    padding: 1em;
+    align-items: center;
+}
+
+header .head_section .top-link ul li {
+    padding: 1em;
+    display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+    color: rgba(0, 0, 0, 0.424);
+    font-weight: 500;
+    text-decoration: none;
 }
 
 header .search_bar #search_bar {
-  height: 2.4em;
-  width: 23em;
-  border-radius: 3px;
-  outline: none;
-  border: .6px solid rgba(128, 128, 128, .5);
-  padding: 0 .5em;
+    height: 2.4em;
+    width: 23em;
+    border-radius: 3px;
+    outline: none;
+    border: .6px solid rgba(128, 128, 128, .5);
+    padding: 0 .5em;
 }
+
 
 /* #search_bar {
    position: absolute;
@@ -59,6 +64,7 @@ header .search_bar #search_bar {
     transform: translate(-50%, -50%);
 } */
 
+
 /* header .head_section .logo img {
   width: 70px;
   height: 55px;
@@ -66,306 +72,257 @@ header .search_bar #search_bar {
 } */
 
 div.login {
-  display: flex;
-
-  align-content: center;
-  width: 8em;
-  justify-content: space-between
+    display: flex;
+    align-content: center;
+    width: 8em;
+    justify-content: space-between
 }
 
 div.login>div {
-  display: flex;
-
-
+    display: flex;
 }
 
 div.login>div button {
-  background: none;
-  border: none;
+    background: none;
+    border: none;
 }
 
 div.login>div a {
-  text-decoration: none;
-  color: black;
-  font-size: 14px;
-  font-weight: 600;
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
 }
-
 
 .nav-links ul {
-  display: flex;
-  justify-content: space-around;
-  background-color: var(--secondary-color);
-  padding: 10px;
-  border-radius: 8px;
-
-
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 8px;
 }
 
 .nav-links ul li {
-  /* position: relative; */
-  text-decoration: none;
+    /* position: relative; */
+    text-decoration: none;
 }
 
 .nav-links ul li {
-  list-style: none;
-
-
+    list-style: none;
 }
 
 .nav-links ul li a {
-  text-decoration: none;
-  color: var(--main-color);
+    text-decoration: none;
+    color: var(--main-color);
 }
 
 .nav-links ul div ul li a {
-  text-decoration: none;
-  width: 2rem;
-  color: var(--main-color);
-
-
+    text-decoration: none;
+    width: 2rem;
+    color: var(--main-color);
 }
 
 .nav-links ul div ul li {
-  margin: 10px 0px;
-  border-bottom: 1px solid #7c84ce;
+    margin: 10px 0px;
+    border-bottom: 1px solid #7c84ce;
 }
 
 .nav-links ul div ul {
-  position: relative;
-  top: .3rem;
-  left: -40px;
-  display: block;
-  width: 11rem;
-
-
+    position: relative;
+    top: .3rem;
+    left: -40px;
+    display: block;
+    width: 11rem;
 }
 
 .nav-links ul div {
-  display: none;
-  position: absolute;
-  width: 2rem;
-  top: 5.7rem;
-  z-index: 1;
-
-
+    display: none;
+    position: absolute;
+    width: 2rem;
+    top: 5.7rem;
+    z-index: 1;
 }
 
 .nav-links ul li:hover div,
 .nav-links ul li:active div {
-  display: block;
-
+    display: block;
 }
-
-
-
-
 
 .navLinks ul li {
-  list-style: none;
-  width: 100%;
-  text-align: center;
-  padding: .5em;
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
 }
 
 section[heroSection] {
-  padding-top: 1em;
+    padding-top: 1em;
 }
 
 section[heroSection] {
-
-  display: flex;
-  gap: 3rem;
-  justify-content: space-between;
-  width: 100%;
-
+    display: flex;
+    gap: 3rem;
+    justify-content: space-between;
+    width: 100%;
 }
 
 section[heroSection] div {
-
-  display: flex;
-  justify-content: space-between;
-  width: 100%;
-
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 div[firstBox],
 div[secondBox] {
-  border: 1px solid var(--secondary-color);
-  border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    border-radius: 8px;
 }
 
 img[pop1],
 img[pop2],
 img[pop3] {
-  padding: 1em;
+    padding: 1em;
 }
 
 img[pop3] {
-  height: 16em;
+    height: 16em;
 }
 
 p#brand {
-  color: var(--load-color);
-  font-size: larger;
-  font-weight: 800;
+    color: var(--load-color);
+    font-size: larger;
+    font-weight: 800;
 }
 
 section[heroSection] div[firstBox],
 div[secondBox] {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
 
-
 section[heroSection] div[firstBox] #img1 {
-  width: 80%;
-  margin: 0 auto;
-  padding: 1em;
-  height: 100%;
-  object-fit: contain;
-
+    width: 80%;
+    margin: 0 auto;
+    padding: 1em;
+    height: 100%;
+    object-fit: contain;
 }
 
 div[firstBox]>div {
-
-  justify-content: center;
-  align-items: center;
-
+    justify-content: center;
+    align-items: center;
 }
 
 section[heroSection] div[firstBox]>div {
-
-  padding: 1em;
+    padding: 1em;
 }
 
 div[secondBox] div p {
-  font-size: 13px;
-  width: 100%;
+    font-size: 13px;
+    width: 100%;
 }
 
 div[firstBox] div div p[cross] {
-  position: relative;
+    position: relative;
 }
 
 div[firstBox] div div p[cross]::before {
-  content: '';
-  position: absolute;
-  width: 100%;
-  top: .5em;
-  height: 2px;
-  background-color: red;
+    content: '';
+    position: absolute;
+    width: 100%;
+    top: .5em;
+    height: 2px;
+    background-color: red;
 }
 
 div[firstBox] h2 {
-  text-align: center;
+    text-align: center;
 }
 
 div[firstBox]>div>div {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-items: center;
-  max-width: fit-content;
-
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    max-width: fit-content;
 }
 
 section[heroSection] div[secondBox] #image-one img,
 section[heroSection] div[secondBox] #image-two img {
-  width: 8rem;
-  margin: 0 auto;
-  /* margin-bottom: 5em; */
+    width: 8rem;
+    margin: 0 auto;
+    /* margin-bottom: 5em; */
 }
 
 section[heroSection] div[secondBox] #image-one h5 {
-  font-size: 13px;
-  font-weight: bolder;
+    font-size: 13px;
+    font-weight: bolder;
 }
 
 section[heroSection] div[secondBox] {
-  display: flex;
-  flex-direction: row;
-  /* justify-content: space-around; */
-
-  gap: 3rem;
-
-
+    display: flex;
+    flex-direction: row;
+    /* justify-content: space-around; */
+    gap: 3rem;
 }
 
-
-
 div[secondBox] #image-two div {
-
-  display: block;
+    display: block;
 }
 
 div[secondBox] #image-two img {
-  padding-bottom: 1.5em;
+    padding-bottom: 1.5em;
 }
 
 div[secondBox] #image-one,
 #image-two {
-  /* display: flex; */
-  flex-direction: column;
-  justify-content: center;
-
-
-
+    /* display: flex; */
+    flex-direction: column;
+    justify-content: center;
 }
 
 div[secondBox] #image-one {
-  padding-left: .2em;
-
+    padding-left: .2em;
 }
 
 #image-one div[specs] {
-  display: flex;
-  justify-content: space-between;
-
-  width: 100%;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
 }
 
 div[specs]>div {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: fit-content;
-  justify-content: left;
-
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: fit-content;
+    justify-content: left;
 }
 
 #image-one div[specs] div h5 {
-  text-align: left;
-  justify-content: left;
-  font-size: 16px;
+    text-align: left;
+    justify-content: left;
+    font-size: 16px;
 }
 
-
 main {
-  display: grid;
-  grid-template-areas:
-    'slider slider slider slider slider'
-    'filter box box box box'
-  ;
-  gap: 3rem;
-  justify-content: center;
-  font-family: 'Sora', sans-serif;
-
-
-
-  margin-top: 2rem;
-  gap: 3rem;
-  justify-content: center;
+    display: grid;
+    grid-template-areas: 'slider slider slider slider slider' 'filter box box box box';
+    gap: 3rem;
+    justify-content: center;
+    font-family: 'Sora', sans-serif;
+    margin-top: 2rem;
+    gap: 3rem;
+    justify-content: center;
 }
 
 main .hero-section {
-  grid-area: slider;
-  display: flex;
-  width: 100%;
-
+    grid-area: slider;
+    display: flex;
+    width: 100%;
 }
+
 
 /* main .hero-section img {
 
@@ -374,721 +331,676 @@ main .hero-section {
 } */
 
 aside.filter {
-
-  grid-area: filter;
-  height: fit-content;
-  width: 18em;
-  position: sticky;
-  top: 0;
-
+    grid-area: filter;
+    height: fit-content;
+    width: 18em;
+    position: sticky;
+    top: 0;
 }
 
 .filter h2 {
-  color: var(--load-color);
-  padding: 10px;
+    color: var(--load-color);
+    padding: 10px;
 }
 
 .filter p[search-text] {
-  text-align: center;
-  font-size: 13px;
-  padding: 1.5em 0;
-  color: var(--load-color);
+    text-align: center;
+    font-size: 13px;
+    padding: 1.5em 0;
+    color: var(--load-color);
 }
 
 .filter span {
-  display: block;
-  text-align: center;
+    display: block;
+    text-align: center;
 }
 
 .filter input[search] {
-  padding: 0.9em;
-  border-radius: 8px;
-  border: 1px solid rgb(73, 70, 70);
-  outline: none;
-  width: 100%;
-  margin-bottom: 0.6em;
+    padding: 0.9em;
+    border-radius: 8px;
+    border: 1px solid rgb(73, 70, 70);
+    outline: none;
+    width: 100%;
+    margin-bottom: 0.6em;
 }
 
 .filter div.amount input {
-
-  width: 100px;
-  text-align: center;
-  padding: .7em;
-  border-radius: 10px;
-  border: 1px solid rgb(73, 70, 70);
-
+    width: 100px;
+    text-align: center;
+    padding: .7em;
+    border-radius: 10px;
+    border: 1px solid rgb(73, 70, 70);
 }
 
 .filter div.amount {
-  display: flex;
-  justify-content: center;
-  gap: 1em;
-  align-items: center;
-  margin-bottom: 0.6em;
+    display: flex;
+    justify-content: center;
+    gap: 1em;
+    align-items: center;
+    margin-bottom: 0.6em;
 }
 
 div[container] {
-  grid-area: box;
-  width: 100%;
-
+    grid-area: box;
+    width: 100%;
 }
 
 section[reviews] {
-  grid-area: reviews;
+    grid-area: reviews;
 }
 
 h3 {
-  background-color: var(--secondary-color);
-  color: white;
-  padding: 6px;
-  border-radius: 8px;
-
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 6px;
+    border-radius: 8px;
 }
 
 .popular {
-  margin-top: 1.4em;
+    margin-top: 1.4em;
 }
 
 .popular div a,
 .stores div a {
-
-
-  text-decoration: none;
-  color: black;
-
+    text-decoration: none;
+    color: black;
 }
 
 .popular div,
 .stores div {
-  padding: 4px 15px;
+    padding: 4px 15px;
 }
 
-
-
-
-
 .preview .box div img {
-
-  width: 10em;
-  margin: 0 auto;
-  display: block;
+    width: 10em;
+    margin: 0 auto;
+    display: block;
 }
 
 div[preview] {
-  display: flex;
-  flex-direction: column;
-
+    display: flex;
+    flex-direction: column;
 }
 
 .preview .box div img {
-  width: 13em;
+    width: 13em;
 }
 
 div[preview] .news-one img,
 .news-two img {
-  width: 100%;
+    width: 100%;
 }
 
 .preview {
-
-  display: flex;
-  justify-content: space-between;
-  gap: 1em;
-
+    display: flex;
+    justify-content: space-between;
+    gap: 1em;
 }
 
 .box {
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-  border: none;
-  width: 13.5rem;
-  background-color: var(--main-color);
-  border-radius: 8px;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    border: none;
+    width: 13.5rem;
+    background-color: var(--main-color);
+    border-radius: 8px;
 }
 
 .box h4 {
-
-  color: var(--load-color);
-  text-align: center;
-  font-size: .9rem;
-  font-weight: bolder;
-  padding-bottom: 1em;
-
+    color: var(--load-color);
+    text-align: center;
+    font-size: .9rem;
+    font-weight: bolder;
+    padding-bottom: 1em;
 }
 
 .box p {
-  text-align: center;
-  padding-bottom: 1em;
-  color: var(--secondary-color);
+    text-align: center;
+    padding-bottom: 1em;
+    color: var(--secondary-color);
 }
 
 .iPhone,
 .samsung,
 .tecno,
 .hot-deals {
-  border: 1px solid var(--secondary-color);
-  padding: 1.5rem 1rem;
-  border-radius: 8px;
+    border: 1px solid var(--secondary-color);
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
 }
 
 .samsung,
 .tecno,
 .hot-deals {
-
-  margin-top: 3rem;
-
+    margin-top: 3rem;
 }
 
 .iPhone h2,
 .samsung h2,
 .tecno h2,
 .hot-deals h2 {
-  margin-top: 0px;
-  margin-bottom: 1.4em;
-  color: var(--load-color);
-  font-size: 1.6rem;
-  font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 1.4em;
+    color: var(--load-color);
+    font-size: 1.6rem;
+    font-weight: bolder;
 }
 
 .hot-deals .box {
-  width: 100%;
+    width: 100%;
 }
 
 .hot-deals .box img {
-  display: block;
-  margin: 0 auto;
+    display: block;
+    margin: 0 auto;
 }
 
 div[see_more] {
-  text-align: right;
-  padding: 2em 0 1em;
-
+    text-align: right;
+    padding: 2em 0 1em;
 }
 
 div[see_more] a {
-
-  text-decoration: none;
-  color: var(--load-color);
+    text-decoration: none;
+    color: var(--load-color);
 }
 
 span[sub] {
-  color: var(--load-color);
-  /* color: #fff; */
-  font-size: 16px;
-  font-weight: 400;
+    color: var(--load-color);
+    /* color: #fff; */
+    font-size: 16px;
+    font-weight: 400;
 }
-
-
-
-
 
 p[hot-price] {
-  display: flex;
-  align-items: center;
-  justify-content: space-around;
-  color: var(--load-color);
-  font-weight: 800;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    color: var(--load-color);
+    font-weight: 800;
 }
-
 
 
 /* fashion men  */
 
 .shoes-section {
-  border: 1px solid var(--secondary-color);
-  padding: 1.5rem 1rem;
-  border-radius: 8px;
-  margin-top: 3rem;
+    border: 1px solid var(--secondary-color);
+    padding: 1.5rem 1rem;
+    border-radius: 8px;
+    margin-top: 3rem;
 }
 
 .shoes-section h2 {
-  margin-top: 0px;
-  margin-bottom: 1.4em;
-  color: var(--load-color);
-  font-size: 1.6rem;
-  font-weight: bolder;
+    margin-top: 0px;
+    margin-bottom: 1.4em;
+    color: var(--load-color);
+    font-size: 1.6rem;
+    font-weight: bolder;
 }
 
 .shoes-box {
-  display: flex;
-  margin-bottom: 2rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    display: flex;
+    margin-bottom: 2rem;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .shoe-content {
-  width: 100%;
-  display: flex;
-  justify-content: space-between;
-  padding: 1.5rem;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 1.5rem;
 }
 
 .shoe-content h4 {
-  color: var(--load-color);
-  font-size: large;
-  font-weight: bolder;
-  width: 38%;
-  text-align: center;
+    color: var(--load-color);
+    font-size: large;
+    font-weight: bolder;
+    width: 38%;
+    text-align: center;
 }
 
 .shoe-content p {
-  padding-bottom: 1em;
-  color: var(--secondary-color);
+    padding-bottom: 1em;
+    color: var(--secondary-color);
 }
 
 
 /*footer section*/
 
 footer .footerContainer {
-  display: flex;
-  margin-top: 5rem;
-  justify-content: space-between;
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
 }
 
 div.footLogo img {
-  width: 120px;
+    width: 120px;
 }
 
 .Social_Icons div.Icons ul {
-  display: flex;
-  justify-content: space-between;
-  padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
 }
 
 .Social_Icons div.Icons ul li {
-  padding: 5px;
+    padding: 5px;
 }
 
 div.Icons ul li {
-  list-style: none;
+    list-style: none;
 }
 
 section[categories] ul li,
 [gadgetBrands] ul li,
 [popularBrands] ul li,
 [about] ul li {
-  list-style: none;
-  padding-top: 10px
+    list-style: none;
+    padding-top: 10px
 }
 
 section[categories] ul li a,
 [gadgetBrands] ul li a,
 [popularBrands] ul li a,
 [about] ul li a {
-  text-decoration: none;
-  color: black;
-
+    text-decoration: none;
+    color: black;
 }
 
 section[bottom] {
-  display: flex;
-  justify-content: space-between;
+    display: flex;
+    justify-content: space-between;
 }
 
 section[bottom] .contact {
-  display: flex;
-  align-items: center;
+    display: flex;
+    align-items: center;
 }
 
 section[bottom] .contact a {
-  padding: 0 10px;
-  text-decoration: none;
+    padding: 0 10px;
+    text-decoration: none;
 }
 
 .contact div.box {
-  width: 8px;
-  height: 8px;
-  background-color: black;
-
+    width: 8px;
+    height: 8px;
+    background-color: black;
 }
 
 hr[bottom] {
-  margin: 3em 0;
+    margin: 3em 0;
 }
 
 
 /*hair home page additional style*/
+
 .hair-preview {
-  justify-content: space-around !important;
+    justify-content: space-around !important;
 }
 
 .hair-page__box {
-  width: 211px;
+    width: 211px;
 }
 
 .hair-page__box div {
-  text-align: center;
+    text-align: center;
 }
 
 .hair-page__box img {
-  width: 144px !important;
+    width: 144px !important;
 }
 
 .hot-deal-img img {
-  width: 183px !important;
+    width: 183px !important;
 }
 
+
 /* styles for Login Page */
+
 #login-body-content {
-  width: 100%;
-  max-width: 1200px;
+    width: 100%;
+    max-width: 1200px;
 }
 
 #login-form {
-  padding: 70px 0 0;
+    padding: 70px 0 0;
 }
 
 .form__title {
-  font-weight: 700;
-  font-size: 18px;
-  color: #1B29A9;
-  padding: 0 0 40px;
-  text-align: center;
+    font-weight: 700;
+    font-size: 18px;
+    color: #1B29A9;
+    padding: 0 0 40px;
+    text-align: center;
 }
 
 .login-label {
-  display: block;
-  font-weight: 400;
-  font-size: 14px;
-  line-height: 18px;
-  width: 100%;
-  max-width: 590px;
-  margin: 0 auto;
-  padding: 8px 0;
+    display: block;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
+    padding: 8px 0;
 }
 
 .login__input-box {
-  padding: 0 0 32px;
+    padding: 0 0 32px;
 }
 
 #email-phone,
 #password {
-  display: block;
-  padding: 24px;
-  gap: 10px;
-  background: #FFFFFF;
-  border: 1px solid rgba(90, 90, 90, 0.5);
-  border-radius: 8px;
-  width: 100%;
-  max-width: 590px;
-  margin: 0 auto;
+    display: block;
+    padding: 24px;
+    gap: 10px;
+    background: #FFFFFF;
+    border: 1px solid rgba(90, 90, 90, 0.5);
+    border-radius: 8px;
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
 }
 
 .password--link {
-  display: block;
-  width: 100%;
-  max-width: 590px;
-  margin: 0 auto;
-  text-align: right;
-  padding: 24px 0 0;
+    display: block;
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
+    text-align: right;
+    padding: 24px 0 0;
 }
 
 .password--link a {
-  font-size: 14px;
-  line-height: 18px;
-  text-decoration: none;
-  color: #1B29A9;
+    font-size: 14px;
+    line-height: 18px;
+    text-decoration: none;
+    color: #1B29A9;
 }
 
 .login-btn {
-  display: block;
-  padding: 32px 24px;
-  background: var(--secondary-color);
-  border: none;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 590px;
-  margin: 0 auto;
-  color: #fff;
-  cursor: pointer;
+    display: block;
+    padding: 32px 24px;
+    background: var(--secondary-color);
+    border: none;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
+    color: #fff;
+    cursor: pointer;
 }
 
 .form__text {
-  padding: 16px 0;
-  font-weight: 400;
-  font-size: 12px;
-  text-align: center;
+    padding: 16px 0;
+    font-weight: 400;
+    font-size: 12px;
+    text-align: center;
 }
 
 .login__option {
-  display: flex;
-  column-gap: 20px;
-  width: 100%;
-  max-width: 590px;
-  margin: 0 auto;
+    display: flex;
+    column-gap: 20px;
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
 }
 
 .login-option__link {
-  display: block;
-  padding: 10px;
-  border: 1px solid #1B29A9;
-  border-radius: 8px;
-  width: 100%;
-  text-align: center;
-  text-decoration: none;
-  color: #1B29A9;
+    display: block;
+    padding: 10px;
+    border: 1px solid #1B29A9;
+    border-radius: 8px;
+    width: 100%;
+    text-align: center;
+    text-decoration: none;
+    color: #1B29A9;
 }
 
 .login__create-account {
-  padding: 92px 0 0;
+    padding: 92px 0 0;
 }
 
 .create-account__link {
-  padding: 32px 24px;
-  border: 1px solid #1B29A9;
-  border-radius: 8px;
-  width: 100%;
-  max-width: 590px;
-  margin: 0 auto;
-  text-align: center;
+    padding: 32px 24px;
+    border: 1px solid #1B29A9;
+    border-radius: 8px;
+    width: 100%;
+    max-width: 590px;
+    margin: 0 auto;
+    text-align: center;
 }
 
 .create-account__link a {
-  font-weight: 700;
-  font-size: 16px;
-  color: #1B29A9;
-  text-decoration: none;
+    font-weight: 700;
+    font-size: 16px;
+    color: #1B29A9;
+    text-decoration: none;
 }
-
-
-
-
 
 footer {
-  margin-top: 5em;
-  border-top: 1px solid gray;
+    margin-top: 5em;
+    border-top: 1px solid gray;
 }
 
-
-
-
 .progress-container {
-
-  height: 6em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 7px;
-
-  width: fit-content;
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 7px;
+    width: fit-content;
 }
 
 div.progress-bar {
-  height: 8px;
-  width: 16em;
-  background-color: var(--secondary-color);
-
+    height: 8px;
+    width: 16em;
+    background-color: var(--secondary-color);
 }
 
 section[reviews] {
-  border-top: 1px solid gray;
-  max-width: 100%;
-  margin-top: 2em;
-
+    border-top: 1px solid gray;
+    max-width: 100%;
+    margin-top: 2em;
 }
 
 div.progress-bar-fill {
-  height: inherit;
-  width: 60%;
-  background-color: var(--load-color);
+    height: inherit;
+    width: 60%;
+    background-color: var(--load-color);
 }
 
 div.first {
-  width: 100%;
+    width: 100%;
 }
 
 div.second {
-  width: 80%;
+    width: 80%;
 }
 
 div.third {
-  width: 60%;
+    width: 60%;
 }
 
 div.fourth {
-  width: 40%;
+    width: 40%;
 }
 
 div.fifth {
-  width: 20%;
+    width: 20%;
 }
 
 .stars-container {
-
-  width: fit-content;
-
+    width: fit-content;
 }
 
 .stars-container .star {
-  display: flex;
-  justify-content: right;
-  gap: 5px;
-  padding-top: 5px;
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+    padding-top: 5px;
 }
 
 div.review-section {
-  margin-top: 2em;
+    margin-top: 2em;
 }
 
 div.review-section div.overall-review {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
-
 div.review-section div.overall-review .review-container div[contain] {
-  display: flex;
-
-
+    display: flex;
 }
 
 i.fas {
-  color: gold;
-  ;
+    color: gold;
+    ;
 }
 
-
 div.profile-pic {
-  width: 2.3rem;
-  height: 2.3rem;
-  border-radius: 50%;
-
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
 }
 
 div.profile-pic img {
-  border-radius: 50%;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
 }
 
 div.pro-contain {
-  display: flex;
-  padding-top: 1em;
-  gap: 1.4rem;
-  margin-top: 1.5em;
-
+    display: flex;
+    padding-top: 1em;
+    gap: 1.4rem;
+    margin-top: 1.5em;
 }
 
 div.profile {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
 }
 
 div.profile h4 {
-  color: var(--load-color);
+    color: var(--load-color);
 }
 
 div.time p {
-  color: var(--secondary-color)
+    color: var(--secondary-color)
 }
 
 .head_section .logo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--load-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--load-color);
 }
 
 .head_section .logo span {
-  color: black;
+    color: black;
 }
 
 div.footLogo {
-  font-size: 1.4rem;
-  font-weight: 700;
-  color: var(--load-color);
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--load-color);
 }
 
 .footLogo span {
-  color: black;
+    color: black;
 }
 
 .footerContainer section p {
-  color: var(--load-color)
+    color: var(--load-color)
 }
 
-/* This is the compare button*/
-a.compare-btn {
-  text-decoration: none;
-  color: white;
-  background: var(--secondary-color);
-  padding: .5em 1em;
-  border-radius: 8px;
 
+/* This is the compare button*/
+
+a.compare-btn {
+    text-decoration: none;
+    color: white;
+    background: var(--secondary-color);
+    padding: .5em 1em;
+    border-radius: 8px;
 }
 
 div.compare {
-  padding-bottom: 2.5rem;
-  text-align: center;
+    padding-bottom: 2.5rem;
+    text-align: center;
 }
 
 .box img:hover {
-  transform: scale(1.025, 1.025);
-  transition: transform 200ms ease-in-out;
+    transform: scale(1.025, 1.025);
+    transition: transform 200ms ease-in-out;
 }
 
 .hero-section .display {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
 }
 
 main .hero-section {
-  background: url(../display.jpg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 30rem;
-  /* z-index: -1; */
-  /* margin-bottom: -11em; */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
+    background: url(../display.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 30rem;
+    /* z-index: -1; */
+    /* margin-bottom: -11em; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
+
 
 /* edited the search bar code  */
 
 div.search_bar {
-  width: 100%;
-  max-width: 26rem;
-  height: 3.5rem;
+    width: 100%;
+    max-width: 26rem;
+    height: 3.5rem;
 }
 
 .hero-section__title {
-  color: white;
-  font-size: 2rem;
-  padding: 6rem 0 4rem;
+    color: white;
+    font-size: 2rem;
+    padding: 6rem 0 4rem;
 }
 
 #search_bar {
-  padding: 2rem 1rem;
-  border-radius: 30px;
-  outline: none;
-  border: 1px solid white;
-  width: 100%;
-  height: 100%;
-
+    padding: 2rem 1rem;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
 }
 
 #search_bar::placeholder {
-
-  font-size: 20px;
+    font-size: 20px;
 }
 
 main section.hero-section {
-  display: flex;
+    display: flex;
 }
 
 .search_bar {
-  position: relative;
+    position: relative;
 }
 
 .search_bar span {
-  font-size: 2.5em;
-  position: absolute;
-  right: .5em;
-  color: gray;
-  top: .3em;
+    font-size: 2.5em;
+    position: absolute;
+    right: .5em;
+    color: gray;
+    top: .3em;
 }
+
 
 /* ends here  */
