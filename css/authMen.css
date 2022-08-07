@@ -30,7 +30,7 @@
 .social-share {
     display: flex;
     justify-content: space-between;
-    padding: 1rem 0;
+    padding: 1rem 1rem;
 }
 
 .social-share a {
@@ -38,36 +38,36 @@
 }
 
 .men-box {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     width: 13.5rem;
     background-color: var(--main-color);
     border-radius: 8px;
-    padding: 0 1.5rem;
-
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .men-box h4 {
-
     color: var(--load-color);
     text-align: center;
     font-size: .9rem;
     font-weight: bolder;
     padding: 1em 0;
-
 }
 
 .men-box p,
 .special-p {
     text-align: center;
     border: none;
-    width: 83%;
+    width: 86%;
     margin: 0 auto;
     border-radius: 8px;
     background-color: var(--secondary-color);
     color: var(--main-color) !important;
     font-size: small;
     padding: 0.5rem 0;
+    text-decoration: none;
 }
 
 .send-icon {
@@ -88,4 +88,35 @@
 .shoes-box,
 .shoe-content {
     align-items: center;
+}
+
+.men-preview img:hover {
+    transform: scale(1.025, 1.025);
+    transition: transform 200ms ease-in-out;
+}
+
+.send-icon,
+.chat-icon {
+    color: var(--secondary-color);
+}
+
+.anchor {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.special-p {
+    cursor: pointer;
+    padding: 0.5rem;
+}
+
+.special-p:hover,
+.special-p:focus-visible {
+    opacity: 0.8;
+    transition: .3s;
+}
+
+main #GAD-tv {
+    background-image: url("../images/gadget and phones/SAMSUNG 1.png");
+    background-size: cover;
 }

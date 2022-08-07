@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
 :root {
     --main-color: #fefefe;
     --load-color: #151f7f;
@@ -11,21 +12,20 @@
     box-sizing: border-box;
 }
 
+
 body {
     font-family: "Sora", sans-serif;
     position: relative;
+    justify-content: center;
+    margin: 0 auto;
+    max-width: max-content;
 }
+
 
 .material-symbols-outlined {
     color: var(--mainColor);
 }
 
-body {
-    margin: 0 auto;
-    max-width: max-content;
-    justify-content: center;
-    font-family: sora;
-}
 
 header .head_section {
     display: flex;
@@ -33,17 +33,6 @@ header .head_section {
     background-color: rgba(255, 255, 255);
     padding: 1em;
     align-items: center;
-}
-
-header .head_section .top-link ul li {
-    padding: 0 1em 0 1em;
-    display: inline-block;
-}
-
-header .head_section .top-link ul li a {
-    color: rgba(0, 0, 0, 0.424);
-    font-weight: 500;
-    text-decoration: none;
 }
 
 header .search_bar #search_bar {
@@ -55,7 +44,6 @@ header .search_bar #search_bar {
     padding: 0 .5em;
 }
 
-
 /* #search_bar {
    position: absolute;
     z-index: 1;
@@ -63,7 +51,6 @@ header .search_bar #search_bar {
     left: 50%;
     transform: translate(-50%, -50%);
 } */
-
 
 /* header .head_section .logo img {
   width: 70px;
@@ -73,6 +60,7 @@ header .search_bar #search_bar {
 
 div.login {
     display: flex;
+
     align-content: center;
     width: 8em;
     justify-content: space-between
@@ -80,6 +68,8 @@ div.login {
 
 div.login>div {
     display: flex;
+
+
 }
 
 div.login>div button {
@@ -94,12 +84,15 @@ div.login>div a {
     font-weight: 600;
 }
 
+
 .nav-links ul {
     display: flex;
     justify-content: space-around;
     background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 8px;
+
+
 }
 
 .nav-links ul li {
@@ -109,6 +102,8 @@ div.login>div a {
 
 .nav-links ul li {
     list-style: none;
+
+
 }
 
 .nav-links ul li a {
@@ -120,6 +115,8 @@ div.login>div a {
     text-decoration: none;
     width: 2rem;
     color: var(--main-color);
+
+
 }
 
 .nav-links ul div ul li {
@@ -133,6 +130,8 @@ div.login>div a {
     left: -40px;
     display: block;
     width: 11rem;
+
+
 }
 
 .nav-links ul div {
@@ -140,13 +139,19 @@ div.login>div a {
     position: absolute;
     width: 2rem;
     top: 5.7rem;
-    z-index: 1;
+
+
 }
 
 .nav-links ul li:hover div,
 .nav-links ul li:active div {
     display: block;
+
 }
+
+
+
+
 
 .navLinks ul li {
     list-style: none;
@@ -160,16 +165,20 @@ section[heroSection] {
 }
 
 section[heroSection] {
+
     display: flex;
     gap: 3rem;
     justify-content: space-between;
     width: 100%;
+
 }
 
 section[heroSection] div {
+
     display: flex;
     justify-content: space-between;
     width: 100%;
+
 }
 
 div[firstBox],
@@ -199,7 +208,9 @@ div[secondBox] {
     display: flex;
     flex-direction: column;
     justify-content: center;
+
 }
+
 
 section[heroSection] div[firstBox] #img1 {
     width: 80%;
@@ -207,14 +218,18 @@ section[heroSection] div[firstBox] #img1 {
     padding: 1em;
     height: 100%;
     object-fit: contain;
+
 }
 
 div[firstBox]>div {
+
     justify-content: center;
     align-items: center;
+
 }
 
 section[heroSection] div[firstBox]>div {
+
     padding: 1em;
 }
 
@@ -246,6 +261,7 @@ div[firstBox]>div>div {
     justify-content: center;
     align-items: center;
     max-width: fit-content;
+
 }
 
 section[heroSection] div[secondBox] #image-one img,
@@ -264,10 +280,16 @@ section[heroSection] div[secondBox] {
     display: flex;
     flex-direction: row;
     /* justify-content: space-around; */
+
     gap: 3rem;
+
+
 }
 
+
+
 div[secondBox] #image-two div {
+
     display: block;
 }
 
@@ -280,15 +302,20 @@ div[secondBox] #image-one,
     /* display: flex; */
     flex-direction: column;
     justify-content: center;
+
+
+
 }
 
 div[secondBox] #image-one {
     padding-left: .2em;
+
 }
 
 #image-one div[specs] {
     display: flex;
     justify-content: space-between;
+
     width: 100%;
 }
 
@@ -298,6 +325,7 @@ div[specs]>div {
     align-items: center;
     width: fit-content;
     justify-content: left;
+
 }
 
 #image-one div[specs] div h5 {
@@ -306,12 +334,19 @@ div[specs]>div {
     font-size: 16px;
 }
 
+
 main {
     display: grid;
-    grid-template-areas: 'slider slider slider slider slider' 'filter box box box box';
+    grid-template-areas:
+        'slider slider slider slider slider'
+        'filter box box box box'
+    ;
     gap: 3rem;
     justify-content: center;
     font-family: 'Sora', sans-serif;
+
+
+
     margin-top: 2rem;
     gap: 3rem;
     justify-content: center;
@@ -321,21 +356,23 @@ main .hero-section {
     grid-area: slider;
     display: flex;
     width: 100%;
+
 }
 
+main .hero-section img {
 
-/* main .hero-section img {
+    max-width: 11em;
 
-  width: 11em;
-
-} */
+}
 
 aside.filter {
+
     grid-area: filter;
     height: fit-content;
     width: 18em;
     position: sticky;
     top: 0;
+
 }
 
 .filter h2 {
@@ -365,11 +402,13 @@ aside.filter {
 }
 
 .filter div.amount input {
+
     width: 100px;
     text-align: center;
     padding: .7em;
     border-radius: 10px;
     border: 1px solid rgb(73, 70, 70);
+
 }
 
 .filter div.amount {
@@ -383,6 +422,7 @@ aside.filter {
 div[container] {
     grid-area: box;
     width: 100%;
+
 }
 
 section[reviews] {
@@ -394,6 +434,7 @@ h3 {
     color: white;
     padding: 6px;
     border-radius: 8px;
+
 }
 
 .popular {
@@ -402,8 +443,11 @@ h3 {
 
 .popular div a,
 .stores div a {
+
+
     text-decoration: none;
     color: black;
+
 }
 
 .popular div,
@@ -412,6 +456,7 @@ h3 {
 }
 
 .preview .box div img {
+
     width: 10em;
     margin: 0 auto;
     display: block;
@@ -420,10 +465,12 @@ h3 {
 div[preview] {
     display: flex;
     flex-direction: column;
+
 }
 
 .preview .box div img {
-    width: 13em;
+    max-width: 13em;
+    padding-bottom: 2rem;
 }
 
 div[preview] .news-one img,
@@ -432,25 +479,33 @@ div[preview] .news-one img,
 }
 
 .preview {
+
     display: flex;
     justify-content: space-between;
     gap: 1em;
+
+
 }
 
 .box {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     border: none;
     width: 13.5rem;
     background-color: var(--main-color);
     border-radius: 8px;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
 }
 
 .box h4 {
+
     color: var(--load-color);
     text-align: center;
     font-size: .9rem;
     font-weight: bolder;
-    padding-bottom: 1em;
+    padding: 1em;
+
 }
 
 .box p {
@@ -471,7 +526,9 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
+
     margin-top: 3rem;
+
 }
 
 .iPhone h2,
@@ -497,9 +554,11 @@ div[preview] .news-one img,
 div[see_more] {
     text-align: right;
     padding: 2em 0 1em;
+
 }
 
 div[see_more] a {
+
     text-decoration: none;
     color: var(--load-color);
 }
@@ -511,6 +570,7 @@ span[sub] {
     font-weight: 400;
 }
 
+
 p[hot-price] {
     display: flex;
     align-items: center;
@@ -519,52 +579,12 @@ p[hot-price] {
     font-weight: 800;
 }
 
-
-/* fashion men  */
-
-.shoes-section {
-    border: 1px solid var(--secondary-color);
-    padding: 1.5rem 1rem;
-    border-radius: 8px;
-    margin-top: 3rem;
-}
-
-.shoes-section h2 {
-    margin-top: 0px;
-    margin-bottom: 1.4em;
-    color: var(--load-color);
-    font-size: 1.6rem;
-    font-weight: bolder;
-}
-
-.shoes-box {
-    display: flex;
-    margin-bottom: 2rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-}
-
-.shoe-content {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    padding: 1.5rem;
-}
-
-.shoe-content h4 {
-    color: var(--load-color);
-    font-size: large;
-    font-weight: bolder;
-    width: 38%;
-    text-align: center;
-}
-
-.shoe-content p {
-    padding-bottom: 1em;
-    color: var(--secondary-color);
-}
-
-
 /*footer section*/
+
+footer {
+    margin-top: 5em;
+    border-top: 1px solid gray;
+}
 
 footer .footerContainer {
     display: flex;
@@ -604,6 +624,7 @@ section[categories] ul li a,
 [about] ul li a {
     text-decoration: none;
     color: black;
+
 }
 
 section[bottom] {
@@ -625,170 +646,23 @@ section[bottom] .contact a {
     width: 8px;
     height: 8px;
     background-color: black;
+
 }
 
 hr[bottom] {
     margin: 3em 0;
 }
 
-
-/*hair home page additional style*/
-
-.hair-preview {
-    justify-content: space-around !important;
-}
-
-.hair-page__box {
-    width: 211px;
-}
-
-.hair-page__box div {
-    text-align: center;
-}
-
-.hair-page__box img {
-    width: 144px !important;
-}
-
-.hot-deal-img img {
-    width: 183px !important;
-}
-
-
-/* styles for Login Page */
-
-#login-body-content {
-    width: 100%;
-    max-width: 1200px;
-}
-
-#login-form {
-    padding: 70px 0 0;
-}
-
-.form__title {
-    font-weight: 700;
-    font-size: 18px;
-    color: #1B29A9;
-    padding: 0 0 40px;
-    text-align: center;
-}
-
-.login-label {
-    display: block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
-    width: 100%;
-    max-width: 590px;
-    margin: 0 auto;
-    padding: 8px 0;
-}
-
-.login__input-box {
-    padding: 0 0 32px;
-}
-
-#email-phone,
-#password {
-    display: block;
-    padding: 24px;
-    gap: 10px;
-    background: #FFFFFF;
-    border: 1px solid rgba(90, 90, 90, 0.5);
-    border-radius: 8px;
-    width: 100%;
-    max-width: 590px;
-    margin: 0 auto;
-}
-
-.password--link {
-    display: block;
-    width: 100%;
-    max-width: 590px;
-    margin: 0 auto;
-    text-align: right;
-    padding: 24px 0 0;
-}
-
-.password--link a {
-    font-size: 14px;
-    line-height: 18px;
-    text-decoration: none;
-    color: #1B29A9;
-}
-
-.login-btn {
-    display: block;
-    padding: 32px 24px;
-    background: var(--secondary-color);
-    border: none;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 590px;
-    margin: 0 auto;
-    color: #fff;
-    cursor: pointer;
-}
-
-.form__text {
-    padding: 16px 0;
-    font-weight: 400;
-    font-size: 12px;
-    text-align: center;
-}
-
-.login__option {
-    display: flex;
-    column-gap: 20px;
-    width: 100%;
-    max-width: 590px;
-    margin: 0 auto;
-}
-
-.login-option__link {
-    display: block;
-    padding: 10px;
-    border: 1px solid #1B29A9;
-    border-radius: 8px;
-    width: 100%;
-    text-align: center;
-    text-decoration: none;
-    color: #1B29A9;
-}
-
-.login__create-account {
-    padding: 92px 0 0;
-}
-
-.create-account__link {
-    padding: 32px 24px;
-    border: 1px solid #1B29A9;
-    border-radius: 8px;
-    width: 100%;
-    max-width: 590px;
-    margin: 0 auto;
-    text-align: center;
-}
-
-.create-account__link a {
-    font-weight: 700;
-    font-size: 16px;
-    color: #1B29A9;
-    text-decoration: none;
-}
-
-footer {
-    margin-top: 5em;
-    border-top: 1px solid gray;
-}
+/* review section */
 
 .progress-container {
+
     height: 6em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 7px;
+
     width: fit-content;
 }
 
@@ -796,12 +670,14 @@ div.progress-bar {
     height: 8px;
     width: 16em;
     background-color: var(--secondary-color);
+
 }
 
 section[reviews] {
     border-top: 1px solid gray;
     max-width: 100%;
     margin-top: 2em;
+
 }
 
 div.progress-bar-fill {
@@ -831,7 +707,9 @@ div.fifth {
 }
 
 .stars-container {
+
     width: fit-content;
+
 }
 
 .stars-container .star {
@@ -851,8 +729,11 @@ div.review-section div.overall-review {
     align-items: flex-end;
 }
 
+
 div.review-section div.overall-review .review-container div[contain] {
     display: flex;
+
+
 }
 
 i.fas {
@@ -860,10 +741,12 @@ i.fas {
     ;
 }
 
+
 div.profile-pic {
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 50%;
+
 }
 
 div.profile-pic img {
@@ -878,6 +761,7 @@ div.pro-contain {
     padding-top: 1em;
     gap: 1.4rem;
     margin-top: 1.5em;
+
 }
 
 div.profile {
@@ -918,15 +802,14 @@ div.footLogo {
     color: var(--load-color)
 }
 
-
 /* This is the compare button*/
-
 a.compare-btn {
     text-decoration: none;
     color: white;
     background: var(--secondary-color);
     padding: .5em 1em;
     border-radius: 8px;
+
 }
 
 div.compare {
@@ -939,68 +822,69 @@ div.compare {
     transition: transform 200ms ease-in-out;
 }
 
-.hero-section .display {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
+/* authentication styles */
+
+.vendors {
+    margin-bottom: 1rem;
 }
 
-main .hero-section {
-    background: url(../display.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 30rem;
-    /* z-index: -1; */
-    /* margin-bottom: -11em; */
-    position: relative;
+.vendors h6 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.send-icon {
+    transform: rotate(-40deg);
+
+}
+
+.send-icon,
+.chat-icon {
+    color: var(--secondary-color);
+}
+
+.social-share {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: space-between;
+    padding: 1rem 0;
 }
 
+.social-share a {
+    text-decoration: none;
+}
 
-/* edited the search bar code  */
+.send-icon,
+.chat-icon {
+    color: var(--secondary-color);
+}
 
-div.search_bar {
+.anchor {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.special-p {
+    cursor: pointer;
+    padding: 0.5rem;
+    text-align: center;
+    border: none;
+    width: 86%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: var(--secondary-color);
+    color: var(--main-color) !important;
+    font-size: small;
+}
+
+.special-p:hover,
+.special-p:focus-visible {
+    opacity: 0.8;
+    transition: .3s;
+}
+
+.box_content {
     width: 100%;
-    max-width: 26rem;
-    height: 3.5rem;
+    height: 50%;
 }
-
-.hero-section__title {
-    color: white;
-    font-size: 2rem;
-    padding: 6rem 0 4rem;
-}
-
-#search_bar {
-    padding: 2rem 1rem;
-    border-radius: 30px;
-    outline: none;
-    border: 1px solid white;
-    width: 100%;
-    height: 100%;
-}
-
-#search_bar::placeholder {
-    font-size: 20px;
-}
-
-main section.hero-section {
-    display: flex;
-}
-
-.search_bar {
-    position: relative;
-}
-
-.search_bar span {
-    font-size: 2.5em;
-    position: absolute;
-    right: .5em;
-    color: gray;
-    top: .3em;
-}
-
-
-/* ends here  */

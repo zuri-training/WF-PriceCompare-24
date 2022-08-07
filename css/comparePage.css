@@ -78,7 +78,7 @@
 
 .compare-product--content {
    display: flex;
-   justify-content: center;
+   justify-content: space-between;
    padding: 56px 0 39px;
 }
 
