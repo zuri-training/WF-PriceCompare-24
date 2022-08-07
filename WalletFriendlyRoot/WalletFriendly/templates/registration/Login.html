@@ -1,0 +1,141 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Login Page</title>
+		<link rel="stylesheet" href="../css/style.css" />
+		<link rel="stylesheet" href="{% static 'css/gadgetPhones.css' %}" />
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+	</head>
+	<body id="login-body-content">
+		<header>
+			<section class="head_section">
+				<div class="logo">Wallet<span>friendly</span></div>
+				<div class="search_bar">
+					<input
+						type="search"
+						placeholder="Search Product, brand"
+						name="search"
+						id="search_bar"
+					/>
+				</div>
+				<div class="login">
+					<div>
+						<span class="material-symbols-outlined">person</span>
+						<button class="signInButton"><a href="#"> Login </a></button>
+					</div>
+					<div>
+						<span class="material-symbols-outlined">shopping_cart</span>
+					</div>
+				</div>
+			</section>
+
+			<nav id="nav_bar">
+				<div class="nav-links nav-list">
+					<ul>
+						<li fashion>
+							<a href="#"> Fashion</a>
+							<div class="subMenu1">
+								<ul class="linkPages">
+									<li><a href="#">Men's Clothing</a></li>
+									<li><a href="#">Women's Clothing</a></li>
+									<li><a href="#">Men's Shoes</a></li>
+									<li><a href="#">Women's Shoes</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li gadget>
+							<a href="#"> Gadget</a>
+
+							<div class="subMenu1">
+								<ul class="linkPages">
+									<li><a href="#">Mobile Phones</a></li>
+									<li><a href="#">Laptops</a></li>
+									<li><a href="#">Smart TVs</a></li>
+								</ul>
+							</div>
+						</li>
+						<li hair>
+							<a href="#"> Hair</a>
+
+							<div class="subMenu1">
+								<ul class="linkPages">
+									<li><a href="#">Human Hair</a></li>
+									<li><a href="#">Bone Straight</a></li>
+									<li><a href="#">Accessories</a></li>
+								</ul>
+							</div>
+						</li>
+						<li other>
+							<a href="#"> Other</a>
+							<div class="subMenu1">
+								<ul class="linkPages">
+									<li><a href="#">Social Media</a></li>
+									<li><a href="#">Partners</a></li>
+									<li><a href="#">WalletFriendly Team</a></li>
+									<li><a href="#">FAQs</a></li>
+								</ul>
+							</div>
+						</li>
+						<li compare>
+							<a href="#"> Compare</a>
+							<div class="subMenu1">
+								<ul class="linkPages">
+									<li><a href="#">By Price</a></li>
+									<li><a href="#">By Brand</a></li>
+									<li><a href="#">By Rating</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+
+			<form action="" id="login-form">
+				<h2 class="form__title">Login</h2>
+				<div class="login__input-box">
+					<label class="login-label" for="email-phone">Email Address or Phone Number</label>
+					<input
+						type="text"
+						name="email-phone"
+						id="email-phone"
+						placeholder="Enter Email Address or Phone Number"
+						required
+					/>
+				</div>
+				<div class="login__input-box">
+					<label class="login-label" for="password">Password</label>
+					<input
+						type="text"
+						name="password"
+						id="password"
+						placeholder="Enter Password"
+                  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
+						required
+					/>
+               <span class="password--link">
+                  <a href="">Forgot Your Password?</a>
+               </span>
+				</div>
+            <button class="login-btn" type="submit">
+               Login
+            </button>
+            <p class="form__text">OR</p>
+            <div class="login__option">
+               <a href="" class="login-option__link">Login in with Facebook</a>
+               <a href="" class="login-option__link">Login in with Google</a>
+            </div>
+            <div class="login__create-account">
+               <p class="form__text">Don't Have An Account?</p>
+               <div class="create-account__link">
+                  <a href="">Create Account</a>
+               </div>
+            </div>
+			</form>
+	</body>
+</html>
