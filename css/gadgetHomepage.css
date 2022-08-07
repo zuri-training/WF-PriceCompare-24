@@ -137,6 +137,16 @@ div.login>div a {
   padding: .5em;
 }
 
+header .head_section .top-link ul li {
+  padding: 0 1em 0 1em;
+  display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+  color: rgba(0, 0, 0, 0.424);
+  font-weight: 500;
+  text-decoration: none;
+}
 /* main seaction */
 main {
   display: grid;
