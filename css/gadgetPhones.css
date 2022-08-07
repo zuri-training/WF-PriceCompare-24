@@ -36,7 +36,7 @@ header .head_section {
 }
 
 header .head_section .top-link ul li {
-    padding: 1em;
+    padding: 0 1em 0 1em;
     display: inline-block;
 }
 
