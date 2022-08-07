@@ -1,4 +1,5 @@
-{% load static%}
+{% load static %} {% load socialaccount %} {% providers_media_js %}
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -29,7 +30,7 @@
           <div>
             <span class="material-symbols-outlined">person</span>
             <button class="signInButton">
-              <a href="{% url 'login' %}"> Login </a>
+              <a href="{% url 'index' %}"> Logout </a>
             </button>
           </div>
           <div>
@@ -40,6 +41,17 @@
 
       <nav id="nav_bar">
         <div class="nav-links nav-list">
+          <div
+            class="alert alert-warning alert-dismissible fade show"
+            role="alert"
+          >
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="alert"
+              aria-label="Close"
+            ></button>
+          </div>
           <ul>
             <li fashion>
               <a href="#"> Fashion</a>
@@ -100,41 +112,45 @@
         </div>
       </nav>
     </header>
-
+    {% block content %}
     <form action="" id="login-form" method="POST">
       {% csrf_token %}
       <h2 class="form__title">Login</h2>
       <div class="login__input-box">
-        <label class="login-label" for="email-phone"
-          >Email Address or Phone Number</label
-        >
+        <label class="login-label" for="username">Username</label>
         <input
           type="text"
           name="email-phone"
           id="email-phone"
-          placeholder="Enter Email Address or Phone Number"
+          placeholder="Enter Email"
           required
         />
       </div>
       <div class="login__input-box">
         <label class="login-label" for="password">Password</label>
         <input
-          type="text"
+          type="password"
           name="password"
           id="password"
           placeholder="Enter Password"
-          pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}"
           required
         />
         <span class="password--link">
-          <a href="">Forgot Your Password?</a>
+          <a href="{% url 'forgotpassword' %}">Forgot Your Password?</a>
         </span>
       </div>
       <button class="login-btn" type="submit">Login</button>
       <p class="form__text">OR</p>
       <div class="login__option">
-        <a href="" class="login-option__link">Login in with Facebook</a>
-        <a href="" class="login-option__link">Login in with Google</a>
+        {{user}}
+        <a
+          href=" {% provider_login_url 'facebook' method= 'oauth2' %} "
+          class="login-option__link"
+          >Login in with Facebook</a
+        >
+        <a href="{% provider_login_url 'google' %}" class="login-option__link"
+          >Login in with Google</a
+        >
       </div>
       <div class="login__create-account">
         <p class="form__text">Don't Have An Account?</p>
@@ -143,5 +159,6 @@
         </div>
       </div>
     </form>
+    {% endblock %}
   </body>
 </html>

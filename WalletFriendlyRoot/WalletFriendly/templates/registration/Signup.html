@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Login Page</title>
+    <title>Create Account Page</title>
     <link rel="stylesheet" href="../css/style.css" />
     <link rel="stylesheet" href="{% static 'css/gadgetPhones.css' %}" />
     <link
@@ -100,8 +100,10 @@
         </div>
       </nav>
     </header>
+    {% block content %}
 
-    <form action="" id="login-form">
+    <form action="" id="login-form" method="POST">
+      {% csrf_token %}
       <h2 class="form__title">Create Account</h2>
       <div class="login__input-box">
         <label class="login-label" for="email-phone"
@@ -132,6 +134,7 @@
       <button class="login-btn" type="submit">Create Account</button>
       <p class="form__text">OR</p>
       <div class="login__option">
+        {{user}}
         <a href="" class="login-option__link">Signup in with Facebook</a>
         <a href="" class="login-option__link">Signup with Google</a>
       </div>
@@ -142,5 +145,6 @@
         </div>
       </div>
     </form>
+    {% endblock %}
   </body>
 </html>
