@@ -959,6 +959,11 @@ main .hero-section {
     align-items: center;
 }
 
+main #Gtvimage {
+    background-image: url("../images/gadget and phones/SAMSUNG 1.png");
+    background-size: cover;
+}
+
 
 /* edited the search bar code  */
 
