@@ -1,35 +1,4 @@
-@media screen and (max-width: 768px) {
-
-    html body {
-        max-width: 90%;
-    }
-
-    header {
-        max-width: 100%;
-
-        padding: 1em;
-    }
-
-    .head_section .logo {
-        font-size: 1rem;
-        padding-right: 1em;
-    }
-
-    header .search_bar #search_bar {
-        width: 7rem;
-        padding-right: 1em;
-
-    }
-
-    main .hero-section img {
-        width: 6em;
-    }
-
-    main .hero-section {
-        justify-content: center;
-    }
-
-
+@media screen and (max-width:1049px) {
     aside {
         display: none;
     }
@@ -40,9 +9,61 @@
             "reviews reviews reviews reviews reviews";
 
     }
+}
+
+
+
+
+@media screen and (max-width: 864px) {
+
+    html body {
+        width: 100vh;
+        margin: 0 auto;
+
+
+    }
+
+
+
+    main .hero-section {
+        max-width: 80%;
+    }
+
+
+    header {
+        display: block;
+        width: max-content;
+
+        margin-left: -4.5rem;
+
+    }
+
+    .head_section .logo {
+        font-size: 1rem;
+        padding-right: 1em;
+    }
+
+
+
+
+    main .hero-section {
+        /* justify-content: center; */
+        width: 100%;
+        display: block;
+        margin: 0 auto;
+    }
+
+
+    .box {
+        padding: 0 1em;
+
+    }
+
+
 
     .preview {
         justify-content: center;
+        padding: 0 4.5em;
 
     }
 
@@ -65,6 +86,32 @@
         width: 8em;
     }
 
+    footer {
+        width: 100%;
+    }
+
+    footer .footerContainer {
+        width: fit-content;
+        gap: 2rem;
+        margin-left: -5rem;
+
+    }
+
+    section[reviews] {
+        width: max-content;
+
+    }
 
 
+
+}
+
+@media screen and (max-width: 600px) {
+    .top-link {
+        display: none;
+    }
+
+    main .hero-section {
+        width: 100vh;
+    }
 }

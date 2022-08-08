@@ -26,7 +26,6 @@ body {
   max-width: max-content;
   justify-content: center;
   font-family: sora;
-  background-color: #f6f8fa;
 }
 
 header .head_section {
@@ -37,9 +36,6 @@ header .head_section {
   align-items: center;
 }
 
-.linkPages{
-  z-index: 1;
-}
 header .search_bar #search_bar {
   height: 2.4em;
   width: 23em;
@@ -138,16 +134,6 @@ div.login>div a {
   padding: .5em;
 }
 
-header .head_section .top-link ul li {
-  padding: 0 1em 0 1em;
-  display: inline-block;
-}
-
-header .head_section .top-link ul li a {
-  color: rgba(0, 0, 0, 0.424);
-  font-weight: 500;
-  text-decoration: none;
-}
 /* main seaction */
 main {
   display: grid;
@@ -177,7 +163,7 @@ main .hero-section {
 
 main .hero-section img {
   width: 11em;
-} 
+}
 
 aside.filter {
   grid-area: filter;
@@ -286,6 +272,7 @@ div[preview] {
 
 .preview .box div img {
   width: 13em;
+  height: 17.5rem;
 }
 
 div[preview] .news-one img,
@@ -407,8 +394,26 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
+
+section[bottom] .contact {
+  display: flex;
+  align-items: center;
+}
+
+section[bottom] .contact a {
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.contact div.box {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+}
+
 hr[bottom] {
   margin: 3em 0;
 }
@@ -566,11 +571,60 @@ div.compare {
   text-align: center;
 }
 
+.shoes-section {
+  border: 1px solid var(--secondary-color);
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
 
+.shoes-section h2 {
+  margin-top: 0px;
+  margin-bottom: 1.4em;
+  color: var(--load-color);
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
 
-.box img:hover {
-  transform: scale(1.025, 1.025);
-  transition: transform 200ms ease-in-out;
+.shoes-box {
+  display: flex;
+  margin-bottom: 2rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.shoe-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.shoe-content h4 {
+  color: var(--load-color);
+  font-size: large;
+  font-weight: bolder;
+  width: 38%;
+  text-align: center;
+}
+
+.shoe-content p {
+  padding-bottom: 1em;
+  color: var(--secondary-color);
+}
+
+.linkPages {
+  z-index: 1;
+}
+
+header .head_section .top-link ul li {
+  padding: 0 1em 0 1em;
+  display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+  color: rgba(0, 0, 0, 0.424);
+  font-weight: 500;
+  text-decoration: none;
 }
 
 .hero-section .display {
@@ -580,17 +634,19 @@ div.compare {
 }
 
 main .hero-section {
-   background: url(../display.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 22rem;
-    /* z-index: -1; */
-    /* margin-bottom: -11em; */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  background: url(../images/men/bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 22rem;
+  /* z-index: -1; */
+  /* margin-bottom: -11em; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
+
+
 /* edited the search bar code  */
 
 div.search_bar {
@@ -633,6 +689,3 @@ main section.hero-section {
   color: gray;
   top: .3em;
 }
-
-
-/* ends here  */

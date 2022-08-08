@@ -5,7 +5,7 @@
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<title>Create an account Page</title>
-		<link rel="stylesheet" href="static/css/createAccount.css" />
+		<link rel="stylesheet" href="../css/createAccount.css" />
         <link
         rel="stylesheet"
         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -19,14 +19,22 @@
 		<header>
 			<section class="head_section">
 				<div class="logo">Wallet<span>friendly</span></div>
-				<div class="search_bar">
+				<!-- <div class="search_bar">
 					<input
 						type="search"
 						placeholder="Search Product, brand"
 						name="search"
 						id="search_bar"
 					/>
-				</div>
+				</div> -->
+				<div class="top-link">
+          <ul>
+              <li><a href="">About</a></li>
+              <li><a href="">Team</a></li>
+              <li><a href="">FAQs</a></li>
+              <li><a href="../template/contactUs.html">Contact</a></li>
+          </ul>
+      </div>
 				<div class="login">
 					<div>
 						<span class="material-symbols-outlined">person</span>
@@ -42,50 +50,61 @@
 				<div class="nav-links nav-list">
 					<ul>
 						<li fashion>
-							<a href="../template/fashion.html"> Fashion</a>
-							<div class="subMenu1">
-								<ul class="linkPages">
-									<li><a href="../template/fashionMen.html">Men's Clothing</a></li>
-									<li><a href="../template/fashionWomen.html">Women's Clothing</a></li>
-									<li><a href="../template/fashionMen.html">Men's Shoes</a></li>
-									<li><a href="../template/fashionWomen.html">Women's Shoes</a></li>
-								</ul>
-							</div>
+						  <a href="#"> Fashion</a>
+						  <div class="subMenu1">
+							<ul class="linkPages">
+							  <li><a href="#">Men's Clothing</a></li>
+							  <li><a href="#">Women's Clothing</a></li>
+							  <li><a href="#">Men's Shoes</a></li>
+							  <li><a href="#">Women's Shoes</a></li>
+							</ul>
+						  </div>
 						</li>
-
+			
 						<li gadget>
-							<a href="../template/gadgetHompage.html"> Gadget</a>
-
-							<div class="subMenu1">
-								<ul class="linkPages">
-									<li><a href="../template/gadgetPhones.html">Mobile Phones</a></li>
-									<li><a href="../template/gadgetLaptops.html">Laptops</a></li>
-									<li><a href="../template/gadgettv.html">Smart TVs</a></li>
-								</ul>
-							</div>
+						  <a href="#"> Gadget</a>
+			
+						  <div class="subMenu1">
+							<ul class="linkPages">
+							  <li><a href="#">Mobile Phones</a></li>
+							  <li><a href="#">Laptops</a></li>
+							  <li><a href="#">Smart TVs</a></li>
+							</ul>
+						  </div>
 						</li>
 						<li hair>
-							<a href="../template/hairHomePage.html"> Hair</a>
-
-							<div class="subMenu1">
-								<ul class="linkPages">
-									<li><a href="../template/humanHair.html">Human Hair</a></li>
-									<li><a href="../template/boneStraight.html">Bone Straight</a></li>
-									<li><a href="../template/hairAccessories.html">Accessories</a></li>
-								</ul>
-							</div>
+						  <a href="#"> Hair</a>
+			
+						  <div class="subMenu1">
+							<ul class="linkPages">
+							  <li><a href="#">Human Hair</a></li>
+							  <li><a href="#">Bone Straight</a></li>
+							  <li><a href="#">Accessories</a></li>
+							</ul>
+						  </div>
+						</li>
+						<li other>
+						  <a href="#"> Other</a>
+						  <div class="subMenu1">
+							<ul class="linkPages">
+							  <li><a href="#">Social Media</a></li>
+							  <li><a href="#">Partners</a></li>
+							  <li><a href="#">WalletFriendly Team</a></li>
+							  <li><a href="#">FAQs</a></li>
+							</ul>
+						  </div>
 						</li>
 						<li compare>
-							<a href="#"> Compare</a>
-							<div class="subMenu1">
-								<ul class="linkPages">
-									<li><a href="#">By Price</a></li>
-									<li><a href="#">By Brand</a></li>
-									<li><a href="#">By Rating</a></li>
-								</ul>
-							</div>
+						  <a href="#"> Compare</a>
+						  <div class="subMenu1">
+							<ul class="linkPages">
+							  <li><a href="#">By Price</a></li>
+							  <li><a href="#">By Brand</a></li>
+							  <li><a href="#">By Rating</a></li>
+							</ul>
+						  </div>
 						</li>
-					</ul>
+					  </ul>
 				</div>
 			</nav>
 		</header>
@@ -161,7 +180,7 @@
             <div class="create-account-login">
                <p class="form__text acc">Already Have An Account?</p>
                <div class="create-account__link">
-                  <a href="Login.html">Login</a>
+                  <a href="../template/Login.html">Login</a>
                </div>
             </div>
 			</form>

@@ -10,7 +10,8 @@
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
-    <link rel="stylesheet" href="../css/gadgetPhones.css">
+    <link rel="stylesheet" href="../css/fashionmen.css">
+    <link rel="stylesheet" href="../css/popup.css">
 
 </head>
 
@@ -20,10 +21,19 @@
             <div class="logo">
                 Wallet<span>friendly</span>
             </div>
-            <div class="search_bar">
+            <!-- <div class="search_bar">
                 <input type="search" placeholder="Search Product, brand" name="search" id="search_bar">
 
+            </div> -->
+            <div class="top-link">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
             </div>
+
             <div class="login">
 
                 <div>
@@ -63,7 +73,7 @@
 
 
 
-                    <li gadget> <a href="./gadgetHompage.html"> Gadget</a>
+                    <li gadget> <a href="./gadgetHomepage.html"> Gadget</a>
 
                         <div class="subMenu1">
                             <ul class="linkPages">
@@ -81,7 +91,7 @@
 
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href="./hairHomePage.html">Human Hair</a></li>
+                                <li><a href="./humanHair.html">Human Hair</a></li>
                                 <li><a href="./boneStraight.html">Bone Straight</a></li>
                                 <li><a href="./hairAccessories.html">Accessories</a></li>
 
@@ -92,16 +102,14 @@
 
                     </li>
 
-                    <li compare> <a href="#"> Compare</a>
+                    <li compare>
+                        <a href="../template/compareGadgets.html"> Compare</a>
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href="#">By Price</a></li>
-                                <li><a href="#">By Brand</a></li>
-                                <li><a href="#">By Rating</a></li>
-
+                                <li><a href="../template/compareGadgets.html">By Price</a></li>
+                                <li><a href="../template/compareGadgets.html">By Brand</a></li>
+                                <li><a href="../template/compareGadgets.html">By Rating</a></li>
                             </ul>
-
-
                         </div>
                     </li>
                 </ul>
@@ -112,12 +120,20 @@
     </header>
     <main>
         <section class="hero-section">
-            <img src="../images/men/Rectangle 18.png" alt="" />
+            <!-- <img src="../images/men/Rectangle 18.png" alt="" />
             <img src="../images/men/Rectangle 10.png" alt="" />
             <img src="../images/men/Rectangle 11.png" alt="" />
             <img src="../images/men/Rectangle 12.png" alt="" />
             <img src="../images/men/Rectangle 13.png" alt="" />
-            <img src="../images/men/Rectangle 14.png" alt="" />
+            <img src="../images/men/Rectangle 14.png" alt="" /> -->
+
+            <h1 class="hero-section__title">
+                Men's Wear
+            </h1>
+            <div class="search_bar">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" placeholder="Search Product, brand" name="search" id="search_bar" />
+            </div>
         </section>
 
         <aside class="filter">
@@ -172,7 +188,31 @@
                             <h4>Jeans</h4>
                             <p>&#8358;15,000</p>
                             <div class="compare">
-                                <a class="compare-btn" href="#">Compare</a>
+                                <a class="compare-btn" href="">Compare</a>
+                            </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -186,6 +226,30 @@
                             <div class="compare">
                                 <a class="compare-btn" href="#">Compare</a>
                             </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="box">
@@ -197,6 +261,30 @@
                             <p>&#8358;7,000</p>
                             <div class="compare">
                                 <a class="compare-btn" href="#">Compare</a>
+                            </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -217,6 +305,30 @@
                             <div class="compare">
                                 <a class="compare-btn" href="#">Compare</a>
                             </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="box">
@@ -229,6 +341,30 @@
                             <div class="compare">
                                 <a class="compare-btn" href="#">Compare</a>
                             </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="box">
@@ -240,6 +376,30 @@
                             <p>&#8358;8,000</p>
                             <div class="compare">
                                 <a class="compare-btn" href="#">Compare</a>
+                            </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -259,6 +419,30 @@
                             <div class="compare">
                                 <a class="compare-btn" href="#">Compare</a>
                             </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="shoes-box">
@@ -270,6 +454,30 @@
                             <p>&#8358;5,000</p>
                             <div class="compare">
                                 <a class="compare-btn" href="#">Compare</a>
+                            </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -289,6 +497,30 @@
                             <div class="compare">
                                 <a class="compare-btn" href="#">Compare</a>
                             </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                     <div class="shoes-box">
@@ -300,6 +532,30 @@
                             <p>&#8358;10,000</p>
                             <div class="compare">
                                 <a class="compare-btn" href="#">Compare</a>
+                            </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -540,6 +796,8 @@
         </section>
 
     </footer>
+
+    <script src="../script/popup.js"></script>
 </body>
 
 </html>

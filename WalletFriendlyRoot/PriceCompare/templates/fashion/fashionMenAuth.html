@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-    {% load social_share %}
+{% load social_share %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -21,9 +21,18 @@
             <div class="logo">
                 Wallet<span>friendly</span>
             </div>
-            <div class="search_bar">
+            <!-- <div class="search_bar">
                 <input type="search" placeholder="Search Product, brand" name="search" id="search_bar">
 
+            </div> -->
+
+            <div class="top-link">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="">Team</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="">Contact</a></li>
+                </ul>
             </div>
             <div class="login">
 
@@ -64,7 +73,7 @@
 
 
 
-                    <li gadget> <a href="./gadgetHompage.html"> Gadget</a>
+                    <li gadget> <a href="./gadgetHomepage.html"> Gadget</a>
 
                         <div class="subMenu1">
                             <ul class="linkPages">
@@ -82,7 +91,7 @@
 
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href="./hairHomePage.html">Human Hair</a></li>
+                                <li><a href="./humanHair.html">Human Hair</a></li>
                                 <li><a href="./boneStraight.html">Bone Straight</a></li>
                                 <li><a href="./hairAccessories.html">Accessories</a></li>
 
@@ -93,16 +102,14 @@
 
                     </li>
 
-                    <li compare> <a href="#"> Compare</a>
+                    <li compare>
+                        <a href="../template/compareGadgets.html"> Compare</a>
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href="#">By Price</a></li>
-                                <li><a href="#">By Brand</a></li>
-                                <li><a href="#">By Rating</a></li>
-
+                                <li><a href="../template/compareGadgets.html">By Price</a></li>
+                                <li><a href="../template/compareGadgets.html">By Brand</a></li>
+                                <li><a href="../template/compareGadgets.html">By Rating</a></li>
                             </ul>
-
-
                         </div>
                     </li>
                 </ul>
@@ -114,12 +121,19 @@
 
     <main>
         <section class="hero-section">
-            <img src="../images/men/Rectangle 18.png" alt="" />
+            <!-- <img src="../images/men/Rectangle 18.png" alt="" />
             <img src="../images/men/Rectangle 10.png" alt="" />
             <img src="../images/men/Rectangle 11.png" alt="" />
             <img src="../images/men/Rectangle 12.png" alt="" />
             <img src="../images/men/Rectangle 13.png" alt="" />
-            <img src="../images/men/Rectangle 14.png" alt="" />
+            <img src="../images/men/Rectangle 14.png" alt="" /> -->
+            <h1 class="hero-section__title">
+                Men's Wear
+            </h1>
+            <div class="search_bar">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" placeholder="Search Product, brand" name="search" id="search_bar" />
+            </div>
         </section>
 
         <aside class="filter">
@@ -182,9 +196,9 @@
                             </div>
                             <div class="social-share">
                                 {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
-                                        </a>
+                                <a href=" {{facebook_url}} " target="_blank">
+                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
                                 </a>
@@ -207,9 +221,9 @@
                             </div>
                             <div class="social-share">
                                 {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
-                                        </a>
+                                <a href=" {{facebook_url}} " target="_blank">
+                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
                                 </a>
@@ -232,9 +246,9 @@
                             </div>
                             <div class="social-share">
                                 {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
-                                        </a>
+                                <a href=" {{facebook_url}} " target="_blank">
+                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
                                 </a>
@@ -263,9 +277,9 @@
                             </div>
                             <div class="social-share">
                                 {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
-                                        </a>
+                                <a href=" {{facebook_url}} " target="_blank">
+                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
                                 </a>
@@ -283,15 +297,15 @@
                                 <h6>AliExpress:&#8358;10,000</h6>
                                 <h6>Jumia:&#8358;10,500</h6>
                             </div>
-                            <div class="achor">
+                            <div class="anchor">
                                 <a href="#" class="special-p">Aliexpress &#8358;10,000</a>
                             </div>
 
                             <div class="social-share">
                                 {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
-                                        </a>
+                                <a href=" {{facebook_url}} " target="_blank">
+                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
                                 </a>
@@ -315,9 +329,9 @@
 
                             <div class="social-share">
                                 {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
-                                        </a>
+                                <a href=" {{facebook_url}} " target="_blank">
+                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
                                 </a>
