@@ -15,7 +15,6 @@
 body {
   font-family: "Sora", sans-serif;
   position: relative;
-  background-color: rgba(246, 248, 250, 1);
 }
 
 .material-symbols-outlined {
@@ -37,17 +36,6 @@ header .head_section {
   align-items: center;
 }
 
-header .head_section .top-link ul li {
-  padding: 0 1em 0 1em;
-  display: inline-block;
-}
-
-header .head_section .top-link ul li a {
-  color: rgba(0, 0, 0, 0.424);
-  font-weight: 500;
-  text-decoration: none;
-}
-
 header .search_bar #search_bar {
   height: 2.4em;
   width: 23em;
@@ -57,14 +45,6 @@ header .search_bar #search_bar {
   padding: 0 0.5em;
 }
 
-/* #search_bar {
-   position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
 /* header .head_section .logo img {
   width: 70px;
   height: 55px;
@@ -73,6 +53,7 @@ header .search_bar #search_bar {
 
 div.login {
   display: flex;
+
   align-content: center;
   width: 8em;
   justify-content: space-between;
@@ -140,7 +121,6 @@ div.login > div a {
   position: absolute;
   width: 2rem;
   top: 5.7rem;
-  z-index: 1;
 }
 
 .nav-links ul li:hover div,
@@ -264,6 +244,7 @@ section[heroSection] div[secondBox] {
   display: flex;
   flex-direction: row;
   /* justify-content: space-around; */
+
   gap: 3rem;
 }
 
@@ -289,6 +270,7 @@ div[secondBox] #image-one {
 #image-one div[specs] {
   display: flex;
   justify-content: space-between;
+
   width: 100%;
 }
 
@@ -308,11 +290,14 @@ div[specs] > div {
 
 main {
   display: grid;
-  grid-template-areas: "slider slider slider slider slider" "filter box box box box";
+  grid-template-areas:
+    "slider slider slider slider slider"
+    "filter box box box box";
   gap: 3rem;
   justify-content: center;
   font-family: "Sora", sans-serif;
-  margin-top: 2rem;
+
+  margin-top: 1rem;
   gap: 3rem;
   justify-content: center;
 }
@@ -323,12 +308,60 @@ main .hero-section {
   width: 100%;
 }
 
-/* main .hero-section img {
-
+main .hero-section img {
   width: 11em;
+}
 
+#auth-hero-section {
+  background-image: url("../images/humanHairAuth/istockphoto-1329662476-612x612\ 1.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 341px;
+}
+
+#auth-hero-section-p {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 150%;
+  color: #fff;
+}
+
+#human-hair-search {
+  width: 405px;
+  padding: 5px;
+  background: #ffffff;
+  border: 1px solid rgba(90, 90, 90, 0.5);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+#human-hair-search-input {
+  padding: 7px 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+#human-hair-search-input::placeholder {
+  color: #a5a6a7;
+  font-size: 16px;
+}
+
+#search-icon {
+  color: #a5a6a7;
+  justify-self: flex-end;
+}
+
+/* #auth-hero-section img {
+  width: 100%;
 } */
-
 aside.filter {
   grid-area: filter;
   height: fit-content;
@@ -437,6 +470,7 @@ div[preview] .news-one img,
 }
 
 .box {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   width: 13.5rem;
   background-color: var(--main-color);
@@ -603,7 +637,24 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
+}
+
+section[bottom] .contact {
+  display: flex;
+  align-items: center;
+}
+
+section[bottom] .contact a {
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.contact div.box {
+  width: 8px;
+  height: 8px;
+  background-color: black;
 }
 
 hr[bottom] {
@@ -611,7 +662,6 @@ hr[bottom] {
 }
 
 /*hair home page additional style*/
-
 .hair-preview {
   justify-content: space-around !important;
 }
@@ -633,7 +683,6 @@ hr[bottom] {
 }
 
 /* styles for Login Page */
-
 #login-body-content {
   width: 100%;
   max-width: 1200px;
@@ -894,12 +943,10 @@ div.footLogo {
   color: var(--load-color);
 }
 
-/* This is the compare button*/
-
 a.compare-btn {
   text-decoration: none;
   color: white;
-  background: var(--load-color);
+  background: var(--secondary-color);
   padding: 0.5em 1em;
   border-radius: 8px;
 }
@@ -914,71 +961,7 @@ div.compare {
   transition: transform 200ms ease-in-out;
 }
 
-.hero-section .display {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
+aside .filter {
+  position: sticky;
+  top: 0;
 }
-
-main .hero-section {
-  background: url(../images/boneStraight/bonestraight.jpeg);
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 22rem;
-  /* z-index: -1; */
-  /* margin-bottom: -11em; */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-main #Gtvimage {
-  background-image: url("../images/boneStraight/bonestraight.jpeg");
-  background-size: cover;
-}
-
-/* edited the search bar code  */
-
-div.search_bar {
-  width: 100%;
-  max-width: 26rem;
-  height: 3.5rem;
-}
-
-.hero-section__title {
-  color: white;
-  font-size: 2rem;
-  padding: 6rem 0 4rem;
-}
-
-#search_bar {
-  padding: 2rem 1rem;
-  border-radius: 30px;
-  outline: none;
-  border: 1px solid white;
-  width: 100%;
-  height: 100%;
-}
-
-#search_bar::placeholder {
-  font-size: 20px;
-}
-
-main section.hero-section {
-  display: flex;
-}
-
-.search_bar {
-  position: relative;
-}
-
-.search_bar span {
-  font-size: 2.5em;
-  position: absolute;
-  right: 0.5em;
-  color: gray;
-  top: 0.3em;
-}
-
-/* ends here  */
