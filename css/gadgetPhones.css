@@ -440,7 +440,7 @@ div[preview] .news-one img,
 }
 
 .box {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     border: none;
     width: 13.5rem;
     background-color: var(--main-color);
@@ -609,11 +609,12 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-    display: flex;
+    display: block;
     justify-content: space-between;
+    text-align: center;
 }
 
-section[bottom] .contact {
+/* section[bottom] .contact {
     display: flex;
     align-items: center;
 }
@@ -621,13 +622,13 @@ section[bottom] .contact {
 section[bottom] .contact a {
     padding: 0 10px;
     text-decoration: none;
-}
+} */
 
-.contact div.box {
+/* .contact div.box {
     width: 8px;
     height: 8px;
     background-color: black;
-}
+} */
 
 hr[bottom] {
     margin: 3em 0;
