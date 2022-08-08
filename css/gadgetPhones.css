@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
-
 :root {
     --main-color: #fefefe;
     --load-color: #151f7f;
@@ -440,7 +439,6 @@ div[preview] .news-one img,
 }
 
 .box {
-
     border: none;
     width: 13.5rem;
     background-color: var(--main-color);
@@ -609,11 +607,11 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-
     display: block;
     justify-content: space-between;
     text-align: center;
 }
+
 
 /* section[bottom] .contact {
     display: flex;
@@ -624,6 +622,7 @@ section[bottom] .contact a {
     padding: 0 10px;
     text-decoration: none;
 } */
+
 
 /* .contact div.box {
     width: 8px;
