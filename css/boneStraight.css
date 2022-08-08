@@ -899,7 +899,7 @@ div.footLogo {
 a.compare-btn {
   text-decoration: none;
   color: white;
-  background: var(--secondary-color);
+  background: var(--load-color);
   padding: 0.5em 1em;
   border-radius: 8px;
 }
