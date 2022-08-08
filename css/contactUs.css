@@ -4,6 +4,8 @@
     --main-color: #fefefe;
     --load-color: #151f7f;
     --secondary-color: #949efe;
+    --bg-color: rgba(246, 248, 250, 1);
+
 }
 
 * {

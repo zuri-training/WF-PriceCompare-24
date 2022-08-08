@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
 :root {
     --main-color: #fefefe;
     --load-color: #151f7f;
@@ -14,6 +15,7 @@
 body {
     font-family: "Sora", sans-serif;
     position: relative;
+    background-color: rgba(246, 248, 250, 1);
 }
 
 .material-symbols-outlined {
@@ -308,7 +310,7 @@ div[specs]>div {
 
 main {
     display: grid;
-    grid-template-areas: 'slider slider slider slider slider' 'filter box box box box';
+    grid-template-areas: 'slider slider slider slider slider''filter box box box box';
     gap: 3rem;
     justify-content: center;
     font-family: 'Sora', sans-serif;
@@ -438,7 +440,7 @@ div[preview] .news-one img,
 }
 
 .box {
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+
     border: none;
     width: 13.5rem;
     background-color: var(--main-color);
@@ -607,11 +609,13 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-    display: flex;
+
+    display: block;
     justify-content: space-between;
+    text-align: center;
 }
 
-section[bottom] .contact {
+/* section[bottom] .contact {
     display: flex;
     align-items: center;
 }
@@ -619,13 +623,18 @@ section[bottom] .contact {
 section[bottom] .contact a {
     padding: 0 10px;
     text-decoration: none;
-}
+} */
 
-.contact div.box {
+/* .contact div.box {
     width: 8px;
     height: 8px;
     background-color: black;
+} */
+=======
+    text-align: center;
 }
+
+
 
 hr[bottom] {
     margin: 3em 0;
@@ -949,13 +958,18 @@ main .hero-section {
     background: url(../display.jpg);
     background-repeat: no-repeat;
     background-size: cover;
-    min-height: 30rem;
+    min-height: 22rem;
     /* z-index: -1; */
     /* margin-bottom: -11em; */
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+main #Gtvimage {
+    background-image: url("../images/gadget and phones/SAMSUNG 1.png");
+    background-size: cover;
 }
 
 
