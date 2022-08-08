@@ -493,10 +493,10 @@ div[preview] .news-one img,
     width: 13.5rem;
     background-color: var(--main-color);
     border-radius: 8px;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding: 0 1rem;
 }
 
 .box h4 {
@@ -545,6 +545,7 @@ div[preview] .news-one img,
 
 .hot-deals .box {
     width: 100%;
+    padding: 0 1rem;
 }
 
 .hot-deals .box img {
@@ -629,8 +630,7 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 section[bottom] .contact {

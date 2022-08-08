@@ -440,6 +440,7 @@ div[preview] .news-one img,
 }
 
 .box {
+
     border: none;
     width: 13.5rem;
     background-color: var(--main-color);
@@ -608,8 +609,31 @@ section[categories] ul li a,
 }
 
 section[bottom] {
+
+    display: block;
+    justify-content: space-between;
     text-align: center;
 }
+
+/* section[bottom] .contact {
+    display: flex;
+    align-items: center;
+}
+
+section[bottom] .contact a {
+    padding: 0 10px;
+    text-decoration: none;
+} */
+
+/* .contact div.box {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+} */
+=======
+    text-align: center;
+}
+
 
 
 hr[bottom] {
