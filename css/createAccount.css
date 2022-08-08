@@ -21,6 +21,7 @@ body {
   max-width: max-content;
   justify-content: center;
   font-family: sora;
+  background-color: #F6F8FA;
 }
 header .head_section {
   display: flex;
