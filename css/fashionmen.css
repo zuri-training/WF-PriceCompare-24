@@ -163,7 +163,7 @@ main .hero-section {
 
 main .hero-section img {
   width: 11em;
-} 
+}
 
 aside.filter {
   grid-area: filter;
@@ -272,7 +272,7 @@ div[preview] {
 
 .preview .box div img {
   width: 13em;
-  height:17.5rem;
+  height: 17.5rem;
 }
 
 div[preview] .news-one img,
@@ -610,4 +610,82 @@ div.compare {
 .shoe-content p {
   padding-bottom: 1em;
   color: var(--secondary-color);
+}
+
+.linkPages {
+  z-index: 1;
+}
+
+header .head_section .top-link ul li {
+  padding: 0 1em 0 1em;
+  display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+  color: rgba(0, 0, 0, 0.424);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.hero-section .display {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+main .hero-section {
+  background: url(../images/men/bg-img.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 22rem;
+  /* z-index: -1; */
+  /* margin-bottom: -11em; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+/* edited the search bar code  */
+
+div.search_bar {
+  width: 100%;
+  max-width: 26rem;
+  height: 3.5rem;
+}
+
+.hero-section__title {
+  color: white;
+  font-size: 2rem;
+  padding: 6rem 0 4rem;
+}
+
+#search_bar {
+  padding: 2rem 1rem;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid white;
+  width: 100%;
+  height: 100%;
+}
+
+#search_bar::placeholder {
+  font-size: 20px;
+}
+
+main section.hero-section {
+  display: flex;
+}
+
+.search_bar {
+  position: relative;
+}
+
+.search_bar span {
+  font-size: 2.5em;
+  position: absolute;
+  right: .5em;
+  color: gray;
+  top: .3em;
 }
