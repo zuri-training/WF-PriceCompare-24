@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
-
 :root {
     --main-color: #fefefe;
     --load-color: #151f7f;
@@ -15,6 +14,7 @@
 body {
     font-family: "Sora", sans-serif;
     position: relative;
+    background-color: rgba(246, 248, 250, 1);
 }
 
 .material-symbols-outlined {

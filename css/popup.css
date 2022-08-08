@@ -32,21 +32,6 @@
                opacity 200ms ease-in-out 0ms,
                transform 200ms ease-in-out 0ms; 
   }
-  /* .popup {
-    position:absolute;
-    top:-150%;
-    left:50%;
-    opacity:0;
-    transform:translate(-50%,-50%) scale(1.25);
-    width:380px;
-    padding:20px 30px;
-    background:#fff;
-    box-shadow:2px 2px 5px 5px rgba(0,0,0,0.15);
-    border-radius:10px;
-    transition:top 0ms ease-in-out 200ms,
-               opacity 200ms ease-in-out 0ms,
-               transform 200ms ease-in-out 0ms; 
-  } */
   .popup.active {
     top:50%;
     opacity:1;
@@ -134,4 +119,8 @@
   .backdrop.active {
      display: block;
      pointer-events: all;
+  }
+  .popup-signup a{
+    text-decoration: none;
+    color: #1a79ca;
   }
