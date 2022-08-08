@@ -397,24 +397,7 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-  display: flex;
-  justify-content: space-between;
-}
-
-section[bottom] .contact {
-  display: flex;
-  align-items: center;
-}
-
-section[bottom] .contact a {
-  padding: 0 10px;
-  text-decoration: none;
-}
-
-.contact div.box {
-  width: 8px;
-  height: 8px;
-  background-color: black;
+  text-align: center;
 }
 
 hr[bottom] {
@@ -671,4 +654,13 @@ main section.hero-section {
   right: .5em;
   color: gray;
   top: .3em;
+}
+
+section[categories] ul li a:hover,
+[gadgetBrands] ul li a:hover,
+[popularBrands] ul li a:hover,
+[about] ul li a:hover {
+  color: var(--load-color);
+  font-weight: 600;
+  transition: .3s;
 }

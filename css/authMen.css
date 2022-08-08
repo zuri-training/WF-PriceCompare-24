@@ -154,3 +154,12 @@ main .hero-section {
     flex-direction: column;
     align-items: center;
 }
+
+section[categories] ul li a:hover,
+[gadgetBrands] ul li a:hover,
+[popularBrands] ul li a:hover,
+[about] ul li a:hover {
+    color: var(--load-color);
+    font-weight: 600;
+    transition: .3s;
+}

@@ -341,10 +341,11 @@ main {
     margin: 0 auto;
 }
 
-main h2 {
+main h1 {
     color: var(--load-color);
-    width: 50%;
+    text-align: center;
     padding-bottom: 5rem;
+    font-size: 1.5rem;
 }
 
 .section {
@@ -493,4 +494,36 @@ header .head_section .top-link ul li a {
 
 .head_section .logo span {
     color: black;
+}
+
+.rating {
+    display: inline-block;
+    width: 100%;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.rating h6 {
+    color: var(--load-color);
+    font-size: 1rem;
+}
+
+.like,
+.dislike {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.6rem;
+}
+
+.dislike:hover,
+.like:hover {
+    color: var(--load-color);
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.active {
+    color: var(--load-color);
 }
