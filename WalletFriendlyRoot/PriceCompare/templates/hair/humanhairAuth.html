@@ -1,6 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
-
+{% load social_share %}
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -9,8 +9,8 @@
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 
-    <link rel="stylesheet" href="../css/gadgetPhones.css">
-    <link rel="stylesheet" href="../css/authMen.css">
+    <link rel="stylesheet" href="/WalletFriendlyRoot/WalletFriendly/static/css/gadgetPhones.css">
+    <link rel="stylesheet" href="/WalletFriendlyRoot/WalletFriendly/static/css/authMen.css">
 </head>
 
 <body>
@@ -195,7 +195,8 @@
                             </div>
                             <p>Joyposh &#8358;150,000</p>
                             <div class="social-share">
-                                <a href="#">
+                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                                <a href=" {{facebook_url}} " target="_blank">
                                     <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
@@ -217,7 +218,8 @@
                             </div>
                             <p class="men-price">Naijabeauty &#8358;120,000</p>
                             <div class="social-share">
-                                <a href="#">
+                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                                <a href=" {{facebook_url}} " target="_blank">
                                     <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
@@ -239,7 +241,8 @@
                             </div>
                             <p>FashionNova &#8358;7,000</p>
                             <div class="social-share">
-                                <a href="#">
+                                {% post_to_facebook object_or_url '<i name="send"></i>' %}
+                                <a href=" {{facebook_url}} " target="_blank">
                                     <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
@@ -270,7 +273,8 @@
                             </div>
                             <p>FashionNova &#8358;5,000</p>
                             <div class="social-share">
-                                <a href="#">
+                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                                <a href=" {{facebook_url}} " target="_blank">
                                     <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
@@ -292,7 +296,8 @@
                             </div>
                             <p>Aliexpress &#8358;10,000</p>
                             <div class="social-share">
-                                <a href="#">
+                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                                <a href=" {{facebook_url}} " target="_blank">
                                     <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
@@ -314,7 +319,8 @@
                             </div>
                             <p>Aliexpress &#8358;8,000</p>
                             <div class="social-share">
-                                <a href="#">
+                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                                <a href=" {{facebook_url}} " target="_blank">
                                     <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
@@ -345,8 +351,9 @@
                                     <h6>Jumia:&#8358;55,000</h6>
                                     <p class="special-p">AliExpress &#8358;49,000</p>
                                     <div class="social-share">
-                                        <a href="#">
-                                            <ion-icon name="send" class="send-icon"></ion-icon>
+                                        {% post_to_facebook object_or_url '<i name="send" "></i>' %}
+                                        <a href=" {{facebook_url}} " target="_blank">
+                                        <ion-icon name="send" class="send-icon"></ion-icon>
                                         </a>
                                         <a href="#">
                                             <ion-icon name="chatbubbles"></ion-icon>
@@ -370,8 +377,9 @@
                                     <h6>Jumia:&#8358;7,000</h6>
                                     <p class="special-p">AliExpress &#8358;5,000</p>
                                     <div class="social-share">
-                                        <a href="#">
-                                            <ion-icon name="send" class="send-icon"></ion-icon>
+                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                                        <a href=" {{facebook_url}} " target="_blank">
+                                        <ion-icon name="send" class="send-icon"></ion-icon>
                                         </a>
                                         <a href="#">
                                             <ion-icon name="chatbubbles"></ion-icon>
@@ -404,8 +412,9 @@
                                     <h6>Jumia:&#8358;55,000</h6>
                                     <p class="special-p">AliExpress &#8358;49,000</p>
                                     <div class="social-share">
-                                        <a href="#">
-                                            <ion-icon name="send" class="send-icon"></ion-icon>
+                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                                        <a href=" {{facebook_url}} " target="_blank">
+                                        <ion-icon name="send" class="send-icon"></ion-icon>
                                         </a>
                                         <a href="#">
                                             <ion-icon name="chatbubbles"></ion-icon>
@@ -429,8 +438,9 @@
                                     <h6>Jumia:&#8358;12,500</h6>
                                     <p class="special-p">AliExpress &#8358;10,000</p>
                                     <div class="social-share">
-                                        <a href="#">
-                                            <ion-icon name="send" class="send-icon"></ion-icon>
+                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                                        <a href=" {{facebook_url}} " target="_blank">
+                                        <ion-icon name="send" class="send-icon"></ion-icon>
                                         </a>
                                         <a href="#">
                                             <ion-icon name="chatbubbles"></ion-icon>

@@ -42,6 +42,7 @@ INSTALLED_APPS = [
     # apps installed by team
         #3rd party
     'django_extensions',
+    'django_social_share',
         #local apps
     #write apps created here
 ]
