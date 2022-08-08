@@ -13,23 +13,19 @@
 }
 
 
-body {
-    font-family: "Sora", sans-serif;
-    padding: 2rem;
-}
-
-
-.material-symbols-outlined {
-    color: var(--mainColor);
-}
 
 body {
 
     margin: 0 auto;
-    max-width: max-content;
+    max-width: 80%;
     justify-content: center;
-    font-family: sora;
+    font-family: "Sora", sans-serif;
+    background-color: rgba(246, 248, 250, 1);
 
+}
+
+.material-symbols-outlined {
+    color: var(--mainColor);
 }
 
 header .head_section {
@@ -49,11 +45,19 @@ header .search_bar #search_bar {
     padding: 0 .5em;
 }
 
-header .head_section .logo img {
-    width: 70px;
-    height: 55px;
-    object-fit: contain;
-}
+/* #search_bar {
+   position: absolute;
+    z-index: 1;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+} */
+
+/* header .head_section .logo img {
+  width: 70px;
+  height: 55px;
+  object-fit: contain;
+} */
 
 div.login {
     display: flex;
@@ -191,7 +195,7 @@ img[pop3] {
 }
 
 img[pop3] {
-    height: 14em;
+    height: 16em;
 }
 
 p#brand {
@@ -299,6 +303,9 @@ div[secondBox] #image-one,
     /* display: flex; */
     flex-direction: column;
     justify-content: center;
+
+
+
 }
 
 div[secondBox] #image-one {
@@ -334,10 +341,11 @@ main {
     margin: 0 auto;
 }
 
-main h2 {
+main h1 {
     color: var(--load-color);
-    width: 50%;
+    text-align: center;
     padding-bottom: 5rem;
+    font-size: 1.5rem;
 }
 
 .section {
@@ -354,10 +362,8 @@ main h2 {
 .branch h3,
 .branch h4 {
     color: var(--load-color);
-    flex-basis: 60%;
-    padding: 0 3rem 0 0;
     font-weight: 700;
-    font-size: 25px;
+    font-size: 1rem;
 }
 
 main img {
@@ -368,6 +374,8 @@ main img {
     display: flex;
     padding-bottom: 4rem;
     gap: 1rem;
+    justify-content: center;
+    align-items: center;
 }
 
 #erd {
@@ -375,14 +383,15 @@ main img {
 }
 
 .branch p {
-    font-size: 14px;
+    font-size: .8rem;
     font-weight: 400;
     color: #000;
+    line-height: 1.7;
 
 }
 
 #get {
-    font-size: 12px;
+    font-size: 0.8rem;
     color: #323232;
     font-weight: 600;
     padding: 1rem 0 3rem;
@@ -402,8 +411,8 @@ main img {
 
 #cli {
     width: 40%;
-    font-size: 12px;
-    line-height: 1.5;
+    font-size: .8rem;
+    line-height: 1.7;
 }
 
 .bottom {
@@ -426,26 +435,27 @@ main img {
 
 .box {
     padding: 1rem;
-    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    font-size: 14px;
+    font-size: .8rem;
+    line-height: 1.7;
 }
 
 .box h5 {
     font-weight: 400;
     color: var(--load-color);
     padding-bottom: 0.8rem;
+    font-size: .9rem;
 }
 
 .references h3 {
     color: var(--load-color);
-    font-size: 25px;
+    font-size: 1rem;
     font-weight: 700;
     padding: 3rem 0;
 }
 
 .references h4 {
     color: var(--load-color);
-    font-size: 20px;
+    font-size: .9rem;
     font-weight: 700;
     padding-bottom: 2rem;
 }
@@ -454,9 +464,66 @@ main img {
     list-style-position: inside;
     padding-left: 2rem;
     padding-bottom: 2rem;
+    font-size: .8rem;
+    line-height: 1.7;
 }
 
 .references ul {
     list-style-position: inside;
     padding-left: 2rem;
+    font-size: .8rem;
+    line-height: 1.7;
+}
+
+header .head_section .top-link ul li {
+    padding: 0 1em 0 1em;
+    display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+    color: rgba(0, 0, 0, 0.424);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.head_section .logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--load-color);
+}
+
+.head_section .logo span {
+    color: black;
+}
+
+.rating {
+    display: inline-block;
+    width: 100%;
+    padding-top: 1rem;
+    text-align: left;
+}
+
+.rating h6 {
+    color: var(--load-color);
+    font-size: 1rem;
+}
+
+.like,
+.dislike {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    color: rgba(0, 0, 0, 0.6);
+    font-size: 0.6rem;
+}
+
+.dislike:hover,
+.like:hover {
+    color: var(--load-color);
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.active {
+    color: var(--load-color);
 }

@@ -21,6 +21,7 @@ body {
   max-width: max-content;
   justify-content: center;
   font-family: sora;
+  background-color: #F6F8FA;
 }
 header .head_section {
   display: flex;
@@ -118,6 +119,16 @@ div.login>div a {
   width: 100%;
   text-align: center;
   padding: .5em;
+}
+header .head_section .top-link ul li {
+  padding: 0 1em 0 1em;
+  display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+  color: rgba(0, 0, 0, 0.424);
+  font-weight: 500;
+  text-decoration: none;
 }
 /* main section */
 #login-body-content {

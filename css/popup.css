@@ -18,7 +18,7 @@
     border-radius:5px;
   }
   .popup {
-    position:absolute;
+    position:fixed;
     top:-150%;
     left:50%;
     opacity:0;
@@ -39,6 +39,7 @@
     transition:top 0ms ease-in-out 0ms,
                opacity 200ms ease-in-out 0ms,
                transform 200ms ease-in-out 0ms;
+   z-index: 20;
   }
   .popup .close-btn {
     position:absolute;
@@ -97,4 +98,29 @@
     color:#1a79ca;
     text-decoration:none;
     font-weight:600;
+  }
+
+.StopScroll {
+	height: 100%;
+	overflow: hidden;
+}
+
+  .backdrop {
+     display: none;
+     position: fixed;
+     width: 100%;
+     height: 100%;
+     top: 0;
+     left: 0;
+     background: rgb(0, 0, 0, 0.8);
+     z-index: 10;
+     pointer-events:none;
+  }
+  .backdrop.active {
+     display: block;
+     pointer-events: all;
+  }
+  .popup-signup a{
+    text-decoration: none;
+    color: #1a79ca;
   }
