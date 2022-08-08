@@ -11,6 +11,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
 
     <link rel="stylesheet" href="../css/fashionmen.css">
+    <link rel="stylesheet" href="../css/popup.css">
 
 </head>
 
@@ -20,10 +21,19 @@
             <div class="logo">
                 Wallet<span>friendly</span>
             </div>
-            <div class="search_bar">
+            <!-- <div class="search_bar">
                 <input type="search" placeholder="Search Product, brand" name="search" id="search_bar">
 
+            </div> -->
+            <div class="top-link">
+                <ul>
+                    <li><a href="">About</a></li>
+                    <li><a href="./team.html">Team</a></li>
+                    <li><a href="">FAQs</a></li>
+                    <li><a href="./contactUs.html">Contact</a></li>
+                </ul>
             </div>
+
             <div class="login">
 
                 <div>
@@ -118,6 +128,14 @@
             <img src="../images/men/Rectangle 12.png" alt="" />
             <img src="../images/men/Rectangle 13.png" alt="" />
             <img src="../images/men/Rectangle 14.png" alt="" /> -->
+
+            <h1 class="hero-section__title">
+                Men's Wear
+            </h1>
+            <div class="search_bar">
+                <span class="material-symbols-outlined">search</span>
+                <input type="search" placeholder="Search Product, brand" name="search" id="search_bar" />
+            </div>
         </section>
 
         <aside class="filter">
@@ -301,6 +319,33 @@
                             <div class="compare">
                                 <a class="compare-btn" href="#">Compare</a>
                             </div>
+                            <div class="popup">
+                                <div class="close-btn">&times;</div>
+                                <div class="form">
+                                    <h2>Log in</h2>
+                                    <div class="form-element">
+                                        <label for="email">Email</label>
+                                        <input type="text" id="email" placeholder="Enter email">
+                                    </div>
+                                    <div class="form-element">
+                                        <label for="password">Password</label>
+                                        <input type="password" id="password" placeholder="Enter password">
+                                    </div>
+                                    <div class="form-element">
+                                        <input type="checkbox" id="remember-me">
+                                        <label for="remember-me">Remember me</label>
+                                    </div>
+                                    <div class="form-element">
+                                        <button>Sign in</button>
+                                    </div>
+                                    <div class="form-element">
+                                        <a href="../template/forgotPassword.html">Forgot password?</a>
+                                    </div>
+                                    <div class="popup-signup">
+                                        Don't have an account? <a href="../template/createAccount.html">Sign up</a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
@@ -318,10 +363,8 @@
 
             <div class="overall-review">
                 <div class="numbers">
-                    <span number>4.5</span>
-                    <p>out of 5</p>
+                    <p>4.5 out of 5</p>
                 </div>
-                <div class="rating">15 Ratings</div>
 
                 <div class="review-container">
                     <div contain>
@@ -452,58 +495,64 @@
                 </div>
                 <div class="Icons">
                     <ul>
-                        <li> <a href="#"><img src="../images/social media icon/mail.svg" alt=""></a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/twitter.svg" alt=""> </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/instagram.svg" alt=""> </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/youtube.svg" alt=""> </a> </li>
+                        <li> <a href="#"><img src="../images/social media icon/mail.svg" alt="mail icon"></a> </li>
+                        <li> <a href="#"> <img src="../images/social media icon/twitter.svg" alt="twitter icon"> </a>
+                        </li>
+                        <li> <a href="#"> <img src="../images/social media icon/facebook.svg" alt="facebook icon"> </a>
+                        </li>
+                        <li> <a href="#"> <img src="../images/social media icon/youtube.svg" alt="youtube icon"> </a>
+                        </li>
                     </ul>
                     <ul>
-                        <li> <a href="#"> <img src="../images/social media icon/reddit.svg" alt=""></a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/telegram.svg" alt=""> </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/tiktok.svg" alt=""> </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/facebook.svg" alt=""></a> </li>
+                        <li> <a href="#"> <img src="../images/social media icon/instagram.svg" alt="instagram icon"></a>
+                        </li>
+                        <li> <a href="#"> <img src="../images/social media icon/telegram.svg" alt="telegram icon"> </a>
+                        </li>
+                        <li> <a href="#"> <img src="../images/social media icon/tiktok.svg" alt="tiktok icon"> </a>
+                        </li>
+                        <li> <a href="#"> <img src="../images/social media icon/reddit.svg" alt="reddit icon"></a> </li>
                     </ul>
             </section>
             <section categories>
                 <p><strong>Categories</strong></p>
                 <ul>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Bone Straight</a></li>
-                    <li><a href="#">Human Hairs</a></li>
-                    <li><a href="#">Laptops</a></li>
-                    <li><a href="#">Mobile Phones</a></li>
-                    <li><a href="#">Men's Wear</a></li>
-                    <li><a href="#">Men's Shoes</a></li>
-                    <li><a href="#">Women's Wear</a></li>
-                    <li><a href="#">Women's Shoes</a></li>
-                    <li><a href="#">Smart TVs</a></li>
+                    <li><a href="../template/hairAccessories.html">Accessories</a></li>
+                    <li><a href="../template/boneStraight.html">Bone Straight</a></li>
+                    <li><a href="../template/humanHair.html">Human Hairs</a></li>
+                    <li><a href="../template/gadgetLaptops.html">Laptops</a></li>
+                    <li><a href="../template/gadgetPhones.html">Mobile Phones</a></li>
+                    <li><a href="../template/fashionMen.html">Men's Wear</a></li>
+                    <li><a href="../template/fashionMen.html">Men's Shoes</a></li>
+                    <li><a href="../template/fashionWomen.html">Women's Wear</a></li>
+                    <li><a href="../template/fashionWomen.html">Women's Shoes</a></li>
+                    <li><a href="../template/gadgettv.html">Smart TVs</a></li>
                 </ul>
             </section>
             <section gadgetBrands>
                 <p><strong>Gadgets Brands</strong></p>
                 <ul>
-                    <li><a href="#">Apple TVs</a></li>
-                    <li><a href="#">Dell</a></li>
-                    <li><a href="#">Hisense</a></li>
-                    <li><a href="#">Infinix Smart TVs</a></li>
-                    <li><a href="#">iPhones</a></li>
-                    <li><a href="#">Oppo</a></li>
-                    <li><a href="#">Samsung</a></li>
-                    <li><a href="#">Spectre</a></li>
-                    <li><a href="#">Polystar</a></li>
-                    <li><a href="#">Watches</a></li>
+                    <li><a href="../template/gadgettv.html">Apple TVs</a></li>
+                    <li><a href="../template/gadgetLaptops.html">Dell</a></li>
+                    <li><a href="../template/gadgettv.html">Hisense</a></li>
+                    <li><a href="../template/gadgettv.html">Infinix Smart TVs</a></li>
+                    <li><a href="../template/gadgetPhones.html">iPhones</a></li>
+                    <li><a href="../template/gadgetPhones.html">Oppo</a></li>
+                    <li><a href="../template/gadgetPhones.html">Samsung</a></li>
+                    <li><a href="../template/fashion.html">Spectre</a></li>
+                    <li><a href="../template/fashionMen.html">Polystar</a></li>
+                    <li><a href="../template/fashionMen.html">Watches</a></li>
                 </ul>
             </section>
             <section popularBrands>
                 <p><strong>Popular Brands</strong></p>
                 <ul>
-                    <li><a href="#">Amazon</a></li>
-                    <li><a href="#">Apple</a></li>
-                    <li><a href="#">Google</a></li>
-                    <li><a href="#">Lewi's</a></li>
-                    <li><a href="#">Microsoft</a></li>
-                    <li><a href="#">7up</a></li>
-                    <li><a href="#">Zara</a></li>
+                    <li><a href="http://www.amazon.com/" target="_blank">Amazon</a></li>
+                    <li><a href="https://www.apple.com/ng/" target="_blank">Apple</a></li>
+                    <li><a href="http://www.google.com/" target="_blank">Google</a></li>
+                    <li><a href="https://www.lewisstores.co.za/" target="_blank">Lewi's</a></li>
+                    <li><a href="https://www.microsoft.com/en-ng" target="_blank">Microsoft</a></li>
+                    <li><a href="https://www.7up.com/" target="_blank">7up</a></li>
+                    <li><a href="https://www.zara.com/" target="_blank">Zara</a></li>
 
                 </ul>
             </section>
@@ -512,12 +561,13 @@
                 <ul>
                     <li><a href="#">About WalletFriendly</a></li>
                     <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Team</a></li>
+                    <li><a href="../template/team.html">Team</a></li>
                     <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Compare Prices</a></li>
-                    <li><a href="#">Latest News</a></li>
-
+                    <li><a href="../template/contactUs.html">Contact Us</a></li>
+                    <li><a href="../template/compareGadgets.html">Compare Prices</a></li>
+                    <li><a href="../template/trendingNews.html">Latest News</a></li>
+                    <li><a href="../template/review.html">Reviews</a></li>
+                    <li><a href="../template/documentation.html">Documentation</a></li>
                 </ul>
             </section>
         </section>
@@ -530,16 +580,11 @@
             <div class="bottom">
                 <p> <strong>Copyright 2022,</strong>WalletFriendly © <strong>All Rights Reserved</strong></p>
             </div>
-            <div class="contact">
-                <a href="#">Contact Us</a>
-                <div class="box"></div>
-                <a href="#">Privacy Policy</a>
-                <div class="box"></div>
-                <a href="#"> Terms of Service</a>
-            </div>
         </section>
 
     </footer>
+
+    <script src="../script/popup.js"></script>
 </body>
 
 </html>

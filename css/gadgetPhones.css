@@ -609,6 +609,7 @@ section[categories] ul li a,
 }
 
 section[bottom] {
+
     display: block;
     justify-content: space-between;
     text-align: center;
@@ -629,6 +630,11 @@ section[bottom] .contact a {
     height: 8px;
     background-color: black;
 } */
+=======
+    text-align: center;
+}
+
+
 
 hr[bottom] {
     margin: 3em 0;
