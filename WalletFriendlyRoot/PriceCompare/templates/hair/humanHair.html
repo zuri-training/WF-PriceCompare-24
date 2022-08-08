@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+{% load static%}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Human Hair</title>
     <!-- <link rel="stylesheet" href="/css/gadgetPhones.css" /> -->
-    <link rel="stylesheet" href="../css/gadgetPhones.css">
+    <link rel="stylesheet" href="{% static 'css/gadgetPhones.css' %}">
     <link rel="stylesheet" href="../css/forgotPassword.css">
     <link
       rel="stylesheet"
@@ -22,111 +24,15 @@
     />
   </head>
   <body>
-      <header>
-
-        <section class="head_section">
-            <div class="logo">
-              Wallet<span>friendly</span>
-            </div>
-            <div class="search_bar">
-                <input type="search" placeholder="Search Product, brand" name="search" id="search_bar">
-                
-            </div>
-            <div class="login">
-
-                <div>
-                <span class="material-symbols-outlined">person</span>     
-                <button class="signInButton">  <a href="./Login.html"> Login </a></button>
-                </div>
-                <div>
-                    <span class="material-symbols-outlined">shopping_cart</span>
-                </div>
-
-
-              
-            </div>
-
-        </section>
-
-
-
-        <nav id="nav_bar">
-
-            <div class="nav-links">
-
-            <ul>
-              
-                <li fashion> <a href="./fashion.html"> Fashion</a>
-                    <div class="subMenu1">
-                            <ul class="linkPages">
-                                <li><a href="./fashionMen.html">Men's Clothing</a></li>
-                                <li><a href="./fashionWomen.html">Women's Clothing</a></li>
-                                <li><a href="./fashionMen.html">Men's Shoes</a></li>
-                                <li><a href="./fashionWomen.html">Women's Shoes</a></li>
-                            </ul>
-
-
-                        </div>
-                    </li>
-
-
-
-                <li gadget> <a href="./gadgetHompage.html"> Gadget</a>
-                
-                         <div class="subMenu1">
-                            <ul class="linkPages">
-                                <li><a href="./gadgetPhones.html">Mobile Phones</a></li>
-                                <li><a href="./gadgetLaptops.html">Laptops</a></li>
-                                <li><a href="./gadgettv.html">Smart TVs</a></li>
-
-                            </ul>
-
-
-                    </div> 
-                
-                </li>
-                <li hair> <a href="./hairHomePage.html" id="hair"> Hair</a>
-                
-                         <div class="subMenu1">
-                            <ul class="linkPages">
-                                <li><a href="./hairHomePage.html">Human Hair</a></li>
-                                <li><a href="./boneStraight.html">Bone Straight</a></li>
-                                <li><a href="./hairAccessories.html">Accessories</a></li>
-
-                            </ul>
-
-
-                    </div> 
-                
-                </li>
-            
-                <li compare> <a href="#"> Compare</a>
-                   <div class="subMenu1">
-                            <ul class="linkPages">
-                                <li><a href="#">By Price</a></li>
-                                <li><a href="#">By Brand</a></li>
-                                <li><a href="#">By Rating</a></li>
-
-                            </ul>
-
-
-                    </div> 
-                </li>
-            </ul>
-        </div>
-
-        </nav>
-
-    </header>
-
+    {% block maincontent %}
     <main>
       <section class="hero-section">
-        <img src="../images/human hair/Rectangle 9 (2).png" alt="" />
-        <img src="../images/human hair/Rectangle 10 (2).png" alt="" />
-        <img src="../images/human hair/Rectangle 11 (2).png" alt="" />
-        <img src="../images/human hair/Rectangle 12 (2).png" alt="" />
-        <img src="../images/human hair/Rectangle 13 (2).png" alt="" />
-        <img src="../images/human hair/Rectangle 14 (2).png" alt="" />
+        <img src="{% static "/images/accesories/Rectangle 9 (2).png" %}" alt="" />
+        <img src="{% static "/images/accesories/Rectangle 10 (2).png" %}" alt="" />
+        <img src="{% static "/images/accesories/Rectangle 11 (2).png" %}" alt="" />
+        <img src="{% static "/images/accesories/Rectangle 12 (2).png" %}" alt="" />
+        <img src="{% static "/images/accesories/Rectangle 13 (2).png" %}" alt="" />
+        <img src="{% static "/images/accesories/Rectangle 14 (2).png" %}" alt="" />
       </section>
 
       <aside class="filter">
@@ -181,7 +87,7 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="../images/human hair/image 33.png" alt="" />
+                <img src="{% static "/images/human hair/image 33.png" %}" alt="" />
               </div>
               <div>
                 <h4>300% Raw straight <br />4 x 4 closure</h4>
@@ -194,7 +100,7 @@
             <div class="box">
               <div>
                 <img
-                  src="../images/human hair/image-22.png"
+                  src="{% static "/images/human hair/image-22.png" %}"
                   alt="Double Drawn 3 x 6 Bob Wig"
                 />
               </div>
@@ -209,7 +115,7 @@
             <div class="box">
               <div>
                 <img
-                  src="../images/human hair/image 24-2.png"
+                  src="{% static "/images/human hair/image 24-2.png" %}"
                   alt="Water wave Compact Frontal Wig"
                 />
               </div>
@@ -233,7 +139,7 @@
             <div class="box">
               <div>
                 <img
-                  src="../images/human hair/image 26.png"
+                  src="{% static "/images/human hair/image 26.png" %}"
                   alt="Double drawn Bone straight"
                 />
               </div>
@@ -248,7 +154,7 @@
             <div class="box">
               <div>
                 <img
-                  src="../images/human hair/image 25.png"
+                  src="{% static "/images/human hair/image 25.png" %}"
                   alt="Layered Bone Straight Wig"
                 />
               </div>
@@ -263,7 +169,7 @@
             <div class="box">
               <div>
                 <img
-                  src="../images/human hair/image 24.png"
+                  src="{% static "/images/human hair/image 24.png" %}"
                   alt="Double drawn Bone straight Hair Bundles"
                 />
               </div>
@@ -287,7 +193,7 @@
             <div class="box">
               <div>
                 <img
-                  src="../images/human hair/image 26 (2).png"
+                  src="{% static "/images/human hair/image 26 (2).png" %}"
                   alt="Got2b Glue Set"
                 />
               </div>
@@ -301,7 +207,7 @@
             </div>
             <div class="box">
               <div>
-                <img src="../images/human hair/image 25-1.png" alt="Ghost bond" />
+                <img src="{% static "/images/human hair/image 25-1.png" %}" alt="Ghost bond" />
               </div>
               <div>
                 <h4>Ombré Silky Straight 14’’</h4>
@@ -313,7 +219,7 @@
             </div>
             <div class="box">
               <div>
-                <img src="../images/human hair/image 24-1.png" alt="Milky Way Human Hair Blend" />
+                <img src="{% static "/images/human hair/image 24-1.png" %}" alt="Milky Way Human Hair Blend" />
               </div>
               <div>
                 <h4>Milky Way Human Hair Blend</h4>
@@ -333,7 +239,7 @@
             <div class="box">
               <div>
                 <img
-                  src="../images/human hair/image 47.png"
+                  src="{% static "/images/human hair/image 47.png" %}"
                   alt="Straightener + Hair Oil"
                 />
               </div>
@@ -345,7 +251,7 @@
             <div class="box">
               <div>
                 <img
-                  src="../images/human hair/image 47-1.png"
+                  src="{% static "/images/human hair/image 47-1.png" %}"
                   alt="Pixie cut Frontal Lace Wig"
                 />
               </div>
@@ -357,236 +263,7 @@
           </div>
         </section>
       </div>
-
-    </main>
-    <section reviews>
-    <div class="review-section">
-      <h2>Ratings and Reviews</h2>
-
-      <div class="overall-review">
-        <div class="numbers">
-          <span number>4.5</span>
-          <p>out of 5</p>
-        </div>
-        <div class="rating">15 Ratings</div>
-
-        <div class="review-container">
-          <div contain>
-            <div class="stars-container">
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-              </div>
-              <div class="star">
-                <i class="fas fa-star"></i>
-              </div>
-            </div>
-            <div class="progress-container">
-              <div class="progress-bar">
-                <div class="progress-bar-fill first"></div>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-bar-fill second"></div>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-bar-fill third"></div>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-bar-fill fourth"></div>
-              </div>
-              <div class="progress-bar">
-                <div class="progress-bar-fill fifth"></div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      <div class="profile">
-        <div class="pro-contain">
-          <div class="profile-pic">
-            <img src="../images/model.png" alt="profile-pic" />
-          </div>
-          <div class="content">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-            </div>
-            <p>Joe</p>
-            <p>joelawrence@gmail.com</p>
-            <address>California, USA</address>
-            <h4>Great App for shopping</h4>
-          </div>
-        </div>
-        <div class="time">
-          <p>2 days ago...</p>
-        </div>
-      </div>
-    </div>
-    <div class="profile">
-      <div class="pro-contain">
-        <div class="profile-pic">
-          <img src="../images/model1.png" alt="profile-pic" />
-        </div>
-        <div class="content">
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>Mary</p>
-          <p>maryrandy@gmail.com</p>
-          <address>Lagos, Nigeria</address>
-          <h4>I've been using this app for so long and I love it</h4>
-        </div>
-      </div>
-      <div class="time">
-        <p>15 days ago...</p>
-      </div>
-    </div>
-    <div class="profile">
-      <div class="pro-contain">
-        <div class="profile-pic">
-          <img src="../images/model2.png" alt="profile-pic" />
-        </div>
-        <div class="content">
-          <div class="star">
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-            <i class="fas fa-star"></i>
-          </div>
-          <p>Bimbo</p>
-          <p>missbimbo@gmail.com</p>
-          <address>Abuja, Nigeria</address>
-          <h4>
-            I love it, very easy to use and have lots of affordable products
-          </h4>
-        </div>
-      </div>
-      <div class="time">
-        <p>1 month ago...</p>
-      </div>
-    </div>
-  </section>
-
-    <footer>
-            <section class="footerContainer">
-    
-            <section class="Social_Icons">
-                <div class="footLogo">
-                    Wallet<span>friendly</span>
-                </div>
-                <div class="Icons">
-                    <ul>
-                        <li> <a href="#"><img src="../images/social media icon/mail.svg" alt=""></a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/twitter.svg" alt="">  </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/instagram.svg" alt=""> </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/youtube.svg" alt=""> </a> </li>
-                    </ul>
-                      <ul>
-                        <li> <a href="#"> <img src="../images/social media icon/reddit.svg" alt=""></a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/telegram.svg" alt="">  </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/tiktok.svg" alt="">  </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/facebook.svg" alt=""></a> </li>
-                    </ul>
-                </section>
-                   <section categories>
-                <p><strong>Categories</strong></p>
-                <ul>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Bone Straight</a></li>
-                    <li><a href="#">Human Hairs</a></li>
-                    <li><a href="#">Laptops</a></li>
-                    <li><a href="#">Mobile Phones</a></li>
-                    <li><a href="#">Men's Wear</a></li>
-                    <li><a href="#">Men's Shoes</a></li>
-                    <li><a href="#">Women's Wear</a></li>
-                    <li><a href="#">Women's Shoes</a></li>
-                    <li><a href="#">Smart TVs</a></li>
-                </ul>
-            </section>
-                <section gadgetBrands>
-                    <p><strong>Gadgets Brands</strong></p>
-                    <ul>
-                        <li><a href="#">Apple TVs</a></li>
-                        <li><a href="#">Dell</a></li>
-                        <li><a href="#">Hisense</a></li>
-                        <li><a href="#">Infinix Smart TVs</a></li>
-                        <li><a href="#">iPhones</a></li>
-                        <li><a href="#">Oppo</a></li>
-                        <li><a href="#">Samsung</a></li>
-                        <li><a href="#">Spectre</a></li>
-                        <li><a href="#">Polystar</a></li>
-                        <li><a href="#">Watches</a></li>
-                    </ul>
-                </section>
-                <section popularBrands>
-                    <p><strong>Popular Brands</strong></p>
-                    <ul>
-                        <li><a href="#">Amazon</a></li>
-                        <li><a href="#">Apple</a></li>
-                        <li><a href="#">Google</a></li>
-                        <li><a href="#">Lewi's</a></li>
-                        <li><a href="#">Microsoft</a></li>
-                        <li><a href="#">7up</a></li>
-                        <li><a href="#">Zara</a></li>
-
-                    </ul>
-                </section>
-                <section About>
-                    <p><strong>About</strong></p>
-                    <ul>
-                        <li><a href="#">About WalletFriendly</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Compare Prices</a></li>
-                        <li><a href="#">Latest News</a></li>
-
-                    </ul>
-                </section>
-            </section>
-
-
-            <hr bottom>
-
-            <section bottom>
-
-                <div class="bottom">
-                    <p> <strong>Copyright 2022,</strong>WalletFriendly © <strong>All Rights Reserved</strong></p>
-                </div>
-                <div class="contact">
-                    <a href="#">Contact Us</a>
-                    <div class="box"></div>
-                    <a href="#">Privacy Policy</a>
-                    <div class="box"></div>
-                    <a href="#"> Terms of Service</a>
-                </div>
-            </section>
-
-        </footer>
+      {% endblock maincontent %}
+   
   </body>
 </html>

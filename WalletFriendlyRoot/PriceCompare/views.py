@@ -28,7 +28,7 @@ def fashionmenauth(request):
 def fashionwomen(request):
     return render(request, 'fashion/fashionWomen.html')
 
-def gadgets(request):
+def gadget(request):
     return render(request, 'gadget/gadgetHomepage.html')
 
 def laptop(request):
@@ -59,4 +59,4 @@ def humanhairauth(request):
     return render(request, 'hair/humanhairAuth.html')
 
 def comparegadget(request):
-    return render(request, 'compare/compareGadget.html')
+    return render(request, 'compare/compareGadgets.html')

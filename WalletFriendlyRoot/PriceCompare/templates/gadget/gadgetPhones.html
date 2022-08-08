@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gadget Phones</title>
-    <link rel="stylesheet" href="../css/gadgetPhones.css" />
+    <link rel="stylesheet" href="{% static 'css/gadgetPhones.css' %}"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -18,80 +20,7 @@
   </head>
 
   <body>
-    <header>
-      <section class="head_section">
-        <div class="logo">Wallet<span>friendly</span></div>
-        <!-- <div class="search_bar">
-          <input
-            type="search"
-            placeholder="Search Product, brand"
-            name="search"
-            id="search_bar"
-          />
-        </div> -->
-        <div class="login">
-          <div>
-            <span class="material-symbols-outlined">person</span>
-            <button class="signInButton"><a href="#"> Login </a></button>
-          </div>
-          <div>
-            <span class="material-symbols-outlined">shopping_cart</span>
-          </div>
-        </div>
-      </section>
-
-      <nav id="nav_bar">
-        <div class="nav-links">
-          <ul>
-            <li fashion>
-              <a href="#"> Fashion</a>
-              <div class="subMenu1">
-                <ul class="linkPages">
-                  <li><a href="#">Men's Clothing</a></li>
-                  <li><a href="#">Women's Clothing</a></li>
-                  <li><a href="#">Men's Shoes</a></li>
-                  <li><a href="#">Women's Shoes</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <li gadget>
-              <a href="#"> Gadget</a>
-
-              <div class="subMenu1">
-                <ul class="linkPages">
-                  <li><a href="#">Mobile Phones</a></li>
-                  <li><a href="#">Laptops</a></li>
-                  <li><a href="#">Smart TVs</a></li>
-                </ul>
-              </div>
-            </li>
-            <li hair>
-              <a href="#"> Hair</a>
-
-              <div class="subMenu1">
-                <ul class="linkPages">
-                  <li><a href="#">Human Hair</a></li>
-                  <li><a href="#">Bone Straight</a></li>
-                  <li><a href="#">Accessories</a></li>
-                </ul>
-              </div>
-            </li>
-
-            <li compare>
-              <a href="#"> Compare</a>
-              <div class="subMenu1">
-                <ul class="linkPages">
-                  <li><a href="#">By Price</a></li>
-                  <li><a href="#">By Brand</a></li>
-                  <li><a href="#">By Rating</a></li>
-                </ul>
-              </div>
-            </li>
-          </ul>
-        </div>
-      </nav>
-    </header>
+    {% block maincontent %}
     <main>
       <section class="hero-section">
         <!-- <img src="/display.jpg" class="display" alt=""> -->
@@ -164,7 +93,7 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="../images/gadget and phones/Frame 102.png" alt="" />
+                <img src="{% static "/images/gadget and phones/Frame 102.png" }" alt="" />
               </div>
               <div>
                 <h4>Iphone 13 128GB</h4>
@@ -177,7 +106,7 @@
             </div>
             <div class="box">
               <div>
-                <img src="../images/gadget and phones/Frame 103.png" alt="" />
+                <img src="{% static "/images/gadget and phones/Frame 103.png" %}" alt="" />
               </div>
               <div>
                 <h4>Iphone 11 64GB</h4>
@@ -189,7 +118,7 @@
             </div>
             <div box class="box">
               <div>
-                <img src="../images/gadget and phones/Frame 104.png" alt="" />
+                <img src="static "/images/gadget and phones/Frame 104.png" %}" alt="" />
               </div>
               <div>
                 <h4>Iphone X</h4>
@@ -211,7 +140,7 @@
             <div class="box">
               <div>
                 <img
-                  src="../images/gadget and phones/details main.png"
+                  src=" static "/images/gadget and phones/details main.png" %}"
                   alt=""
                 />
               </div>
@@ -225,7 +154,7 @@
             </div>
             <div class="box">
               <div>
-                <img src="../images/gadget and phones/details.png" alt="" />
+                <img src="{% static "/images/gadget and phones/details.png" %}" alt="" />
               </div>
               <div>
                 <h4>Samsung Z flip</h4>
@@ -238,7 +167,7 @@
             <div box class="box">
               <div>
                 <img
-                  src="../images/gadget and phones/Rectangle 14.png"
+                  src="{% static "/images/gadget and phones/Rectangle 14.png" %}"
                   alt=""
                 />
               </div>
@@ -261,7 +190,7 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="../images/gadget and phones/details ma.png" alt="" />
+                <img src="{% static "/images/gadget and phones/details ma.png" %}" alt="" />
               </div>
               <div>
                 <h4>Tecno Camon 12</h4>
@@ -273,7 +202,7 @@
             </div>
             <div class="box">
               <div>
-                <img src="../images/gadget and phones/ug.png" alt="" />
+                <img src="{% static "/images/gadget and phones/ug.png" %}" alt="" />
               </div>
               <div>
                 <h4>Tecno Spark 7</h4>
@@ -285,7 +214,7 @@
             </div>
             <div box class="box">
               <div>
-                <img src="../images/gadget and phones/pjj.png" alt="" />
+                <img src="{% static "/images/gadget and phones/pjj.png" %}" alt="" />
               </div>
               <div>
                 <h4>Pop 5</h4>
@@ -307,7 +236,7 @@
             <div class="box">
               <div>
                 <img
-                  src="../images/gadget and phones/iphone 13 pro max 1.png"
+                  src="{% static "/images/gadget and phones/iphone 13 pro max 1.png" %}"
                   alt=""
                 />
               </div>
@@ -318,7 +247,7 @@
             </div>
             <div box class="box">
               <div>
-                <img src="../images/gadget and phones/lkfjg.png" alt="" />
+                <img src="{% static "/images/gadget and phones/lkfjg.png" %}" alt="" />
               </div>
               <div>
                 <p>40% discount</p>
@@ -462,102 +391,7 @@
           </div>
         </div>
       </section>
-         <footer>
-            <section class="footerContainer">
-    
-            <section class="Social_Icons">
-                <div class="footLogo">
-                    Wallet<span>friendly</span>
-                </div>
-                <div class="Icons">
-                    <ul>
-                        <li> <a href="#"><img src="../images/social media icon/mail.svg" alt=""></a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/twitter.svg" alt="">  </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/facebook.svg" alt=""> </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/youtube.svg" alt=""> </a> </li>
-                    </ul>
-                      <ul>
-                        <li> <a href="#"> <img src="../images/social media icon/instagram.svg" alt=""></a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/telegram.svg" alt="">  </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/tiktok.svg" alt="">  </a> </li>
-                        <li> <a href="#"> <img src="../images/social media icon/reddit.svg" alt=""></a> </li>
-                    </ul>
-                </section>
-                   <section categories>
-                <p><strong>Categories</strong></p>
-                <ul>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Bone Straight</a></li>
-                    <li><a href="#">Human Hairs</a></li>
-                    <li><a href="#">Laptops</a></li>
-                    <li><a href="#">Mobile Phones</a></li>
-                    <li><a href="#">Men's Wear</a></li>
-                    <li><a href="#">Men's Shoes</a></li>
-                    <li><a href="#">Women's Wear</a></li>
-                    <li><a href="#">Women's Shoes</a></li>
-                    <li><a href="#">Smart TVs</a></li>
-                </ul>
-            </section>
-                <section gadgetBrands>
-                    <p><strong>Gadgets Brands</strong></p>
-                    <ul>
-                        <li><a href="#">Apple TVs</a></li>
-                        <li><a href="#">Dell</a></li>
-                        <li><a href="#">Hisense</a></li>
-                        <li><a href="#">Infinix Smart TVs</a></li>
-                        <li><a href="#">iPhones</a></li>
-                        <li><a href="#">Oppo</a></li>
-                        <li><a href="#">Samsung</a></li>
-                        <li><a href="#">Spectre</a></li>
-                        <li><a href="#">Polystar</a></li>
-                        <li><a href="#">Watches</a></li>
-                    </ul>
-                </section>
-                <section popularBrands>
-                    <p><strong>Popular Brands</strong></p>
-                    <ul>
-                        <li><a href="#">Amazon</a></li>
-                        <li><a href="#">Apple</a></li>
-                        <li><a href="#">Google</a></li>
-                        <li><a href="#">Lewi's</a></li>
-                        <li><a href="#">Microsoft</a></li>
-                        <li><a href="#">7up</a></li>
-                        <li><a href="#">Zara</a></li>
-
-                    </ul>
-                </section>
-                <section About>
-                    <p><strong>About</strong></p>
-                    <ul>
-                        <li><a href="#">About WalletFriendly</a></li>
-                        <li><a href="#">FAQ</a></li>
-                        <li><a href="#">Team</a></li>
-                        <li><a href="#">Jobs</a></li>
-                        <li><a href="#">Contact Us</a></li>
-                        <li><a href="#">Compare Prices</a></li>
-                        <li><a href="#">Latest News</a></li>
-
-                    </ul>
-                </section>
-            </section>
-
-
-            <hr bottom>
-
-            <section bottom>
-
-                <div class="bottom">
-                    <p> <strong>Copyright 2022,</strong>WalletFriendly © <strong>All Rights Reserved</strong></p>
-                </div>
-                <div class="contact">
-                    <a href="#">Contact Us</a>
-                    <div class="box"></div>
-                    <a href="#">Privacy Policy</a>
-                    <div class="box"></div>
-                    <a href="#"> Terms of Service</a>
-                </div>
-            </section>
-
-        </footer>
+      {% endblock maincontent %}
+        
   </body>
 </html>

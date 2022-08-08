@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -6,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Walletfriendly</title>
    
-    <link rel="stylesheet" href="/css/gadgetPhones.css">
+    <link rel="stylesheet" href="{% static 'css/gadgetPhones.css' %}">
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -15,112 +17,16 @@
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
   </head>
   <body>
-    <header>
-
-      <section class="head_section">
-          <div class="logo">
-            Wallet<span>friendly</span>
-          </div>
-          <div class="search_bar">
-              <input type="search" placeholder="Search Product, brand" name="search" id="search_bar">
-              
-          </div>
-          <div class="login">
-
-              <div>
-              <span class="material-symbols-outlined">person</span>     
-              <button class="signInButton">  <a href="./Login.html"> Login </a></button>
-              </div>
-              <div>
-                  <span class="material-symbols-outlined">shopping_cart</span>
-              </div>
-
-
-            
-          </div>
-
-      </section>
-
-
-
-      <nav id="nav_bar">
-
-          <div class="nav-links">
-
-          <ul>
-            
-              <li fashion> <a href="./fashion.html"> Fashion</a>
-                  <div class="subMenu1">
-                          <ul class="linkPages">
-                              <li><a href="./fashionMen.html">Men's Clothing</a></li>
-                              <li><a href="./fashionWomen.html">Women's Clothing</a></li>
-                              <li><a href="./fashionMen.html">Men's Shoes</a></li>
-                              <li><a href="./fashionWomen.html">Women's Shoes</a></li>
-                          </ul>
-
-
-                      </div>
-                  </li>
-
-
-
-              <li gadget> <a href="./gadgetHompage.html"> Gadget</a>
-              
-                       <div class="subMenu1">
-                          <ul class="linkPages">
-                              <li><a href="./gadgetPhones.html">Mobile Phones</a></li>
-                              <li><a href="./gadgetLaptops.html">Laptops</a></li>
-                              <li><a href="./gadgettv.html">Smart TVs</a></li>
-
-                          </ul>
-
-
-                  </div> 
-              
-              </li>
-              <li hair> <a href="./hairHomePage.html"> Hair</a>
-              
-                       <div class="subMenu1">
-                          <ul class="linkPages">
-                              <li><a href="./hairHomePage.html">Human Hair</a></li>
-                              <li><a href="./boneStraight.html">Bone Straight</a></li>
-                              <li><a href="./hairAccessories.html">Accessories</a></li>
-
-                          </ul>
-
-
-                  </div> 
-              
-              </li>
-          
-              <li compare> <a href="#"> Compare</a>
-                 <div class="subMenu1">
-                          <ul class="linkPages">
-                              <li><a href="#">By Price</a></li>
-                              <li><a href="#">By Brand</a></li>
-                              <li><a href="#">By Rating</a></li>
-
-                          </ul>
-
-
-                  </div> 
-              </li>
-          </ul>
-      </div>
-
-      </nav>
-
-  </header>
-
+  {% block maincontent %}
     <main>
       <section class="hero-section">
         <div style="margin-left: 1.2rem;">
-        <img src="../images/fashion women/Rectangle 10.png" alt="" />
-        <img src="../images/fashion women/Rectangle 11.png" alt="" />
-        <img src="../images/fashion women/Rectangle 12.png" alt="" />
-        <img src="../images/fashion women/Rectangle 13.png" alt="" />
-        <img src="../images/fashion women/Rectangle 14.png" alt="" />
-        <img src="../images/fashion women/Rectangle 15.png" alt="" />
+        <img src="{% static "/images/men/Rectangle 10.png" %}" alt="" />
+        <img src="{% static "/images/men/Rectangle 11.png" %}" alt="" />
+        <img src="{% static "/images/men/Rectangle 12.png" %}" alt="" />
+        <img src="{% static "/images/men/Rectangle 13.png" %}" alt="" />
+        <img src="{% static "/images/men/Rectangle 14.png" %}" alt="" />
+        <img src="{% static "/images/men/Rectangle 15.png" %}" alt="" />
       </div>
       </section>
 
@@ -174,7 +80,7 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="../images/fashion women/dress.png" alt="" />
+                <img src="{% static "/images/fashion women/dress.png" %}" alt="" />
               </div>
               <div>
                 <h4>Dresses</h4>
@@ -183,7 +89,7 @@
             </div>
             <div class="box">
               <div>
-                <img src="../images/fashion women/details main.png" alt="" />
+                <img src="{% static "/images/fashion women/details main.png" %}" alt="" />
               </div>
               <div>
                 <h4>Tops/Blouses</h4>
@@ -192,7 +98,7 @@
             </div>
             <div class="box">
               <div>
-                <img src="../images/fashion women/iuy.png" alt="" />
+                <img src="{% static "/images/fashion women/iuy.png" %}" alt="" />
               </div>
               <div>
                 <h4>Skirts</h4>
@@ -210,7 +116,7 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="../images/fashion women/Corporate Elegant.jpeg" alt="" />
+                <img src="{% static "/images/fashion women/Corporate Elegant.jpeg" %}" alt="" />
               </div>
               <div>
                 <h4>Corporate Elegant 
@@ -220,7 +126,7 @@
             </div>
             <div class="box">
               <div>
-                <img src="../images/fashion women/Sleeveless Woman.jpeg" alt="" />
+                <img src="{% static "/images/fashion women/Sleeveless Woman.jpeg" %}" alt="" />
               </div>
               <div>
                 <h4>Sleeveless Woman
@@ -230,7 +136,7 @@
             </div>
             <div class="box">
               <div>
-                <img src="../images/fashion women/Womens Dresses.jpeg" alt="" />
+                <img src="{% static "/images/fashion women/Womens Dresses.jpeg" %}" alt="" />
               </div>
               <div>
                 <h4>Skater Royal 
@@ -249,7 +155,7 @@
           <div class="shoes">
               <div class="shoes-box">
                   <div>
-                      <img src="../images/fashion women/top.png" alt="" />
+                      <img src="{% static "/images/fashion women/top.png" %}" alt="" />
                   </div>
                   <div class="shoe-content">
                       <h4>Women's Crocodile Patterned Pointed Stiletto Heel</h4>
@@ -258,7 +164,7 @@
               </div>
               <div class="shoes-box">
                   <div>
-                      <img src="../images/fashion women/opentop.png" alt="" />
+                      <img src="{% static "/images/fashion women/opentop.png" %}" alt="" />
                   </div>
                   <div class="shoe-content">
                       <h4>Dark Brown Court Shoe</h4>
@@ -276,7 +182,7 @@
           <div class="shoes">
               <div class="shoes-box">
                   <div>
-                      <img src="../images/fashion women/shoe.jpeg" alt="" />
+                      <img src="{% static "/images/fashion women/shoe.jpeg" %}" alt="" />
                   </div>
                   <div class="shoe-content">
                       <h4>Butterfly Slippers 
@@ -286,7 +192,7 @@
               </div>
               <div class="shoes-box">
                   <div>
-                      <img src="../images/fashion women/slip.jpeg" alt="" />
+                      <img src="{% static "/images/fashion women/slip.jpeg" %}" alt="" />
                   </div>
                   <div class="shoe-content">
                       <h4>Birkenstock Flat
@@ -302,103 +208,6 @@
       </section>
       </div>
     </main>
-
-    <footer>
-      <section class="footerContainer">
-
-      <section class="Social_Icons">
-          <div class="footLogo">
-              Wallet<span>friendly</span>
-          </div>
-          <div class="Icons">
-              <ul>
-                  <li> <a href="#"><img src="../images/social media icon/mail.svg" alt=""></a> </li>
-                  <li> <a href="#"> <img src="../images/social media icon/twitter.svg" alt="">  </a> </li>
-                  <li> <a href="#"> <img src="../images/social media icon/instagram.svg" alt=""> </a> </li>
-                  <li> <a href="#"> <img src="../images/social media icon/youtube.svg" alt=""> </a> </li>
-              </ul>
-                <ul>
-                  <li> <a href="#"> <img src="../images/social media icon/reddit.svg" alt=""></a> </li>
-                  <li> <a href="#"> <img src="../images/social media icon/telegram.svg" alt="">  </a> </li>
-                  <li> <a href="#"> <img src="../images/social media icon/tiktok.svg" alt="">  </a> </li>
-                  <li> <a href="#"> <img src="../images/social media icon/facebook.svg" alt=""></a> </li>
-              </ul>
-          </section>
-             <section categories>
-          <p><strong>Categories</strong></p>
-          <ul>
-              <li><a href="#">Accessories</a></li>
-              <li><a href="#">Bone Straight</a></li>
-              <li><a href="#">Human Hairs</a></li>
-              <li><a href="#">Laptops</a></li>
-              <li><a href="#">Mobile Phones</a></li>
-              <li><a href="#">Men's Wear</a></li>
-              <li><a href="#">Men's Shoes</a></li>
-              <li><a href="#">Women's Wear</a></li>
-              <li><a href="#">Women's Shoes</a></li>
-              <li><a href="#">Smart TVs</a></li>
-          </ul>
-      </section>
-          <section gadgetBrands>
-              <p><strong>Gadgets Brands</strong></p>
-              <ul>
-                  <li><a href="#">Apple TVs</a></li>
-                  <li><a href="#">Dell</a></li>
-                  <li><a href="#">Hisense</a></li>
-                  <li><a href="#">Infinix Smart TVs</a></li>
-                  <li><a href="#">iPhones</a></li>
-                  <li><a href="#">Oppo</a></li>
-                  <li><a href="#">Samsung</a></li>
-                  <li><a href="#">Spectre</a></li>
-                  <li><a href="#">Polystar</a></li>
-                  <li><a href="#">Watches</a></li>
-              </ul>
-          </section>
-          <section popularBrands>
-              <p><strong>Popular Brands</strong></p>
-              <ul>
-                  <li><a href="#">Amazon</a></li>
-                  <li><a href="#">Apple</a></li>
-                  <li><a href="#">Google</a></li>
-                  <li><a href="#">Lewi's</a></li>
-                  <li><a href="#">Microsoft</a></li>
-                  <li><a href="#">7up</a></li>
-                  <li><a href="#">Zara</a></li>
-
-              </ul>
-          </section>
-          <section About>
-              <p><strong>About</strong></p>
-              <ul>
-                  <li><a href="#">About WalletFriendly</a></li>
-                  <li><a href="#">FAQ</a></li>
-                  <li><a href="#">Team</a></li>
-                  <li><a href="#">Jobs</a></li>
-                  <li><a href="#">Contact Us</a></li>
-                  <li><a href="#">Compare Prices</a></li>
-                  <li><a href="#">Latest News</a></li>
-
-              </ul>
-          </section>
-      </section>
-
-
-      <hr bottom>
-
-      <section bottom>
-
-          <div class="bottom">
-              <p> <strong>Copyright 2022,</strong>WalletFriendly © <strong>All Rights Reserved</strong></p>
-          </div>
-          <div class="contact">
-              <a href="#">Contact Us</a>
-              <div class="box"></div>
-              <a href="#">Privacy Policy</a>
-              <div class="box"></div>
-              <a href="#"> Terms of Service</a>
-          </div>
-      </section>
-
-  </footer>
+    {% endblock maincontent %}
 </body>
 </html>

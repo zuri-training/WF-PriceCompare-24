@@ -1,3 +1,5 @@
+{% extends "base.html" %}
+{% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -5,7 +7,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gadget Phones</title>
-    <link rel= "stylesheet" href="../css/gadgetPhones.css" />
+    <link rel= "stylesheet" href="{% static 'css/gadgetPhones.css' %}"/>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -13,13 +15,14 @@
   </head>
   <body>
     <main>
+      {% block maincontent %}
       <section class="hero-section">
-        <img src="/images/gadget and phones/Rectangle 9.jpg" alt="" />
-        <img src="/images/gadget and phones/Rectangle 10.jpg" alt="" />
-        <img src="/images/gadget and phones/Rectangle 11.jpg" alt="" />
-        <img src="/images/gadget and phones/Rectangle 12.jpg" alt="" />
-        <img src="/images/gadget and phones/Rectangle 13.jpg" alt="" />
-        <img src="/images/gadget and phones/Rectangle 14.jpg" alt="" />
+        <img src="{% static "/images/gadget and phones/Rectangle 9.jpg" %}" alt="" />
+        <img src="{% static "/images/gadget and phones/Rectangle 10.jpg" %}" alt="" />
+        <img src="{% static "/images/gadget and phones/Rectangle 11.jpg" %}" alt="" />
+        <img src="{% static "/images/gadget and phones/Rectangle 12.jpg" %}" alt="" />
+        <img src="{% static "/images/gadget and phones/Rectangle 13.jpg" %}" alt="" />
+        <img src="{% static "/images/gadget and phones/Rectangle 14.jpg" %}" alt="" />
       </section>
 
       <aside class="filter">
@@ -237,5 +240,6 @@
         <i class="fas fa-star"></i>
       </section>
     </main>
+    {% endblock maincontent %}
   </body>
 </html>
