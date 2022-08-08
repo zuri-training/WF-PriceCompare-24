@@ -15,6 +15,7 @@
 body {
     font-family: "Sora", sans-serif;
     position: relative;
+    background-color: rgba(246, 248, 250, 1);
 }
 
 .material-symbols-outlined {
