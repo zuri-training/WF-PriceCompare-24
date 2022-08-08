@@ -1,22 +1,3 @@
-@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap");
-
-:root {
-  --main-color: #fefefe;
-  --load-color: #151f7f;
-  --secondary-color: #949efe;
-}
-
-* {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-}
-
-body {
-  font-family: "Sora", sans-serif;
-  position: relative;
-}
-
 .men-content {
   border: 1px solid var(--secondary-color);
   padding: 1rem;
@@ -136,7 +117,7 @@ body {
 }
 
 main #GAD-tv {
-  /* background-image: url("../images/gadget and phones/SAMSUNG 1.png"); */
+  background-image: url("../images/gadget and phones/SAMSUNG 1.png");
   background-size: cover;
 }
 
@@ -162,7 +143,7 @@ header .head_section .top-link ul li a {
 }
 
 main .hero-section {
-  /* background: url(../images/men/bg-img.png); */
+  background: url(../images/fashionwomen/fashionWomen.jpeg);
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 22rem;
@@ -172,4 +153,13 @@ main .hero-section {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+section[categories] ul li a:hover,
+[gadgetBrands] ul li a:hover,
+[popularBrands] ul li a:hover,
+[about] ul li a:hover {
+  color: var(--load-color);
+  font-weight: 600;
+  transition: 0.3s;
 }
