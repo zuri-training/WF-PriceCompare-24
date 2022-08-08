@@ -26,7 +26,6 @@ body {
   max-width: max-content;
   justify-content: center;
   font-family: sora;
-  background-color: #f6f8fa;
 }
 
 header .head_section {
@@ -37,9 +36,6 @@ header .head_section {
   align-items: center;
 }
 
-.linkPages {
-  z-index: 1;
-}
 header .search_bar #search_bar {
   height: 2.4em;
   width: 23em;
@@ -49,14 +45,15 @@ header .search_bar #search_bar {
   padding: 0 0.5em;
 }
 
-header .head_section .logo img {
+/* header .head_section .logo img {
   width: 70px;
   height: 55px;
   object-fit: contain;
-}
+} */
 
 div.login {
   display: flex;
+
   align-content: center;
   width: 8em;
   justify-content: space-between;
@@ -138,32 +135,169 @@ div.login > div a {
   padding: 0.5em;
 }
 
-header .head_section .top-link ul li {
-  padding: 0 1em 0 1em;
-  display: inline-block;
+section[heroSection] {
+  padding-top: 1em;
 }
 
-header .head_section .top-link ul li a {
-  color: rgba(0, 0, 0, 0.424);
-  font-weight: 500;
-  text-decoration: none;
+section[heroSection] {
+  display: flex;
+  gap: 3rem;
+  justify-content: space-between;
+  width: 100%;
 }
-/* main seaction */
+
+section[heroSection] div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+}
+
+div[firstBox],
+div[secondBox] {
+  border: 1px solid var(--secondary-color);
+  border-radius: 8px;
+}
+
+img[pop1],
+img[pop2],
+img[pop3] {
+  padding: 1em;
+}
+
+img[pop3] {
+  height: 16em;
+}
+
+p#brand {
+  color: var(--load-color);
+  font-size: larger;
+  font-weight: 800;
+}
+
+section[heroSection] div[firstBox],
+div[secondBox] {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+section[heroSection] div[firstBox] #img1 {
+  width: 80%;
+  margin: 0 auto;
+  padding: 1em;
+  height: 100%;
+  object-fit: contain;
+}
+
+div[firstBox] > div {
+  justify-content: center;
+  align-items: center;
+}
+
+section[heroSection] div[firstBox] > div {
+  padding: 1em;
+}
+
+div[secondBox] div p {
+  font-size: 13px;
+  width: 100%;
+}
+
+div[firstBox] div div p[cross] {
+  position: relative;
+}
+
+div[firstBox] div div p[cross]::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  top: 0.5em;
+  height: 2px;
+  background-color: red;
+}
+
+div[firstBox] h2 {
+  text-align: center;
+}
+
+div[firstBox] > div > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  max-width: fit-content;
+}
+
+section[heroSection] div[secondBox] #image-one img,
+section[heroSection] div[secondBox] #image-two img {
+  width: 8rem;
+  margin: 0 auto;
+  /* margin-bottom: 5em; */
+}
+
+section[heroSection] div[secondBox] #image-one h5 {
+  font-size: 13px;
+  font-weight: bolder;
+}
+
+section[heroSection] div[secondBox] {
+  display: flex;
+  flex-direction: row;
+  /* justify-content: space-around; */
+
+  gap: 3rem;
+}
+
+div[secondBox] #image-two div {
+  display: block;
+}
+
+div[secondBox] #image-two img {
+  padding-bottom: 1.5em;
+}
+
+div[secondBox] #image-one,
+#image-two {
+  /* display: flex; */
+  flex-direction: column;
+  justify-content: center;
+}
+
+div[secondBox] #image-one {
+  padding-left: 0.2em;
+}
+
+#image-one div[specs] {
+  display: flex;
+  justify-content: space-between;
+
+  width: 100%;
+}
+
+div[specs] > div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  justify-content: left;
+}
+
+#image-one div[specs] div h5 {
+  text-align: left;
+  justify-content: left;
+  font-size: 16px;
+}
+
 main {
   display: grid;
   grid-template-areas:
     "slider slider slider slider slider"
-    "filter box box box box"
-    "reviews reviews reviews reviews reviews";
+    "filter box box box box";
   gap: 3rem;
   justify-content: center;
   font-family: "Sora", sans-serif;
-  display: grid;
-  grid-template-areas:
-    "slider slider slider slider slider"
-    "filter box box box box"
-    "reviews reviews reviews reviews reviews";
-  margin-top: 2rem;
+
+  margin-top: 1rem;
   gap: 3rem;
   justify-content: center;
 }
@@ -178,6 +312,56 @@ main .hero-section img {
   width: 11em;
 }
 
+#auth-hero-section {
+  background-image: url("../images/humanHairAuth/istockphoto-1329662476-612x612\ 1.png");
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  width: 100%;
+  height: 341px;
+}
+
+#auth-hero-section-p {
+  font-weight: 700;
+  font-size: 25px;
+  line-height: 150%;
+  color: #fff;
+}
+
+#human-hair-search {
+  width: 405px;
+  padding: 5px;
+  background: #ffffff;
+  border: 1px solid rgba(90, 90, 90, 0.5);
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 6px;
+}
+
+#human-hair-search-input {
+  padding: 7px 5px;
+  border: none;
+  outline: none;
+  font-size: 16px;
+}
+
+#human-hair-search-input::placeholder {
+  color: #a5a6a7;
+  font-size: 16px;
+}
+
+#search-icon {
+  color: #a5a6a7;
+  justify-self: flex-end;
+}
+
+/* #auth-hero-section img {
+  width: 100%;
+} */
 aside.filter {
   grid-area: filter;
   height: fit-content;
@@ -233,7 +417,7 @@ div[container] {
   width: 100%;
 }
 
-section.reviews {
+section[reviews] {
   grid-area: reviews;
 }
 
@@ -257,19 +441,6 @@ h3 {
 .popular div,
 .stores div {
   padding: 4px 15px;
-}
-
-aside.filter div[load-more] {
-  background-color: var(--load-color);
-  width: 100%;
-  padding: 10px;
-  border-radius: 8px;
-  text-align: center;
-}
-
-aside.filter div[load-more] a {
-  color: white;
-  text-decoration: none;
 }
 
 .preview .box div img {
@@ -299,6 +470,7 @@ div[preview] .news-one img,
 }
 
 .box {
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
   border: none;
   width: 13.5rem;
   background-color: var(--main-color);
@@ -364,7 +536,66 @@ div[see_more] a {
   color: var(--load-color);
 }
 
+span[sub] {
+  color: var(--load-color);
+  /* color: #fff; */
+  font-size: 16px;
+  font-weight: 400;
+}
+
+p[hot-price] {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: var(--load-color);
+  font-weight: 800;
+}
+
+/* fashion men  */
+
+.shoes-section {
+  border: 1px solid var(--secondary-color);
+  padding: 1.5rem 1rem;
+  border-radius: 8px;
+  margin-top: 3rem;
+}
+
+.shoes-section h2 {
+  margin-top: 0px;
+  margin-bottom: 1.4em;
+  color: var(--load-color);
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+.shoes-box {
+  display: flex;
+  margin-bottom: 2rem;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.shoe-content {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 1.5rem;
+}
+
+.shoe-content h4 {
+  color: var(--load-color);
+  font-size: large;
+  font-weight: bolder;
+  width: 38%;
+  text-align: center;
+}
+
+.shoe-content p {
+  padding-bottom: 1em;
+  color: var(--secondary-color);
+}
+
 /*footer section*/
+
 footer .footerContainer {
   display: flex;
   margin-top: 5rem;
@@ -406,10 +637,171 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-  text-align: center;
+  display: flex;
+  justify-content: space-between;
 }
+
+section[bottom] .contact {
+  display: flex;
+  align-items: center;
+}
+
+section[bottom] .contact a {
+  padding: 0 10px;
+  text-decoration: none;
+}
+
+.contact div.box {
+  width: 8px;
+  height: 8px;
+  background-color: black;
+}
+
 hr[bottom] {
   margin: 3em 0;
+}
+
+/*hair home page additional style*/
+.hair-preview {
+  justify-content: space-around !important;
+}
+
+.hair-page__box {
+  width: 211px;
+}
+
+.hair-page__box div {
+  text-align: center;
+}
+
+.hair-page__box img {
+  width: 144px !important;
+}
+
+.hot-deal-img img {
+  width: 183px !important;
+}
+
+/* styles for Login Page */
+#login-body-content {
+  width: 100%;
+  max-width: 1200px;
+}
+
+#login-form {
+  padding: 70px 0 0;
+}
+
+.form__title {
+  font-weight: 700;
+  font-size: 18px;
+  color: #1b29a9;
+  padding: 0 0 40px;
+  text-align: center;
+}
+
+.login-label {
+  display: block;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 18px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  padding: 8px 0;
+}
+
+.login__input-box {
+  padding: 0 0 32px;
+}
+
+#email-phone,
+#password {
+  display: block;
+  padding: 24px;
+  gap: 10px;
+  background: #ffffff;
+  border: 1px solid rgba(90, 90, 90, 0.5);
+  border-radius: 8px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+.password--link {
+  display: block;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  text-align: right;
+  padding: 24px 0 0;
+}
+
+.password--link a {
+  font-size: 14px;
+  line-height: 18px;
+  text-decoration: none;
+  color: #1b29a9;
+}
+
+.login-btn {
+  display: block;
+  padding: 32px 24px;
+  background: var(--secondary-color);
+  border: none;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  color: #fff;
+  cursor: pointer;
+}
+
+.form__text {
+  padding: 16px 0;
+  font-weight: 400;
+  font-size: 12px;
+  text-align: center;
+}
+
+.login__option {
+  display: flex;
+  column-gap: 20px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+}
+
+.login-option__link {
+  display: block;
+  padding: 10px;
+  border: 1px solid #1b29a9;
+  border-radius: 8px;
+  width: 100%;
+  text-align: center;
+  text-decoration: none;
+  color: #1b29a9;
+}
+
+.login__create-account {
+  padding: 92px 0 0;
+}
+
+.create-account__link {
+  padding: 32px 24px;
+  border: 1px solid #1b29a9;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 590px;
+  margin: 0 auto;
+  text-align: center;
+}
+
+.create-account__link a {
+  font-weight: 700;
+  font-size: 16px;
+  color: #1b29a9;
+  text-decoration: none;
 }
 
 footer {
@@ -569,67 +961,7 @@ div.compare {
   transition: transform 200ms ease-in-out;
 }
 
-.hero-section .display {
-  width: 100%;
-  height: 70%;
-  object-fit: cover;
+aside .filter {
+  position: sticky;
+  top: 0;
 }
-
-main .hero-section {
-  background-image: url("../images/humanHairAuth/istockphoto-1329662476-612x612\ 1.png");
-  background-repeat: no-repeat;
-  background-size: cover;
-  min-height: 22rem;
-  /* z-index: -1; */
-  /* margin-bottom: -11em; */
-  position: relative;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-/* edited the search bar code  */
-
-div.search_bar {
-  width: 100%;
-  max-width: 26rem;
-  height: 3rem;
-}
-
-.hero-section__title {
-  color: white;
-  font-size: 2rem;
-  padding: 6rem 0 4rem;
-}
-
-#search_bar {
-  font-size: 16px;
-  /* padding: 2rem 1rem; */
-  padding: 5px;
-  border-radius: 16px;
-  outline: none;
-  border: 1px solid white;
-  width: 100%;
-  height: 100%;
-}
-
-#search_bar::placeholder {
-  font-size: 16px;
-}
-
-main section.hero-section {
-  display: flex;
-}
-
-.search_bar {
-  position: relative;
-}
-
-.search_bar span {
-  font-size: 24px;
-  position: absolute;
-  right: 0.5em;
-  color: gray;
-  top: 0.3em;
-}
-
-/* ends here  */
