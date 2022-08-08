@@ -676,22 +676,24 @@ hr[bottom] {
 }
 
 .form__title {
-    font-weight: 700;
-    font-size: 18px;
-    color: #1B29A9;
-    padding: 0 0 40px;
-    text-align: center;
+   font-weight: 700;
+   font-size: 32px;
+   line-height: 48px;
+   color: #1B29A9;
+   text-align: center;
+   padding: 22px;
 }
 
 .login-label {
     display: block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
     width: 100%;
     max-width: 590px;
     margin: 0 auto;
     padding: 8px 0;
+    font-weight: 400;
+   font-size: 14px;
+   line-height: 18px;
+   color: #949EFE;
 }
 
 .login__input-box {
@@ -764,10 +766,14 @@ hr[bottom] {
     text-align: center;
     text-decoration: none;
     color: #1B29A9;
+    font-weight: 600;
+   font-size: 16px;
+   line-height: 20px;
+   color: #1B29A9;
 }
 
 .login__create-account {
-    padding: 92px 0 0;
+    padding: 92px 0;
 }
 
 .create-account__link {
@@ -783,8 +789,10 @@ hr[bottom] {
 .create-account__link a {
     font-weight: 700;
     font-size: 16px;
-    color: #1B29A9;
     text-decoration: none;
+    font-weight: 600;
+   line-height: 20px;
+   color: #1B29A9;
 }
 
 footer {
