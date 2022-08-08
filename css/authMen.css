@@ -63,7 +63,7 @@
     width: 86%;
     margin: 0 auto;
     border-radius: 8px;
-    background-color: var(--secondary-color);
+    background-color: var(--load-color);
     color: var(--main-color) !important;
     font-size: small;
     padding: 0.5rem 0;
@@ -97,7 +97,7 @@
 
 .send-icon,
 .chat-icon {
-    color: var(--secondary-color);
+    color: var(--load-color);
 }
 
 .anchor {
@@ -119,4 +119,38 @@
 main #GAD-tv {
     background-image: url("../images/gadget and phones/SAMSUNG 1.png");
     background-size: cover;
+}
+
+.linkPages {
+    z-index: 1;
+}
+
+header .head_section .top-link ul li {
+    padding: 0 1em 0 1em;
+    display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+    color: rgba(0, 0, 0, 0.424);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.hero-section .display {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+main .hero-section {
+    background: url(../images/men/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 22rem;
+    /* z-index: -1; */
+    /* margin-bottom: -11em; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }

@@ -19,6 +19,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     max-width: max-content;
+    background-color: rgba(246, 248, 250, 1);
 }
 
 
@@ -502,7 +503,7 @@ div[preview] .news-one img,
 
     color: var(--load-color);
     text-align: center;
-    font-size: .9rem;
+    font-size: 16px;
     font-weight: bolder;
     padding: 1em;
 
@@ -732,8 +733,6 @@ div.review-section div.overall-review {
 
 div.review-section div.overall-review .review-container div[contain] {
     display: flex;
-
-
 }
 
 i.fas {
@@ -831,7 +830,7 @@ div.compare {
 .vendors h6 {
     color: var(--secondary-color);
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 12px;
     line-height: 1.7;
 }
 
@@ -857,7 +856,7 @@ div.compare {
 
 .send-icon,
 .chat-icon {
-    color: var(--secondary-color);
+    color: var(--load-color);
 }
 
 .anchor {
@@ -873,9 +872,9 @@ div.compare {
     width: 86%;
     margin: 0 auto;
     border-radius: 8px;
-    background-color: var(--secondary-color);
+    background-color: var(--load-color);
     color: var(--main-color) !important;
-    font-size: small;
+    font-size: 10px;
 }
 
 .special-p:hover,
@@ -887,4 +886,86 @@ div.compare {
 .box_content {
     width: 100%;
     height: 50%;
+}
+
+header .head_section .top-link ul li {
+    padding: 0 1em 0 1em;
+    display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+    color: rgba(0, 0, 0, 0.424);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.hero-section .display {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+main .hero-section {
+    background: url(../images/accesories/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 22rem;
+    /* z-index: -1; */
+    /* margin-bottom: -11em; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* edited the search bar code  */
+
+div.search_bar {
+    width: 100%;
+    max-width: 26rem;
+    height: 3.5rem;
+}
+
+.hero-section__title {
+    color: white;
+    font-size: 2rem;
+    padding: 6rem 0 4rem;
+}
+
+#search_bar {
+    padding: 2rem 1rem;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+#search_bar::placeholder {
+    font-size: 20px;
+}
+
+main section.hero-section {
+    display: flex;
+}
+
+.search_bar {
+    position: relative;
+}
+
+.search_bar span {
+    font-size: 2.5em;
+    position: absolute;
+    right: .5em;
+    color: gray;
+    top: .3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linkPages {
+    z-index: 1;
 }
