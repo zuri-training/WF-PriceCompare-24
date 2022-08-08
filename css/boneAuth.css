@@ -1,0 +1,156 @@
+.men-content {
+  border: 1px solid var(--secondary-color);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.men-content h2 {
+  margin-top: 0px;
+  margin-bottom: 1em;
+  color: var(--load-color);
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+.men-preview {
+  display: flex;
+  gap: 1em;
+}
+
+.men-preview img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.extra {
+  margin-top: 3rem;
+}
+
+.social-share {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.social-share a {
+  text-decoration: none;
+}
+
+.men-box {
+  border: none;
+  width: 13.5rem;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+
+.men-box h4 {
+  color: var(--load-color);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  padding: 1em 0;
+}
+
+.men-box p,
+.special-p {
+  text-align: center;
+  border: none;
+  width: 86%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: var(--load-color);
+  color: var(--main-color) !important;
+  font-size: small;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+.send-icon {
+  transform: rotate(-40deg);
+}
+
+.vendors {
+  margin-bottom: 1rem;
+}
+
+.vendors h6 {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.shoes-box,
+.shoe-content {
+  align-items: center;
+}
+
+.men-preview img:hover {
+  transform: scale(1.025, 1.025);
+  transition: transform 200ms ease-in-out;
+}
+
+.send-icon,
+.chat-icon {
+  color: var(--load-color);
+}
+
+.anchor {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.special-p {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.special-p:hover,
+.special-p:focus-visible {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+main #GAD-tv {
+  /* background-image: url("../images/gadget and phones/SAMSUNG 1.png"); */
+  background-size: cover;
+}
+
+.linkPages {
+  z-index: 1;
+}
+
+header .head_section .top-link ul li {
+  padding: 0 1em 0 1em;
+  display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+  color: rgba(0, 0, 0, 0.424);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.hero-section .display {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+main .hero-section {
+  /* background: url(../images/men/bg-img.png); */
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 22rem;
+  /* z-index: -1; */
+  /* margin-bottom: -11em; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
