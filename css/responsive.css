@@ -2,12 +2,14 @@
     aside {
         display: none;
     }
+
     main {
         grid-template-areas: "slider slider slider slider slider"
             "box box box box box"
             "reviews reviews reviews reviews reviews";
 
     }
+
     .hamburger {
         padding: 0 1em;
     }
@@ -31,9 +33,12 @@
 
 
     main .hero-section {
-        max-width: 80%;
-        background-size: cover;
+        max-width: 70%;
+        background-size: contain;
+        /* width: 100%; */
+        display: block;
         margin: 0 auto;
+
     }
 
 
@@ -49,22 +54,6 @@
         font-size: 1rem;
         padding-right: 1em;
     }
-
-    .footerContainerResponsive{
-        display: block;
-       }
-    .fullScreen{
-        display: none;
-       }
-
-
-    main .hero-section {
-        /* justify-content: center; */
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-
 
     .box {
         padding: 0 1em;
@@ -106,6 +95,7 @@
         width: fit-content;
         gap: 2rem;
         margin-left: -5rem;
+
     }
 
     section[reviews] {
@@ -118,53 +108,67 @@
 
 }
 
-@media screen and (max-width: 780px) {
+@media screen and (max-width: 768px) {
 
-
+    .top-link {
+        display: none;
+    }
 
     div.icons {
         display: block;
     }
 
 
-    .footerContainer{
+    [gadgetBrands],
+    [popularBrands],
+    [about] {
         display: none;
     }
 
     footer {
-        margin: auto;
+
+        margin: 0 auto;
         width: 100%;
-        margin-top: 2rem;
+
     }
 
-    /* .footerContainer {
-        display: flex; 
+    .footerContainer {
+        /* display: flex; */
         width: 100%;
         flex-direction: column-reverse;
         justify-content: space-around;
         margin-left: -30rem;
         padding-left: 8rem;
 
-    } */
 
-    /* .Social_Icons div.Icons ul {
+    }
+
+    .Social_Icons div.Icons ul {
         display: inline;
         display: flex;
-    } */
-    .top-link {
-        display: none;
     }
+
+
 }
 
-@media screen and (max-width: 600px) {
-    .top-link {
-        display: none;
+@media screen and (max-width: 680px) {
+
+
+    header {
+        max-width: 90%;
+        margin: auto;
+
     }
 
-    main .hero-section {
-        width: 100vh;
+    div.search_bar {
+        width: 20rem;
+
     }
-    footer{
-        padding-left: 3rem;
+
+    .search_bar span {
+        font-size: 2rem;
+        top: 1rem;
     }
+
+
 }
