@@ -664,21 +664,21 @@ main section.hero-section {
 	font-size: 16px;
 	line-height: 19px;
 	color: #151f7f;
-   height: 57px;
-   overflow: hidden;
+	height: 57px;
+	overflow: hidden;
 }
 .hair-page__box p {
 	font-weight: 700;
 	font-size: 12px;
 	line-height: 14px;
 	color: #949ffe;
-   padding: 16px   0 0;
+	padding: 16px 0 0;
 }
 
 .hair-page__box img {
 	width: 144px !important;
-   height: 180px;
-   transition: 0.5s;
+	height: 180px;
+	transition: 0.5s;
 }
 
 .hair-page__box img:hover {
@@ -687,11 +687,11 @@ main section.hero-section {
 
 .hot-deal-img img {
 	width: 183px !important;
-   height: 138px;
+	height: 138px;
 }
 
 .compare-btn {
-   cursor: pointer;
+	cursor: pointer;
 }
 
 /* media query for responsiveness */
