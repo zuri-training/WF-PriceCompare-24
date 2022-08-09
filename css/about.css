@@ -11,6 +11,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+
+    margin: 0 auto;
+    max-width: max-content;
+    justify-content: center;
+    font-family: sora;
+    background: #FCFCFD;
+  
+  }
+#nav_bar{
+    width: 100% !important;
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+}
 .heading {
     text-align: center;
     padding: 50px;
@@ -59,25 +73,12 @@
 }
 
 
-body {
-  font-family: "Sora", sans-serif;
-  
-}
-
 
 .material-symbols-outlined {
   color: var(--mainColor);
 }
 
-body {
 
-  margin: 0 auto;
-  max-width: max-content;
-  justify-content: center;
-  font-family: sora;
-  background: #FCFCFD;;
-
-}
 #para {
     color: #949FFE;
     padding-bottom: 30px;
@@ -104,12 +105,15 @@ input, textarea {
 
 .address {
     align-self: flex-end;
+    
 }
 
 .address div {
     display: flex;
     padding: .5em;
     gap: .5rem;
+    padding-right: 60px;
+    font-size: 14px;
 }
 
 .address div span {
