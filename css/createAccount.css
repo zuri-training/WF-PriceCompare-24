@@ -14,7 +14,7 @@
 
 body {
   font-family: "Sora", sans-serif;
-  color: #7C7D7D;
+  position: relative;
 }
 
 .material-symbols-outlined {
@@ -45,6 +45,10 @@ header .head_section {
 
 .head_section .logo span {
   color: black;
+}
+
+.linkPages {
+  z-index: 1;
 }
 
 header .search_bar #search_bar {
@@ -155,10 +159,9 @@ header .head_section .top-link ul li a {
   font-weight: 500;
   text-decoration: none;
 }
-
 /* main section */
 #login-body-content {
-  width: 100%;
+  max-width: max-content;
   max-width: 1200px;
 }
 
