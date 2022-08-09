@@ -431,3 +431,16 @@ header.active {
   color: var(--secondary-color);
 
 }
+
+
+
+
+
+
+@media (max-width:600px){
+  form{
+    max-width: 100%;
+    margin-left: 5rem;
+    margin-right: 5rem;
+  }
+}
