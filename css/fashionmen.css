@@ -847,3 +847,50 @@ header.active {
   color: var(--secondary-color);
 
 }
+
+/* mobile screen footer */
+.Social_Icons div.Icons ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.Social_Icons div.Icons ul li {
+  padding: 5px;
+}
+
+div.Icons ul li {
+  list-style: none;
+}
+
+.categories,
+.about {
+  margin-top: 1rem;
+}
+
+.categories ul li,
+.about ul li {
+  list-style: none;
+  padding-top: 10px
+}
+
+.categories ul li a,
+.about ul li a {
+  text-decoration: none;
+  color: black;
+}
+
+.footerContainerResponsive {
+  display: none;
+}
+
+div.footLogoResponsive {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: var(--load-color);
+}
+
+.footLogoResponsive span {
+  color: black;
+}
