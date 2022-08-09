@@ -9,6 +9,10 @@
             "reviews reviews reviews reviews reviews";
 
     }
+
+    .hamburger {
+        padding: 0 1em;
+    }
 }
 
 
@@ -23,18 +27,23 @@
 
     }
 
+    .main-section {
+        overflow-x: hidden;
+    }
 
 
     main .hero-section {
         max-width: 80%;
+        background-size: contain;
+
     }
 
 
     header {
         display: block;
-        width: max-content;
+        width: 100%;
 
-        margin-left: -4.5rem;
+
 
     }
 
@@ -98,10 +107,52 @@
     }
 
     section[reviews] {
-        width: max-content;
+        max-width: 100vh;
+
 
     }
 
+
+
+}
+
+@media screen and (max-width: 768px) {
+
+
+
+    div.icons {
+        display: block;
+    }
+
+
+    [gadgetBrands],
+    [popularBrands],
+    [about] {
+        display: none;
+    }
+
+    footer {
+        border: 2px solid black;
+        margin: auto;
+        width: 100%;
+
+    }
+
+    .footerContainer {
+        /* display: flex; */
+        width: 100%;
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        margin-left: -30rem;
+        padding-left: 8rem;
+        border: 2px solid red;
+
+    }
+
+    .Social_Icons div.Icons ul {
+        display: inline;
+        display: flex;
+    }
 
 
 }
@@ -114,4 +165,6 @@
     main .hero-section {
         width: 100vh;
     }
+
+
 }
