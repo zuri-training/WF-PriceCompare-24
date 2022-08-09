@@ -692,26 +692,11 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-    display: flex;
-    justify-content: space-between;
+    display: block;
+    text-align: center;
 }
 
-section[bottom] .contact {
-    display: flex;
-    align-items: center;
-}
 
-section[bottom] .contact a {
-    padding: 0 10px;
-    text-decoration: none;
-}
-
-.contact div.box {
-    width: 8px;
-    height: 8px;
-    background-color: black;
-
-}
 
 hr[bottom] {
     margin: 3em 0;
