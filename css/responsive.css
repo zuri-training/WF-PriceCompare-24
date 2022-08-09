@@ -33,8 +33,11 @@
 
 
     main .hero-section {
-        max-width: 80%;
+        max-width: 70%;
         background-size: contain;
+        /* width: 100%; */
+        display: block;
+        margin: 0 auto;
 
     }
 
@@ -51,17 +54,6 @@
         font-size: 1rem;
         padding-right: 1em;
     }
-
-
-
-
-    main .hero-section {
-        /* justify-content: center; */
-        width: 100%;
-        display: block;
-        margin: 0 auto;
-    }
-
 
     .box {
         padding: 0 1em;
@@ -118,7 +110,9 @@
 
 @media screen and (max-width: 768px) {
 
-
+    .top-link {
+        display: none;
+    }
 
     div.icons {
         display: block;
@@ -132,8 +126,8 @@
     }
 
     footer {
-        border: 2px solid black;
-        margin: auto;
+
+        margin: 0 auto;
         width: 100%;
 
     }
@@ -145,7 +139,7 @@
         justify-content: space-around;
         margin-left: -30rem;
         padding-left: 8rem;
-        border: 2px solid red;
+
 
     }
 
@@ -157,13 +151,23 @@
 
 }
 
-@media screen and (max-width: 600px) {
-    .top-link {
-        display: none;
+@media screen and (max-width: 680px) {
+
+
+    header {
+        max-width: 90%;
+        margin: auto;
+
     }
 
-    main .hero-section {
-        width: 100vh;
+    div.search_bar {
+        width: 20rem;
+
+    }
+
+    .search_bar span {
+        font-size: 2rem;
+        top: 1rem;
     }
 
 
