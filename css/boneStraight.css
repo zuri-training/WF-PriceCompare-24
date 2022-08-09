@@ -981,25 +981,18 @@ main section.hero-section {
   top: 0.3em;
 }
 
-<<<<<<< HEAD
 
-=======
 /* ends here  */
 
 /*hamburger menu*/
->>>>>>> 1645fb033af48e7245b855f8daa220fc2d4883f1
 div.icons {
   display: none;
 }
 
 header .icons div,
-<<<<<<< HEAD
 
 header .icons a {
 
-=======
-header .icons a {
->>>>>>> 1645fb033af48e7245b855f8daa220fc2d4883f1
   height: 2rem;
 
   width: 2rem;
@@ -1018,7 +1011,6 @@ header .icons a {
 
   cursor: pointer;
 
-<<<<<<< HEAD
   margin-right: .7rem;
 
 }
@@ -1036,19 +1028,6 @@ header .icons a:hover {
 
 header.active {
 
-=======
-  margin-right: 0.7rem;
-}
-
-header .icons div:hover,
-header .icons a:hover {
-  background: var(--secondary-color);
-
-  color: #fff;
-}
-
-header.active {
->>>>>>> 1645fb033af48e7245b855f8daa220fc2d4883f1
   position: fixed;
 
   top: 0;
@@ -1056,17 +1035,11 @@ header.active {
   left: 0;
 
   z-index: 100;
-<<<<<<< HEAD
 
 }
 
 .navbar {
 
-=======
-}
-
-.navbar {
->>>>>>> 1645fb033af48e7245b855f8daa220fc2d4883f1
   position: fixed;
 
   top: 0;
@@ -1080,7 +1053,6 @@ header.active {
   padding: 3rem;
 
   width: 23rem;
-<<<<<<< HEAD
 
 }
 
@@ -1102,30 +1074,12 @@ header.active {
 
 .navbar .user img {
 
-=======
-}
-
-.navbar.active {
-  left: 0;
-
-  z-index: 1;
-}
-
-.navbar .user {
-  text-align: center;
-
-  margin: 3rem auto;
-}
-
-.navbar .user img {
->>>>>>> 1645fb033af48e7245b855f8daa220fc2d4883f1
   height: 10rem;
 
   width: 10rem;
 
   border-radius: 50%;
 
-<<<<<<< HEAD
   border: .5rem solid var(--main-color);
 
   object-fit: cover;
@@ -1137,25 +1091,12 @@ header.active {
 .navbar .user h4 {
 
   padding-top: .5rem;
-=======
-  border: 0.5rem solid var(--main-color);
-
-  object-fit: cover;
-
-  box-shadow: 4rem 2rem 0 -3rem var(--secondary-color),
-    -4rem -2rem 0 -3rem var(--secondary-color);
-}
-
-.navbar .user h4 {
-  padding-top: 0.5rem;
->>>>>>> 1645fb033af48e7245b855f8daa220fc2d4883f1
 
   color: #333;
 
   font-weight: 500;
 
   font-size: 1.4rem;
-<<<<<<< HEAD
 
 }
 
@@ -1165,22 +1106,12 @@ header.active {
   text-decoration: none;
 
   border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
-=======
-}
-
-.navbar .links a {
-  display: block;
-  text-decoration: none;
-
-  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
->>>>>>> 1645fb033af48e7245b855f8daa220fc2d4883f1
 
   font-size: 1.2rem;
 
   padding: 1rem 0;
 
   color: #333;
-<<<<<<< HEAD
 
 }
 
@@ -1200,21 +1131,6 @@ header.active {
 
 .navbar #close {
 
-=======
-}
-
-.navbar .links a:last-child {
-  border: none;
-}
-
-.navbar .links a:hover {
-  letter-spacing: 0.2rem;
-
-  color: var(--secondary-color);
-}
-
-.navbar #close {
->>>>>>> 1645fb033af48e7245b855f8daa220fc2d4883f1
   position: absolute;
 
   top: 1rem;
@@ -1226,7 +1142,6 @@ header.active {
   cursor: pointer;
 
   color: #333;
-<<<<<<< HEAD
 
 }
 
@@ -1235,12 +1150,3 @@ header.active {
   color: var(--secondary-color);
 
 }
-
-/* ends here  */
-=======
-}
-
-.navbar #close:hover {
-  color: var(--secondary-color);
-}
->>>>>>> 1645fb033af48e7245b855f8daa220fc2d4883f1
