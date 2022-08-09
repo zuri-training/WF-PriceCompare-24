@@ -29,16 +29,23 @@
     font-size: 16px;
     text-align: center;
     color: #949EFE;
-    padding-left: 30px;
-    padding-right: 30px;
+    
+    
+}
+.main-para p {
+    padding-bottom: 20px;
+    width: 70%;
+    margin-left: 200px;
+    justify-content: center;
+    text-align: center;
 }
 .para {
     font-weight: 400;
     font-size: 16px;
     text-align: center;
     color: #949EFE;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 70%;
+    margin-left: 200px;
 }
 .ul {
     padding-top: 40px;
@@ -90,7 +97,7 @@ input, textarea {
     max-width: 100%;
     flex-direction: row;
     align-items: flex-start;
-    padding: 24px;
+    padding-left: 200px;
     gap: 10px;
     justify-content: space-between;
 }
