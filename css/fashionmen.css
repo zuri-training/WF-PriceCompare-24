@@ -325,6 +325,7 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
+    border: 1px solid var(--secondary-color);
     padding: 1.5rem 1rem;
     border-radius: 8px;
     background: white;
@@ -1069,5 +1070,9 @@ div.footLogoResponsive {
         width: 100%;
     }
 
-
+    .iPhone,
+    .samsung,
+    .tecno {
+        border: none;
+    }
 }
