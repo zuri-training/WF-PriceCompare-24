@@ -40,6 +40,7 @@ header .head_section {
 .linkPages {
 	z-index: 1;
 }
+
 header .search_bar #search_bar {
 	height: 2.4em;
 	width: 23em;
@@ -62,16 +63,16 @@ div.login {
 	justify-content: space-between;
 }
 
-div.login > div {
+div.login>div {
 	display: flex;
 }
 
-div.login > div button {
+div.login>div button {
 	background: none;
 	border: none;
 }
 
-div.login > div a {
+div.login>div a {
 	text-decoration: none;
 	color: black;
 	font-size: 14px;
@@ -148,6 +149,7 @@ header .head_section .top-link ul li a {
 	font-weight: 500;
 	text-decoration: none;
 }
+
 /* main seaction */
 main {
 	display: grid;
@@ -408,6 +410,7 @@ section[categories] ul li a,
 section[bottom] {
 	text-align: center;
 }
+
 hr[bottom] {
 	margin: 3em 0;
 }
@@ -597,6 +600,7 @@ main .hero-section {
 	flex-direction: column;
 	align-items: center;
 }
+
 /* edited the search bar code  */
 
 div.search_bar {
@@ -667,6 +671,7 @@ main section.hero-section {
 	height: 57px;
 	overflow: hidden;
 }
+
 .hair-page__box p {
 	font-weight: 700;
 	font-size: 12px;

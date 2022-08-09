@@ -28,10 +28,12 @@ body {
   font-family: sora;
   background-color: #F6F8FA;
 }
-a{
-    text-decoration: none;
-    color: var(--load-color);
+
+a {
+  text-decoration: none;
+  color: var(--load-color);
 }
+
 header .head_section {
   display: flex;
   justify-content: space-evenly;
@@ -39,19 +41,21 @@ header .head_section {
   padding: 1em;
   align-items: center;
 }
-.head_section .logo {
-    font-size: 1.4rem;
-    font-weight: 700;
-    color: var(--load-color);
-  }
-  
-  .head_section .logo span {
-    color: black;
-  }
 
-.linkPages{
+.head_section .logo {
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--load-color);
+}
+
+.head_section .logo span {
+  color: black;
+}
+
+.linkPages {
   z-index: 1;
 }
+
 header .search_bar #search_bar {
   height: 2.4em;
   width: 23em;
@@ -149,28 +153,198 @@ div.login>div a {
   text-align: center;
   padding: .5em;
 }
+
 header .head_section .top-link ul li {
-    padding: 0 1em 0 1em;
-    display: inline-block;
-  }
-  
-  header .head_section .top-link ul li a {
-    color: rgba(0, 0, 0, 0.424);
-    font-weight: 500;
-    text-decoration: none;
-  }
-  
+  padding: 0 1em 0 1em;
+  display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+  color: rgba(0, 0, 0, 0.424);
+  font-weight: 500;
+  text-decoration: none;
+}
+
 /* main */
-main{
-    font-size: 14px;
-    margin-bottom: 5rem;
+main {
+  font-size: 14px;
+  margin-bottom: 5rem;
 }
-.newsImage{
-    margin: 2rem 0 1rem 0;
+
+.newsImage {
+  margin: 2rem 0 1rem 0;
 }
-.pContent{
-    margin-bottom: .5rem;
+
+.pContent {
+  margin-bottom: .5rem;
 }
-.amazon-image{
-    margin: 2.5rem 0 1.5rem 0;
+
+.amazon-image {
+  margin: 2.5rem 0 1.5rem 0;
+}
+
+div.icons {
+  display: none;
+}
+
+header .icons div,
+
+header .icons a {
+
+  height: 2rem;
+
+  width: 2rem;
+
+  font-size: 1rem;
+
+  line-height: 2rem;
+
+  background: rgb(39, 38, 38);
+
+  color: #fff;
+
+  text-align: center;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  margin-right: .7rem;
+
+}
+
+header .icons div:hover,
+
+header .icons a:hover {
+
+  background: var(--secondary-color);
+
+  color: #fff;
+
+
+}
+
+header.active {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: 100;
+
+}
+
+.navbar {
+
+  position: fixed;
+
+  top: 0;
+
+  left: -120%;
+
+  height: 100%;
+
+  background: var(--main-color);
+
+  padding: 3rem;
+
+  width: 23rem;
+
+}
+
+.navbar.active {
+
+  left: 0;
+
+  z-index: 1;
+
+}
+
+.navbar .user {
+
+  text-align: center;
+
+  margin: 3rem auto;
+
+}
+
+.navbar .user img {
+
+  height: 10rem;
+
+  width: 10rem;
+
+  border-radius: 50%;
+
+  border: .5rem solid var(--main-color);
+
+  object-fit: cover;
+
+  box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
+
+}
+
+.navbar .user h4 {
+
+  padding-top: .5rem;
+
+  color: #333;
+
+  font-weight: 500;
+
+  font-size: 1.4rem;
+
+}
+
+.navbar .links a {
+
+  display: block;
+  text-decoration: none;
+
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
+
+  font-size: 1.2rem;
+
+  padding: 1rem 0;
+
+  color: #333;
+
+}
+
+.navbar .links a:last-child {
+
+  border: none;
+
+}
+
+.navbar .links a:hover {
+
+  letter-spacing: .2rem;
+
+  color: var(--secondary-color);
+
+}
+
+.navbar #close {
+
+  position: absolute;
+
+  top: 1rem;
+
+  right: 2rem;
+
+  font-size: 3rem;
+
+  cursor: pointer;
+
+  color: #333;
+
+}
+
+.navbar #close:hover {
+
+  color: var(--secondary-color);
+
 }
