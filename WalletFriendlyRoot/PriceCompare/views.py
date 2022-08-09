@@ -60,3 +60,18 @@ def humanhairauth(request):
 
 def comparegadget(request):
     return render(request, 'compare/compareGadgets.html')
+
+def bonestraightauth(request):
+    return render(request, 'hair/boneStraightAuth.html')
+
+def tvauth(request):
+    return render(request, 'gadget/gadgettvAuth.html')
+
+def trendingnews(request):
+    return render(request, 'trendingNews.html')
+
+def review(request):
+    return render(request, 'review.html')
+
+def contactus(request):
+    return render(request, 'contactUs.html')
