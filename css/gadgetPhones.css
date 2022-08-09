@@ -72,6 +72,10 @@ header .search_bar #search_bar {
   object-fit: contain;
 } */
 
+.head_section a {
+    text-decoration: none;
+}
+
 div.login {
     display: flex;
     align-content: center;
@@ -630,7 +634,6 @@ section[bottom] .contact a {
     background-color: black;
 } */
 
-
 hr[bottom] {
     margin: 3em 0;
 }
@@ -671,12 +674,12 @@ hr[bottom] {
 }
 
 .form__title {
-   font-weight: 700;
-   font-size: 32px;
-   line-height: 48px;
-   color: #1B29A9;
-   text-align: center;
-   padding: 22px;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #1B29A9;
+    text-align: center;
+    padding: 22px;
 }
 
 .login-label {
@@ -686,9 +689,9 @@ hr[bottom] {
     margin: 0 auto;
     padding: 8px 0;
     font-weight: 400;
-   font-size: 14px;
-   line-height: 18px;
-   color: #949EFE;
+    font-size: 14px;
+    line-height: 18px;
+    color: #949EFE;
 }
 
 .login__input-box {
@@ -762,9 +765,9 @@ hr[bottom] {
     text-decoration: none;
     color: #1B29A9;
     font-weight: 600;
-   font-size: 16px;
-   line-height: 20px;
-   color: #1B29A9;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1B29A9;
 }
 
 .login__create-account {
@@ -786,8 +789,8 @@ hr[bottom] {
     font-size: 16px;
     text-decoration: none;
     font-weight: 600;
-   line-height: 20px;
-   color: #1B29A9;
+    line-height: 20px;
+    color: #1B29A9;
 }
 
 footer {
