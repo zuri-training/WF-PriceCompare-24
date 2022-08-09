@@ -59,16 +59,16 @@ div.login {
   justify-content: space-between;
 }
 
-div.login > div {
+div.login>div {
   display: flex;
 }
 
-div.login > div button {
+div.login>div button {
   background: none;
   border: none;
 }
 
-div.login > div a {
+div.login>div a {
   text-decoration: none;
   color: black;
   font-size: 14px;
@@ -189,12 +189,12 @@ section[heroSection] div[firstBox] #img1 {
   object-fit: contain;
 }
 
-div[firstBox] > div {
+div[firstBox]>div {
   justify-content: center;
   align-items: center;
 }
 
-section[heroSection] div[firstBox] > div {
+section[heroSection] div[firstBox]>div {
   padding: 1em;
 }
 
@@ -220,7 +220,7 @@ div[firstBox] h2 {
   text-align: center;
 }
 
-div[firstBox] > div > div {
+div[firstBox]>div>div {
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -274,7 +274,7 @@ div[secondBox] #image-one {
   width: 100%;
 }
 
-div[specs] > div {
+div[specs]>div {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -964,4 +964,170 @@ div.compare {
 aside .filter {
   position: sticky;
   top: 0;
+}
+
+div.icons {
+  display: none;
+}
+
+header .icons div,
+
+header .icons a {
+
+  height: 2rem;
+
+  width: 2rem;
+
+  font-size: 1rem;
+
+  line-height: 2rem;
+
+  background: rgb(39, 38, 38);
+
+  color: #fff;
+
+  text-align: center;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  margin-right: .7rem;
+
+}
+
+header .icons div:hover,
+
+header .icons a:hover {
+
+  background: var(--secondary-color);
+
+  color: #fff;
+
+
+}
+
+header.active {
+
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: 100;
+
+}
+
+.navbar {
+
+  position: fixed;
+
+  top: 0;
+
+  left: -120%;
+
+  height: 100%;
+
+  background: var(--main-color);
+
+  padding: 3rem;
+
+  width: 23rem;
+
+}
+
+.navbar.active {
+
+  left: 0;
+
+  z-index: 1;
+
+}
+
+.navbar .user {
+
+  text-align: center;
+
+  margin: 3rem auto;
+
+}
+
+.navbar .user img {
+
+  height: 10rem;
+
+  width: 10rem;
+
+  border-radius: 50%;
+
+  border: .5rem solid var(--main-color);
+
+  object-fit: cover;
+
+  box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
+
+}
+
+.navbar .user h4 {
+
+  padding-top: .5rem;
+
+  color: #333;
+
+  font-weight: 500;
+
+  font-size: 1.4rem;
+
+}
+
+.navbar .links a {
+
+  display: block;
+  text-decoration: none;
+
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
+
+  font-size: 1.2rem;
+
+  padding: 1rem 0;
+
+  color: #333;
+
+}
+
+.navbar .links a:last-child {
+
+  border: none;
+
+}
+
+.navbar .links a:hover {
+
+  letter-spacing: .2rem;
+
+  color: var(--secondary-color);
+
+}
+
+.navbar #close {
+
+  position: absolute;
+
+  top: 1rem;
+
+  right: 2rem;
+
+  font-size: 3rem;
+
+  cursor: pointer;
+
+  color: #333;
+
+}
+
+.navbar #close:hover {
+
+  color: var(--secondary-color);
+
 }
