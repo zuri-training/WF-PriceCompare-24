@@ -9,7 +9,7 @@
 * [Requirements](#requirements)
 * [Features](#features)
 * [How to Contribute](#how-to-contribute)
-* [Setup & Installation](#setup-&-installation)
+* [Setup and Installation](#setup-and-installation)
 * [Video Demo](#video-demo)
 * [Contributors](#contributors)
 * [Acknowledgment](#acknowledgment)
@@ -70,13 +70,23 @@ Project Status: _in progress_
 
 ## How to Contribute 
 
-## Setup & Installation
+## Setup and Installation 
 
 ## Video Demo
 
 ## Contributors
 
+|__Name__ | __Slack Username__|
+|:--------|:------------------|
+| [Oputa Olivia](https://github.com/oputaolivia)| `Oputa Olivia`|
+| [Nkiru Oduenyi](https://github.com/nkirusteph)| `NkiruOdunenyi`|
+| [Dolapo Mosuro](https://github.com/Dolapo-Mosuro)| `dolapoololade`|
+
 ## Acknowledgment 
+<img src="https://res.cloudinary.com/zuri-team/image/upload/zuriboard/tenant-logo/ms5faj5pae6nd03wazk1.png" width="200" height="50">
+
+Appreciating the [Ingressive For Good X Zuri Team](https://training.zuri.team/) for this wonderful initiative.
+During the course of this program majority of the participants have been stretched beyond their limits going outside of their comfort zone seeking solutions, which has broaden their scope.
 
 ## Team Links
 
