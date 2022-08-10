@@ -12,15 +12,21 @@
 * [Setup & Installation](#setup-&-installation)
 * [Video Demo](#video-demo)
 * [Contributors](#contributors)
-* [Acknowledgement](#acknowledgement)
+* [Acknowledgment](#acknowledgment)
 * [Team Links](#team-links)
 
 ## Overview
-About Us
+__About Us__
 
-Vision
+Wallet friendly is an online platform which compares the prices of products across different platforms.
 
-Mission
+__Vision__
+
+To be among the top 20% companies in the e-commerce industry.
+
+__Mission__
+
+To help buyers get quality goods at the best price.
 
 Project Status: _in progress_
 
@@ -46,7 +52,32 @@ Project Status: _in progress_
 ## Requirements
 
 ## Features
-  `Create Account` Users are able to sign up on wallentfriendly with their email/ phone number/ facebook and password.
+  `Create Account` Users are able to sign up on wallentfriendly with their email, phone number, facebook and password.
+  
+  `Login` Retrieves users sign up details from a database compares the inputted login details and allows authenticated users gain full access to the platform.
+  
+  `Documentation` Users have full access to view and interact with the documentation.
+  
+  `Comment` Authenticated users have the ability to comment about a product.
+  
+  `Share` Authenticated users can share links to a product on Facebook.
+ 
+  `Purchase Page` Links to the stores are made available to authenticated users.
+  
+  `Search Bar` Enables users to search for various products by specifying their desired product.
+  
+  `Responsive` Enables users to access the platform via their various devices without any issues with their display.
+
+## How to Contribute 
+
+## Setup & Installation
+
+## Video Demo
+
+## Contributors
+
+## Acknowledgment 
+
 ## Team Links
 
 - [Project Brief](https://bit.ly/Team24_PriceCompare_Brief)
