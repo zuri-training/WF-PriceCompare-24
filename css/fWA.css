@@ -198,8 +198,23 @@ header .icons a:hover {
   color: #fff;
 }
 
+
+header .icons div:hover,
+
+header .icons a:hover {
+
+  background: var(--secondary-color);
+
+  color: #fff;
+
+
+}
+
 header.active {
+
   position: fixed;
+  margin-right: .7rem;
+  
 
   top: 0;
 
@@ -236,7 +251,25 @@ header.active {
   margin: 3rem auto;
 }
 
+
+.navbar.active {
+
+  left: 0;
+
+  z-index: 1;
+
+}
+
+.navbar .user {
+
+  text-align: center;
+
+  margin: 3rem auto;
+
+}
+
 .navbar .user img {
+
   height: 10rem;
 
   width: 10rem;
@@ -253,6 +286,17 @@ header.active {
 
 .navbar .user h4 {
   padding-top: 0.5rem;
+  border: .5rem solid var(--main-color);
+
+  object-fit: cover;
+
+  box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
+
+}
+
+.navbar .user h4 {
+
+  padding-top: .5rem;
 
   color: #333;
 
@@ -266,6 +310,15 @@ header.active {
   text-decoration: none;
 
   border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+
+}
+
+.navbar .links a {
+
+  display: block;
+  text-decoration: none;
+
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
 
   font-size: 1.2rem;
 
@@ -282,6 +335,22 @@ header.active {
   letter-spacing: 0.2rem;
 
   color: var(--secondary-color);
+}
+
+
+
+.navbar .links a:last-child {
+
+  border: none;
+
+}
+
+.navbar .links a:hover {
+
+  letter-spacing: .2rem;
+
+  color: var(--secondary-color);
+
 }
 
 .navbar #close {
