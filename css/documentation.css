@@ -501,7 +501,7 @@ header .head_section .top-link ul li a {
     display: inline-block;
     width: 100%;
     padding-top: 1rem;
-    text-align: left;
+    text-align: center;
 }
 
 .rating h6 {
@@ -514,8 +514,17 @@ header .head_section .top-link ul li a {
     display: inline-block;
     cursor: pointer;
     margin: 10px;
-    color: rgba(0, 0, 0, 0.6);
-    font-size: 0.6rem;
+    font-size: 4rem;
+}
+
+.like {
+    color: #40C0E7;
+    padding-right: 4rem;
+}
+
+.dislike {
+    color: #F44336;
+
 }
 
 .dislike:hover,
