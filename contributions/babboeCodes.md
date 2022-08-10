@@ -1,5 +1,5 @@
 # Abiola Ayodele - babboeCodes contributions
-This is a lis of the works and issues i did in the  [WF-PriceCompare-24](https://github.com/zuri-training/WF-PriceCompare-24) project.
+This is a list of the works and issues i did in the  [WF-PriceCompare-24](https://github.com/zuri-training/WF-PriceCompare-24) project.
 
 ## Issue-8
 - I started working with the LO-FI from the product designs on the hair home page Html and Css file, <br/>Below is a ink to the issue.
