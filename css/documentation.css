@@ -502,6 +502,8 @@ header .head_section .top-link ul li a {
     width: 100%;
     padding-top: 1rem;
     text-align: center;
+    color: var(--load-color);
+    font-size: 1.3rem;
 }
 
 .rating h6 {
