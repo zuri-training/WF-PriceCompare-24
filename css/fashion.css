@@ -26,6 +26,7 @@ body {
   max-width: max-content;
   justify-content: center;
   font-family: sora;
+  background-color: #f6f8fa;
 }
 
 header .head_section {
