@@ -31,9 +31,9 @@ body {
 
 header .head_section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: rgba(255, 255, 255);
-  padding: 1em;
+  padding: 1em 0px;
   align-items: center;
 }
 
@@ -59,20 +59,20 @@ header .head_section .logo img {
 div.login {
   display: flex;
   align-content: center;
-  width: 8em;
-  justify-content: space-between;
+  /* width: 8em; */
+  /* justify-content: space-between; */
 }
 
-div.login>div {
+div.login > div {
   display: flex;
 }
 
-div.login>div button {
+div.login > div button {
   background: none;
   border: none;
 }
 
-div.login>div a {
+div.login > div a {
   text-decoration: none;
   color: black;
   font-size: 14px;
@@ -641,9 +641,7 @@ div.icons {
 }
 
 header .icons div,
-
 header .icons a {
-
   height: 2rem;
 
   width: 2rem;
@@ -662,23 +660,17 @@ header .icons a {
 
   cursor: pointer;
 
-  margin-right: .7rem;
-
+  margin-right: 0.7rem;
 }
 
 header .icons div:hover,
-
 header .icons a:hover {
-
   background: var(--secondary-color);
 
   color: #fff;
-
-
 }
 
 header.active {
-
   position: fixed;
 
   top: 0;
@@ -686,11 +678,9 @@ header.active {
   left: 0;
 
   z-index: 100;
-
 }
 
 .navbar {
-
   position: fixed;
 
   top: 0;
@@ -704,84 +694,69 @@ header.active {
   padding: 3rem;
 
   width: 23rem;
-
 }
 
 .navbar.active {
-
   left: 0;
 
   z-index: 1;
-
 }
 
 .navbar .user {
-
   text-align: center;
 
   margin: 3rem auto;
-
 }
 
 .navbar .user img {
-
   height: 10rem;
 
   width: 10rem;
 
   border-radius: 50%;
 
-  border: .5rem solid var(--main-color);
+  border: 0.5rem solid var(--main-color);
 
   object-fit: cover;
 
-  box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
-
+  box-shadow: 4rem 2rem 0 -3rem var(--secondary-color),
+    -4rem -2rem 0 -3rem var(--secondary-color);
 }
 
 .navbar .user h4 {
-
-  padding-top: .5rem;
+  padding-top: 0.5rem;
 
   color: #333;
 
   font-weight: 500;
 
   font-size: 1.4rem;
-
 }
 
 .navbar .links a {
-
   display: block;
   text-decoration: none;
 
-  border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
 
   font-size: 1.2rem;
 
   padding: 1rem 0;
 
   color: #333;
-
 }
 
 .navbar .links a:last-child {
-
   border: none;
-
 }
 
 .navbar .links a:hover {
-
-  letter-spacing: .2rem;
+  letter-spacing: 0.2rem;
 
   color: var(--secondary-color);
-
 }
 
 .navbar #close {
-
   position: absolute;
 
   top: 1rem;
@@ -793,13 +768,10 @@ header.active {
   cursor: pointer;
 
   color: #333;
-
 }
 
 .navbar #close:hover {
-
   color: var(--secondary-color);
-
 }
 
 /* ends here  */
