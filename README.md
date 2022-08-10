@@ -1,95 +1,60 @@
-# WF-PriceCompare-24
+![IMG_9178](https://user-images.githubusercontent.com/72948572/183902369-2e490011-e58a-4adb-82cb-cff9d076d9a9.jpg)
+ 
+ # WalletFriendly
+ An Ingressive for Good x Zuri Project
 
-An online platform that compares the prices of products across other platforms
+## Table of Content
+* [Overview](#overview)
+* [Technologies Used](#technologies-used)
+* [Requirements](#requirements)
+* [Features](#features)
+* [How to Contribute](#how-to-contribute)
+* [Setup & Installation](#setup-&-installation)
+* [Video Demo](#video-demo)
+* [Contributors](#contributors)
+* [Acknowledgement](#acknowledgement)
+* [Team Links](#team-links)
 
-## Backend Documentation
+## Overview
+About Us
 
-###### Back-end language and framework
+Vision
 
-- python/Django
+Mission
 
-###### Templates
+Project Status: _in progress_
 
-- Frontend
+## Technologies Used
+  - __Design__ <br/>
+  ![figma-#F24E1E](https://user-images.githubusercontent.com/72948572/183909728-8197f9c8-8b97-4015-8e0b-f8e605b19309.svg)
+  
+  - __Frontend__ <br/>
+  ![html5-#E34F26](https://user-images.githubusercontent.com/72948572/183910382-06b2d259-2f17-4c4f-afb0-0ed20cddd85c.svg) ![css3-#1572B6](https://user-images.githubusercontent.com/72948572/183910424-215b3da2-9067-44ba-a16a-91eefc3d90fc.svg) ![javascript-#323330](https://user-images.githubusercontent.com/72948572/183910461-4e24a5f5-7ad9-48a0-a7b0-94bcba32a94b.svg)
 
-###### Database
+  - __Backend__ <br/>
+  ![python-3670A0](https://user-images.githubusercontent.com/72948572/183910681-b6193dcd-8242-4a5e-af78-d79f99fc40b6.svg) ![django-#092E20](https://user-images.githubusercontent.com/72948572/183910701-cdc634b5-9524-4158-8063-045000741e42.svg)
 
-- SQLite(Python)
+  - __Database__ <br/>
+  ![POSTGRE-SQL-brightgreen](https://user-images.githubusercontent.com/72948572/183910301-8bcb404e-4fdd-497f-a493-a33430561a9b.svg)
 
-###### Server
+  - __Web Scrapping__ <br/>
+  ![selenium-#121011](https://user-images.githubusercontent.com/72948572/183910223-79339cd5-713d-408c-a79d-918933e4435c.svg)
+  
+  - __Project Mnagement__ <br/>
+  ![github-#121011](https://user-images.githubusercontent.com/72948572/183911700-45ab5ec7-8f95-41ce-8d0e-616ddca2827f.svg)
 
-- Zuri
+## Requirements
 
-###### Cost
+## Features
+  `Create Account` Users are able to sign up on wallentfriendly with their email/ phone number/ facebook and password.
+## Team Links
 
-- Nothing
+- [Project Brief](https://bit.ly/Team24_PriceCompare_Brief)
+- [DataBase Schema](https://bit.ly/Team24_PriceCompare_DataBaseSchema)
+- [Frontend Documentation](https://bit.ly/Team24_PriceCompare_FrontendDoc)
+- [Backend Documentation](https://bit.ly/Team24_PriceCompare_BE_Doc)
+- [Research Report](https://bit.ly/Team24_PriceCompare_Research)
+- [Figma Board](https://bit.ly/Team24_PriceCompare_FigmaBoard)
+- [Slides](https://www.canva.com/design/DAFHbeze7Nw/n6F3XGAqUlZkHroeOl9C8g/edit?utm_content=DAFHbeze7Nw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
+- [Task Sheet](https://bit.ly/Team24_PriceCompare_TaskSheet)
 
-###### Third-party integrations
-
-- Google Authentication
-- Facebook
-- Retail stores APIs (Amazon, Aliexpress)
-
-###### Technical Obstacles
-
-Possible risks that might be met is as follows:
-We are limited to direct APIs from this websites which isn’t easy to get without joining some partnership and prone to errors
-
-###### Hardware
-
-We will be accessible on all devices, Desktops, Mobile, Tablets.
-
-###### Setup
-
-1. Stores
-
-- Amazon
-- Ali-Express
-- Jumia
-
-2. Requirements
-
-- Python 3.7+
-- Django
-- Requests
-- Pip
-
-## Frontend Documentation
-
-###### Frontend Languages
-
-- Hypertext Markup Language(HTML)
-- Cascading StyleSheet(CSS)
-- JavaScript(JS)
-
-###### Icons
-
-- Font Awesome
-
-###### Fonts
-
-- Google Fonts
-
-###### PRE-PROCESSORS
-
-- # Swiper.js
-  ######FRAMEWORK
-- Bootstrap
-
-## Important Links
-
-- [Team24_PriceCompare_brief](https://bit.ly/Team24_PriceCompare_Brief)
-- [Team24_PriceCompare_DataBaseSchema](https://bit.ly/Team24_PriceCompare_DataBaseSchema)
-- [Team24_PriceCompareFrontendDocumentation](https://bit.ly/Team24_PriceCompare_FrontendDoc)
-- [Team24_PriceCompare_Backend Documentation](https://bit.ly/Team24_PriceCompare_BE_Doc)
-- [Team24_PriceCompare_ResearchReport](https://bit.ly/Team24_PriceCompare_Research)
-- [Team24_PriceCompare_FigmaBoard](https://bit.ly/Team24_PriceCompare_FigmaBoard)
-- [Team24_PriceCompare_Slides](https://www.canva.com/design/DAFHbeze7Nw/n6F3XGAqUlZkHroeOl9C8g/edit?utm_content=DAFHbeze7Nw&utm_campaign=designshare&utm_medium=link2&utm_source=sharebutton)
-- [Team24_PriceCompare_TaskSheet](https://bit.ly/Team24_PriceCompare_TaskSheet)
-
-###### Administrator
-
-- Username
-  admin
-- Password
-  wfteam24
