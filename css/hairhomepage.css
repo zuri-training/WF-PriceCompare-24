@@ -60,6 +60,7 @@ div.login {
 	display: flex;
 	align-content: center;
 	width: 8em;
+   max-width: fit-content;
 	justify-content: space-between;
 }
 
@@ -235,6 +236,7 @@ div[container] {
 	width: 100%;
 }
 
+/* edited review style */
 section.reviews {
 	grid-area: reviews;
 }
@@ -440,6 +442,7 @@ div.progress-bar {
 	display: flex;
 	align-items: center;
 	column-gap: 14.25px;
+   width: 100%;
 }
 
 section[reviews] {
@@ -520,6 +523,7 @@ div.profile-pic img {
 }
 
 div.pro-contain {
+   width:100%;
 	display: flex;
 	padding-top: 1em;
 	gap: 1.4rem;
@@ -755,19 +759,8 @@ header.active {
 .navbar {
 
 	position: fixed;
-
-	top: 0;
-
-	left: -120%;
-
-	height: 100%;
-
-	background: var(--main-color);
-
-	padding: 3rem;
-
-	width: 23rem;
-
+   opacity: 0;
+   z-index: -10;
 }
 
 .navbar.active {
@@ -775,6 +768,16 @@ header.active {
 	left: 0;
 
 	z-index: 1;
+   top: 0;
+
+	height: 100%;
+
+	background: var(--main-color);
+
+	padding: 3rem;
+ width: 100%;
+	max-width: 20rem;
+   opacity: 1;
 
 }
 
@@ -922,6 +925,9 @@ header.active {
 		display: block;
 		padding: 1rem 0;
 	}
+   div.icons {
+		display: block;
+	}
 }
 
 @media screen and (max-width: 600px) {
@@ -966,7 +972,17 @@ header.active {
 		row-gap: 2rem;
 	}
 
-	div.icons {
-		display: block;
-	}
+	div.login>div:nth-child(2) {
+      display:  none;
+   }
+
+   div.time p {
+    display: none;
+   }
+}
+
+@media screen and (max-width:425px) {
+   div.login {
+      display:  none;
+   }
 }
