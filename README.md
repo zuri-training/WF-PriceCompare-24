@@ -6,11 +6,10 @@
 ## Table of Content
 * [Overview](#overview)
 * [Technologies Used](#technologies-used)
-* [Requirements](#requirements)
 * [Features](#features)
+* [Requirements](#requirements)
 * [How to Contribute](#how-to-contribute)
 * [Setup and Installation](#setup-and-installation)
-* [Video Demo](#video-demo)
 * [Contributors](#contributors)
 * [Acknowledgment](#acknowledgment)
 * [Team Links](#team-links)
@@ -28,7 +27,7 @@ __Mission__
 
 To help buyers get quality goods at the best price.
 
-Project Status: _in progress_
+__Project Status__: _in progress_
 
 ## Technologies Used
   - __Design__ <br/>
@@ -49,8 +48,6 @@ Project Status: _in progress_
   - __Project Mnagement__ <br/>
   ![github-#121011](https://user-images.githubusercontent.com/72948572/183911700-45ab5ec7-8f95-41ce-8d0e-616ddca2827f.svg)
 
-## Requirements
-
 ## Features
   `Create Account` Users are able to sign up on wallentfriendly with their email, phone number, facebook and password.
   
@@ -68,11 +65,15 @@ Project Status: _in progress_
   
   `Responsive` Enables users to access the platform via their various devices without any issues with their display.
 
+## Requirements
+* An IDE
+* Git & GitHub 
+* A compatibility browser
+* Python 3.7+
+
 ## How to Contribute 
 
 ## Setup and Installation 
-
-## Video Demo
 
 ## Contributors
 
@@ -81,6 +82,26 @@ Project Status: _in progress_
 | [Oputa Olivia](https://github.com/oputaolivia)| `Oputa Olivia`|
 | [Nkiru Oduenyi](https://github.com/nkirusteph)| `NkiruOdunenyi`|
 | [Dolapo Mosuro](https://github.com/Dolapo-Mosuro)| `dolapoololade`|
+| [Idisi Efezino](https://github.com/efezinoidisi) | `Efezino`|
+| [Olasupo Habeeb](https://github.com/olasb) | `Olasbee`|
+| [Elizabeth Asieba](https://github.com/asiebaelizabeth) | `Elizabeth Asieba`|
+| [Adefila Islamiyyah Adebimpe](https://github.com/MiyyahCodes) | `MiyyahCodes`|
+| [Uwakmfon Etim](https://github.com/Wakygrace) | `Uwakmfon`|
+| [Chibuike Otiji](https://github.com/Charles3K14) | `Charles3K14`|
+| [Oye Haruna Ibrahim](https://github.com/Oye-Ibrahim) | `Oye`|
+| [Kemi Rokosu](https://github.com/kemirokosu) | `Kemi Rokosu`|
+| [Ezeh Victoria](https://github.com/Ezeh-Vikki1635) | `Ezeh Victoria`|
+| [Victor Nwimo](https://github.com/Vicwin13) | `VicWin`|
+| [Oluniyi Oladunjoye](https://github.com/niyi-olad) | `Niyi`|
+| [Oshin Oluwafemi Elijah](https://github.com/SirCalvary) | `Oshin Oluwafemi Elijah`|
+| [Jadesola Kareem](https://github.com/jadesola123) | `Jadesola Kareem`|
+| [Dada Oluwasegun](https://github.com/Shegzyrey) | `Dada oluwasegun`|
+| [Mavis Oghenesuvwe](https://github.com/MavisOdis) | `Mavis`|
+| [Jonathan Ikpen](https://github.com/jonathan-ikpen) | `Codeamant`|
+| [Daniel Ndukwe](https://github.com/fantome76) | `Daniie`|
+| [Olaitan Kolawole](https://github.com/Powelldabig) | `Olaitan Kolawole`|
+| [Babatunde Oluwaseun](https://github.com/Mayana74) | `Mayana`|
+| [Abiola Ayodele](https://github.com/babboe1) | `babboeCodes`|
 
 ## Acknowledgment 
 <img src="https://res.cloudinary.com/zuri-team/image/upload/zuriboard/tenant-logo/ms5faj5pae6nd03wazk1.png" width="200" height="50">
