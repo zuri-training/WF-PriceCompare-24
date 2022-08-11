@@ -1178,3 +1178,9 @@ section[categories] ul li a:hover,
 
 
 }
+
+@media screen and (max-width:425px) {
+    div.login {
+        display: none;
+    }
+}
