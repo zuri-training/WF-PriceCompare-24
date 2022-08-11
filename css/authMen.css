@@ -302,7 +302,7 @@ div[preview] .news-one img,
 }
 
 .box {
-    border: none;
+    border: 1px solid rgb(241, 241, 241);
     width: 13.5rem;
     background-color: var(--main-color);
     border-radius: 8px;
@@ -1098,11 +1098,6 @@ section[categories] ul li a:hover,
         padding: 1rem 0;
     }
 
-    [gadgetBrands],
-    [popularBrands],
-    [about] {
-        display: none;
-    }
 
     main .hero-section {
         background-position: center;
@@ -1182,4 +1177,10 @@ section[categories] ul li a:hover,
     }
 
 
+}
+
+@media screen and (max-width:425px) {
+    div.login {
+        display: none;
+    }
 }
