@@ -160,14 +160,8 @@ main {
     gap: 3rem;
     justify-content: center;
     font-family: 'Sora', sans-serif;
-    display: grid;
-    grid-template-areas:
-        'slider slider slider slider slider'
-        'filter box box box box'
-        'reviews reviews reviews reviews reviews';
-    margin-top: 2rem;
-    gap: 3rem;
-    justify-content: center;
+
+
 }
 
 main .hero-section {
@@ -261,18 +255,7 @@ h3 {
     padding: 4px 15px;
 }
 
-aside.filter div[load-more] {
-    background-color: var(--load-color);
-    width: 100%;
-    padding: 10px;
-    border-radius: 8px;
-    text-align: center;
-}
 
-aside.filter div[load-more] a {
-    color: white;
-    text-decoration: none;
-}
 
 .preview .box div img {
     width: 10em;
@@ -287,6 +270,7 @@ div[preview] {
 
 .preview .box div img {
     width: 13em;
+    height: max-content;
 }
 
 div[preview] .news-one img,
@@ -302,10 +286,11 @@ div[preview] .news-one img,
 }
 
 .box {
-    border: 1px solid rgb(241, 241, 241);
+    border: none;
     width: 13.5rem;
     background-color: var(--main-color);
     border-radius: 8px;
+
 }
 
 .box h4 {
@@ -326,15 +311,17 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
-    padding: 1.5rem 1rem;
+    padding: .5rem 1rem 0rem;
     border-radius: 8px;
     background: white;
+
 }
 
 .samsung,
 .tecno,
 .hot-deals {
-    margin-top: 3rem;
+    margin-top: 2rem;
+
 }
 
 .iPhone h2,
@@ -342,7 +329,7 @@ div[preview] .news-one img,
 .tecno h2,
 .hot-deals h2 {
     margin-top: 0px;
-    margin-bottom: 1.4em;
+    margin-bottom: 1em;
     color: var(--load-color);
     font-size: 1.6rem;
     font-weight: bolder;
@@ -357,15 +344,7 @@ div[preview] .news-one img,
     margin: 0 auto;
 }
 
-div[see_more] {
-    text-align: right;
-    padding: 2em 0 1em;
-}
 
-div[see_more] a {
-    text-decoration: none;
-    color: var(--load-color);
-}
 
 /*footer section*/
 footer .footerContainer {
@@ -461,6 +440,7 @@ div.first {
 
 div.second {
     width: 80%;
+
 }
 
 div.third {
@@ -942,7 +922,7 @@ div.footLogoResponsive {
 }
 
 .vendors {
-    margin-bottom: 1rem;
+    padding-bottom: 1rem;
 }
 
 .vendors h6 {
@@ -983,10 +963,7 @@ div.footLogoResponsive {
     transition: .3s;
 }
 
-main #GAD-tv {
-    background-image: url("../images/gadget and phones/SAMSUNG 1.png");
-    background-size: cover;
-}
+
 
 .linkPages {
     z-index: 1;
@@ -1010,7 +987,7 @@ header .head_section .top-link ul li a {
 }
 
 main .hero-section {
-    background: url(../images/men/bg-img.png);
+    background: url(../images/Rectangle10.png);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 22rem;
@@ -1098,6 +1075,11 @@ section[categories] ul li a:hover,
         padding: 1rem 0;
     }
 
+    [gadgetBrands],
+    [popularBrands],
+    [about] {
+        display: none;
+    }
 
     main .hero-section {
         background-position: center;
@@ -1112,7 +1094,15 @@ section[categories] ul li a:hover,
 
     main section.hero-section {
         min-height: 16rem;
+
     }
+
+
+
+    .box {
+        margin-top: 3rem;
+    }
+
 
     .hero-section__title {
         padding: 4rem 0 2rem;
@@ -1177,10 +1167,4 @@ section[categories] ul li a:hover,
     }
 
 
-}
-
-@media screen and (max-width:425px) {
-    div.login {
-        display: none;
-    }
 }

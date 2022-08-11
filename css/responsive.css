@@ -1,11 +1,18 @@
 @media screen and (max-width: 1024px) {
-    #main {
+
+    /* #main {
         display: block;
+    } */
+    body {
+        width: 100%;
+        margin: 0 auto;
     }
 
     .filter {
         display: none;
     }
+
+
 }
 
 @media screen and (max-width: 768px) {
@@ -15,6 +22,10 @@
 
     .top-link {
         display: none;
+    }
+
+    div.icons {
+        display: block;
     }
 
     header .head_section {
@@ -82,6 +93,11 @@
         justify-content: center;
     }
 
+    .box {
+        width: 100%;
+        margin: 0 auto;
+    }
+
     .progress-star>div:nth-child(1) {
         max-width: fit-content;
         width: 100%;
@@ -96,5 +112,10 @@
         display: flex;
         flex-direction: column;
         row-gap: 2rem;
+    }
+
+    .search_bar {
+
+        bottom: 3em;
     }
 }

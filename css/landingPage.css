@@ -87,10 +87,22 @@ div.login {
     justify-content: space-between
 }
 
+div.logout {
+    display: flex;
+
+    align-content: center;
+    width: 8em;
+    justify-content: space-between
+}
+
 div.login>div {
     display: flex;
 
 
+}
+
+div.logout>div {
+    display: flex;
 }
 
 div.login>div button {
@@ -98,7 +110,20 @@ div.login>div button {
     border: none;
 }
 
+div.logout>div button {
+    background: none;
+    border: none;
+}
+
+
 div.login>div a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+div.logout>div a {
     text-decoration: none;
     color: black;
     font-size: 14px;
@@ -1203,24 +1228,6 @@ header.active {
 }
 
 
-
-
-.mobile-view {
-    background: url(../images/Rectangle12.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-    min-height: 16rem;
-    width: 100%;
-    border-radius: 8px;
-    /* z-index: -1; */
-    /* margin-bottom: -11em; */
-    position: relative;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: absolute;
-    display: none;
-}
 
 div.search_bar {
     width: 100%;
