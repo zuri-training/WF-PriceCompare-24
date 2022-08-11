@@ -47,7 +47,7 @@ header .search_bar #search_bar {
   border-radius: 3px;
   outline: none;
   border: .6px solid rgba(128, 128, 128, .5);
-  padding: 0 .5em;
+  padding: 0 0.5em;
 }
 
 header .head_section .logo img {
@@ -434,7 +434,13 @@ footer {
 div.progress-bar {
   height: 8px;
   width: 16em;
-  background-color: var(--secondary-color);
+  border-bottom: 1px solid #1b29a9;
+}
+
+.progress-star {
+  display: flex;
+  align-items: center;
+  column-gap: 14.25px;
 }
 
 section[reviews] {
@@ -492,6 +498,13 @@ div.review-section div.overall-review {
 
 div.review-section div.overall-review .review-container div[contain] {
   display: flex;
+}
+
+.rate-num {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #949ffe;
 }
 
 i.fas {
@@ -570,8 +583,6 @@ div.compare {
   text-align: center;
 
 }
-
-
 
 .box img:hover {
   transform: scale(1.025, 1.025);
