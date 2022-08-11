@@ -302,7 +302,7 @@ div[preview] .news-one img,
 }
 
 .box {
-    border: none;
+    border: 1px solid rgb(241, 241, 241);
     width: 13.5rem;
     background-color: var(--main-color);
     border-radius: 8px;
