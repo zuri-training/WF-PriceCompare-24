@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
 :root {
     --main-color: #fefefe;
     --load-color: #151f7f;
@@ -35,7 +36,7 @@ a {
 
 header .head_section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgba(255, 255, 255);
     padding: 1em;
     align-items: center;
@@ -184,19 +185,36 @@ footer {
     justify-content: space-between;
     margin-top: 7px;
     width: fit-content;
+    align-items: end;
 }
 
 div.progress-bar {
-    height: 8px;
-    width: 16em;
-    background-color: var(--secondary-color);
+    height: 5px;
+    width: 325px;
+    border-bottom: 1px solid #1b29a9;
 }
+
+.progress-star {
+    display: flex;
+    align-items: center;
+    column-gap: 14.25px;
+}
+
+
 
 section[reviews] {
     border-top: 1px solid gray;
     max-width: 100%;
     margin-top: 2em;
 }
+
+.rate-num {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #949ffe;
+}
+
 
 div.progress-bar-fill {
     height: inherit;
@@ -588,6 +606,7 @@ header.active {
     #main {
         display: block;
     }
+
     .filter {
         display: none;
     }
@@ -597,36 +616,51 @@ header.active {
     .hot-deal .box {
         width: 100%;
     }
+
     body {
         padding: 0 2rem;
+        max-width: 100%;
     }
+
     .top-link {
         display: none;
     }
+
+    div.icons {
+        display: block;
+    }
+
     header .head_section {
         justify-content: space-between;
     }
+
     footer .footerContainer {
         display: grid;
         row-gap: 1rem;
         column-gap: 1rem;
-        grid-template-areas: 'a a a a' 'b c d e';
+        grid-template-areas: 'a a a a''b c d e';
     }
+
     .Social_Icons {
         grid-area: a;
     }
+
     section[categories] {
         grid-area: b;
     }
+
     section[gadgetBrands] {
         grid-area: c;
     }
+
     section[popularBrands] {
         grid-area: d;
     }
+
     section[About] {
         grid-area: e;
     }
+
     div.review-section div.overall-review {
         display: block;
         padding: 1rem 0;
@@ -637,15 +671,19 @@ header.active {
     body {
         padding: 0 1rem;
     }
+
     main section.hero-section {
         min-height: 16rem;
     }
+
     .hero-section__title {
         padding: 4rem 0 2rem;
     }
+
     div.search_bar {
         padding: 0 1rem;
     }
+
     /* .hair-page__box {
 		width: 260px;
 	} */
@@ -653,14 +691,17 @@ header.active {
         flex-wrap: wrap;
         justify-content: center;
     }
+
     .progress-star>div:nth-child(1) {
         max-width: fit-content;
         width: 100%;
     }
+
     .progress-container {
         width: 100%;
         max-width: fit-content;
     }
+
     footer .footerContainer {
         display: flex;
         flex-direction: column;
