@@ -11,6 +11,20 @@
   padding: 0;
   box-sizing: border-box;
 }
+body {
+
+    margin: 0 auto;
+    max-width: max-content;
+    justify-content: center;
+    font-family: sora;
+    background: #FCFCFD;
+  
+  }
+#nav_bar{
+    width: 100% !important;
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+}
 .heading {
     text-align: center;
     padding: 50px;
@@ -29,16 +43,23 @@
     font-size: 16px;
     text-align: center;
     color: #949EFE;
-    padding-left: 30px;
-    padding-right: 30px;
+    
+    
+}
+.main-para p {
+    padding-bottom: 20px;
+    width: 70%;
+    margin-left: 200px;
+    justify-content: center;
+    text-align: center;
 }
 .para {
     font-weight: 400;
     font-size: 16px;
     text-align: center;
     color: #949EFE;
-    padding-left: 30px;
-    padding-right: 30px;
+    width: 70%;
+    margin-left: 200px;
 }
 .ul {
     padding-top: 40px;
@@ -52,25 +73,12 @@
 }
 
 
-body {
-  font-family: "Sora", sans-serif;
-  
-}
-
 
 .material-symbols-outlined {
   color: var(--mainColor);
 }
 
-body {
 
-  margin: 0 auto;
-  max-width: max-content;
-  justify-content: center;
-  font-family: sora;
-  background: #FCFCFD;;
-
-}
 #para {
     color: #949FFE;
     padding-bottom: 30px;
@@ -90,19 +98,22 @@ input, textarea {
     max-width: 100%;
     flex-direction: row;
     align-items: flex-start;
-    padding: 24px;
+    padding-left: 200px;
     gap: 10px;
     justify-content: space-between;
 }
 
 .address {
     align-self: flex-end;
+    
 }
 
 .address div {
     display: flex;
     padding: .5em;
     gap: .5rem;
+    padding-right: 60px;
+    font-size: 14px;
 }
 
 .address div span {
