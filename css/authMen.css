@@ -1098,11 +1098,6 @@ section[categories] ul li a:hover,
         padding: 1rem 0;
     }
 
-    [gadgetBrands],
-    [popularBrands],
-    [about] {
-        display: none;
-    }
 
     main .hero-section {
         background-position: center;
