@@ -1265,6 +1265,10 @@ main section.hero-section {
     top: .2em;
 }
 
+.box:nth-child(3)>:nth-child(1) img {
+   transform: scale(0.8);
+}
+
 
 @media screen and (max-width:1049px) {
     aside {
