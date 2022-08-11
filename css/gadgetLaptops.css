@@ -809,3 +809,9 @@ header.active {
 }
 
 /* ends here  */
+
+@media screen and (max-width: 768px) {
+  div.icons {
+    display: block;
+  }
+}
