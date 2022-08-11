@@ -235,6 +235,7 @@ div[container] {
 	width: 100%;
 }
 
+/* edited review style */
 section.reviews {
 	grid-area: reviews;
 }
