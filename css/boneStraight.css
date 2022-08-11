@@ -4,6 +4,7 @@
   --main-color: #fefefe;
   --load-color: #151f7f;
   --secondary-color: #949efe;
+  --unknown: #f6f8fa;
 }
 
 * {
@@ -15,7 +16,7 @@
 body {
   font-family: "Sora", sans-serif;
   position: relative;
-  background-color: rgba(246, 248, 250, 1);
+  background-color: var(--main-color);
 }
 
 .material-symbols-outlined {
