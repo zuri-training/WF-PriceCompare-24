@@ -25,6 +25,9 @@ body {
     padding-right: 40px !important;
     padding-left: 40px !important;
 }
+a{
+    text-decoration: none;
+}
 .heading {
     text-align: center;
     padding: 50px;
