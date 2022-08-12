@@ -1,6 +1,7 @@
-![IMG_9178](https://user-images.githubusercontent.com/72948572/183902369-2e490011-e58a-4adb-82cb-cff9d076d9a9.jpg)
- 
- # WalletFriendly
+<p align="left">
+   <img height= "200px" src="https://user-images.githubusercontent.com/72948572/183902369-2e490011-e58a-4adb-82cb-cff9d076d9a9.jpg">
+<p/>
+
  An Ingressive for Good x Zuri Project
 
 ## Table of Content
@@ -34,16 +35,13 @@ __Project Status__: _in progress_
   ![figma-#F24E1E](https://user-images.githubusercontent.com/72948572/183909728-8197f9c8-8b97-4015-8e0b-f8e605b19309.svg)
   
   - __Frontend__ <br/>
-  ![html5-#E34F26](https://user-images.githubusercontent.com/72948572/183910382-06b2d259-2f17-4c4f-afb0-0ed20cddd85c.svg) ![css3-#1572B6](https://user-images.githubusercontent.com/72948572/183910424-215b3da2-9067-44ba-a16a-91eefc3d90fc.svg) ![javascript-#323330](https://user-images.githubusercontent.com/72948572/183910461-4e24a5f5-7ad9-48a0-a7b0-94bcba32a94b.svg)
+![html5-#E34F26](https://user-images.githubusercontent.com/72948572/183910382-06b2d259-2f17-4c4f-afb0-0ed20cddd85c.svg) ![css3-#1572B6](https://user-images.githubusercontent.com/72948572/183910424-215b3da2-9067-44ba-a16a-91eefc3d90fc.svg) ![javascript-#323330](https://user-images.githubusercontent.com/72948572/183910461-4e24a5f5-7ad9-48a0-a7b0-94bcba32a94b.svg)
 
   - __Backend__ <br/>
   ![python-3670A0](https://user-images.githubusercontent.com/72948572/183910681-b6193dcd-8242-4a5e-af78-d79f99fc40b6.svg) ![django-#092E20](https://user-images.githubusercontent.com/72948572/183910701-cdc634b5-9524-4158-8063-045000741e42.svg)
 
   - __Database__ <br/>
   ![POSTGRE-SQL-brightgreen](https://user-images.githubusercontent.com/72948572/183910301-8bcb404e-4fdd-497f-a493-a33430561a9b.svg)
-
-  - __Web Scrapping__ <br/>
-  ![selenium-#121011](https://user-images.githubusercontent.com/72948572/183910223-79339cd5-713d-408c-a79d-918933e4435c.svg)
   
   - __Project Mnagement__ <br/>
   ![github-#121011](https://user-images.githubusercontent.com/72948572/183911700-45ab5ec7-8f95-41ce-8d0e-616ddca2827f.svg)
@@ -72,8 +70,86 @@ __Project Status__: _in progress_
 * Python 3.7+
 
 ## How to Contribute 
+- __Fork the project repository__<br/>
+In the project repository on github click the fork button in the upper right corner
+
+- __Clone the forked repository to your local machine__
+
+    ```ruby
+    git clone https://github.com/zuri-training/WF-PriceCompare-24.git
+    ```
+- __Navigate to the local directory and open in your IDE/ Text Editor__
+
+- __In the IDE terminal set upstream branch__
+
+    ```ruby
+    git remote add upstream https://github.com/zuri-training/WF-PriceCompare-24.git
+    ```
+- __Pull upstream__
+
+    ```ruby
+    git pull upstream dev
+    ```
+    
+- __Create a new branch to make your changes__
+
+    ```ruby
+    git checkout -b <your_branch_name>
+    ```
+    
+- __Stage the file__
+After making edits, type the below command in your terminal
+
+    ```ruby
+    git add <changed_files>
+    ```
+    
+- __Commit changes__
+
+    ```ruby
+    git commit -m "your_message"
+    ```
+- __Push your local changes__
+
+    ```ruby
+    git push origin <your_branch_name>
+    ```
+
+- __Create a pull request__
+
+- __Wait till the admin accepts and merges your pull request__
 
 ## Setup and Installation 
+  __In your IDE run the following commands in the terminal to setup__
+- Install  environment in the root directory `WF-PriceCompare`
+
+    ``` ruby
+    pip install virtualenv
+    ```
+- Create the virtual environment in the same root directory
+
+    ``` ruby
+    virtualenv <environment_name>
+    ``` 
+- Activate virtual environment
+
+    ``` ruby
+    <environment_name>\scripts\activate
+    ``` 
+- Install all packages/ Dependencies used
+    ``` ruby
+    pip install -r requirements.txt
+    ```
+- Run Migrations when changes are made
+
+    ``` ruby
+    python manage.py migrate
+    ``` 
+- Run Server
+
+    ``` ruby
+    python manage.py runserver
+    ```
 
 ## Contributors
 
