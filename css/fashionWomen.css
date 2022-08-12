@@ -151,6 +151,10 @@ header .head_section .top-link ul li a {
   text-decoration: none;
 }
 
+a {
+  text-decoration: none;
+}
+
 /* main seaction */
 main {
   display: grid;
