@@ -29,6 +29,11 @@ body {
 	background-color: #f6f8fa;
 }
 
+.logo a {
+   text-decoration: none;
+   
+}
+
 header .head_section {
 	display: flex;
 	justify-content: space-between;
