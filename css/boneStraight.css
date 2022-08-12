@@ -30,6 +30,9 @@ body {
   font-family: sora;
 }
 
+a {
+  text-decoration: none;
+}
 header .head_section {
   display: flex;
   justify-content: space-between;
