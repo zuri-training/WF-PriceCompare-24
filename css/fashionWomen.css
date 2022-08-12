@@ -32,7 +32,7 @@ body {
 
 header .head_section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: rgba(255, 255, 255);
   padding: 1em;
   align-items: center;
@@ -583,7 +583,7 @@ div.compare {
 
 main .hero-section {
   background: url(../images/fashionwomen/fashionWomen.jpeg);
-  /* width: 95%; */
+  width: 95%;
   margin: 0 auto;
   background-repeat: no-repeat;
   background-size: cover;
