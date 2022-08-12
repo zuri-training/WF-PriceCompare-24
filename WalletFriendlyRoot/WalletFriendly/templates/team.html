@@ -1,0 +1,216 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Team Page</title>
+    <link rel="stylesheet" href=" {% static '../css/team.css' %} " />
+    <script src=" {% static '../script/sidebar.js' %} " defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+  </head>
+  <body>
+    <header>
+      <section class="head_section">
+        <div class="icons">
+          <div id="menu-bar" class="fas fa-bars"></div>
+        </div>
+        <nav class="navbar">
+          <div class="user">
+            <img src=" {% static '../images/model.png' %} " alt="user-image" />
+            <h4>John Doe</h4>
+          </div>
+          <div class="links">
+            <a href=" {% static './index.html' %} ">Home</a>
+            <a href=" {% static './AboutUs.html' %} ">About</a>
+            <a href=" {% static './team.html' %} ">Team</a>
+            <a href=" {% static './faq.html' %} ">FAQ</a>
+            <a href=" {% static './contactUs.html' %} ">Contact Us</a>
+          </div>
+          <div id="close" class="fas fa-times"></div>
+        </nav>
+        <div class="logo"><a href=" {% static './index.html' %} ">Wallet<span>friendly</span></a></div>
+        <!-- <div class="search_bar">
+                <input
+                    type="search"
+                    placeholder="Search Product, brand"
+                    name="search"
+                    id="search_bar"
+                />
+            </div> -->
+        <div class="top-link">
+          <ul>
+            <li><a href=" {% static '../template/AboutUs.html' %} ">About</a></li>
+            <li><a href=" {% static '../template/team.html' %} ">Team</a></li>
+            <li><a href=" {% static '../template/faq.html' %} ">FAQs</a></li>
+            <li><a href=" {% static '../template/contactUs.html' %} ">Contact</a></li>
+          </ul>
+        </div>
+        <div class="login">
+          <div>
+            <span class="material-symbols-outlined">person</span>
+            <button class="signInButton">
+              <a href=" {% static '../template/Login.html' %} "> Login </a>
+            </button>
+          </div>
+          <div>
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </div>
+        </div>
+      </section>
+
+      <nav id="nav_bar">
+        <div class="nav-links nav-list">
+          <ul>
+            <li fashion>
+              <a href=" {% static '../template/fashion.html' %} "> Fashion</a>
+              <div class="subMenu1">
+                <ul class="linkPages">
+                  <li>
+                    <a href=" {% static '../template/fashionMen.html' %} ">Men's Clothing</a>
+                  </li>
+                  <li>
+                    <a href=" {% static '../template/fashionWomen.html' %} ">Women's Clothing</a>
+                  </li>
+                  <li><a href=" {% static '../template/fashionMen.html' %} ">Men's Shoes</a></li>
+                  <li>
+                    <a href=" {% static '../template/fashionWomen.html' %} ">Women's Shoes</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+
+            <li gadget>
+              <a href=" {% static '../template/gadgetHomepage.html' %} "> Gadget</a>
+
+              <div class="subMenu1">
+                <ul class="linkPages">
+                  <li>
+                    <a href=" {% static '../template/gadgetPhones.html' %} ">Mobile Phones</a>
+                  </li>
+                  <li><a href=" {% static '../template/gadgetLaptops.html' %} ">Laptops</a></li>
+                  <li><a href=" {% static '../template/gadgettv.html' %} ">Smart TVs</a></li>
+                </ul>
+              </div>
+            </li>
+            <li hair>
+              <a href=" {% static '../template/hairHomePage.html' %} "> Hair</a>
+
+              <div class="subMenu1">
+                <ul class="linkPages">
+                  <li><a href=" {% static '../template/humanHair.html' %} ">Human Hair</a></li>
+                  <li>
+                    <a href=" {% static '../template/boneStraight.html' %} ">Bone Straight</a>
+                  </li>
+                  <li>
+                    <a href=" {% static '../template/hairAccessories.html' %} ">Accessories</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+            <li compare>
+              <a href=" {% static '' %} "> Compare</a>
+              <div class="subMenu1">
+                <ul class="linkPages">
+                  <li>
+                    <a href=" {% static '' %} ">By Price</a>
+                  </li>
+                  <li>
+                    <a href=" {% static '' %} ">By Brand</a>
+                  </li>
+                  <li>
+                    <a href=" {% static '' %} ">By Rating</a>
+                  </li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main>
+      <div class="flex">
+        <div class="names">
+          <h3>Designers</h3>
+          <p>Oshin Oluwafemi</p>
+          <p>Daniel Ndukwe</p>
+          <p>Oluwaseun Babatunde</p>
+          <p>Kemi Rokosu</p>
+          <p>Asieba Elizabeth</p>
+          <p>Olasupo Habeeb</p>
+          <p>Olaitan Kolawole</p>
+          <p>Nkiruka Stephanie</p>
+        </div>
+        <div class="usernames">
+          <h3>Slack usernames</h3>
+          <p>SirCalvary</p>
+          <p>Daniie</p>
+          <p>Mayana</p>
+          <p>Kemi Rokosu</p>
+          <p>Elizabeth Asieba</p>
+          <p>Olasbee</p>
+          <p>Olaitan Kolawole</p>
+          <p>NkiruOduenyi</p>
+        </div>
+      </div>
+
+      <div class="flex frontend">
+        <div class="names">
+          <h3>Frontend</h3>
+          <p>Idisi Efezino</p>
+          <p>Abiodun Opeyemi</p>
+          <p>Abiola Ayodele</p>
+          <p>Ezeh Victoria</p>
+          <p>Jonathan Ikpen</p>
+          <p>Adefila Islamiyyah</p>
+          <p>Oye Ibrahim</p>
+          <p>Uwakmfon Etim</p>
+          <p>Nwimo Victor</p>
+        </div>
+        <div class="usernames">
+          <h3>Slack usernames</h3>
+          <p>Efezino</p>
+          <p>OPE(FE)</p>
+          <p>babboeCodes</p>
+          <p>Ezeh Victoria</p>
+          <p>codeamant</p>
+          <p>MiyyahCodes</p>
+          <p>Oye Ibrahim</p>
+          <p>wakygrace</p>
+          <p>VicWin</p>
+        </div>
+      </div>
+      <div class="flex backend">
+        <div class="names">
+          <h3>Backend</h3>
+          <p>Dolapo Mosuro</p>
+          <p>Chibuike Otiji</p>
+          <p>Oluniyi Oladunjoye</p>
+          <p>Oputa Olivia</p>
+          <p>Jadesola kareem</p>
+          <p>Dada Oluwasegun</p>
+          <p>Mavis Oghenesuvwe</p>
+        </div>
+        <div class="usernames">
+          <h3>Slack usernames</h3>
+          <p>dolapoololade</p>
+          <p>Charles3K14</p>
+          <p>Niyi</p>
+          <p>Oputa Olivia</p>
+          <p>Jadesola kareem</p>
+          <p>Dada oluwasegun</p>
+          <p>Odivwofene Mavis</p>
+        </div>
+      </div>
+    </main>
+  </body>
+</html>

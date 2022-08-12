@@ -26,5 +26,5 @@ urlpatterns = [
     path('', include('PriceCompare.urls')),
 ]
 
-urlpatterns += staticfiles_urlpatterns()
-urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)
+#urlpatterns += staticfiles_urlpatterns()
+#urlpatterns += static(settings.STATIC_URL, document_root=settings.STATIC_ROOT)

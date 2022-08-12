@@ -1,4 +1,3 @@
-{% extends "base.html" %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
@@ -7,26 +6,121 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gadget Homepage</title>
-    <link rel="stylesheet" href="{% static 'css/gadgetHomepage.css' %}"/>
-    <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
-  />
+    <link rel="stylesheet" href=" {% static '../css/popup.css' %} ">
+    <link rel="stylesheet" href=" {% static '../css/gadgetHomepage.css' %} " />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
   <link
     rel="stylesheet"
     href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
   />
   </head>
   <body>
-    {% block maincontent %}
-    <main>
+    <header>
+			<section class="head_section">
+          <!-- the beginning of the side-bar -->
+      <div class="icons">
+        <div id="menu-bar" class="fas fa-bars"></div>
+    </div>
+    <nav class="navbar">
+    <div class="user">
+        <img src=" {% static '../images/model.png' %} " alt="user image">
+        <h4>John Doe</h4>
+    </div>
+    <div class="links">
+        <a href=" {% static './index.html' %} ">Home</a>
+        <a href=" {% static './AboutUs.html' %} ">About</a>
+        <a href=" {% static './team.html' %} ">Team</a>
+        <a href=" {% static './faq.html' %} ">FAQ</a>
+        <a href=" {% static './contactUs.html' %} ">Contact Us</a>
+    </div>
+    <div id="close" class="fas fa-times"></div>
+    </nav>
+    <!-- this is the end of aside bar -->
+    
+				<div class="logo"><a href=" {% static '../template/index.html' %} ">Wallet<span>friendly</span></a></div>
+        <div class="top-link">
+          <ul>
+              <li><a href=" {% static '../template/AboutUs.html' %} ">About</a></li>
+              <li><a href=" {% static '../template/team.html' %} ">Team</a></li>
+              <li><a href=" {% static '../template/faq.html' %} ">FAQs</a></li>
+              <li><a href=" {% static '../template/contactUs.html' %} ">Contact</a></li>
+          </ul>
+      </div>
+				<div class="login">
+					<div>
+						<span class="material-symbols-outlined">person</span>
+						<button class="signInButton"><a href=" {% static '../template/Login.html' %} "> Login </a></button>
+					</div>
+					<div>
+						<span class="material-symbols-outlined">shopping_cart</span>
+					</div>
+				</div>
+			</section>
+
+			<nav id="nav_bar">
+				<div class="nav-links nav-list">
+					<ul>
+						<li fashion>
+							<a href=" {% static '../template/fashion.html' %} "> Fashion</a>
+							<div class="subMenu1">
+								<ul class="linkPages">
+									<li><a href=" {% static '../template/fashionMen.html' %} ">Men's Clothing</a></li>
+									<li><a href=" {% static '../template/fashionWomen.html' %} ">Women's Clothing</a></li>
+									<li><a href=" {% static '../template/fashionMen.html' %} ">Men's Shoes</a></li>
+									<li><a href=" {% static '../template/fashionWomen.html' %} ">Women's Shoes</a></li>
+								</ul>
+							</div>
+						</li>
+
+						<li gadget>
+							<a href=" {% static '../template/gadgetHomepage.html' %} "> Gadget</a>
+							<div class="subMenu1">
+								<ul class="linkPages">
+									<li><a href=" {% static '../template/gadgetPhones.html' %} ">Mobile Phones</a></li>
+									<li><a href=" {% static '../template/gadgetLaptops.html' %} ">Laptops</a></li>
+									<li><a href=" {% static '../template/gadgettv.html' %} ">Smart TVs</a></li>
+								</ul>
+							</div>
+						</li>
+						<li hair>
+							<a href=" {% static '../template/hairHomePage.html' %} "> Hair</a>
+
+							<div class="subMenu1">
+								<ul class="linkPages">
+									<li><a href=" {% static '../template/humanHair.html' %} ">Human Hair</a></li>
+									<li><a href=" {% static '../template/boneStraight.html' %} ">Bone Straight</a></li>
+									<li><a href=" {% static '../template/hairAccessories.html' %} ">Accessories</a></li>
+								</ul>
+							</div>
+						</li>
+						<li compare>
+							<a href=" {% static '' %} "> Compare</a>
+							<div class="subMenu1">
+								<ul class="linkPages">
+									<li><a href=" {% static '' %} ">By Price</a></li>
+									<li><a href=" {% static '' %} ">By Brand</a></li>
+									<li><a href=" {% static '' %} ">By Rating</a></li>
+								</ul>
+							</div>
+						</li>
+					</ul>
+				</div>
+			</nav>
+		</header>
+    <main class="main-section" id="main">
       <section class="hero-section">
-        <img src="{% static "/images/gadget and phones/Rectangle 9.jpg" %}" alt="" />
-        <img src="{% static "/images/gadget and phones/Rectangle 10.jpg" %}" alt="" />
-        <img src="{% static "/images/gadget and phones/Rectangle 11.jpg" %}" alt="" />
-        <img src="{% static "/images/gadget and phones/Rectangle 12.jpg" %}" alt="" />
-        <img src="{% static "/images/gadget and phones/Rectangle 13.jpg" %}" alt="" />
-        <img src="{% static "/images/gadget and phones/Rectangle 14.jpg" %}" alt="" />
+        <h1 class="hero-section__title">
+          Gadgets.
+      </h1>
+      <div class="search_bar">
+        <span class="material-symbols-outlined">search</span>
+        <input
+          type="search"
+          placeholder="Search Product, brand"
+          name="search"
+          id="search_bar"
+        />
+      </div>
       </section>
 
       <aside class="filter">
@@ -48,13 +142,13 @@
         <div class="popular">
           <h3>Popular Phones</h3>
           <div>
-            <a href="#"> Apple IPhone </a>
+            <a href=" {% static '../template/gadgetPhones.html' %} "> Apple IPhone </a>
           </div>
           <div>
-            <a href="#">Samsung</a>
+            <a href=" {% static '../template/gadgetPhones.html' %} ">Samsung</a>
           </div>
           <div>
-            <a href="#">Oppo</a>
+            <a href=" {% static '../template/gadgetPhones.html' %} ">Oppo</a>
           </div>
           
         </div>
@@ -62,26 +156,26 @@
         <div class="popular">
           <h3>Popular Laptops</h3>
           <div>
-            <a href="#">Hp</a>
+            <a href=" {% static '../template/gadgetLaptops.html' %} ">Hp</a>
           </div>
           <div>
-            <a href="#">MacBook</a>
+            <a href=" {% static '../template/gadgetLaptops.html' %} ">MacBook</a>
           </div>
           <div>
-            <a href="#">Dell</a>
+            <a href=" {% static '../template/gadgetLaptops.html' %} ">Dell</a>
           </div>
           
         </div>
         <div class="popular">
           <h3>Popular Smart Tvs</h3>
           <div>
-            <a href="#">Infinix</a>
+            <a href=" {% static '../template/gadgettv.html' %} ">Infinix</a>
           </div>
           <div>
-            <a href="#">Hisense</a>
+            <a href=" {% static '../template/gadgettv.html' %} ">Hisense</a>
           </div>
           <div>
-            <a href="#">Sony</a>
+            <a href=" {% static '../template/gadgettv.html' %} ">Sony</a>
           </div>
           
         </div>
@@ -89,13 +183,13 @@
         <div class="stores">
           <h3>Stores</h3>
           <div>
-            <a href="#"> Konga </a>
+            <a href="https://www.konga.com/" target="_blank"> Konga </a>
           </div>
           <div>
-            <a href="#">Jumia</a>
+            <a href="https://www.jumia.com.ng/" target="_blank">Jumia</a>
           </div>
           <div>
-            <a href="#">AliExpress</a>
+            <a href="http://www.aliexpress.com/" target="_blank">AliExpress</a>
           </div>
           
         </div>
@@ -107,42 +201,66 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="{% static "/images/gadget and phones/Frame 102.png" %}" alt="" />
+                <img src=" {% static '../images/gadget and phones/Frame 102.png' %} " alt="gadget image" />
               </div>
               <div>
                 <h4>
-                  Apple Iphone 13 Pro Max 6.7 Super Retina XDR Display (6GB RAM
-                  +256GB ROM), IOS 15 - Graphite
+                  Apple Iphone 13 Pro Max
                 </h4>
                 <p>N850,000</p>
-                <div class="compare">
-                  <a class="compare-btn" href="#">Compare</a>
+                <div class="compare center">
+                  <a class="compare-btn" href="#" id="show-login">Compare</a>
+                </div>
+                <div class="popup">
+                  <div class="close-btn">&times;</div>
+                  <div class="form">
+                    <h2>Log in</h2>
+                    <div class="form-element">
+                      <label for="email">Email</label>
+                      <input type="text" id="email" placeholder="Enter email">
+                    </div>
+                    <div class="form-element">
+                      <label for="password">Password</label>
+                      <input type="password" id="password" placeholder="Enter password">
+                    </div>
+                    <div class="form-element">
+                      <input type="checkbox" id="remember-me">
+                      <label for="remember-me">Remember me</label>
+                    </div>
+                    <div class="form-element">
+                      <button>Sign in</button>
+                    </div>
+                    <div class="form-element">
+                      <a href=" {% static '../template/forgotPassword.html' %} ">Forgot password?</a>
+                    </div>
+                    <div class="popup-signup">
+                      Don't have an account? <a href=" {% static '../template/createAccount.html' %} ">Sign up</a>
+                    </div>
+                  </div>
                 </div>
               </div>
             </div>
             <div class="box">
               <div>
-                <img src="{% static "/images/gadget and phones/Frame 103.png" %}" alt="" />
+                <img src=" {% static '../images/gadget and phones/Frame 103.png' %} " alt="gadget image" />
               </div>
               <div>
                 <h4>
-                  Samsung Galaxy A53, 6.5" Super AMOLED Screen,(6GB RAM +128GB
-                  ROM),Android 12 - Peach
+                  Samsung Galaxy A53
                 </h4>
                 <p>N250,000</p>
-                 <div class="compare">
-                  <a class="compare-btn" href="#">Compare</a>
+                <div class="compare center">
+                  <a class="compare-btn" href="#" id="show-login">Compare</a>
                 </div>
               </div>
             </div>
             <div class="box">
               <div>
-                <img src="{% static "/images/gadget and phones/Frame 104.png" %}" alt="" />
+                <img src=" {% static '../images/gadget and phones/Frame 104.png' %} " alt="gadget image" />
               </div>
               <div>
                 <h4>
-                  Oppo A96,6.59',Sunset Blue (8RAM +256GB ROM),5OMP + 2MP
-                  Rear,16MP Selfie
+                  Oppo A96
                 </h4>
                 <p>N168,000</p>
                  <div class="compare">
@@ -159,11 +277,11 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="{% static "/images/gadget and phones/po.png" %}" alt="" />
+                <img src=" {% static '../images/gadget and phones/po.png' %} " alt="gadget image" />
               </div>
               <div>
                 <h4>
-                  Apple MacBook Pro 14" M1 Pro Chip 16GB RAM,512GB(2021 Model)
+                  Apple MacBook Pro 14"
                 </h4>
                 <p>N1,350,000</p>
                  <div class="compare">
@@ -173,12 +291,11 @@
             </div>
             <div class="box">
               <div>
-                <img src="{% static "/images/gadget and phones/ol.png" %}" alt="" />
+                <img src=" {% static '../images/gadget and phones/ol.png' %} " alt="gadget image" />
               </div>
               <div>
                 <h4>
-                  Hp Pavilion 15- Intel I5 - 16GB RAM - Keyboard Light
-                  Touch,512GB SSD -11TH GEN Windows 1
+                  Hp Pavilion 15
                 </h4>
                 <p>N405,000</p>
                  <div class="compare">
@@ -188,12 +305,11 @@
             </div>
             <div class="box">
               <div>
-                <img src= "{% static "/images/gadget and phones/rry.png" %}" alt="" />
+                <img src=" {% static '../images/gadget and phones/rry.png' %} " alt="gadget image" />
               </div>
               <div>
                 <h4>
-                  Dell Inspiron 15 3510 - Intel Pentium Silver N5030,128GB
-                  SSD,4GB RAM Windows 11
+                  Dell Inspiron 15 
                 </h4>
                 <p>N204,500</p>
                  <div class="compare">
@@ -210,11 +326,11 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="{% static "/images/gadget and phones/oliu.png" %}" alt="" />
+                <img src=" {% static '../images/gadget and phones/oliu.png' %} " alt="gadget image" />
               </div>
               <div>
                 <h4>
-                  Sony 50W660 Bravia 50" Digital Smart FHD Tv With Andriod OS
+                  Sony 50W660 Bravia 50" 
                 </h4>
                 <p>N307,800</p>
                  <div class="compare">
@@ -224,10 +340,10 @@
             </div>
             <div class="box">
               <div>
-                <img src="{% static "/images/gadget and phones/ioio.png" %}" alt="" />
+                <img src=" {% static '../images/gadget and phones/ioio.png' %} " alt="gadget image" />
               </div>
               <div>
-                <h4>Hisense 43" Full High Definition LED Smart Tv With WiFi</h4>
+                <h4>Hisense Smart Tv</h4>
                 <p>N165,700</p>
                  <div class="compare">
                   <a class="compare-btn" href="#">Compare</a>
@@ -236,12 +352,12 @@
             </div>
             <div class="box">
               <div>
-                <img src="{% static "/images/gadget and phones/8i.png" %}" alt="" />
+                <img src=" {% static '../images/gadget and phones/8i.png' %} " alt="gadget image" />
               </div>
               <div>
-                <h4>Infinity 50" Smart Full HD LED 4K Screen Tv</h4>
+                <h4>Infinity Screen Tv</h4>
                 <p>N170,000</p>
-                 <div class="compare">
+                <div class="compare">
                   <a class="compare-btn" href="#">Compare</a>
                 </div>
               </div>
@@ -255,7 +371,7 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="{% static "/images/gadget and phones/HISENSE 2 1.png" %}" alt="" />
+                <img src=" {% static '../images/gadget and phones/HISENSE 2 1.png' %} " alt="gadget image" />
               </div>
               <div>
                 <p>25% discount</p>
@@ -268,15 +384,15 @@
             <div class="box">
               <div>
                 <img
-                  src="{% static "/images/gadget and phones/IPHONE 11 PRO 1.png" %}"
-                  alt=""
+                  src=" {% static '../images/gadget and phones/IPHONE 11 PRO 1.png' %} "
+                  alt="gadget image"
                 />
               </div>
               <div>
                 <p>15% discount</p>
                 <h4>Apple Iphone 11 Pro Max</h4>
-                 <div class="compare">
-                  <a class="compare-btn" href="#">Compare</a>
+                 <div class="compare center">
+                  <a class="compare-btn" href="#" id="show-login">Compare</a>
                 </div>
               </div>
             </div>
@@ -291,55 +407,62 @@
 
         <div class="overall-review">
           <div class="numbers">
-            <span number>4.5</span>
-            <p>out of 5</p>
+            <p><span class="rate-num">4.5</span> out of 5</p>
           </div>
-          <div class="rating">15 Ratings</div>
 
           <div class="review-container">
             <div contain>
-              <div class="stars-container">
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                  <i class="fas fa-star"></i>
-                </div>
-                <div class="star">
-                  <i class="fas fa-star"></i>
-                </div>
-              </div>
+              <div class="stars-container"></div>
               <div class="progress-container">
-                <div class="progress-bar">
-                  <div class="progress-bar-fill first"></div>
+                <div class="progress-star">
+                  <div>
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill first"></div>
+                  </div>
                 </div>
-                <div class="progress-bar">
-                  <div class="progress-bar-fill second"></div>
+                <div class="progress-star">
+                  <div>
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill second"></div>
+                  </div>
                 </div>
-                <div class="progress-bar">
-                  <div class="progress-bar-fill third"></div>
+                <div class="progress-star">
+                  <div>
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill third"></div>
+                  </div>
                 </div>
-                <div class="progress-bar">
-                  <div class="progress-bar-fill fourth"></div>
+                <div class="progress-star">
+                  <div>
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill fourth"></div>
+                  </div>
                 </div>
-                <div class="progress-bar">
-                  <div class="progress-bar-fill fifth"></div>
+                <div class="progress-star">
+                  <div>
+                    <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill fifth"></div>
+                  </div>
                 </div>
               </div>
             </div>
@@ -349,13 +472,13 @@
         <div class="profile">
           <div class="pro-contain">
             <div class="profile-pic">
-              <img src="{% static "/images/model.png" %}" alt="profile-pic" />
+              <img src=" {% static '../images/model.png' %} " alt="profile-pic" />
             </div>
             <div class="content">
-              <div class="star">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+              <div>
+                <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+                <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
               </div>
               <p>Joe</p>
               <p>joelawrence@gmail.com</p>
@@ -371,14 +494,14 @@
       <div class="profile">
         <div class="pro-contain">
           <div class="profile-pic">
-            <img src="{% static "/images/model1.png" %}" alt="profile-pic" />
+            <img src=" {% static '../images/model1.png' %} " alt="profile-pic" />
           </div>
           <div class="content">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+            <div>
+              <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
             </div>
             <p>Mary</p>
             <p>maryrandy@gmail.com</p>
@@ -393,15 +516,15 @@
       <div class="profile">
         <div class="pro-contain">
           <div class="profile-pic">
-            <img src="{% static "/images/model2.png" %}" alt="profile-pic" />
+            <img src=" {% static '../images/model2.png' %} " alt="profile-pic" />
           </div>
           <div class="content">
-            <div class="star">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+            <div>
+              <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static '../images/social media icon/star.svg' %} " alt="" />
             </div>
             <p>Bimbo</p>
             <p>missbimbo@gmail.com</p>
@@ -416,7 +539,224 @@
         </div>
       </div>
     </section>
-    {% endblock maincontent %}
+    <footer>
+      <section class="footerContainer">
+        <section class="Social_Icons">
+          <div class="footLogo">Wallet<span>friendly</span></div>
+          <div class="Icons">
+            <ul>
+              <li>
+                <a href="#"
+                  ><img src=" {% static '../images/social media icon/mail.svg' %} " alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src=" {% static '../images/social media icon/twitter.svg' %} " alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src=" {% static '../images/social media icon/facebook.svg' %} " alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src=" {% static '../images/social media icon/youtube.svg' %} " alt="" />
+                </a>
+              </li>
+            </ul>
+            <ul>
+              <li>
+                <a href="#">
+                  <img src=" {% static '../images/social media icon/instagram.svg' %} " alt=""
+                /></a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src=" {% static '../images/social media icon/telegram.svg' %} " alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src=" {% static '../images/social media icon/tiktok.svg' %} " alt="" />
+                </a>
+              </li>
+              <li>
+                <a href="#">
+                  <img src=" {% static '../images/social media icon/reddit.svg' %} " alt=""
+                /></a>
+              </li>
+            </ul>
+          </div>
+        </section>
+        <section categories>
+          <p><strong>Categories</strong></p>
+          <ul>
+            <li>
+              <a href=" {% static '../template/hairAccessories.html' %} ">Accessories</a>
+            </li>
+            <li>
+              <a href=" {% static '../template/boneStraight.html' %} ">Bone Straight</a>
+            </li>
+            <li><a href=" {% static '../template/humanHair.html' %} ">Human Hairs</a></li>
+            <li><a href=" {% static '../template/gadgetLaptops.html' %} ">Laptops</a></li>
+            <li>
+              <a href=" {% static '../template/gadgetPhones.html' %} ">Mobile Phones</a>
+            </li>
+            <li><a href=" {% static '../template/fashionMen.html' %} ">Men's Wear</a></li>
+            <li><a href=" {% static '../template/fashionMen.html' %} ">Men's Shoes</a></li>
+            <li>
+              <a href=" {% static '../template/fashionWomen.html' %} ">Women's Wear</a>
+            </li>
+            <li>
+              <a href=" {% static '../template/fashionWomen.html' %} ">Women's Shoes</a>
+            </li>
+            <li><a href=" {% static '../template/gadgettv.html' %} ">Smart TVs</a></li>
+          </ul>
+        </section>
+        <section gadgetBrands>
+          <p><strong>Gadgets Brands</strong></p>
+          <ul>
+            <li><a href=" {% static '../template/gadgettv.html' %} ">Apple TVs</a></li>
+            <li><a href=" {% static '../template/gadgetLaptops.html' %} ">Dell</a></li>
+            <li><a href=" {% static '../template/gadgettv.html' %} ">Hisense</a></li>
+            <li>
+              <a href=" {% static '../template/gadgettv.html' %} ">Infinix Smart TVs</a>
+            </li>
+            <li><a href=" {% static '../template/gadgetPhones.html' %} ">iPhones</a></li>
+            <li><a href=" {% static '../template/gadgetPhones.html' %} ">Oppo</a></li>
+            <li><a href=" {% static '../template/gadgetPhones.html' %} ">Samsung</a></li>
+            <li><a href=" {% static '../template/fashion.html' %} ">Spectre</a></li>
+            <li><a href=" {% static '../template/fashionMen.html' %} ">Polystar</a></li>
+            <li><a href=" {% static '../template/fashionMen.html' %} ">Watches</a></li>
+          </ul>
+        </section>
+        <section popularBrands>
+          <p><strong>Popular Brands</strong></p>
+          <ul>
+            <li>
+              <a href="http://www.amazon.com/" target="_blank">Amazon</a>
+            </li>
+            <li>
+              <a href="https://www.apple.com/ng/" target="_blank">Apple</a>
+            </li>
+            <li>
+              <a href="http://www.google.com/" target="_blank">Google</a>
+            </li>
+            <li>
+              <a href="https://www.lewisstores.co.za/" target="_blank"
+                >Lewi's</a
+              >
+            </li>
+            <li>
+              <a href="https://www.microsoft.com/en-ng" target="_blank"
+                >Microsoft</a
+              >
+            </li>
+            <li>
+              <a href="https://www.7up.com/" target="_blank">7up</a>
+            </li>
+            <li>
+              <a href="https://www.zara.com/" target="_blank">Zara</a>
+            </li>
+          </ul>
+        </section>
+        <section About>
+          <p><strong>About</strong></p>
+          <ul>
+            <li>
+              <a href=" {% static '../template/AboutUs.html' %} ">About WalletFriendly</a>
+            </li>
+            <li><a href=" {% static '../template/faq.html' %} ">FAQ</a></li>
+            <li><a href=" {% static '../template/team.html' %} ">Team</a></li>
+            <li><a href="#">Jobs</a></li>
+            <li><a href=" {% static '../template/contactUs.html' %} ">Contact Us</a></li>
+            <li>
+              <a href=" {% static '../template/compareGadgets.html' %} ">Compare Prices</a>
+            </li>
+            <li>
+              <a href=" {% static '../template/trendingNews.html' %} ">Latest News</a>
+            </li>
+            <li><a href=" {% static '../template/review.html' %} ">Reviews</a></li>
+            <li>
+              <a href=" {% static '../template/documentation.html' %} ">Documentation</a>
+            </li>
+          </ul>
+        </section>
+      </section>
 
+      <hr bottom />
+
+      <section bottom>
+        <div class="bottom">
+          <p>
+            <strong>Copyright 2022,</strong>WalletFriendly ©
+            <strong>All Rights Reserved</strong>
+          </p>
+        </div>
+      </section>
+    </footer>
+<!-- <footer class="footerContainerResponsive">
+    <section >
+      <div class="footLogoResponsive">
+        Wallet<span>friendly</span>
+    </div>
+             <section class="categories">
+          <p><strong>Categories</strong></p>
+          <ul>
+              <li><a href=" {% static '../template/hairAccessories.html' %} ">Accessories</a></li>
+              <li><a href=" {% static '../template/boneStraight.html' %} ">Bone Straight</a></li>
+              <li><a href=" {% static '../template/humanHair.html' %} ">Human Hairs</a></li>
+              <li><a href=" {% static '../template/gadgetLaptops.html' %} ">Laptops</a></li>
+              <li><a href=" {% static '../template/gadgetPhones.html' %} ">Mobile Phones</a></li>
+              <li><a href=" {% static '../template/fashionMen.html' %} ">Men's Wear</a></li>
+              <li><a href=" {% static '../template/fashionMen.html' %} ">Men's Shoes</a></li>
+              <li><a href=" {% static '../template/fashionWomen.html' %} ">Women's Wear</a></li>
+              <li><a href=" {% static '../template/fashionWomen.html' %} ">Women's Shoes</a></li>
+              <li><a href=" {% static '../template/gadgettv.html' %} ">Smart TVs</a></li>
+          </ul>
+      </section>
+          <section class="about">
+              <p><strong>About</strong></p>
+              <ul>
+                  <li><a href="#">About WalletFriendly</a></li>
+                  <li><a href="#">FAQ</a></li>
+                  <li><a href=" {% static '../template/team.html' %} ">Team</a></li>
+                  <li><a href="#">Jobs</a></li>
+                  <li><a href=" {% static '../template/contactUs.html' %} ">Contact Us</a></li>
+                  <li><a href=" {% static '../template/compareGadgets.html' %} ">Compare Prices</a></li>
+                  <li><a href=" {% static '../template/trendingNews.html' %} ">Latest News</a></li>
+                  <li><a href=" {% static '../template/review.html' %} ">Reviews</a></li>
+                  <li><a href=" {% static '../template/documentation.html' %} ">Documentation</a></li>
+              </ul>
+          </section>
+      </section>
+
+      <section class="Social_Icons">
+        <div class="Icons">
+            <ul>
+                <li> <a href="#"><img src=" {% static '../images/social media icon/mail.svg' %} " alt="mail icon"></a> </li>
+                <li> <a href="#"> <img src=" {% static '../images/social media icon/twitter.svg' %} " alt="twitter icon">  </a> </li>
+                <li> <a href="#"> <img src=" {% static '../images/social media icon/facebook.svg' %} " alt="facebook icon"> </a> </li>
+                <li> <a href="#"> <img src=" {% static '../images/social media icon/youtube.svg' %} " alt="youtube icon"> </a> </li>
+                <li> <a href="#"> <img src=" {% static '../images/social media icon/instagram.svg' %} " alt="instagram icon"></a> </li>
+                <li> <a href="#"> <img src=" {% static '../images/social media icon/telegram.svg' %} " alt="telegram icon">  </a> </li>
+                <li> <a href="#"> <img src=" {% static '../images/social media icon/tiktok.svg' %} " alt="tiktok icon">  </a> </li>
+                <li> <a href="#"> <img src=" {% static '../images/social media icon/reddit.svg' %} " alt="reddit icon"></a> </li>
+            </ul>
+        </section>
+      <hr bottom>
+
+      <section bottom>
+
+          <div class="bottom">
+              <p> <strong>Copyright 2022,</strong>WalletFriendly © <strong>All Rights Reserved</strong></p>
+          </div>
+      </section>
+
+  </footer> -->
+  <script src=" {% static '../script/sidebar.js' %} "></script>
+  <script src=" {% static '../script/popup.js' %} "></script>
 </body>
 </html>
