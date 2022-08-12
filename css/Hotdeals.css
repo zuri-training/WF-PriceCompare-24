@@ -36,7 +36,7 @@ a {
 
 header .head_section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgba(255, 255, 255);
     padding: 1em;
     align-items: center;
@@ -185,19 +185,36 @@ footer {
     justify-content: space-between;
     margin-top: 7px;
     width: fit-content;
+    align-items: end;
 }
 
 div.progress-bar {
-    height: 8px;
-    width: 16em;
-    background-color: var(--secondary-color);
+    height: 5px;
+    width: 325px;
+    border-bottom: 1px solid #1b29a9;
 }
+
+.progress-star {
+    display: flex;
+    align-items: center;
+    column-gap: 14.25px;
+}
+
+
 
 section[reviews] {
     border-top: 1px solid gray;
     max-width: 100%;
     margin-top: 2em;
 }
+
+.rate-num {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #949ffe;
+}
+
 
 div.progress-bar-fill {
     height: inherit;

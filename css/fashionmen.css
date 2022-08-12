@@ -924,6 +924,10 @@ div.footLogoResponsive {
     color: black;
 }
 
+a {
+    text-decoration: none;
+}
+
 /* media query for responsiveness */
 @media screen and (max-width: 1024px) {
     #main {
@@ -990,11 +994,6 @@ div.footLogoResponsive {
         padding: 1rem 0;
     }
 
-    [gadgetBrands],
-    [popularBrands],
-    [about] {
-        display: none;
-    }
 
     main .hero-section {
         background-position: center;

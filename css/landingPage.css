@@ -62,7 +62,7 @@ body {
 
 header .head_section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgba(255, 255, 255);
     padding: 1em;
     align-items: center;
@@ -1270,6 +1270,10 @@ main section.hero-section {
     right: .5em;
     color: gray;
     top: .2em;
+}
+
+.box:nth-child(3)>:nth-child(1) img {
+   transform: scale(0.8);
 }
 
 
