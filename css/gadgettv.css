@@ -1209,12 +1209,6 @@ header.active {
         padding: 1rem 0;
     }
 
-    [gadgetBrands],
-    [popularBrands],
-    [about] {
-        display: none;
-    }
-
     main .hero-section {
         background-position: center;
     }
@@ -1268,6 +1262,14 @@ header.active {
         row-gap: 2rem;
     }
 
+    div.login>div:nth-child(2) {
+        display: none;
+    }
+
+    div.time p {
+        display: none;
+    }
+
     .shoes-section,
     .men-content {
         border: none;
@@ -1293,5 +1295,11 @@ header.active {
     .shoe-content h4 {
         font-size: 1rem;
         width: 100%;
+    }
+}
+
+@media screen and (max-width:425px) {
+    div.login {
+        display: none;
     }
 }
