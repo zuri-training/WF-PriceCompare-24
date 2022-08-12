@@ -831,6 +831,10 @@ header.active {
 
 }
 
+a {
+  text-decoration: none;
+}
+
 @media screen and (max-width: 1024px) {
   #main {
     display: block;

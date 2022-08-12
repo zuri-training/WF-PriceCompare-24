@@ -763,6 +763,10 @@ div.pro-contain {
 
 }
 
+a {
+    text-decoration: none;
+}
+
 div.profile {
     display: flex;
     justify-content: space-between;
