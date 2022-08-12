@@ -13,7 +13,8 @@
     <!-- <link rel="stylesheet" href="../css/responsive.css"> -->
     <!-- <link rel="stylesheet" href="../css/gadgettv.css"> -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
 </head>
 
 <body>
@@ -52,9 +53,11 @@
                 <div id="close" class="fas fa-times"></div>
 
             </nav>
-            <div class="logo">
-                Wallet<span>friendly</span>
-            </div>
+            <a href="./gadgettvAuth.html">
+                <div class="logo">
+                    Wallet<span>friendly</span>
+                </div>
+            </a>
             <!-- <div class="search_bar">
                 <input type="search" placeholder="Search Product, brand" name="search" id="search_bar">
 
@@ -71,7 +74,7 @@
 
                 <div>
                     <span class="material-symbols-outlined">person</span>
-                    <button class="signInButton">  <a href="./Login.html"> Login </a></button>
+                    <button class="signInButton"> <a href="./Login.html"> Log Out </a></button>
                 </div>
                 <div>
                     <span class="material-symbols-outlined">shopping_cart</span>
@@ -94,10 +97,10 @@
                     <li fashion> <a href="./fashion.html"> Fashion</a>
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href="./fashionMen.html">Men's Clothing</a></li>
-                                <li><a href="./fashionWomen.html">Women's Clothing</a></li>
-                                <li><a href="./fashionMen.html">Men's Shoes</a></li>
-                                <li><a href="./fashionWomen.html">Women's Shoes</a></li>
+                                <li><a href="./fashionMenAuth.html">Men's Clothing</a></li>
+                                <li><a href="./fashionwomenAuth.html">Women's Clothing</a></li>
+                                <li><a href="./fashionMenAuth.html">Men's Shoes</a></li>
+                                <li><a href="./fashionwomenAuth.html">Women's Shoes</a></li>
                             </ul>
 
 
@@ -110,9 +113,9 @@
 
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href="./gadgetPhones.html">Mobile Phones</a></li>
+                                <li><a href="./gadgetPhonesAuth.html">Mobile Phones</a></li>
                                 <li><a href="./gadgetLaptops.html">Laptops</a></li>
-                                <li><a href="./gadgettv.html">Smart TVs</a></li>
+                                <li><a href="./gadgettvAuth.html">Smart TVs</a></li>
 
                             </ul>
 
@@ -125,8 +128,8 @@
                         <div class="subMenu1">
                             <ul class="linkPages">
                                 <li><a href="./hairHomePage.html">Human Hair</a></li>
-                                <li><a href="./boneStraight.html">Bone Straight</a></li>
-                                <li><a href="./hairAccessories.html">Accessories</a></li>
+                                <li><a href="./boneStraightAuth.html">Bone Straight</a></li>
+                                <li><a href="./hairAccessoriesAuth.html">Accessories</a></li>
 
                             </ul>
 
@@ -135,7 +138,7 @@
 
                     </li>
 
-                    <li compare> <a href="#"> Compare</a>
+                    <li compare> <a href="./compareGadgets.html"> Compare</a>
                         <div class="subMenu1">
                             <ul class="linkPages">
                                 <li><a href="#">By Price</a></li>
@@ -206,7 +209,8 @@
                     <a href="https://www.jumia.com.ng/" target="_blank">Jumia</a>
                 </div>
                 <div>
-                    <a href="https://www.aliexpress.com/?spm=a2g0o.best.1000002.1.719a2c250LlJBR" target="_blank">AliExpress</a>
+                    <a href="https://www.aliexpress.com/?spm=a2g0o.best.1000002.1.719a2c250LlJBR"
+                        target="_blank">AliExpress</a>
                 </div>
                 <div></div>
             </div>
@@ -498,55 +502,61 @@
 
             <div class="overall-review">
                 <div class="numbers">
-                    <span number>4.5</span>
-                    <p>out of 5</p>
+                    <p> <span class="rate-num">4.5</span> out of 5</p>
                 </div>
-                <div class="rating">15 Ratings</div>
-
                 <div class="review-container">
                     <div contain>
-                        <div class="stars-container">
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                                <i class="fas fa-star"></i>
-                            </div>
-                            <div class="star">
-                                <i class="fas fa-star"></i>
-                            </div>
-                        </div>
+                        <div class="stars-container"></div>
                         <div class="progress-container">
-                            <div class="progress-bar">
-                                <div class="progress-bar-fill first"></div>
+                            <div class="progress-star">
+                                <div>
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill first"></div>
+                                </div>
                             </div>
-                            <div class="progress-bar">
-                                <div class="progress-bar-fill second"></div>
+                            <div class="progress-star">
+                                <div>
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill second"></div>
+                                </div>
                             </div>
-                            <div class="progress-bar">
-                                <div class="progress-bar-fill third"></div>
+                            <div class="progress-star">
+                                <div>
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill third"></div>
+                                </div>
                             </div>
-                            <div class="progress-bar">
-                                <div class="progress-bar-fill fourth"></div>
+                            <div class="progress-star">
+                                <div>
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill fourth"></div>
+                                </div>
                             </div>
-                            <div class="progress-bar">
-                                <div class="progress-bar-fill fifth"></div>
+                            <div class="progress-star">
+                                <div>
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                </div>
+                                <div class="progress-bar">
+                                    <div class="progress-bar-fill fifth"></div>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -560,9 +570,9 @@
                     </div>
                     <div class="content">
                         <div class="star">
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
-                            <i class="fas fa-star"></i>
+                            <img src="../images/social media icon/star.svg" alt="" />
+                            <img src="../images/social media icon/star.svg" alt="" />
+                            <img src="../images/social media icon/star.svg" alt="" />
                         </div>
                         <p>Joe</p>
                         <p>joelawrence@gmail.com</p>
@@ -582,10 +592,10 @@
                 </div>
                 <div class="content">
                     <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
                     </div>
                     <p>Mary</p>
                     <p>maryrandy@gmail.com</p>
@@ -604,11 +614,11 @@
                 </div>
                 <div class="content">
                     <div class="star">
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
-                        <i class="fas fa-star"></i>
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
                     </div>
                     <p>Bimbo</p>
                     <p>missbimbo@gmail.com</p>
@@ -664,31 +674,31 @@
             <section categories>
                 <p><strong>Categories</strong></p>
                 <ul>
-                    <li><a href="../template/hairAccessories.html">Accessories</a></li>
-                    <li><a href="../template/boneStraight.html">Bone Straight</a></li>
-                    <li><a href="../template/humanHair.html">Human Hairs</a></li>
+                    <li><a href="../template/hairAccessoriesAuth.html">Accessories</a></li>
+                    <li><a href="../template/boneStraightAuth.html">Bone Straight</a></li>
+                    <li><a href="../template/humanhairAuth.html">Human Hairs</a></li>
                     <li><a href="../template/gadgetLaptops.html">Laptops</a></li>
-                    <li><a href="../template/gadgetPhones.html">Mobile Phones</a></li>
-                    <li><a href="../template/fashionMen.html">Men's Wear</a></li>
-                    <li><a href="../template/fashionMen.html">Men's Shoes</a></li>
-                    <li><a href="../template/fashionWomen.html">Women's Wear</a></li>
-                    <li><a href="../template/fashionWomen.html">Women's Shoes</a></li>
-                    <li><a href="../template/gadgettv.html">Smart TVs</a></li>
+                    <li><a href="../template/gadgetPhonesAuth.html">Mobile Phones</a></li>
+                    <li><a href="../template/fashionMenAuth.html">Men's Wear</a></li>
+                    <li><a href="../template/fashionMenAuth.html">Men's Shoes</a></li>
+                    <li><a href="../template/fashionwomenAuth.html">Women's Wear</a></li>
+                    <li><a href="../template/fashionwomenAuth.html">Women's Shoes</a></li>
+                    <li><a href="../template/gadgettvAuth.html">Smart TVs</a></li>
                 </ul>
             </section>
             <section gadgetBrands>
                 <p><strong>Gadgets Brands</strong></p>
                 <ul>
-                    <li><a href="../template/gadgettv.html">Apple TVs</a></li>
+                    <li><a href="../template/gadgettvAuth.html">Apple TVs</a></li>
                     <li><a href="../template/gadgetLaptops.html">Dell</a></li>
-                    <li><a href="../template/gadgettv.html">Hisense</a></li>
-                    <li><a href="../template/gadgettv.html">Infinix Smart TVs</a></li>
-                    <li><a href="../template/gadgetPhones.html">iPhones</a></li>
-                    <li><a href="../template/gadgetPhones.html">Oppo</a></li>
-                    <li><a href="../template/gadgetPhones.html">Samsung</a></li>
+                    <li><a href="../template/gadgettvAuth.html">Hisense</a></li>
+                    <li><a href="../template/gadgettvAuth.html">Infinix Smart TVs</a></li>
+                    <li><a href="../template/gadgetPhonesAuth.html">iPhones</a></li>
+                    <li><a href="../template/gadgetPhonesAuth.html">Oppo</a></li>
+                    <li><a href="../template/gadgetPhonesAuth.html">Samsung</a></li>
                     <li><a href="../template/fashion.html">Spectre</a></li>
-                    <li><a href="../template/fashionMen.html">Polystar</a></li>
-                    <li><a href="../template/fashionMen.html">Watches</a></li>
+                    <li><a href="../template/fashionMenAuth.html">Polystar</a></li>
+                    <li><a href="../template/fashionMenAuth.html">Watches</a></li>
                 </ul>
             </section>
             <section popularBrands>
