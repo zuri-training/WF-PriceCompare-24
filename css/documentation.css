@@ -371,6 +371,10 @@ main img {
     width: 421px;
 }
 
+a {
+    text-decoration: none;
+}
+
 .branch {
     display: flex;
     padding-bottom: 4rem;
