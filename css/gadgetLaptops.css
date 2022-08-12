@@ -759,6 +759,7 @@ header.active {
 
 /* ends here  */
 
+<<<<<<< HEAD
 /* mobile screen footer */
 .Social_Icons div.Icons ul {
   display: flex;
@@ -905,6 +906,9 @@ div.footLogoResponsive {
     row-gap: 2rem;
   }
 
+=======
+@media screen and (max-width: 768px) {
+>>>>>>> origin/Development_FE
   div.icons {
     display: block;
   }
