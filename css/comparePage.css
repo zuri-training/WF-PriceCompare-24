@@ -18,7 +18,9 @@
    font-size: 25px;
    padding: 0 0 0 25px;
 }
-
+a{
+   text-decoration: none;
+}
 .nav-links.compare ul {
    justify-content: start;
    background-color: white;
@@ -324,7 +326,9 @@ header.active {
    color: var(--secondary-color);
 
 }
-
+.logo{
+   color: red !important;
+}
 @media screen and (max-width: 768px) {
    div.icons {
       display: block;
