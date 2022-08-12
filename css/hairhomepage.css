@@ -37,6 +37,10 @@ header .head_section {
 	align-items: center;
 }
 
+header .head_section a {
+	text-decoration: none;
+}
+
 .linkPages {
 	z-index: 1;
 }
@@ -60,7 +64,7 @@ div.login {
 	display: flex;
 	align-content: center;
 	width: 8em;
-   max-width: fit-content;
+	max-width: fit-content;
 	justify-content: space-between;
 }
 
@@ -442,7 +446,7 @@ div.progress-bar {
 	display: flex;
 	align-items: center;
 	column-gap: 14.25px;
-   width: 100%;
+	width: 100%;
 }
 
 section[reviews] {
@@ -523,7 +527,7 @@ div.profile-pic img {
 }
 
 div.pro-contain {
-   width:100%;
+	width: 100%;
 	display: flex;
 	padding-top: 1em;
 	gap: 1.4rem;
@@ -759,8 +763,8 @@ header.active {
 .navbar {
 
 	position: fixed;
-   opacity: 0;
-   z-index: -10;
+	opacity: 0;
+	z-index: -10;
 }
 
 .navbar.active {
@@ -768,16 +772,16 @@ header.active {
 	left: 0;
 
 	z-index: 1;
-   top: 0;
+	top: 0;
 
 	height: 100%;
 
 	background: var(--main-color);
 
 	padding: 3rem;
- width: 100%;
+	width: 100%;
 	max-width: 20rem;
-   opacity: 1;
+	opacity: 1;
 
 }
 
@@ -925,7 +929,8 @@ header.active {
 		display: block;
 		padding: 1rem 0;
 	}
-   div.icons {
+
+	div.icons {
 		display: block;
 	}
 }
@@ -973,16 +978,16 @@ header.active {
 	}
 
 	div.login>div:nth-child(2) {
-      display:  none;
-   }
+		display: none;
+	}
 
-   div.time p {
-    display: none;
-   }
+	div.time p {
+		display: none;
+	}
 }
 
 @media screen and (max-width:425px) {
-   div.login {
-      display:  none;
-   }
+	div.login {
+		display: none;
+	}
 }
