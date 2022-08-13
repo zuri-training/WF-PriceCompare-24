@@ -1,5 +1,4 @@
 {% load static %}
-{% load social_share %}
 <!DOCTYPE html>
 <html lang="en">
 
@@ -8,11 +7,11 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>WalletFriendly</title>
-        <link rel="stylesheet" href=" {% static 'css/fashionWomen.css' %} " />
-        <link rel="stylesheet" href=" {% static 'css/fWA.css' %} " />
-        <link rel="stylesheet" href=" {% static 'css/responsive.css' %} ">
+        <link rel="stylesheet" href=" {% static '../css/fashionWomen.css' %} " />
+        <link rel="stylesheet" href=" {% static '../css/fWA.css' %} " />
+        <link rel="stylesheet" href=" {% static '../css/responsive.css' %} ">
 
-         <script src=" {% static 'script/sidebar.js' %} " defer></script>
+         <script src=" {% static '../script/sidebar.js' %} " defer></script>
        
 
         <link
@@ -27,122 +26,125 @@
     
       <body>
         <header>
-            <section class="head_section">
-                <div class="icons">
-                    <div id="menu-bar" class="fas fa-bars"></div>
-                </div>
-                <nav class="navbar">
-                    <div class="user">
-                        <img src=" {% static 'images/model.png' %} " alt="profile picture" />
-    
-                        <h4>John Doe</h4>
+                <section class="head_section">
+
+
+ <!-- the beginning of the side-bar -->
+ <div class="icons">
+
+    <div id="menu-bar" class="fas fa-bars"></div>
+  
+  </div>
+  <nav class="navbar">
+  
+  <div class="user">
+  
+    <img src=" {% static '../images/model.png' %} " alt="">
+  
+    <h4>John Doe</h4>
+  
+  </div>
+  
+  <div class="links">
+  
+    <a href=" {% static './index.html' %} ">Home</a>
+  
+    <a href=" {% static './AboutUs.html' %} ">About</a>
+  
+    <a href=" {% static './team.html' %} ">Team</a>
+  
+    <a href=" {% static './faq.html' %} ">FAQ</a>
+  
+    <a href=" {% static './contactUs.html' %} ">Contact Us</a>
+  
+  </div>
+  
+  <div id="close" class="fas fa-times"></div>
+  
+  </nav>
+  
+  <!-- this is the end of aside bar -->
+  
+  <a href=" {% static './indexAuth.html' %} "><div class="logo">Wallet<span>Friendly</span></div></a>
+
+                    <!-- <div class="search_bar">
+                        <input
+                            type="search"
+                            placeholder="Search Product, brand"
+                            name="search"
+                            id="search_bar"
+                        />
+                    </div> -->
+            <div class="top-link">
+              <ul>
+                  <li><a href=" {% static './AboutUs.html' %} ">About</a></li>
+                  <li><a href=" {% static '../template/team.html' %} ">Team</a></li>
+                  <li><a href=" {% static './faq.html' %} ">FAQs</a></li>
+                  <li><a href=" {% static '../template/contactUs.html' %} ">Contact</a></li>
+              </ul>
+          </div>
+                    <div class="login">
+                        <div>
+                            <span class="material-symbols-outlined">person</span>
+                            <button class="signInButton"><a href=" {% static '../template/Login.html' %} "> Logout</a></button>
+                        </div>
+                        <div>
+                            <span class="material-symbols-outlined">shopping_cart</span>
+                        </div>
                     </div>
+                </section>
     
-                    <div class="links">
-                        <a href=" {% url 'index' %} ">Home</a>
+                <nav id="nav_bar">
+                    <div class="nav-links nav-list">
+                        <ul>
+                            <li fashion>
+                                <a href=" {% static '' %} "> Fashion</a>
+                                <div class="subMenu1">
+                                    <ul class="linkPages">
+                                        <li><a href=" {% static '../template/fashionMenAuth.html' %} ">Men's Clothing</a></li>
+                                        <li><a href=" {% static '../template/fashionwomenAuth.html' %} ">Women's Clothing</a></li>
+                                        <li><a href=" {% static '../template/fashionMenAuth.html' %} ">Men's Shoes</a></li>
+                                        <li><a href=" {% static '../template/fashionwomenAuth.html' %} ">Women's Shoes</a></li>
+                                    </ul>
+                                </div>
+                            </li>
     
-                        <a href=" {% url 'aboutus' %} ">About</a>
+                            <li gadget>
+                                <a href="#"> Gadget</a>
     
-                        <a href=" {% url 'team' %} ">Team</a>
+                                <div class="subMenu1">
+                                    <ul class="linkPages">
+                                        <li><a href=" {% static '../template/gadgetPhonesAuth.html' %} ">Mobile Phones</a></li>
+                                        <li><a href=" {% static '../template/gadgetLaptopAuth.html' %} ">Laptops</a></li>
+                                        <li><a href=" {% static '../template/gadgettvAuth.html' %} ">Smart TVs</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li hair>
+                                <a href=" {% static '' %} "> Hair</a>
     
-                        <a href=" {% url 'faq' %} ">FAQ</a>
-    
-                        <a href=" {% url 'contactus' %} ">Contact Us</a>
+                                <div class="subMenu1">
+                                    <ul class="linkPages">
+                                        <li><a href=" {% static '../template/humanhairAuth.html' %} ">Human Hair</a></li>
+                                        <li><a href=" {% static '../template/boneStraightAuth.html' %} ">Bone Straight</a></li>
+                                        <li><a href=" {% static '../template/hairAccessoriesAuth.html' %} ">Accessories</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                            <li compare>
+                                <a href=" {% static './compareGadgets.html' %} "> Compare</a>
+                                <div class="subMenu1">
+                                    <ul class="linkPages">
+                                        <li><a href=" {% static '' %} ">By Price</a></li>
+                                        <li><a href=" {% static '' %} ">By Brand</a></li>
+                                        <li><a href=" {% static '' %} ">By Rating</a></li>
+                                    </ul>
+                                </div>
+                            </li>
+                        </ul>
                     </div>
-    
-                    <div id="close" class="fas fa-times"></div>
                 </nav>
-                <div class="logo">
-                    <a href=" {% url 'indexauth' %} ">Wallet<span>friendly</span></a>
-                </div>
-                <!-- <div class="search_bar">
-                    <input type="search" placeholder="Search Product, brand" name="search" id="search_bar">
-    
-                </div> -->
-    
-                <div class="top-link">
-                    <ul>
-                        <li><a href=" {% url 'aboutus' %} ">About</a></li>
-                        <li><a href=" {% url 'team' %} ">Team</a></li>
-                        <li><a href=" {% url 'faq' %} ">FAQs</a></li>
-                        <li><a href=" {% url 'contactus' %} ">Contact</a></li>
-                    </ul>
-                </div>
-                <div class="login">
-    
-                    <div>
-                        <span class="material-symbols-outlined">person</span>
-                        <button class="signInButton"> <a href=" {% url 'indexauth' %} "> Logout </a></button>
-                    </div>
-                    <div>
-                        <span class="material-symbols-outlined">shopping_cart</span>
-                    </div>
-                </div>
-    
-            </section>
-            <nav id="nav_bar">
-    
-                <div class="nav-links">
-    
-                    <ul>
-    
-                        <li fashion> <a href="#"> Fashion</a>
-                            <div class="subMenu1">
-                                <ul class="linkPages">
-                                    <li><a href="#">Men's Clothing</a></li>
-                                    <li><a href=" {% url 'fashionwomenauth' %} ">Women's Clothing</a></li>
-                                    <li><a href="#">Men's Shoes</a></li>
-                                    <li><a href=" {% url 'fashionwomenauth' %} ">Women's Shoes</a></li>
-                                </ul>
-    
-    
-                            </div>
-                        </li>
-    
-    
-    
-                        <li gadget> <a href=" # "> Gadget</a>
-    
-                            <div class="subMenu1">
-                                <ul class="linkPages">
-                                    <li><a href=" {% url 'gadgetPhonesauth' %} ">Mobile Phones</a></li>
-                                    <li><a href=" {% url 'gadgetlaptopsuth' %} ">Laptops</a></li>
-                                    <li><a href=" {% url 'gadgettvauth' %} ">Smart TVs</a></li>
-    
-                                </ul>
-    
-    
-                            </div>
-    
-                        </li>
-                        <li hair> <a href=" # "> Hair</a>
-    
-                            <div class="subMenu1">
-                                <ul class="linkPages">
-                                    <li><a href="#">Human Hair</a></li>
-                                    <li><a href=" {% url 'bonestraightauth' %} ">Bone Straight</a></li>
-                                    <li><a href=" {% url 'hairaccessoriesauth' %} ">Accessories</a></li>
-    
-                                </ul>
-    
-    
-                            </div>
-    
-                        </li>
-    
-                        <li compare> <a href=" {% url 'comparegadgets' %} "> Compare</a>
-                            <div class="subMenu1">
-                                <ul class="linkPages">
-                                    <li><a href="#">By Price</a></li>
-                                    <li><a href="#">By Brand</a></li>
-                                    <li><a href="#">By Rating</a></li>
-                                </ul>
-                            </div>
-                        </li>
-                    </ul>
-                </div>
-            </nav>
-        </header>
+            </header>
         <main id="main">
           <section class="hero-section">
             <h1 class="hero-section__title">
@@ -210,7 +212,7 @@
                 <div class="men-preview">
                     <div class="men-box">
                         <div>
-                            <img src=" {% static 'images/fashionwomen/dress.png' %} " alt="women_clothes" />
+                            <img src=" {% static '../images/fashionwomen/dress.png' %} " alt="women_clothes" />
                         </div>
                         <div>
                             <h4>Dresses</h4>
@@ -223,9 +225,8 @@
                                 <a href="http://www.aliexpress.com/" target="_blank" class="special-p">Aliexpress &#8358;15,000</a>
                             </div>
                             <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                <a href="#">
+                                    <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
@@ -235,7 +236,7 @@
                     </div>
                     <div class="men-box">
                         <div>
-                            <img src=" {% static 'images/fashionwomen/details main.png' %} " alt="" />
+                            <img src=" {% static '../images/fashionwomen/details main.png' %} " alt="" />
                         </div>
                         <div>
                             <h4>Tops/Blouses</h4>
@@ -248,9 +249,8 @@
                                 <a href="https://www.jumia.com.ng/" target="_blank" class="special-p">Jumia &#8358;29,300</a>
                             </div>
                             <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                <a href="#">
+                                    <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
@@ -260,7 +260,7 @@
                     </div>
                     <div class="men-box">
                         <div>
-                            <img src=" {% static 'images/fashionwomen/iuy.png' %} " alt="women_clothes" />
+                            <img src=" {% static '../images/fashionwomen/iuy.png' %} " alt="women_clothes" />
                         </div>
                         <div>
                             <h4>Skirts</h4>
@@ -273,9 +273,8 @@
                                 <a href="#" class="special-p">FashionNova &#8358;7,000</a>
                             </div>
                             <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                <a href="#">
+                                    <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
@@ -291,7 +290,7 @@
                 <div class="men-preview">
                     <div class="men-box">
                         <div>
-                            <img src=" {% static 'images/fashionwomen/Corporate Elegant.jpeg' %} " alt="women_clothes" />
+                            <img src=" {% static '../images/fashionwomen/Corporate Elegant.jpeg' %} " alt="women_clothes" />
                         </div>
                         <div>
                             <h4>Corporate Elegant 
@@ -305,9 +304,8 @@
                                 <a href="#" class="special-p">FashionNova &#8358;5,000</a>
                             </div>
                             <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                <a href="#">
+                                    <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
@@ -317,7 +315,7 @@
                     </div>
                     <div class="men-box">
                         <div>
-                            <img style="height:21rem" src=" {% static 'images/fashionwomen/Sleeveless Woman.jpeg' %} " alt="women_clothes" />
+                            <img style="height:21rem" src=" {% static '../images/fashionwomen/Sleeveless Woman.jpeg' %} " alt="women_clothes" />
                         </div>
                         <div>
                             <h4>Sleeveless Woman
@@ -332,9 +330,8 @@
                             </div>
 
                             <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                <a href="#">
+                                    <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
@@ -344,7 +341,7 @@
                     </div>
                     <div class="men-box">
                         <div>
-                            <img src=" {% static 'images/fashionwomen/Womens Dresses.jpeg' %} " alt="women_clothes" />
+                            <img src=" {% static '../images/fashionwomen/Womens Dresses.jpeg' %} " alt="women_clothes" />
                         </div>
                         <div>
                             <h4>Skater Royal 
@@ -359,9 +356,8 @@
                             </div>
 
                             <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                <a href="#">
+                                    <ion-icon name="send" class="send-icon"></ion-icon>
                                 </a>
                                 <a href="#">
                                     <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
@@ -377,7 +373,7 @@
                 <div class="shoes">
                     <div class="shoes-box">
                         <div>
-                            <img src=" {% static 'images/fashionwomen/top.png' %} " alt="women_clothes" />
+                            <img src=" {% static '../images/fashionwomen/top.png' %} " alt="women_clothes" />
                         </div>
                         <div class="shoe-content">
                             <h4>Women's Crocodile Patterned Pointed Stiletto Heel</h4>
@@ -391,9 +387,8 @@
                                     </div>
 
                                     <div class="social-share">
-                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
+                                        <a href="#">
+                                            <ion-icon name="send" class="send-icon"></ion-icon>
                                         </a>
                                         <a href="#">
                                             <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
@@ -406,7 +401,7 @@
                     </div>
                     <div class="shoes-box">
                         <div>
-                            <img src=" {% static 'images/fashionwomen/opentop.png' %} " alt="" />
+                            <img src=" {% static '../images/fashionwomen/opentop.png' %} " alt="" />
                         </div>
                         <div class="shoe-content">
                             <h4>Dark Brown Court Shoe</h4>
@@ -420,9 +415,8 @@
                                     </div>
 
                                     <div class="social-share">
-                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
+                                        <a href="#">
+                                            <ion-icon name="send" class="send-icon"></ion-icon>
                                         </a>
                                         <a href="#">
                                             <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
@@ -441,7 +435,7 @@
                 <div class="shoes">
                     <div class="shoes-box">
                         <div>
-                            <img src=" {% static 'images/fashionwomen/shoe.jpeg' %} " alt="women_clothes" />
+                            <img src=" {% static '../images/fashionwomen/shoe.jpeg' %} " alt="women_clothes" />
                         </div>
                         <div class="shoe-content">
                             <h4>Butterfly Slippers 
@@ -455,9 +449,8 @@
                                         <a href="#" class="special-p">AliExpress &#8358;49,000</a>
                                     </div>
                                     <div class="social-share">
-                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
+                                        <a href="#">
+                                            <ion-icon name="send" class="send-icon"></ion-icon>
                                         </a>
                                         <a href="#">
                                             <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
@@ -470,7 +463,7 @@
                     </div>
                     <div class="shoes-box">
                         <div>
-                            <img src=" {% static 'images/fashionwomen/slip.jpeg' %} " alt="women_clothes" />
+                            <img src=" {% static '../images/fashionwomen/slip.jpeg' %} " alt="women_clothes" />
                         </div>
                         <div class="shoe-content">
                             <h4>Birkenstock Flat
@@ -485,9 +478,8 @@
                                     </div>
 
                                     <div class="social-share">
-                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
+                                        <a href="#">
+                                            <ion-icon name="send" class="send-icon"></ion-icon>
                                         </a>
                                         <a href="#">
                                             <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
@@ -566,7 +558,7 @@
           <div class="profile">
             <div class="pro-contain">
               <div class="profile-pic">
-                <img src=" {% static 'images/model.png' %} " alt="profile-pic" />
+                <img src=" {% static '../images/model.png' %} " alt="profile-pic" />
               </div>
               <div class="content">
                 <div class="star">
@@ -588,7 +580,7 @@
         <div class="profile">
           <div class="pro-contain">
             <div class="profile-pic">
-              <img src=" {% static 'images/model1.png' %} " alt="profile-pic" />
+              <img src=" {% static '../images/model1.png' %} " alt="profile-pic" />
             </div>
             <div class="content">
               <div class="star">
@@ -610,7 +602,7 @@
         <div class="profile">
           <div class="pro-contain">
             <div class="profile-pic">
-              <img src=" {% static 'images/model2.png' %} " alt="profile-pic" />
+              <img src=" {% static '../images/model2.png' %} " alt="profile-pic" />
             </div>
             <div class="content">
               <div class="star">
@@ -636,59 +628,53 @@
   
       <footer>
         <section class="footerContainer">
-
-            <section class="Social_Icons">
-                <div class="footLogo">
-                    Wallet<span>friendly</span>
-                </div>
-                <div class="Icons">
-                    <ul>
-                        <li> <a href="#"><img src=" {% static 'images/social media icon/mail.svg' %} " alt="mail icon"></a> </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/twitter.svg' %} " alt="twitter icon"> </a>
-                        </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/facebook.svg' %} " alt="facebook icon"> </a>
-                        </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/youtube.svg' %} " alt="youtube icon"> </a>
-                        </li>
-                    </ul>
-                    <ul>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/instagram.svg' %} " alt="instagram icon"></a>
-                        </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/telegram.svg' %} " alt="telegram icon"> </a>
-                        </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/tiktok.svg' %} " alt="tiktok icon"> </a>
-                        </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/reddit.svg' %} " alt="reddit icon"></a> </li>
-                    </ul>
-            </section>
-            <section categories>
-                <p><strong>Categories</strong></p>
+  
+        <section class="Social_Icons">
+            <div class="footLogo">
+                Wallet<span>friendly</span>
+            </div>
+            <div class="Icons">
                 <ul>
-                    <li><a href=" {% url 'hairaccessories' %} ">Accessories</a></li>
-                    <li><a href=" {% url 'bonestraight' %} ">Bone Straight</a></li>
-                    <li><a href=" {% url 'humanhair' %} ">Human Hairs</a></li>
-                    <li><a href=" {% url 'laptop' %} ">Laptops</a></li>
-                    <li><a href=" {% url 'phones' %} ">Mobile Phones</a></li>
-                    <li><a href=" {% url 'fashionmen' %} ">Men's Wear</a></li>
-                    <li><a href=" {% url 'fashionmen' %} ">Men's Shoes</a></li>
-                    <li><a href=" {% url 'fashionwomen' %} ">Women's Wear</a></li>
-                    <li><a href=" {% url 'fashionwomen' %} ">Women's Shoes</a></li>
-                    <li><a href=" {% url 'tv' %} ">Smart TVs</a></li>
+                    <li> <a href="#"><img src=" {% static '../images/social media icon/mail.svg' %} " alt="mail icon"></a> </li>
+                    <li> <a href="#"> <img src=" {% static '../images/social media icon/twitter.svg' %} " alt="twitter icon">  </a> </li>
+                    <li> <a href="#"> <img src=" {% static '../images/social media icon/facebook.svg' %} " alt="facebook icon"> </a> </li>
+                    <li> <a href="#"> <img src=" {% static '../images/social media icon/youtube.svg' %} " alt="youtube icon"> </a> </li>
+                </ul>
+                  <ul>
+                    <li> <a href="#"> <img src=" {% static '../images/social media icon/instagram.svg' %} " alt="instagram icon"></a> </li>
+                    <li> <a href="#"> <img src=" {% static '../images/social media icon/telegram.svg' %} " alt="telegram icon">  </a> </li>
+                    <li> <a href="#"> <img src=" {% static '../images/social media icon/tiktok.svg' %} " alt="tiktok icon">  </a> </li>
+                    <li> <a href="#"> <img src=" {% static '../images/social media icon/reddit.svg' %} " alt="reddit icon"></a> </li>
                 </ul>
             </section>
+               <section categories>
+            <p><strong>Categories</strong></p>
+            <ul>
+                <li><a href=" {% static '../template/hairAccessories.html' %} ">Accessories</a></li>
+                <li><a href=" {% static '../template/boneStraight.html' %} ">Bone Straight</a></li>
+                <li><a href=" {% static '../template/humanHair.html' %} ">Human Hairs</a></li>
+                <li><a href=" {% static '../template/gadgetLaptops.html' %} ">Laptops</a></li>
+                <li><a href=" {% static '../template/gadgetPhones.html' %} ">Mobile Phones</a></li>
+                <li><a href=" {% static '../template/fashionMen.html' %} ">Men's Wear</a></li>
+                <li><a href=" {% static '../template/fashionMen.html' %} ">Men's Shoes</a></li>
+                <li><a href=" {% static '../template/fashionWomen.html' %} ">Women's Wear</a></li>
+                <li><a href=" {% static '../template/fashionWomen.html' %} ">Women's Shoes</a></li>
+                <li><a href=" {% static '../template/gadgettv.html' %} ">Smart TVs</a></li>
+            </ul>
+        </section>
             <section gadgetBrands>
                 <p><strong>Gadgets Brands</strong></p>
                 <ul>
-                    <li><a href=" {% url 'tv' %} ">Apple TVs</a></li>
-                    <li><a href=" {% url 'laptop' %} ">Dell</a></li>
-                    <li><a href=" {% url 'tv' %} ">Hisense</a></li>
-                    <li><a href=" {% url 'tv' %} ">Infinix Smart TVs</a></li>
-                    <li><a href=" {% url 'phones' %} ">iPhones</a></li>
-                    <li><a href=" {% url 'phones' %} ">Oppo</a></li>
-                    <li><a href=" {% url 'phones' %} ">Samsung</a></li>
-                    <li><a href=" {% url 'fashion' %} ">Spectre</a></li>
-                    <li><a href=" {% url 'fashionmen' %} ">Polystar</a></li>
-                    <li><a href=" {% url 'fashionmen' %} ">Watches</a></li>
+                    <li><a href=" {% static '../template/gadgettv.html' %} ">Apple TVs</a></li>
+                    <li><a href=" {% static '../template/gadgetLaptops.html' %} ">Dell</a></li>
+                    <li><a href=" {% static '../template/gadgettv.html' %} ">Hisense</a></li>
+                    <li><a href=" {% static '../template/gadgettv.html' %} ">Infinix Smart TVs</a></li>
+                    <li><a href=" {% static '../template/gadgetPhones.html' %} ">iPhones</a></li>
+                    <li><a href=" {% static '../template/gadgetPhones.html' %} ">Oppo</a></li>
+                    <li><a href=" {% static '../template/gadgetPhones.html' %} ">Samsung</a></li>
+                    <li><a href=" {% static '../template/fashion.html' %} ">Spectre</a></li>
+                    <li><a href=" {% static '../template/fashionMen.html' %} ">Polystar</a></li>
+                    <li><a href=" {% static '../template/fashionMen.html' %} ">Watches</a></li>
                 </ul>
             </section>
             <section popularBrands>
@@ -701,35 +687,35 @@
                     <li><a href="https://www.microsoft.com/en-ng" target="_blank">Microsoft</a></li>
                     <li><a href="https://www.7up.com/" target="_blank">7up</a></li>
                     <li><a href="https://www.zara.com/" target="_blank">Zara</a></li>
-
+  
                 </ul>
             </section>
             <section About>
                 <p><strong>About</strong></p>
                 <ul>
-                    <li><a href=" {% url 'aboutus' %} ">About WalletFriendly</a></li>
-                    <li><a href=" {% url 'faq' %} ">FAQ</a></li>
-                    <li><a href=" {% url 'team' %} ">Team</a></li>
-                    <li><a href=" {% url 'aboutus' %} ">Jobs</a></li>
-                    <li><a href=" {% url 'contactus' %} ">Contact Us</a></li>
-                    <li><a href=" {% url 'comparegadget' %} ">Compare Prices</a></li>
-                    <li><a href=" {% url 'trendingnews' %} ">Latest News</a></li>
-                    <li><a href=" {% url 'review' %} ">Reviews</a></li>
-                    <li><a href=" {% url 'documentation' %} ">Documentation</a></li>
+                    <li><a href="#">About WalletFriendly</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href=" {% static '../template/team.html' %} ">Team</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href=" {% static '../template/contactUs.html' %} ">Contact Us</a></li>
+                    <li><a href=" {% static '../template/compareGadgets.html' %} ">Compare Prices</a></li>
+                    <li><a href=" {% static '../template/trendingNews.html' %} ">Latest News</a></li>
+                    <li><a href=" {% static '../template/review.html' %} ">Reviews</a></li>
+                    <li><a href=" {% static '../template/documentation.html' %} ">Documentation</a></li>
                 </ul>
             </section>
         </section>
-
-
+  
+  
         <hr bottom>
-
+  
         <section bottom>
-
+  
             <div class="bottom">
                 <p> <strong>Copyright 2022,</strong>WalletFriendly © <strong>All Rights Reserved</strong></p>
             </div>
         </section>
-
+  
     </footer>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

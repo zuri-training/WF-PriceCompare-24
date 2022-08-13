@@ -1,5 +1,5 @@
 {% load static %}
-<!DOCTYPE html>
+ <!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -17,7 +17,7 @@
   <body id="login-body-content">
     <header>
       <section class="head_section">
-       <a href=" {% static './index.html' %} "></a> <div class="icons"> </a> 
+       <a href=" {% static '' %} "></a> <div class="icons"> </a> 
           <div id="menu-bar" class="fas fa-bars"></div>
         </div>
         <nav class="navbar">
@@ -28,15 +28,15 @@
           </div>
 
           <div class="links">
-            <a href=" {% static './index.html' %} ">Home</a>
+            <a href=" {% url '' %} ">Home</a>
 
-            <a href=" {% static './AboutUs.html' %} ">About</a>
+            <a href=" {% url 'aboutUs' %} ">About</a>
 
-            <a href=" {% static './team.html' %} ">Team</a>
+            <a href=" {% url 'team' %} ">Team</a>
 
-            <a href=" {% static './faq.html' %} ">FAQ</a>
+            <a href=" {% url 'faq' %} ">FAQ</a>
 
-            <a href=" {% static './contactUs.html' %} ">Contact Us</a>
+            <a href=" {% url 'contactUs' %} ">Contact Us</a>
           </div>
 
           <div id="close" class="fas fa-times"></div>
@@ -152,6 +152,8 @@
     </header>
 
     <form action="" id="login-form">
+      {% csrf_token %}
+      {% if user.is_authenticated %}
       <h2 class="form__title">Login</h2>
       <div class="login__input-box">
         <label class="login-label" for="email-phone"

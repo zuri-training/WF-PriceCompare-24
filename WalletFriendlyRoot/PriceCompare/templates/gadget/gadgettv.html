@@ -8,10 +8,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gadget TV</title>
     <!-- <link rel="stylesheet" href="../css/swiper-bundle.min.css"> -->
-    <link rel="stylesheet" href="{% static 'css/popup.css' %}">
-    <link rel="stylesheet" href="{% static 'css/gadgettv.css' %}">
+    <link rel="stylesheet" href="../css/popup.css">
+    <link rel="stylesheet" href="../css/gadgettv.css">
     <!-- <link rel="stylesheet" href="../css/responsive.css"> -->
-    <script src="{% static 'script/sidebar.js' %}" defer></script>
+    <script src="../script/sidebar.js" defer></script>
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
     <link rel="stylesheet"
@@ -20,49 +20,65 @@
 
 <body>
     <header>
+
         <section class="head_section">
-                    <div class="icons">
-          <div id="menu-bar" class="fas fa-bars"></div>
-        </div>
-        <nav class="navbar">
-          <div class="user">
-            <img src=" {% static 'images/model.png' %} " alt="" />
+            <div class="icons">
 
-            <h4>John Doe</h4>
-          </div>
+                <div id="menu-bar" class="fas fa-bars">
 
-          <div class="links">
-            <a href=" {% url 'index' %} ">Home</a>
+                </div>
 
-            <a href=" {% url 'aboutus' %} ">About</a>
-
-            <a href=" {% url 'team' %} ">Team</a>
-
-            <a href=" {% url 'faq' %} ">FAQ</a>
-
-            <a href=" {% url 'contactus' %} ">Contact Us</a>
-          </div>
-
-          <div id="close" class="fas fa-times"></div>
-        </nav>
-            <div class="logo">
-                Wallet<span>friendly</span>
             </div>
-            
+            <nav class="navbar">
+
+                <div class="user">
+
+                    <img src="../images/model.png" alt="">
+
+                    <h4>John Doe</h4>
+
+                </div>
+
+                <div class="links">
+
+                    <a href="./index.html">Home</a>
+
+                    <a href="./AboutUs.html">About</a>
+
+                    <a href="./team.html">Team</a>
+
+                    <a href="./faq.html">FAQ</a>
+
+                    <a href="./contactUs.html">Contact Us</a>
+
+                </div>
+
+                <div id="close" class="fas fa-times"></div>
+
+            </nav>
+            <a href="../template/index.html">
+                <div class="logo">
+                    Wallet<span>friendly</span>
+                </div>
+            </a>
+
+            <!-- <div class="search_bar">
+                <input type="search" placeholder="Search Product, brand" name="search" id="search_bar">
+
+            </div> -->
             <div class="top-link">
                 <ul>
-                    <li><a href=" {% url 'aboutus' %} ">About</a></li>
-                    <li><a href=" {% url 'team' %} ">Team</a></li>
-                    <li><a href=" {% url 'faq' %} ">FAQs</a></li>
-                    <li><a href=" {% url 'contactus' %} ">Contact</a></li>
+                    <li><a href="../template/AboutUs.html">About</a></li>
+                    <li><a href="../template/team.html">Team</a></li>
+                    <li><a href="../template/faq.html">FAQs</a></li>
+                    <li><a href="../template/contactUs.html">Contact</a></li>
                 </ul>
             </div>
-
             <div class="login">
 
                 <div>
                     <span class="material-symbols-outlined">person</span>
-                    <button class="signInButton"> <a href=" {% url 'login' %} "> Login </a></button>
+                    <button class="signInButton"> <a href="../template/Login.html"> Login </a></button>
                 </div>
                 <div>
                     <span class="material-symbols-outlined">shopping_cart</span>
@@ -80,52 +96,53 @@
             <div class="nav-links nav-list">
                 <ul>
                     <li fashion>
-                        <a href=" {% url 'fashion' %} "> Fashion</a>
+                        <a href="../template/fashion.html"> Fashion</a>
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href=" {% url 'fashionmen' %} ">Men's Clothing</a></li>
-                                <li><a href=" {% url 'fashionwomen' %} ">Women's Clothing</a></li>
-                                <li><a href=" {% url 'fashionmen' %} ">Men's Shoes</a></li>
-                                <li><a href=" {% url 'fashionwomen' %} ">Women's Shoes</a></li>
+                                <li><a href="../template/fashionMen.html">Men's Clothing</a></li>
+                                <li><a href="../template/fashionWomen.html">Women's Clothing</a></li>
+                                <li><a href="../template/fashionMen.html">Men's Shoes</a></li>
+                                <li><a href="../template/fashionWomen.html">Women's Shoes</a></li>
                             </ul>
                         </div>
                     </li>
 
                     <li gadget>
-                        <a href=" {% url 'gadget' %} "> Gadget</a>
+                        <a href="#"> Gadget</a>
 
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href=" {% url 'phones' %} ">Mobile Phones</a></li>
-                                <li><a href=" {% url 'laptop' %} ">Laptops</a></li>
-                                <li><a href=" {% url 'tv' %} ">Smart TVs</a></li>
+                                <li><a href="../template/gadgetPhones.html">Mobile Phones</a></li>
+                                <li><a href="../template/gadgetLaptops.html">Laptops</a></li>
+                                <li><a href="../template/gadgettv.html">Smart TVs</a></li>
                             </ul>
                         </div>
                     </li>
                     <li hair>
-                        <a href=" {% url 'hair' %} "> Hair</a>
+                        <a href="../template/hairHomePage.html"> Hair</a>
 
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href=" {% url 'humanhair' %} ">Human Hair</a></li>
-                                <li><a href=" {% url 'bonestraight' %} ">Bone Straight</a></li>
-                                <li><a href=" {% url 'hairaccessories' %} ">Accessories</a></li>
+                                <li><a href="../template/humanHair.html">Human Hair</a></li>
+                                <li><a href="../template/boneStraight.html">Bone Straight</a></li>
+                                <li><a href="../template/hairAccessories.html">Accessories</a></li>
                             </ul>
                         </div>
                     </li>
                     <li compare>
-                        <a href=" {% url 'comparegadget' %} "> Compare</a>
+                        <a href="#"> Compare</a>
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href=" {% url 'comparegadget' %} ">By Price</a></li>
-                                <li><a href=" {% url 'comparegadget' %} ">By Brand</a></li>
-                                <li><a href=" {% url 'comparegadget' %} ">By Rating</a></li>
+                                <li><a href="../template/compareGadgets.html">By Price</a></li>
+                                <li><a href="../template/compareGadgets.html">By Brand</a></li>
+                                <li><a href="../template/compareGadgets.html">By Rating</a></li>
                             </ul>
                         </div>
                     </li>
                 </ul>
             </div>
         </nav>
+
     </header>
 
     <main>
@@ -193,7 +210,7 @@
                 <div class="preview">
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/oliu.png' %}" alt="gadget image" />
+                            <img src="../images/gadget and phones/oliu.png" alt="gadget image" />
                         </div>
                         <div>
                             <h4>Sony Digital <br>Smart Tv</h4>
@@ -232,7 +249,7 @@
                     </div>
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/ioio.png' %}" alt="Hisense Screen TV" />
+                            <img src="../images/gadget and phones/ioio.png" alt="Hisense Screen TV" />
                         </div>
                         <div>
                             <h4>Hisense Smart <br> Screen TV</h4>
@@ -244,7 +261,7 @@
                     </div>
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/8i.png' %}" alt="Infinity Smart Screen Tv " />
+                            <img src="../images/gadget and phones/8i.png" alt="Infinity Smart Screen Tv " />
                         </div>
                         <div>
                             <h4>Infinity Smart <br> Screen TV</h4>
@@ -265,7 +282,7 @@
                 <div class="preview">
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/8i.png' %}" alt="Smart 4k Uhd" />
+                            <img src="../images/gadget and phones/8i.png" alt="Smart 4k Uhd" />
                         </div>
                         <div>
                             <h4>50 Smart 4k Uhd</h4>
@@ -277,7 +294,7 @@
                     </div>
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/iok.png' %}" alt="Android Curve Tv" />
+                            <img src="../images/gadget and phones/iok.png" alt="Android Curve Tv" />
                         </div>
                         <div>
                             <h4>Android Curve Tv</h4>
@@ -289,7 +306,7 @@
                     </div>
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/iytr.png' %}" alt="105 Smart Tv" />
+                            <img src="../images/gadget and phones/iytr.png" alt="105 Smart Tv" />
                         </div>
                         <div>
                             <h4>105” Smart Tv</h4>
@@ -310,7 +327,7 @@
                 <div class="preview">
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/oliu.png' %}" alt="50 smart 4k Uhd" />
+                            <img src="../images/gadget and phones/oliu.png" alt="50 smart 4k Uhd" />
                         </div>
                         <div>
                             <h4>50 Smart 4k Uhd</h4>
@@ -322,7 +339,7 @@
                     </div>
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/iok.png' %}" alt="Android Curve Tv" />
+                            <img src="../images/gadget and phones/iok.png" alt="Android Curve Tv" />
                         </div>
                         <div>
                             <h4>Android Curve Tv</h4>
@@ -334,7 +351,7 @@
                     </div>
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/iytr.png' %}" alt="105 Smart Tv" />
+                            <img src="../images/gadget and phones/iytr.png" alt="105 Smart Tv" />
                         </div>
                         <div>
                             <h4>105” Smart Tv</h4>
@@ -355,7 +372,7 @@
                 <div class="preview">
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/HISENSE 2 1.png' %}" alt="Hisense 55 Inches" />
+                            <img src="../images/gadget and phones/HISENSE 2 1.png" alt="Hisense 55 Inches" />
                         </div>
                         <div>
                             <p>25% discount</p>
@@ -367,7 +384,7 @@
                     </div>
                     <div class="box hair-page__box">
                         <div>
-                            <img src="{% static 'images/gadget and phones/uij.png' %}" alt="Android Curve LG" />
+                            <img src="../images/gadget and phones/uij.png" alt="Android Curve LG" />
                         </div>
                         <div>
                             <p>15% discount</p>
@@ -396,11 +413,11 @@
                         <div class="progress-container">
                             <div class="progress-star">
                                 <div>
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
                                 </div>
                                 <div class="progress-bar">
                                     <div class="progress-bar-fill first"></div>
@@ -408,10 +425,10 @@
                             </div>
                             <div class="progress-star">
                                 <div>
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
                                 </div>
                                 <div class="progress-bar">
                                     <div class="progress-bar-fill second"></div>
@@ -419,9 +436,9 @@
                             </div>
                             <div class="progress-star">
                                 <div>
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                                    <img src="{% static 'images/social media icon/star.svg' %}"alt="" />
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
                                 </div>
                                 <div class="progress-bar">
                                     <div class="progress-bar-fill third"></div>
@@ -429,8 +446,8 @@
                             </div>
                             <div class="progress-star">
                                 <div>
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                                    <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
                                 </div>
                                 <div class="progress-bar">
                                     <div class="progress-bar-fill fourth"></div>
@@ -438,7 +455,7 @@
                             </div>
                             <div class="progress-star">
                                 <div>
-                                    <img src="{% static 'images/social media icon/star.svg' %}"alt="" />
+                                    <img src="../images/social media icon/star.svg" alt="" />
                                 </div>
                                 <div class="progress-bar">
                                     <div class="progress-bar-fill fifth"></div>
@@ -452,13 +469,13 @@
             <div class="profile">
                 <div class="pro-contain">
                     <div class="profile-pic">
-                        <img src="{% static 'images/model.png' %}" alt="profile-pic" />
+                        <img src="../images/model.png" alt="profile-pic" />
                     </div>
                     <div class="content">
                         <div class="star">
-                            <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                            <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                            <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
+                            <img src="../images/social media icon/star.svg" alt="" />
+                            <img src="../images/social media icon/star.svg" alt="" />
+                            <img src="../images/social media icon/star.svg" alt="" />
                         </div>
                         <p>Joe</p>
                         <p>joelawrence@gmail.com</p>
@@ -474,14 +491,14 @@
         <div class="profile">
             <div class="pro-contain">
                 <div class="profile-pic">
-                    <img src="{% static 'images/model1.png' %}" alt="profile-pic" />
+                    <img src="../images/model1.png" alt="profile-pic" />
                 </div>
                 <div class="content">
                     <div class="star">
-                        <img src="{% static 'images/social media icon/star.svg' %}"alt="" />
-                        <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                        <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                        <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
                     </div>
                     <p>Mary</p>
                     <p>maryrandy@gmail.com</p>
@@ -496,15 +513,15 @@
         <div class="profile">
             <div class="pro-contain">
                 <div class="profile-pic">
-                    <img src="{% static 'images/model2.png' %}" alt="profile-pic" />
+                    <img src="../images/model2.png" alt="profile-pic" />
                 </div>
                 <div class="content">
                     <div class="star">
-                        <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                        <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                        <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                        <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
-                        <img src="{% static 'images/social media icon/star.svg' %}" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
+                        <img src="../images/social media icon/star.svg" alt="" />
                     </div>
                     <p>Bimbo</p>
                     <p>missbimbo@gmail.com</p>
@@ -529,52 +546,62 @@
                 </div>
                 <div class="Icons">
                     <ul>
-                        <li> <a href="#"><img src=" {% static 'images/social media icon/mail.svg' %} " alt="mail icon"></a> </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/twitter.svg' %} " alt="twitter icon"> </a>
+                        <li>
+                            <a href="#"><img src="../images/social media icon/mail.svg" alt="mail icon"></a>
                         </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/facebook.svg' %} " alt="facebook icon"> </a>
+                        <li>
+                            <a href="#"> <img src="../images/social media icon/twitter.svg" alt="twitter icon"> </a>
                         </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/youtube.svg' %} " alt="youtube icon"> </a>
+                        <li>
+                            <a href="#"> <img src="../images/social media icon/facebook.svg" alt="facebook icon"> </a>
+                        </li>
+                        <li>
+                            <a href="#"> <img src="../images/social media icon/youtube.svg" alt="youtube icon"> </a>
                         </li>
                     </ul>
                     <ul>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/instagram.svg' %} " alt="instagram icon"></a>
+                        <li>
+                            <a href="#"> <img src="../images/social media icon/instagram.svg" alt="instagram icon"></a>
                         </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/telegram.svg' %} " alt="telegram icon"> </a>
+                        <li>
+                            <a href="#"> <img src="../images/social media icon/telegram.svg" alt="telegram icon"> </a>
                         </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/tiktok.svg' %} " alt="tiktok icon"> </a>
+                        <li>
+                            <a href="#"> <img src="../images/social media icon/tiktok.svg" alt="tiktok icon"> </a>
                         </li>
-                        <li> <a href="#"> <img src=" {% static 'images/social media icon/reddit.svg' %} " alt="reddit icon"></a> </li>
+                        <li>
+                            <a href="#"> <img src="../images/social media icon/reddit.svg" alt="reddit icon"></a>
+                        </li>
                     </ul>
             </section>
             <section categories>
                 <p><strong>Categories</strong></p>
                 <ul>
-                    <li><a href=" {% url 'hairaccessories' %} ">Accessories</a></li>
-                    <li><a href=" {% url 'bonestraight' %} ">Bone Straight</a></li>
-                    <li><a href=" {% url 'humanhair' %} ">Human Hairs</a></li>
-                    <li><a href=" {% url 'laptop' %} ">Laptops</a></li>
-                    <li><a href=" {% url 'phones' %} ">Mobile Phones</a></li>
-                    <li><a href=" {% url 'fashionmen' %} ">Men's Wear</a></li>
-                    <li><a href=" {% url 'fashionmen' %} ">Men's Shoes</a></li>
-                    <li><a href=" {% url 'fashionwomen' %} ">Women's Wear</a></li>
-                    <li><a href=" {% url 'fashionwomen' %} ">Women's Shoes</a></li>
-                    <li><a href=" {% url 'tv' %} ">Smart TVs</a></li>
+                    <li><a href="../template/hairAccessories.html">Accessories</a></li>
+                    <li><a href="../template/boneStraight.html">Bone Straight</a></li>
+                    <li><a href="../template/humanHair.html">Human Hairs</a></li>
+                    <li><a href="../template/gadgetLaptops.html">Laptops</a></li>
+                    <li><a href="../template/gadgetPhones.html">Mobile Phones</a></li>
+                    <li><a href="../template/fashionMen.html">Men's Wear</a></li>
+                    <li><a href="../template/fashionMen.html">Men's Shoes</a></li>
+                    <li><a href="../template/fashionWomen.html">Women's Wear</a></li>
+                    <li><a href="../template/fashionWomen.html">Women's Shoes</a></li>
+                    <li><a href="../template/gadgettv.html">Smart TVs</a></li>
                 </ul>
             </section>
             <section gadgetBrands>
                 <p><strong>Gadgets Brands</strong></p>
                 <ul>
-                    <li><a href=" {% url 'tv' %} ">Apple TVs</a></li>
-                    <li><a href=" {% url 'laptop' %} ">Dell</a></li>
-                    <li><a href=" {% url 'tv' %} ">Hisense</a></li>
-                    <li><a href=" {% url 'tv' %} ">Infinix Smart TVs</a></li>
-                    <li><a href=" {% url 'phones' %} ">iPhones</a></li>
-                    <li><a href=" {% url 'phones' %} ">Oppo</a></li>
-                    <li><a href=" {% url 'phones' %} ">Samsung</a></li>
-                    <li><a href=" {% url 'fashion' %} ">Spectre</a></li>
-                    <li><a href=" {% url 'fashionmen' %} ">Polystar</a></li>
-                    <li><a href=" {% url 'fashionmen' %} ">Watches</a></li>
+                    <li><a href="../template/gadgettv.html">Apple TVs</a></li>
+                    <li><a href="../template/gadgetLaptops.html">Dell</a></li>
+                    <li><a href="../template/gadgettv.html">Hisense</a></li>
+                    <li><a href="../template/gadgettv.html">Infinix Smart TVs</a></li>
+                    <li><a href="../template/gadgetPhones.html">iPhones</a></li>
+                    <li><a href="../template/gadgetPhones.html">Oppo</a></li>
+                    <li><a href="../template/gadgetPhones.html">Samsung</a></li>
+                    <li><a href="../template/fashion.html">Spectre</a></li>
+                    <li><a href="../template/fashionMen.html">Polystar</a></li>
+                    <li><a href="../template/fashionMen.html">Watches</a></li>
                 </ul>
             </section>
             <section popularBrands>
@@ -587,21 +614,20 @@
                     <li><a href="https://www.microsoft.com/en-ng" target="_blank">Microsoft</a></li>
                     <li><a href="https://www.7up.com/" target="_blank">7up</a></li>
                     <li><a href="https://www.zara.com/" target="_blank">Zara</a></li>
-
                 </ul>
             </section>
             <section About>
                 <p><strong>About</strong></p>
                 <ul>
-                    <li><a href=" {% url 'aboutus' %} ">About WalletFriendly</a></li>
-                    <li><a href=" {% url 'faq' %} ">FAQ</a></li>
-                    <li><a href=" {% url 'team' %} ">Team</a></li>
-                    <li><a href=" {% url 'aboutus' %} ">Jobs</a></li>
-                    <li><a href=" {% url 'contactus' %} ">Contact Us</a></li>
-                    <li><a href=" {% url 'comparegadget' %} ">Compare Prices</a></li>
-                    <li><a href=" {% url 'trendingnews' %} ">Latest News</a></li>
-                    <li><a href=" {% url 'review' %} ">Reviews</a></li>
-                    <li><a href=" {% url 'documentation' %} ">Documentation</a></li>
+                    <li><a href="../template/AboutUs.html">About WalletFriendly</a></li>
+                    <li><a href="#">FAQ</a></li>
+                    <li><a href="../template/team.html">Team</a></li>
+                    <li><a href="#">Jobs</a></li>
+                    <li><a href="../template/contactUs.html">Contact Us</a></li>
+                    <li><a href="../template/compareGadgets.html">Compare Prices</a></li>
+                    <li><a href="../template/trendingNews.html">Latest News</a></li>
+                    <li><a href="../template/review.html">Reviews</a></li>
+                    <li><a href="../template/documentation.html">Documentation</a></li>
                 </ul>
             </section>
         </section>
@@ -614,12 +640,14 @@
             <div class="bottom">
                 <p> <strong>Copyright 2022,</strong>WalletFriendly © <strong>All Rights Reserved</strong></p>
             </div>
+
         </section>
 
     </footer>
 
 
-    <script src="{% static 'script/popup.js' %}"></script>
+
+    <script src="../script/popup.js"></script>
 </body>
 
 </html>

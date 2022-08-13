@@ -22,112 +22,104 @@
   <body>
     <header>
       <section class="head_section">
-                  <div class="icons">
-        <div id="menu-bar" class="fas fa-bars"></div>
-      </div>
-      <nav class="navbar">
-        <div class="user">
-          <img src=" {% static 'images/model.png' %} " alt="" />
-
-          <h4>John Doe</h4>
+                <div class="icons">
+          <div id="menu-bar" class="fas fa-bars"></div>
         </div>
+        <nav class="navbar">
+          <div class="user">
+            <img src=" {% static '../images/model.png' %} " alt="" />
 
-        <div class="links">
-          <a href=" {% url 'index' %} ">Home</a>
+            <h4>John Doe</h4>
+          </div>
 
-          <a href=" {% url 'aboutus' %} ">About</a>
+          <div class="links">
+            <a href=" {% static './index.html' %} ">Home</a>
 
-          <a href=" {% url 'team' %} ">Team</a>
+            <a href=" {% static './AboutUs.html' %} ">About</a>
 
-          <a href=" {% url 'faq' %} ">FAQ</a>
+            <a href=" {% static './team.html' %} ">Team</a>
 
-          <a href=" {% url 'contactus' %} ">Contact Us</a>
+            <a href=" {% static './faq.html' %} ">FAQ</a>
+
+            <a href=" {% static './contactUs.html' %} ">Contact Us</a>
+          </div>
+
+          <div id="close" class="fas fa-times"></div>
+        </nav>
+        <a href=" {% static './index.html' %} "><div class="logo">Wallet<span>Friendly</span></div> </a>
+        <!-- <div class="search_bar">
+          <input
+            type="search"
+            placeholder="Search Product, brand"
+            name="search"
+            id="search_bar"
+          />
+        </div> -->
+        <div class="login">
+          <div>
+            <span class="material-symbols-outlined">person</span>
+            <button class="signInButton">
+              <a href=" {% static './Login.html' %} "> Login </a>
+            </button>
+          </div>
+          <div>
+            <span class="material-symbols-outlined">shopping_cart</span>
+          </div>
         </div>
-
-        <div id="close" class="fas fa-times"></div>
-      </nav>
-          <div class="logo">
-              Wallet<span>friendly</span>
-          </div>
-          
-          <div class="top-link">
-              <ul>
-                  <li><a href=" {% url 'aboutus' %} ">About</a></li>
-                  <li><a href=" {% url 'team' %} ">Team</a></li>
-                  <li><a href=" {% url 'faq' %} ">FAQs</a></li>
-                  <li><a href=" {% url 'contactus' %} ">Contact</a></li>
-              </ul>
-          </div>
-
-          <div class="login">
-
-              <div>
-                  <span class="material-symbols-outlined">person</span>
-                  <button class="signInButton"> <a href=" {% url 'login' %} "> Login </a></button>
-              </div>
-              <div>
-                  <span class="material-symbols-outlined">shopping_cart</span>
-              </div>
-
-
-
-          </div>
-
       </section>
 
-
-
       <nav id="nav_bar">
-          <div class="nav-links nav-list">
-              <ul>
-                  <li fashion>
-                      <a href=" {% url 'fashion' %} "> Fashion</a>
-                      <div class="subMenu1">
-                          <ul class="linkPages">
-                              <li><a href=" {% url 'fashionmen' %} ">Men's Clothing</a></li>
-                              <li><a href=" {% url 'fashionwomen' %} ">Women's Clothing</a></li>
-                              <li><a href=" {% url 'fashionmen' %} ">Men's Shoes</a></li>
-                              <li><a href=" {% url 'fashionwomen' %} ">Women's Shoes</a></li>
-                          </ul>
-                      </div>
-                  </li>
+        <div class="nav-links">
+          <ul>
+            <li fashion>
+              <a href=" {% static './fashion.html' %} "> Fashion</a>
+              <div class="subMenu1">
+                <ul class="linkPages">
+                  <li><a href=" {% static './fashionMen.html' %} ">Men's Clothing</a></li>
+                  <li><a href=" {% static './fashionWomen.html' %} ">Women's Clothing</a></li>
+                  <li><a href=" {% static './fashionMen.html' %} ">Men's Shoes</a></li>
+                  <li><a href=" {% static './fashionWomen.html' %} ">Women's Shoes</a></li>
+                </ul>
+              </div>
+            </li>
 
-                  <li gadget>
-                      <a href=" {% url 'gadget' %} "> Gadget</a>
+            <li gadget>
+              <a href=" {% static './gadgetHompage.html' %} "> Gadget</a>
 
-                      <div class="subMenu1">
-                          <ul class="linkPages">
-                              <li><a href=" {% url 'phones' %} ">Mobile Phones</a></li>
-                              <li><a href=" {% url 'laptop' %} ">Laptops</a></li>
-                              <li><a href=" {% url 'tv' %} ">Smart TVs</a></li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li hair>
-                      <a href=" {% url 'hair' %} "> Hair</a>
+              <div class="subMenu1">
+                <ul class="linkPages">
+                  <li><a href=" {% static './gadgetPhones.html' %} ">Mobile Phones</a></li>
+                  <li><a href=" {% static './gadgetLaptops.html' %} ">Laptops</a></li>
+                  <li><a href=" {% static './gadgettv.html' %} ">Smart TVs</a></li>
+                </ul>
+              </div>
+            </li>
+            <li hair>
+              <a href=" {% static './hairHomePage.html' %} "> Hair</a>
 
-                      <div class="subMenu1">
-                          <ul class="linkPages">
-                              <li><a href=" {% url 'humanhair' %} ">Human Hair</a></li>
-                              <li><a href=" {% url 'bonestraight' %} ">Bone Straight</a></li>
-                              <li><a href=" {% url 'hairaccessories' %} ">Accessories</a></li>
-                          </ul>
-                      </div>
-                  </li>
-                  <li compare>
-                      <a href=" {% url 'comparegadget' %} "> Compare</a>
-                      <div class="subMenu1">
-                          <ul class="linkPages">
-                              <li><a href=" {% url 'comparegadget' %} ">By Price</a></li>
-                              <li><a href=" {% url 'comparegadget' %} ">By Brand</a></li>
-                              <li><a href=" {% url 'comparegadget' %} ">By Rating</a></li>
-                          </ul>
-                      </div>
-                  </li>
-              </ul>
-          </div>
+              <div class="subMenu1">
+                <ul class="linkPages">
+                  <li><a href=" {% static './hairHomePage.html' %} ">Human Hair</a></li>
+                  <li><a href=" {% static './boneStraight.html' %} ">Bone Straight</a></li>
+                  <li><a href=" {% static './hairAccessories.html' %} ">Accessories</a></li>
+                </ul>
+              </div>
+            </li>
+
+            <li compare>
+              <a href="#"> Compare</a>
+              <div class="subMenu1">
+                <ul class="linkPages">
+                  <li><a href="#">By Price</a></li>
+                  <li><a href="#">By Brand</a></li>
+                  <li><a href="#">By Rating</a></li>
+                </ul>
+              </div>
+            </li>
+          </ul>
+        </div>
       </nav>
-  </header>
+    </header>
 
     <main class="faq">
         <div class="faq_container">

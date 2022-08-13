@@ -49,15 +49,15 @@
 
 <div class="links">
 
-    <a href=" {% url 'index' %} ">Home</a>
+    <a href=" {% url 'index' %}?next=/ ">Home</a>
 
-    <a href=" {% url 'aboutus' %} ">About</a>
+    <a href=" {% url 'aboutus' %}?next=/ ">About</a>
 
-    <a href=" {% url 'team' %} ">Team</a>
+    <a href=" {% url 'team' %}?next=/ ">Team</a>
 
-    <a href=" {% url 'faq' %} ">FAQ</a>
+    <a href=" {% url 'faq' %}?next=/ ">FAQ</a>
 
-    <a href=" {% url 'contactus' %}">Contact Us</a>
+    <a href=" {% url 'contactus' %}?next=/ ">Contact Us</a>
 
 </div>
 
@@ -78,31 +78,38 @@
 				</div> -->
         <div class="top-link">
           <ul>
-              <li><a href=" {% url 'aboutus' %} ">About</a></li>
-              <li><a href=" {% static './team.html' %} ">Team</a></li>
-              <li><a href=" {% static './faq.html' %} ">FAQs</a></li>
-              <li><a href=" {% static './contactUs.html' %} ">Contact</a></li>
+              <li><a href=" {% url 'aboutus' %}?next=/ ">About</a></li>
+              <li><a href=" {% static './team.html' %}?next=/ ">Team</a></li>
+              <li><a href=" {% static './faq.html' %}?next=/ ">FAQs</a></li>
+              <li><a href=" {% static './contactUs.html' %}?next=/ ">Contact</a></li>
           </ul>
       </div>
+      {% if user.is_authenticated %}
+        		<div class="login">
+					<div>
+						<span class="material-symbols-outlined">person</span>
+						<button class="signInButton"><a href=" {%  url 'login' %} "> Logout </a></button>
+					</div>
+
+           {% else %}
+           
 				<div class="login">
 					<div>
 						<span class="material-symbols-outlined">person</span>
-						<button class="signInButton"><a href=" {% static '../template/Login.html' %} "> Login </a></button>
+						<button class="signInButton"><a href=" {%  url 'login' %} "> Login </a></button>
 					</div>
 					<div>
 						<span class="material-symbols-outlined">shopping_cart</span>
 					</div>
 				</div>
 			</section>
-
-
         <nav id="nav_bar">
 
             <div class="nav-links">
 
             <ul>
               
-                <li fashion> <a href=" {% url 'fashion' %} "> Fashion</a>
+                <li fashion> <a href=" {% url 'fashion' %}?next=/ "> Fashion</a>
                     <div class="subMenu1">
                             <ul class="linkPages">
                                 <li><a href=" {% static './fashionMen.html' %} ">Men's Clothing</a></li>
@@ -308,10 +315,10 @@
                       <button>Sign in</button>
                     </div>
                     <div class="form-element">
-                      <a href=" {% static '../template/forgotPassword.html' %} ">Forgot password?</a>
+                      <a href=" {% static '../registration/forgotPassword.html' %} ">Forgot password?</a>
                     </div>
                     <div class="popup-signup">
-                      Don't have an account? <a href=" {% static '../template/createAccount.html' %} ">Sign up</a>
+                      Don't have an account? <a href=" {% static '../registration/createAccount.html' %} ">Sign up</a>
                     </div>
                   </div>
                 </div>
