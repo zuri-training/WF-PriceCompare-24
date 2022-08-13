@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap");
 
 :root {
   --main-color: #fefefe;
@@ -15,6 +15,7 @@
 body {
   font-family: "Sora", sans-serif;
   position: relative;
+  width: 80%;
 }
 
 .material-symbols-outlined {
@@ -26,14 +27,19 @@ body {
   max-width: max-content;
   justify-content: center;
   font-family: sora;
+  background-color: var(--main-color);
 }
 
 header .head_section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: rgba(255, 255, 255);
   padding: 1em;
   align-items: center;
+}
+
+.linkPages {
+  z-index: 1;
 }
 
 header .search_bar #search_bar {
@@ -41,8 +47,8 @@ header .search_bar #search_bar {
   width: 23em;
   border-radius: 3px;
   outline: none;
-  border: .6px solid rgba(128, 128, 128, .5);
-  padding: 0 .5em;
+  border: 0.6px solid rgba(128, 128, 128, 0.5);
+  padding: 0 0.5em;
 }
 
 header .head_section .logo img {
@@ -55,19 +61,19 @@ div.login {
   display: flex;
   align-content: center;
   width: 8em;
-  justify-content: space-between
+  justify-content: space-between;
 }
 
-div.login>div {
+div.login > div {
   display: flex;
 }
 
-div.login>div button {
+div.login > div button {
   background: none;
   border: none;
 }
 
-div.login>div a {
+div.login > div a {
   text-decoration: none;
   color: black;
   font-size: 14px;
@@ -109,7 +115,7 @@ div.login>div a {
 
 .nav-links ul div ul {
   position: relative;
-  top: .3rem;
+  top: 0.3rem;
   left: -40px;
   display: block;
   width: 11rem;
@@ -131,20 +137,34 @@ div.login>div a {
   list-style: none;
   width: 100%;
   text-align: center;
-  padding: .5em;
+  padding: 0.5em;
+}
+
+header .head_section .top-link ul li {
+  padding: 0 1em 0 1em;
+  display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+  color: rgba(0, 0, 0, 0.424);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+a {
+  text-decoration: none;
 }
 
 /* main seaction */
 main {
   display: grid;
   grid-template-areas:
-    'slider slider slider slider slider'
-    'filter box box box box'
-    'reviews reviews reviews reviews reviews'
-  ;
+    "slider slider slider slider slider"
+    "filter box box box box"
+    "reviews reviews reviews reviews reviews";
   gap: 3rem;
   justify-content: center;
-  font-family: 'Sora', sans-serif;
+  font-family: "Sora", sans-serif;
   display: grid;
   grid-template-areas:
     "slider slider slider slider slider"
@@ -163,7 +183,7 @@ main .hero-section {
 
 main .hero-section img {
   width: 11em;
-} 
+}
 
 aside.filter {
   grid-area: filter;
@@ -202,7 +222,7 @@ aside.filter {
 .filter div.amount input {
   width: 100px;
   text-align: center;
-  padding: .7em;
+  padding: 0.7em;
   border-radius: 10px;
   border: 1px solid rgb(73, 70, 70);
 }
@@ -273,7 +293,7 @@ div[preview] {
 /* edit height by biola */
 .preview .box div img {
   width: 13em;
-  height:17.5rem
+  height: 17.5rem;
 }
 
 div[preview] .news-one img,
@@ -297,7 +317,7 @@ div[preview] .news-one img,
 .box h4 {
   color: var(--load-color);
   text-align: center;
-  font-size: .9rem;
+  font-size: 0.9rem;
   font-weight: bolder;
   padding-bottom: 1em;
 }
@@ -383,7 +403,7 @@ section[categories] ul li,
 [popularBrands] ul li,
 [about] ul li {
   list-style: none;
-  padding-top: 10px
+  padding-top: 10px;
 }
 
 section[categories] ul li a,
@@ -395,24 +415,7 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-  display: flex;
-  justify-content: space-between;
-}
-
-section[bottom] .contact {
-  display: flex;
-  align-items: center;
-}
-
-section[bottom] .contact a {
-  padding: 0 10px;
-  text-decoration: none;
-}
-
-.contact div.box {
-  width: 8px;
-  height: 8px;
-  background-color: black;
+  text-align: center;
 }
 
 hr[bottom] {
@@ -531,7 +534,7 @@ div.profile h4 {
 }
 
 div.time p {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
 
 .head_section .logo {
@@ -555,22 +558,145 @@ div.footLogo {
 }
 
 .footerContainer section p {
-  color: var(--load-color)
+  color: var(--load-color);
 }
 
 a.compare-btn {
   text-decoration: none;
   color: white;
   background: var(--secondary-color);
-  padding: .5em 1em;
+  padding: 0.5em 1em;
   border-radius: 8px;
-
 }
 
 div.compare {
   padding-bottom: 2.5rem;
   text-align: center;
 }
+
+.box img:hover {
+  transform: scale(1.025, 1.025);
+  transition: transform 200ms ease-in-out;
+}
+
+.hero-section .display {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+main .hero-section {
+  background: url(../images/fashionwomen/fashionWomen.jpeg);
+  width: 95%;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 20rem;
+  /* z-index: -1; */
+  /* margin-bottom: -11em; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* edited the search bar code  */
+
+div.search_bar {
+  width: 100%;
+  max-width: 26rem;
+  height: 3.5rem;
+}
+
+.hero-section__title {
+  color: white;
+  font-size: 2rem;
+  padding: 6rem 0 4rem;
+}
+
+#search_bar {
+  padding: 2rem 1rem;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid white;
+  width: 100%;
+  height: 100%;
+}
+
+#search_bar::placeholder {
+  font-size: 20px;
+}
+
+main section.hero-section {
+  display: flex;
+}
+
+.search_bar {
+  position: relative;
+}
+
+.search_bar span {
+  font-size: 2.5em;
+  position: absolute;
+  right: 0.5em;
+  color: gray;
+  top: 0.3em;
+}
+
+/* Abiolas additional Edit */
+.hero-section__display-image {
+  width: 100%;
+}
+
+.hero-section__display-image img {
+  width: 100% !important;
+}
+
+/* new header */
+
+/* edited the search bar code  */
+
+div.search_bar {
+  width: 100%;
+  max-width: 26rem;
+  height: 3.5rem;
+}
+
+.hero-section__title {
+  color: white;
+  font-size: 2rem;
+  padding: 6rem 0 4rem;
+}
+
+#search_bar {
+  padding: 2rem 1rem;
+  border-radius: 30px;
+  outline: none;
+  border: 1px solid white;
+  width: 100%;
+  height: 100%;
+}
+
+#search_bar::placeholder {
+  font-size: 20px;
+}
+
+main section.hero-section {
+  display: flex;
+}
+
+.search_bar {
+  position: relative;
+}
+
+.search_bar span {
+  font-size: 2.5em;
+  position: absolute;
+  right: 0.5em;
+  color: gray;
+  top: 0.3em;
+}
+
 .shoes-section {
   border: 1px solid var(--secondary-color);
   padding: 1.5rem 1rem;
@@ -589,7 +715,7 @@ div.compare {
 .shoes-box {
   display: flex;
   margin-bottom: 2rem;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  /* box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25); */
 }
 
 .shoe-content {
@@ -612,10 +738,289 @@ div.compare {
   color: var(--secondary-color);
 }
 
-/* Abiolas additional Edit */
-.hero-section__display-image {
-   width: 100%
+/*hamburger menu*/
+div.icons {
+  display: none;
 }
-.hero-section__display-image img{
-   width: 100% !important;
+
+header .icons div,
+header .icons a {
+  height: 2rem;
+
+  width: 2rem;
+
+  font-size: 1rem;
+
+  line-height: 2rem;
+
+  background: rgb(39, 38, 38);
+
+  color: #fff;
+
+  text-align: center;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  margin-right: 0.7rem;
+}
+
+header .icons div:hover,
+header .icons a:hover {
+  background: var(--secondary-color);
+
+  color: #fff;
+}
+
+header.active {
+  position: fixed;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: 100;
+}
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+
+  left: -120%;
+
+  height: 100%;
+
+  background: var(--main-color);
+
+  padding: 3rem;
+
+  width: 23rem;
+}
+
+.navbar.active {
+  left: 0;
+
+  z-index: 1;
+}
+
+.navbar .user {
+  text-align: center;
+
+  margin: 3rem auto;
+}
+
+.navbar .user img {
+  height: 10rem;
+
+  width: 10rem;
+
+  border-radius: 50%;
+
+  border: 0.5rem solid var(--main-color);
+
+  object-fit: cover;
+
+  box-shadow: 4rem 2rem 0 -3rem var(--secondary-color),
+    -4rem -2rem 0 -3rem var(--secondary-color);
+}
+
+.navbar .user h4 {
+  padding-top: 0.5rem;
+
+  color: #333;
+
+  font-weight: 500;
+
+  font-size: 1.4rem;
+}
+
+.navbar .links a {
+  display: block;
+  text-decoration: none;
+
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+
+  font-size: 1.2rem;
+
+  padding: 1rem 0;
+
+  color: #333;
+}
+
+.navbar .links a:last-child {
+  border: none;
+}
+
+.navbar .links a:hover {
+  letter-spacing: 0.2rem;
+
+  color: var(--secondary-color);
+}
+
+.navbar #close {
+  position: absolute;
+
+  top: 1rem;
+
+  right: 2rem;
+
+  font-size: 3rem;
+
+  cursor: pointer;
+
+  color: #333;
+}
+
+.navbar #close:hover {
+  color: var(--secondary-color);
+}
+
+/* media query for responsiveness */
+@media screen and (max-width: 1024px) {
+  #main {
+    display: block;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .hamburger {
+    padding: 0 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 2rem;
+  }
+
+  .top-link {
+    display: none;
+  }
+
+  div.icons {
+    display: block;
+  }
+
+  header .head_section {
+    justify-content: space-between;
+  }
+
+  footer .footerContainer {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-areas:
+      "a a a a"
+      "b c d e";
+  }
+
+  .Social_Icons {
+    grid-area: a;
+  }
+
+  section[categories] {
+    grid-area: b;
+  }
+
+  section[gadgetBrands] {
+    grid-area: c;
+  }
+
+  section[popularBrands] {
+    grid-area: d;
+  }
+
+  section[About] {
+    grid-area: e;
+  }
+
+  div.review-section div.overall-review {
+    display: block;
+    padding: 1rem 0;
+  }
+
+  [gadgetBrands],
+  [popularBrands],
+  [about] {
+    display: none;
+  }
+
+  main .hero-section {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  main section.hero-section {
+    min-height: 16rem;
+  }
+
+  .hero-section__title {
+    padding: 4rem 0 2rem;
+  }
+
+  div.search_bar {
+    padding: 0 1rem;
+  }
+
+  .preview {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .progress-star > div:nth-child(1) {
+    max-width: fit-content;
+    width: 100%;
+  }
+
+  .progress-container {
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  footer .footerContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .shoes-section {
+    border: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .shoes-box {
+    display: flex;
+    flex-direction: column;
+    /**/
+    margin-bottom: 2rem;
+  }
+
+  .shoe-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+
+  .shoe-content h4 {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .iPhone,
+  .samsung,
+  .tecno {
+    border: none;
+  }
 }

@@ -26,7 +26,7 @@ SECRET_KEY = 'django-insecure-+xgp!e_!i)an(v*befsq&t!kib-+%6kt9^ee1383f(uj)o==l$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['*']
 
 
 # Application definition
@@ -42,8 +42,12 @@ INSTALLED_APPS = [
     # apps installed by team
         #3rd party
     'django_extensions',
-        #local apps
-    #write apps created here
+    'django_social_share',
+    'allauth',
+    'allauth.account', # comma added
+    'allauth.socialaccount',
+    'allauth.socialaccount.providers.google',
+    'allauth.socialaccount.providers.facebook',
 ]
 
 MIDDLEWARE = [
@@ -54,6 +58,8 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
+
+    'social_django.middleware.SocialAuthExceptionMiddleware',
 ]
 
 ROOT_URLCONF = 'WalletFriendly.urls'
@@ -129,3 +135,16 @@ STATICFILES_DIRS = [os.path.join(BASE_DIR, 'walletfriendly/static')]
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
+EMAIL_BACKEND = 'django.core.mail.backends.console.EmailBackend'
+
+DEFAULT_FROM_EMAIL = 'walletfriendlyofficial@gmail.com'
+SERVER_EMAIL = 'walletfriendlyofficial@gmail.com'
+
+EMAIL_BACKEND = 'django.core.mail.backends.smtp.EmailBackend'
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_HOST_USER = 'walletfriendlyofficial@gmail.com'
+EMAIL_HOST_PASSWORD = 'iwhuntutvjcehfdm'
+EMAIL_PORT = 587
+EMAIL_USE_TLS = True
+EMAIL_USE_SSL = False

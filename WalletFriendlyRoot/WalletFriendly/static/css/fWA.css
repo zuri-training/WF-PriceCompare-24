@@ -1,0 +1,498 @@
+.men-content {
+  border: 1px solid var(--secondary-color);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.men-content h2 {
+  margin-top: 0px;
+  margin-bottom: 1em;
+  color: var(--load-color);
+  font-size: 1.6rem;
+  font-weight: bolder;
+}
+
+.men-preview {
+  display: flex;
+  gap: 1em;
+}
+
+.men-preview img {
+  max-width: 100%;
+  margin: 0 auto;
+  display: block;
+}
+
+.extra {
+  margin-top: 3rem;
+}
+
+.social-share {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem;
+}
+
+.social-share a {
+  text-decoration: none;
+}
+
+.men-box {
+  border: none;
+  width: 13.5rem;
+  background-color: var(--main-color);
+  border-radius: 8px;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: flex-end; */
+}
+
+.men-box h4 {
+  color: var(--load-color);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: bolder;
+  padding: 1em 0;
+}
+
+.men-box p,
+.special-p {
+  text-align: center;
+  border: none;
+  width: 86%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: var(--load-color);
+  color: var(--main-color) !important;
+  font-size: small;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+.send-icon {
+  transform: rotate(-40deg);
+}
+
+.vendors {
+  margin-bottom: 1rem;
+}
+
+.vendors h6 {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.shoes-box,
+.shoe-content {
+  align-items: center;
+}
+
+.men-preview img:hover {
+  transform: scale(1.025, 1.025);
+  transition: transform 200ms ease-in-out;
+}
+
+.send-icon,
+.chat-icon {
+  color: var(--load-color);
+}
+
+.anchor {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.special-p {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.special-p:hover,
+.special-p:focus-visible {
+  opacity: 0.8;
+  transition: 0.3s;
+}
+
+main #GAD-tv {
+  background-image: url("../images/gadget and phones/SAMSUNG 1.png");
+  background-size: cover;
+}
+
+.linkPages {
+  z-index: 1;
+}
+
+header .head_section .top-link ul li {
+  padding: 0 1em 0 1em;
+  display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+  color: rgba(0, 0, 0, 0.424);
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.hero-section .display {
+  width: 100%;
+  height: 70%;
+  object-fit: cover;
+}
+
+main .hero-section {
+  background: url(../images/fashionwomen/fashionWomen.jpeg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  min-height: 22rem;
+  /* z-index: -1; */
+  /* margin-bottom: -11em; */
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+section[categories] ul li a:hover,
+[gadgetBrands] ul li a:hover,
+[popularBrands] ul li a:hover,
+[about] ul li a:hover {
+  color: var(--load-color);
+  font-weight: 600;
+  transition: 0.3s;
+}
+
+div.icons {
+  display: none;
+}
+
+header .icons div,
+header .icons a {
+  height: 2rem;
+
+  width: 2rem;
+
+  font-size: 1rem;
+
+  line-height: 2rem;
+
+  background: rgb(39, 38, 38);
+
+  color: #fff;
+
+  text-align: center;
+
+  border-radius: 50%;
+
+  cursor: pointer;
+
+  margin-right: 0.7rem;
+}
+
+header .icons div:hover,
+header .icons a:hover {
+  background: var(--secondary-color);
+
+  color: #fff;
+}
+
+header .icons div:hover,
+header .icons a:hover {
+  background: var(--secondary-color);
+
+  color: #fff;
+}
+
+header.active {
+  position: fixed;
+  margin-right: 0.7rem;
+
+  top: 0;
+
+  left: 0;
+
+  z-index: 100;
+}
+
+.navbar {
+  position: fixed;
+
+  top: 0;
+
+  left: -120%;
+
+  height: 100%;
+
+  background: var(--main-color);
+
+  padding: 3rem;
+
+  width: 23rem;
+}
+
+.navbar.active {
+  left: 0;
+
+  z-index: 1;
+}
+
+.navbar .user {
+  text-align: center;
+
+  margin: 3rem auto;
+}
+
+.navbar.active {
+  left: 0;
+
+  z-index: 1;
+}
+
+.navbar .user {
+  text-align: center;
+
+  margin: 3rem auto;
+}
+
+.navbar .user img {
+  height: 10rem;
+
+  width: 10rem;
+
+  border-radius: 50%;
+
+  border: 0.5rem solid var(--main-color);
+
+  object-fit: cover;
+
+  box-shadow: 4rem 2rem 0 -3rem var(--secondary-color),
+    -4rem -2rem 0 -3rem var(--secondary-color);
+}
+
+.navbar .user h4 {
+  padding-top: 0.5rem;
+  border: 0.5rem solid var(--main-color);
+
+  object-fit: cover;
+
+  box-shadow: 4rem 2rem 0 -3rem var(--secondary-color),
+    -4rem -2rem 0 -3rem var(--secondary-color);
+}
+
+.navbar .user h4 {
+  padding-top: 0.5rem;
+
+  color: #333;
+
+  font-weight: 500;
+
+  font-size: 1.4rem;
+}
+
+.navbar .links a {
+  display: block;
+  text-decoration: none;
+
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+}
+
+.navbar .links a {
+  display: block;
+  text-decoration: none;
+
+  border-bottom: 0.1rem solid rgba(0, 0, 0, 0.3);
+
+  font-size: 1.2rem;
+
+  padding: 1rem 0;
+
+  color: #333;
+}
+
+.navbar .links a:last-child {
+  border: none;
+}
+
+.navbar .links a:hover {
+  letter-spacing: 0.2rem;
+
+  color: var(--secondary-color);
+}
+
+.navbar .links a:last-child {
+  border: none;
+}
+
+.navbar .links a:hover {
+  letter-spacing: 0.2rem;
+
+  color: var(--secondary-color);
+}
+
+.navbar #close {
+  position: absolute;
+
+  top: 1rem;
+
+  right: 2rem;
+
+  font-size: 3rem;
+
+  cursor: pointer;
+
+  color: #333;
+}
+
+.navbar #close:hover {
+  color: var(--secondary-color);
+}
+
+/* media query for responsiveness */
+@media screen and (max-width: 1024px) {
+  #main {
+    display: block;
+  }
+
+  .filter {
+    display: none;
+  }
+
+  .hamburger {
+    padding: 0 1em;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  body {
+    padding: 0 2rem;
+  }
+
+  .top-link {
+    display: none;
+  }
+
+  div.icons {
+    display: block;
+  }
+
+  header .head_section {
+    justify-content: space-between;
+  }
+
+  footer .footerContainer {
+    display: grid;
+    row-gap: 1rem;
+    column-gap: 1rem;
+    grid-template-areas:
+      "a a a a"
+      "b c d e";
+  }
+
+  .Social_Icons {
+    grid-area: a;
+  }
+
+  section[categories] {
+    grid-area: b;
+  }
+
+  section[gadgetBrands] {
+    grid-area: c;
+  }
+
+  section[popularBrands] {
+    grid-area: d;
+  }
+
+  section[About] {
+    grid-area: e;
+  }
+
+  div.review-section div.overall-review {
+    display: block;
+    padding: 1rem 0;
+  }
+
+  [gadgetBrands],
+  [popularBrands],
+  [about] {
+    display: none;
+  }
+
+  main .hero-section {
+    background-position: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 0 1rem;
+  }
+
+  main section.hero-section {
+    min-height: 16rem;
+  }
+
+  .hero-section__title {
+    padding: 4rem 0 2rem;
+  }
+
+  div.search_bar {
+    padding: 0 1rem;
+  }
+
+  .preview {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .progress-star > div:nth-child(1) {
+    max-width: fit-content;
+    width: 100%;
+  }
+
+  .progress-container {
+    width: 100%;
+    max-width: fit-content;
+  }
+
+  footer .footerContainer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+  }
+
+  .shoes-section {
+    border: none;
+    padding: 0;
+    text-align: center;
+  }
+
+  .shoes-box {
+    display: flex;
+    flex-direction: column;
+    /**/
+    margin-bottom: 2rem;
+  }
+
+  .shoe-content {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    gap: 0.5rem;
+  }
+
+  .shoe-content h4 {
+    font-size: 1rem;
+    width: 100%;
+  }
+
+  .iPhone,
+  .samsung,
+  .tecno {
+    border: none;
+  }
+}

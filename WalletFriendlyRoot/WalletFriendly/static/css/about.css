@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+:root {
+  --main-color: #fefefe;
+  --load-color: #151f7f;
+  --secondary-color: #949efe;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+
+    margin: 0 auto;
+    max-width: max-content;
+    justify-content: center;
+    font-family: sora;
+    background: #FCFCFD;
+  
+  }
+#nav_bar{
+    width: 100% !important;
+    padding-right: 40px !important;
+    padding-left: 40px !important;
+}
+a{
+    text-decoration: none;
+}
+.heading {
+    text-align: center;
+    padding: 50px;
+    font-family: 'Sora';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 150%;
+    text-align: center;
+    color: #141F7E;
+
+}
+
+.main-para {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #949EFE;
+    
+    
+}
+.main-para p {
+    padding-bottom: 20px;
+    width: 70%;
+    margin-left: 200px;
+    justify-content: center;
+    text-align: center;
+}
+.para {
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+    color: #949EFE;
+    width: 70%;
+    margin-left: 200px;
+}
+.ul {
+    padding-top: 40px;
+    line-height: normal !important;
+    text-align: center;
+    color: #949EFE;
+}
+.ul li {
+    padding-bottom: 30px;
+    
+}
+
+
+
+.material-symbols-outlined {
+  color: var(--mainColor);
+}
+
+
+#para {
+    color: #949FFE;
+    padding-bottom: 30px;
+}
+
+input, textarea {
+    width: 70%;
+    padding: 12px;
+    border: 1px solid #DCDCDC;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    border-radius: 8px;
+    background: #FFFFFF;
+}
+.contact-page {
+    display: flex;
+    max-width: 100%;
+    flex-direction: row;
+    align-items: flex-start;
+    padding-left: 200px;
+    gap: 10px;
+    justify-content: space-between;
+}
+
+.address {
+    align-self: flex-end;
+    
+}
+
+.address div {
+    display: flex;
+    padding: .5em;
+    gap: .5rem;
+    padding-right: 60px;
+    font-size: 14px;
+}
+
+.address div span {
+    color: var(--secondary-color);
+}
+
+#submit {
+    color: white;
+    background-color: var(--load-color);
+    margin-top: 1em;
+}
+
+/* code ends here */

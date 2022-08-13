@@ -19,6 +19,7 @@ body {
     justify-content: center;
     margin: 0 auto;
     max-width: max-content;
+    background-color: rgba(246, 248, 250, 1);
 }
 
 
@@ -492,17 +493,17 @@ div[preview] .news-one img,
     width: 13.5rem;
     background-color: var(--main-color);
     border-radius: 8px;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
+    padding: 0 1rem;
 }
 
 .box h4 {
 
     color: var(--load-color);
     text-align: center;
-    font-size: .9rem;
+    font-size: 16px;
     font-weight: bolder;
     padding: 1em;
 
@@ -544,6 +545,7 @@ div[preview] .news-one img,
 
 .hot-deals .box {
     width: 100%;
+    padding: 0 1rem;
 }
 
 .hot-deals .box img {
@@ -628,8 +630,7 @@ section[categories] ul li a,
 }
 
 section[bottom] {
-    display: flex;
-    justify-content: space-between;
+    text-align: center;
 }
 
 section[bottom] .contact {
@@ -732,8 +733,6 @@ div.review-section div.overall-review {
 
 div.review-section div.overall-review .review-container div[contain] {
     display: flex;
-
-
 }
 
 i.fas {
@@ -762,6 +761,10 @@ div.pro-contain {
     gap: 1.4rem;
     margin-top: 1.5em;
 
+}
+
+a {
+    text-decoration: none;
 }
 
 div.profile {
@@ -831,7 +834,7 @@ div.compare {
 .vendors h6 {
     color: var(--secondary-color);
     text-align: center;
-    font-size: 0.9rem;
+    font-size: 12px;
     line-height: 1.7;
 }
 
@@ -857,7 +860,7 @@ div.compare {
 
 .send-icon,
 .chat-icon {
-    color: var(--secondary-color);
+    color: var(--load-color);
 }
 
 .anchor {
@@ -873,9 +876,9 @@ div.compare {
     width: 86%;
     margin: 0 auto;
     border-radius: 8px;
-    background-color: var(--secondary-color);
+    background-color: var(--load-color);
     color: var(--main-color) !important;
-    font-size: small;
+    font-size: 10px;
 }
 
 .special-p:hover,
@@ -887,4 +890,365 @@ div.compare {
 .box_content {
     width: 100%;
     height: 50%;
+}
+
+header .head_section .top-link ul li {
+    padding: 0 1em 0 1em;
+    display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+    color: rgba(0, 0, 0, 0.424);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.hero-section .display {
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+}
+
+main .hero-section {
+    background: url(../images/accesories/bg-img.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 22rem;
+    /* z-index: -1; */
+    /* margin-bottom: -11em; */
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+
+/* edited the search bar code  */
+
+div.search_bar {
+    width: 100%;
+    max-width: 26rem;
+    height: 3.5rem;
+}
+
+.hero-section__title {
+    color: white;
+    font-size: 2rem;
+    padding: 6rem 0 4rem;
+}
+
+#search_bar {
+    padding: 2rem 1rem;
+    border-radius: 30px;
+    outline: none;
+    border: 1px solid white;
+    width: 100%;
+    height: 100%;
+}
+
+#search_bar::placeholder {
+    font-size: 20px;
+}
+
+main section.hero-section {
+    display: flex;
+}
+
+.search_bar {
+    position: relative;
+}
+
+.search_bar span {
+    font-size: 2.5em;
+    position: absolute;
+    right: .5em;
+    color: gray;
+    top: .3em;
+}
+
+a {
+    text-decoration: none;
+}
+
+.linkPages {
+    z-index: 1;
+}
+
+div.icons {
+    display: none;
+}
+
+header .icons div,
+
+header .icons a {
+
+    height: 2rem;
+
+    width: 2rem;
+
+    font-size: 1rem;
+
+    line-height: 2rem;
+
+    background: rgb(39, 38, 38);
+
+    color: #fff;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    margin-right: .7rem;
+
+}
+
+header .icons div:hover,
+
+header .icons a:hover {
+
+    background: var(--secondary-color);
+
+    color: #fff;
+
+
+}
+
+header.active {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 100;
+
+}
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: -120%;
+
+    height: 100%;
+
+    background: var(--main-color);
+
+    padding: 3rem;
+
+    width: 23rem;
+
+}
+
+.navbar.active {
+
+    left: 0;
+
+    z-index: 1;
+
+}
+
+.navbar .user {
+
+    text-align: center;
+
+    margin: 3rem auto;
+
+}
+
+.navbar .user img {
+
+    height: 10rem;
+
+    width: 10rem;
+
+    border-radius: 50%;
+
+    border: .5rem solid var(--main-color);
+
+    object-fit: cover;
+
+    box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
+
+}
+
+.navbar .user h4 {
+
+    padding-top: .5rem;
+
+    color: #333;
+
+    font-weight: 500;
+
+    font-size: 1.4rem;
+
+}
+
+.navbar .links a {
+
+    display: block;
+    text-decoration: none;
+
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
+
+    font-size: 1.2rem;
+
+    padding: 1rem 0;
+
+    color: #333;
+
+}
+
+.navbar .links a:last-child {
+
+    border: none;
+
+}
+
+.navbar .links a:hover {
+
+    letter-spacing: .2rem;
+
+    color: var(--secondary-color);
+
+}
+
+.navbar #close {
+
+    position: absolute;
+
+    top: 1rem;
+
+    right: 2rem;
+
+    font-size: 3rem;
+
+    cursor: pointer;
+
+    color: #333;
+
+}
+
+.navbar #close:hover {
+
+    color: var(--secondary-color);
+
+}
+
+@media screen and (max-width: 1024px) {
+    #main {
+        display: block;
+    }
+
+    .filter {
+        display: none;
+    }
+
+    .hamburger {
+        padding: 0 1em;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 2rem;
+    }
+
+    .top-link {
+        display: none;
+    }
+
+    header .head_section {
+        justify-content: space-between;
+    }
+
+    footer .footerContainer {
+        display: grid;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        grid-template-areas:
+            'a a a a'
+            'b c d e';
+    }
+
+    .Social_Icons {
+        grid-area: a;
+    }
+
+    section[categories] {
+        grid-area: b;
+    }
+
+    section[gadgetBrands] {
+        grid-area: c;
+    }
+
+    section[popularBrands] {
+        grid-area: d;
+    }
+
+    section[About] {
+        grid-area: e;
+    }
+
+    div.review-section div.overall-review {
+        display: block;
+        padding: 1rem 0;
+    }
+
+    div.icons {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    main section.hero-section {
+        min-height: 16rem;
+    }
+
+    .hero-section__title {
+        padding: 4rem 0 2rem;
+    }
+
+    div.search_bar {
+        padding: 0 1rem;
+    }
+
+
+    .preview {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .progress-star>div:nth-child(1) {
+        max-width: fit-content;
+        width: 100%;
+    }
+
+    .progress-container {
+        width: 100%;
+        max-width: fit-content;
+    }
+
+    footer .footerContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    .iPhone,
+    .samsung,
+    .tecno,
+    .hot-deals {
+        border: none;
+    }
 }

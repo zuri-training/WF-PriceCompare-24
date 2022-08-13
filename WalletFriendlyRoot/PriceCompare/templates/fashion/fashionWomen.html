@@ -1,35 +1,156 @@
-{% extends "base.html" %}
 {% load static %}
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Walletfriendly</title>
-   
-    <link rel="stylesheet" href="{% static 'css/fashionWomen.css' %}">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>WalletFriendly</title>
+    <link rel="stylesheet" href=" {% static 'css/fashionWomen.css' %} " />
+    <link rel="stylesheet" href=" {% static 'css/popup.css' %} ">
+    <link rel="stylesheet" href=" {% static 'css/responsive.css' %} ">
+    <script src=" {% static 'script/sidebar.js' %} " defer></script>
+
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
     />
-
-<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
   </head>
+
   <body>
-  {% block maincontent %}
-    <main>
-      <section class="hero-section">
-        <div style="margin-left: 1.2rem;">
-        <img src="{% static "/images/men/Rectangle 10.png" %}" alt="" />
-        <img src="{% static "/images/men/Rectangle 11.png" %}" alt="" />
-        <img src="{% static "/images/men/Rectangle 12.png" %}" alt="" />
-        <img src="{% static "/images/men/Rectangle 13.png" %}" alt="" />
-        <img src="{% static "/images/men/Rectangle 14.png" %}" alt="" />
-        <img src="{% static "/images/men/Rectangle 15.png" %}" alt="" />
+    <header>
+      <section class="head_section">
+                  <div class="icons">
+        <div id="menu-bar" class="fas fa-bars"></div>
       </div>
+      <nav class="navbar">
+        <div class="user">
+          <img src=" {% static 'images/model.png' %} " alt="" />
+
+          <h4>John Doe</h4>
+        </div>
+
+        <div class="links">
+          <a href=" {% url 'index' %} ">Home</a>
+
+          <a href=" {% url 'aboutus' %} ">About</a>
+
+          <a href=" {% url 'team' %} ">Team</a>
+
+          <a href=" {% url 'faq' %} ">FAQ</a>
+
+          <a href=" {% url 'contactus' %} ">Contact Us</a>
+        </div>
+
+        <div id="close" class="fas fa-times"></div>
+      </nav>
+          <div class="logo">
+              Wallet<span>friendly</span>
+          </div>
+          
+          <div class="top-link">
+              <ul>
+                  <li><a href=" {% url 'aboutus' %} ">About</a></li>
+                  <li><a href=" {% url 'team' %} ">Team</a></li>
+                  <li><a href=" {% url 'faq' %} ">FAQs</a></li>
+                  <li><a href=" {% url 'contactus' %} ">Contact</a></li>
+              </ul>
+          </div>
+
+          <div class="login">
+
+              <div>
+                  <span class="material-symbols-outlined">person</span>
+                  <button class="signInButton"> <a href=" {% url 'login' %} "> Login </a></button>
+              </div>
+              <div>
+                  <span class="material-symbols-outlined">shopping_cart</span>
+              </div>
+
+
+
+          </div>
+
       </section>
 
+
+
+      <nav id="nav_bar">
+          <div class="nav-links nav-list">
+              <ul>
+                  <li fashion>
+                      <a href=" {% url 'fashion' %} "> Fashion</a>
+                      <div class="subMenu1">
+                          <ul class="linkPages">
+                              <li><a href=" {% url 'fashionmen' %} ">Men's Clothing</a></li>
+                              <li><a href=" {% url 'fashionwomen' %} ">Women's Clothing</a></li>
+                              <li><a href=" {% url 'fashionmen' %} ">Men's Shoes</a></li>
+                              <li><a href=" {% url 'fashionwomen' %} ">Women's Shoes</a></li>
+                          </ul>
+                      </div>
+                  </li>
+
+                  <li gadget>
+                      <a href=" {% url 'gadget' %} "> Gadget</a>
+
+                      <div class="subMenu1">
+                          <ul class="linkPages">
+                              <li><a href=" {% url 'phones' %} ">Mobile Phones</a></li>
+                              <li><a href=" {% url 'laptop' %} ">Laptops</a></li>
+                              <li><a href=" {% url 'tv' %} ">Smart TVs</a></li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li hair>
+                      <a href=" {% url 'hair' %} "> Hair</a>
+
+                      <div class="subMenu1">
+                          <ul class="linkPages">
+                              <li><a href=" {% url 'humanhair' %} ">Human Hair</a></li>
+                              <li><a href=" {% url 'bonestraight' %} ">Bone Straight</a></li>
+                              <li><a href=" {% url 'hairaccessories' %} ">Accessories</a></li>
+                          </ul>
+                      </div>
+                  </li>
+                  <li compare>
+                      <a href=" {% url 'comparegadget' %} "> Compare</a>
+                      <div class="subMenu1">
+                          <ul class="linkPages">
+                              <li><a href=" {% url 'comparegadget' %} ">By Price</a></li>
+                              <li><a href=" {% url 'comparegadget' %} ">By Brand</a></li>
+                              <li><a href=" {% url 'comparegadget' %} ">By Rating</a></li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+    <main id="main">
+      <section class="hero-section">
+        <h1 class="hero-section__title">
+          Women's Wears.
+      </h1>
+      <div class="search_bar">
+        <span class="material-symbols-outlined">search</span>
+        <input
+          type="search"
+          placeholder="Search Product, brand"
+          name="search"
+          id="search_bar"
+        />
+      </div>
+        <!-- <img src=" {% static '/images/gadget and phones/Rectangle 9.jpg' %} " alt="" />
+        <img src=" {% static '/images/gadget and phones/Rectangle 10.jpg' %} " alt="" />
+        <img src=" {% static '/images/gadget and phones/Rectangle 11.jpg' %} " alt="" />
+        <img src=" {% static '/images/gadget and phones/Rectangle 12.jpg' %} " alt="" />
+        <img src=" {% static '/images/gadget and phones/Rectangle 13.jpg' %} " alt="" />
+        <img src=" {% static '/images/gadget and phones/Rectangle 14.jpg' %} " alt="" /> -->
+      </section>
       <aside class="filter">
         <h2>Filters</h2>
         <input search type="text" placeholder="Search A-Z" name="" id="" />
@@ -49,10 +170,10 @@
         <div class="popular">
           <h3>Popular Brands</h3>
           <div>
-            <a href="#"> Fashionnova </a>
+            <a href="https://www.fashionnova.com/" target="_blank"> Fashionnova </a>
           </div>
           <div>
-            <a href="#">Prettylittlething</a>
+            <a href="https://www.prettylittlething.com/" target="_blank">Prettylittlething</a>
           </div>
 
           <div><a href="#">See more...</a></div>
@@ -61,17 +182,16 @@
         <div class="stores">
           <h3>Stores</h3>
           <div>
-            <a href="#"> Fashionnova </a>
+            <a href="https://www.fashionnova.com/" target="_blank"> Fashionnova </a>
           </div>
           <div>
-            <a href="#">Jumia</a>
+            <a href="https://www.jumia.com.ng/" target="_blank">Jumia</a>
           </div>
           <div>
-            <a href="#">AliExpress</a>
+            <a href="http://www.aliexpress.com/" target="_blank">AliExpress</a>
           </div>
           <div><a href="#">See more...</a></div>
         </div>
-        <div load-more><a href="">Load more</a></div>
       </aside>
 
       <div container>
@@ -80,29 +200,42 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="{% static "/images/fashion women/dress.png" %}" alt="" />
+                <img src=" {% static 'images/fashionwomen/dress.png' %} " alt="women_clothes" />
               </div>
               <div>
                 <h4>Dresses</h4>
                 <p>₦ 30,000</p>
+                <div class="compare">
+                  <a class="compare-btn" href="#">Compare</a>
+              
+                </div>
+
+                
+                
               </div>
             </div>
             <div class="box">
               <div>
-                <img src="{% static "/images/fashion women/details main.png" %}" alt="" />
+                <img src=" {% static 'images/fashionwomen/details main.png' %} " alt="women_clothes" />
               </div>
               <div>
                 <h4>Tops/Blouses</h4>
                 <p>₦ 10,000</p>
+                <div class="compare">
+                  <a class="compare-btn" href="#">Compare</a>
+                </div>
               </div>
             </div>
             <div class="box">
               <div>
-                <img src="{% static "/images/fashion women/iuy.png" %}" alt="" />
+                <img src=" {% static 'images/fashionwomen/iuy.png' %} " alt="women_clothes" />
               </div>
               <div>
                 <h4>Skirts</h4>
                 <p>₦ 8,000</p>
+                <div class="compare">
+                  <a class="compare-btn" href="#">Compare</a>
+                </div>
               </div>
             </div>
           </div>
@@ -116,32 +249,40 @@
           <div class="preview">
             <div class="box">
               <div>
-                <img src="{% static "/images/fashion women/Corporate Elegant.jpeg" %}" alt="" />
+                <img src=" {% static 'images/fashionwomen/Corporate Elegant.jpeg' %} " alt="women_clothes" />
               </div>
               <div>
-                <h4>Corporate Elegant 
-                  Bodycon Dress</h4>
+                <h4>Corporate Elegant Bodycon Dress</h4>
                 <p>₦ 7,000</p>
+                <div class="compare">
+                  <a class="compare-btn" href="#">Compare</a>
+                </div>
               </div>
             </div>
             <div class="box">
               <div>
-                <img src="{% static "/images/fashion women/Sleeveless Woman.jpeg" %}" alt="" />
+                <img src=" {% static 'images/fashionwomen/Sleeveless Woman.jpeg' %} " alt="women_clothes" />
               </div>
               <div>
                 <h4>Sleeveless Woman
                   Bodycon Dress</h4>
                 <p>₦ 6,000</p>
+                <div class="compare">
+                  <a class="compare-btn" href="#">Compare</a>
+                </div>
               </div>
             </div>
             <div class="box">
               <div>
-                <img src="{% static "/images/fashion women/Womens Dresses.jpeg" %}" alt="" />
+                <img src=" {% static 'images/fashionwomen/Womens Dresses.jpeg' %} " alt="women_clothes" />
               </div>
               <div>
                 <h4>Skater Royal 
                   Blue Dress</h4>
                 <p>₦ 8,000</p>
+                <div class="compare">
+                  <a class="compare-btn" href="#">Compare</a>
+                </div>
               </div>
             </div>
           </div>
@@ -155,20 +296,26 @@
           <div class="shoes">
               <div class="shoes-box">
                   <div>
-                      <img src="{% static "/images/fashion women/top.png" %}" alt="" />
+                      <img src=" {% static 'images/fashionwomen/top.png' %} " alt="women_clothes" />
                   </div>
                   <div class="shoe-content">
                       <h4>Women's Crocodile Patterned Pointed Stiletto Heel</h4>
                       <p>₦ 10,000</p>
+                      <div class="compare">
+                        <a class="compare-btn" href="#">Compare</a>
+                      </div>
                   </div>
               </div>
               <div class="shoes-box">
                   <div>
-                      <img src="{% static "/images/fashion women/opentop.png" %}" alt="" />
+                      <img src=" {% static 'images/fashionwomen/opentop.png' %} " alt="women_clothes" />
                   </div>
                   <div class="shoe-content">
                       <h4>Dark Brown Court Shoe</h4>
                       <p>₦ 30,0000</p>
+                      <div class="compare">
+                        <a class="compare-btn" href="#">Compare</a>
+                      </div>
                   </div>
               </div>
           </div>
@@ -182,22 +329,28 @@
           <div class="shoes">
               <div class="shoes-box">
                   <div>
-                      <img src="{% static "/images/fashion women/shoe.jpeg" %}" alt="" />
+                      <img src=" {% static 'images/fashionwomen/shoe.jpeg' %} " alt="women_clothes" />
                   </div>
                   <div class="shoe-content">
                       <h4>Butterfly Slippers 
                         Brown</h4>
                       <p>&#8358; 8,000</p>
+                      <div class="compare">
+                        <a class="compare-btn" href="#">Compare</a>
+                      </div>
                   </div>
               </div>
               <div class="shoes-box">
                   <div>
-                      <img src="{% static "/images/fashion women/slip.jpeg" %}" alt="" />
+                      <img src=" {% static 'images/fashionwomen/slip.jpeg' %} " alt="women_clothes" />
                   </div>
                   <div class="shoe-content">
                       <h4>Birkenstock Flat
                         Slippers</h4>
                       <p>&#8358; 7,000</p>
+                      <div class="compare">
+                        <a class="compare-btn" href="#">Compare</a>
+                      </div>
                   </div>
               </div>
 
@@ -208,6 +361,258 @@
       </section>
       </div>
     </main>
-    {% endblock maincontent %}
+
+    <section reviews>
+      <div class="review-section">
+        <h2>Ratings and Reviews</h2>
+
+        <div class="overall-review">
+          <div class="numbers">
+            <p>4.5 out of 5</p>
+          </div>
+
+          <div class="review-container">
+            <div contain>
+              <div class="stars-container">
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                  <i class="fas fa-star"></i>
+                </div>
+                <div class="star">
+                  <i class="fas fa-star"></i>
+                </div>
+              </div>
+              <div class="progress-container">
+                <div class="progress-bar">
+                  <div class="progress-bar-fill first"></div>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar-fill second"></div>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar-fill third"></div>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar-fill fourth"></div>
+                </div>
+                <div class="progress-bar">
+                  <div class="progress-bar-fill fifth"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="pro-contain">
+            <div class="profile-pic">
+              <img src=" {% static 'images/model.png' %} " alt="profile-pic" />
+            </div>
+            <div class="content">
+              <div class="star">
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+                <i class="fas fa-star"></i>
+              </div>
+              <p>Joe</p>
+              <p>joelawrence@gmail.com</p>
+              <address>California, USA</address>
+              <h4>Great App for shopping</h4>
+            </div>
+          </div>
+          <div class="time">
+            <p>2 days ago...</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="pro-contain">
+          <div class="profile-pic">
+            <img src=" {% static 'images/model1.png' %} " alt="profile-pic" />
+          </div>
+          <div class="content">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Mary</p>
+            <p>maryrandy@gmail.com</p>
+            <address>Lagos, Nigeria</address>
+            <h4>I've been using this app for so long and I love it</h4>
+          </div>
+        </div>
+        <div class="time">
+          <p>15 days ago...</p>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="pro-contain">
+          <div class="profile-pic">
+            <img src=" {% static 'images/model2.png' %} " alt="profile-pic" />
+          </div>
+          <div class="content">
+            <div class="star">
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+              <i class="fas fa-star"></i>
+            </div>
+            <p>Bimbo</p>
+            <p>missbimbo@gmail.com</p>
+            <address>Abuja, Nigeria</address>
+            <h4>
+              I love it, very easy to use and have lots of affordable products
+            </h4>
+          </div>
+        </div>
+        <div class="time">
+          <p>1 month ago...</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="footerContainer">
+
+          <section class="Social_Icons">
+              <div class="footLogo">
+                  Wallet<span>friendly</span>
+              </div>
+              <div class="Icons">
+                  <ul>
+                      <li> <a href="#"><img src=" {% static 'images/social media icon/mail.svg' %} " alt="mail icon"></a> </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/twitter.svg' %} " alt="twitter icon"> </a>
+                      </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/facebook.svg' %} " alt="facebook icon"> </a>
+                      </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/youtube.svg' %} " alt="youtube icon"> </a>
+                      </li>
+                  </ul>
+                  <ul>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/instagram.svg' %} " alt="instagram icon"></a>
+                      </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/telegram.svg' %} " alt="telegram icon"> </a>
+                      </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/tiktok.svg' %} " alt="tiktok icon"> </a>
+                      </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/reddit.svg' %} " alt="reddit icon"></a> </li>
+                  </ul>
+          </section>
+          <section categories>
+              <p><strong>Categories</strong></p>
+              <ul>
+                  <li><a href=" {% url 'hairaccessories' %} ">Accessories</a></li>
+                  <li><a href=" {% url 'bonestraight' %} ">Bone Straight</a></li>
+                  <li><a href=" {% url 'humanhair' %} ">Human Hairs</a></li>
+                  <li><a href=" {% url 'laptop' %} ">Laptops</a></li>
+                  <li><a href=" {% url 'phones' %} ">Mobile Phones</a></li>
+                  <li><a href=" {% url 'fashionmen' %} ">Men's Wear</a></li>
+                  <li><a href=" {% url 'fashionmen' %} ">Men's Shoes</a></li>
+                  <li><a href=" {% url 'fashionwomen' %} ">Women's Wear</a></li>
+                  <li><a href=" {% url 'fashionwomen' %} ">Women's Shoes</a></li>
+                  <li><a href=" {% url 'tv' %} ">Smart TVs</a></li>
+              </ul>
+          </section>
+          <section gadgetBrands>
+              <p><strong>Gadgets Brands</strong></p>
+              <ul>
+                  <li><a href=" {% url 'tv' %} ">Apple TVs</a></li>
+                  <li><a href=" {% url 'laptop' %} ">Dell</a></li>
+                  <li><a href=" {% url 'tv' %} ">Hisense</a></li>
+                  <li><a href=" {% url 'tv' %} ">Infinix Smart TVs</a></li>
+                  <li><a href=" {% url 'phones' %} ">iPhones</a></li>
+                  <li><a href=" {% url 'phones' %} ">Oppo</a></li>
+                  <li><a href=" {% url 'phones' %} ">Samsung</a></li>
+                  <li><a href=" {% url 'fashion' %} ">Spectre</a></li>
+                  <li><a href=" {% url 'fashionmen' %} ">Polystar</a></li>
+                  <li><a href=" {% url 'fashionmen' %} ">Watches</a></li>
+              </ul>
+          </section>
+          <section popularBrands>
+              <p><strong>Popular Brands</strong></p>
+              <ul>
+                  <li><a href="http://www.amazon.com/" target="_blank">Amazon</a></li>
+                  <li><a href="https://www.apple.com/ng/" target="_blank">Apple</a></li>
+                  <li><a href="http://www.google.com/" target="_blank">Google</a></li>
+                  <li><a href="https://www.lewisstores.co.za/" target="_blank">Lewi's</a></li>
+                  <li><a href="https://www.microsoft.com/en-ng" target="_blank">Microsoft</a></li>
+                  <li><a href="https://www.7up.com/" target="_blank">7up</a></li>
+                  <li><a href="https://www.zara.com/" target="_blank">Zara</a></li>
+
+              </ul>
+          </section>
+          <section About>
+              <p><strong>About</strong></p>
+              <ul>
+                  <li><a href=" {% url 'aboutus' %} ">About WalletFriendly</a></li>
+                  <li><a href=" {% url 'faq' %} ">FAQ</a></li>
+                  <li><a href=" {% url 'team' %} ">Team</a></li>
+                  <li><a href=" {% url 'aboutus' %} ">Jobs</a></li>
+                  <li><a href=" {% url 'contactus' %} ">Contact Us</a></li>
+                  <li><a href=" {% url 'comparegadget' %} ">Compare Prices</a></li>
+                  <li><a href=" {% url 'trendingnews' %} ">Latest News</a></li>
+                  <li><a href=" {% url 'review' %} ">Reviews</a></li>
+                  <li><a href=" {% url 'documentation' %} ">Documentation</a></li>
+              </ul>
+          </section>
+      </section>
+
+
+      <hr bottom>
+
+      <section bottom>
+
+          <div class="bottom">
+              <p> <strong>Copyright 2022,</strong>WalletFriendly © <strong>All Rights Reserved</strong></p>
+          </div>
+      </section>
+
+  </footer>
+  <div class="popup">
+    <div class="close-btn">&times;</div>
+    <div class="form">
+      <h2>Log in</h2>
+      <div class="form-element">
+        <label for="email">Email</label>
+        <input type="text" id="email" placeholder="Enter email">
+      </div>
+      <div class="form-element">
+        <label for="password">Password</label>
+        <input type="password" id="password" placeholder="Enter password">
+      </div>
+      <div class="form-element">
+        <input type="checkbox" id="remember-me">
+        <label for="remember-me">Remember me</label>
+      </div>
+      <div class="form-element">
+        <button>Sign in</button>
+      </div>
+      <div class="form-element">
+        <a href=" {% static '../template/forgotPassword.html' %} ">Forgot password?</a>
+      </div>
+      <div class="popup-signup">
+        Don't have an account? <a href=" {% static '../template/createAccount.html' %} ">Sign up</a>
+      </div>
+  <script src=" {% static 'script/popup.js' %} "></script>
 </body>
 </html>
