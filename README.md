@@ -28,7 +28,7 @@ __Mission__
 
 To help buyers get quality goods at the best price.
 
-__Live Link__: Walletfriendly.herokuapp.com
+__Live Link__: [Walletfriendly.herokuapp.com](Walletfriendly.herokuapp.com)
 
 __Project Status__: _in progress_
 
