@@ -158,13 +158,13 @@
         <div class="popular">
           <h3>Popular Phones</h3>
           <div>
-            <a href=" {% static '../template/gadgetPhones.html' %} "> Apple IPhone </a>
+            <a href=" {% url 'phones' %} "> Apple IPhone </a>
           </div>
           <div>
-            <a href=" {% static '../template/gadgetPhones.html' %} ">Samsung</a>
+            <a href=" {% url 'phones' %} ">Samsung</a>
           </div>
           <div>
-            <a href=" {% static '../template/gadgetPhones.html' %} ">Oppo</a>
+            <a href=" {% url 'phones' %} ">Oppo</a>
           </div>
           
         </div>
@@ -172,26 +172,26 @@
         <div class="popular">
           <h3>Popular Laptops</h3>
           <div>
-            <a href=" {% static '../template/gadgetLaptops.html' %} ">Hp</a>
+            <a href=" {% url 'laptop' %} ">Hp</a>
           </div>
           <div>
-            <a href=" {% static '../template/gadgetLaptops.html' %} ">MacBook</a>
+            <a href=" {% url 'laptop' %} ">MacBook</a>
           </div>
           <div>
-            <a href=" {% static '../template/gadgetLaptops.html' %} ">Dell</a>
+            <a href=" {% url 'laptop' %} ">Dell</a>
           </div>
           
         </div>
         <div class="popular">
           <h3>Popular Smart Tvs</h3>
           <div>
-            <a href=" {% static '../template/gadgettv.html' %} ">Infinix</a>
+            <a href=" {% url 'tv' %} ">Infinix</a>
           </div>
           <div>
-            <a href=" {% static '../template/gadgettv.html' %} ">Hisense</a>
+            <a href=" {% url 'tv' %} ">Hisense</a>
           </div>
           <div>
-            <a href=" {% static '../template/gadgettv.html' %} ">Sony</a>
+            <a href=" {% url 'tv' %} ">Sony</a>
           </div>
           
         </div>
@@ -247,7 +247,7 @@
                       <button>Sign in</button>
                     </div>
                     <div class="form-element">
-                      <a href=" {% static '../template/forgotPassword.html' %} ">Forgot password?</a>
+                      <a href=" {% url 'forgotpassword' %} ">Forgot password?</a>
                     </div>
                     <div class="popup-signup">
                       Don't have an account? <a href=" {% static '../template/createAccount.html' %} ">Sign up</a>

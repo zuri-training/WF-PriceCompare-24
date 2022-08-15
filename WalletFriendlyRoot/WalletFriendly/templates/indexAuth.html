@@ -8,12 +8,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>WalletfriendlyAuth</title>
    
-    <link rel="stylesheet" href=" {% static '../css/landingPage.css' %} ">
-    <link rel="stylesheet" href=" {% static '../css/popup.css' %} ">
-    <link rel="stylesheet" href=" {% static '../css/responsive.css' %} ">
+    <link rel="stylesheet" href=" {% static 'css/landingPage.css' %} ">
+    <link rel="stylesheet" href=" {% static 'css/popup.css' %} ">
+    <link rel="stylesheet" href=" {% static 'css/responsive.css' %} ">
     
-    <script src=" {% static '../script/popup.js' %} " defer></script>
-    <script src=" {% static '../script/sidebar.js' %} " defer></script>
+    <script src=" {% static 'script/popup.js' %} " defer></script>
+    <script src=" {% static 'script/sidebar.js' %} " defer></script>
        <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
@@ -102,19 +102,16 @@
 
 
 
-                <li gadget> <a href=" # "> Gadget</a>
+                <li gadget>
+                    <a href=" {% url 'gadget' %} "> Gadget</a>
 
                     <div class="subMenu1">
                         <ul class="linkPages">
-                            <li><a href=" {% url 'gadgetPhonesauth' %} ">Mobile Phones</a></li>
-                            <li><a href=" {% url 'gadgetlaptopsuth' %} ">Laptops</a></li>
-                            <li><a href=" {% url 'gadgettvauth' %} ">Smart TVs</a></li>
-
+                            <li><a href=" {% url 'phones' %} ">Mobile Phones</a></li>
+                            <li><a href=" {% url 'laptop' %} ">Laptops</a></li>
+                            <li><a href=" {% url 'tv' %} ">Smart TVs</a></li>
                         </ul>
-
-
                     </div>
-
                 </li>
                 <li hair> <a href=" # "> Hair</a>
 
@@ -131,7 +128,7 @@
 
                 </li>
 
-                <li compare> <a href=" {% url 'comparegadgets' %} "> Compare</a>
+                <li compare> <a href=" {% url 'comparegadget' %} "> Compare</a>
                     <div class="subMenu1">
                         <ul class="linkPages">
                             <li><a href="#">By Price</a></li>
@@ -144,7 +141,6 @@
         </div>
     </nav>
 </header>
-
        <main>
    
       <section heroSection class="hero-section">
@@ -381,7 +377,7 @@
 
             <div class="news-one">
                 <div>
-                   <a href=" {% url 'trendingNews' %} " target="_blank" rel="noopener noreferrer"> <img src=" {% static '../images/image 37.png' %} " alt="">
+                   <a href=" {% url 'trendingnews' %} " target="_blank" rel="noopener noreferrer"> <img src=" {% static '../images/image 37.png' %} " alt="">
                 </div> </a>
                 <p>The iphone 14 and 14 Pro are expected to be totally different
                     devices when they get <br> launched in September.
