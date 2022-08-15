@@ -31,10 +31,14 @@ body {
 
 header .head_section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgba(255, 255, 255);
     padding: 1em;
     align-items: center;
+}
+
+a {
+    text-decoration: none;
 }
 
 header .head_section .top-link ul li {
@@ -72,6 +76,10 @@ header .search_bar #search_bar {
   height: 55px;
   object-fit: contain;
 } */
+
+.head_section a {
+    text-decoration: none;
+}
 
 div.login {
     display: flex;
@@ -608,9 +616,28 @@ section[categories] ul li a,
 }
 
 section[bottom] {
+    display: block;
+    justify-content: space-between;
     text-align: center;
 }
 
+
+/* section[bottom] .contact {
+    display: flex;
+    align-items: center;
+}
+
+section[bottom] .contact a {
+    padding: 0 10px;
+    text-decoration: none;
+} */
+
+
+/* .contact div.box {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+} */
 
 hr[bottom] {
     margin: 3em 0;
@@ -653,21 +680,23 @@ hr[bottom] {
 
 .form__title {
     font-weight: 700;
-    font-size: 18px;
+    font-size: 32px;
+    line-height: 48px;
     color: #1B29A9;
-    padding: 0 0 40px;
     text-align: center;
+    padding: 22px;
 }
 
 .login-label {
     display: block;
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 18px;
     width: 100%;
     max-width: 590px;
     margin: 0 auto;
     padding: 8px 0;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 18px;
+    color: #949EFE;
 }
 
 .login__input-box {
@@ -740,10 +769,14 @@ hr[bottom] {
     text-align: center;
     text-decoration: none;
     color: #1B29A9;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    color: #1B29A9;
 }
 
 .login__create-account {
-    padding: 92px 0 0;
+    padding: 92px 0;
 }
 
 .create-account__link {
@@ -759,8 +792,10 @@ hr[bottom] {
 .create-account__link a {
     font-weight: 700;
     font-size: 16px;
-    color: #1B29A9;
     text-decoration: none;
+    font-weight: 600;
+    line-height: 20px;
+    color: #1B29A9;
 }
 
 footer {
@@ -931,10 +966,11 @@ div.compare {
 }
 
 main .hero-section {
-    background: url(../display.jpg);
+    background: url("../images/gadget and phones/SAMSUNG 1.png");
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 22rem;
+    border-radius: 8px;
     /* z-index: -1; */
     /* margin-bottom: -11em; */
     position: relative;
@@ -990,6 +1026,173 @@ main section.hero-section {
     right: .5em;
     color: gray;
     top: .3em;
+}
+
+/*hamburger menu*/
+div.icons {
+    display: none;
+}
+
+header .icons div,
+
+header .icons a {
+
+    height: 2rem;
+
+    width: 2rem;
+
+    font-size: 1rem;
+
+    line-height: 2rem;
+
+    background: rgb(39, 38, 38);
+
+    color: #fff;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    margin-right: .7rem;
+
+}
+
+header .icons div:hover,
+
+header .icons a:hover {
+
+    background: var(--secondary-color);
+
+    color: #fff;
+
+
+}
+
+header.active {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 100;
+
+}
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: -120%;
+
+    height: 100%;
+
+    background: var(--main-color);
+
+    padding: 3rem;
+
+    width: 23rem;
+
+}
+
+.navbar.active {
+
+    left: 0;
+
+    z-index: 1;
+
+}
+
+.navbar .user {
+
+    text-align: center;
+
+    margin: 3rem auto;
+
+}
+
+.navbar .user img {
+
+    height: 10rem;
+
+    width: 10rem;
+
+    border-radius: 50%;
+
+    border: .5rem solid var(--main-color);
+
+    object-fit: cover;
+
+    box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
+
+}
+
+.navbar .user h4 {
+
+    padding-top: .5rem;
+
+    color: #333;
+
+    font-weight: 500;
+
+    font-size: 1.4rem;
+
+}
+
+.navbar .links a {
+
+    display: block;
+    text-decoration: none;
+
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
+
+    font-size: 1.2rem;
+
+    padding: 1rem 0;
+
+    color: #333;
+
+}
+
+.navbar .links a:last-child {
+
+    border: none;
+
+}
+
+.navbar .links a:hover {
+
+    letter-spacing: .2rem;
+
+    color: var(--secondary-color);
+
+}
+
+.navbar #close {
+
+    position: absolute;
+
+    top: 1rem;
+
+    right: 2rem;
+
+    font-size: 3rem;
+
+    cursor: pointer;
+
+    color: #333;
+
+}
+
+.navbar #close:hover {
+
+    color: var(--secondary-color);
+
 }
 
 

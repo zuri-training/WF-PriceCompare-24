@@ -1,0 +1,69 @@
+.Social_Icons div.Icons ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.Social_Icons div.Icons ul li {
+  padding: 5px;
+}
+
+.social-share {
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem 1rem !important;
+}
+
+.social-share a {
+  text-decoration: none;
+}
+
+.hair-page__box p,
+.special-p {
+  text-align: center;
+  border: none;
+  width: 86%;
+  margin: 0 auto;
+  border-radius: 8px;
+  background-color: var(--load-color);
+  color: var(--main-color) !important;
+  font-size: small;
+  padding: 0.5rem 0;
+  text-decoration: none;
+}
+
+.send-icon {
+  transform: rotate(-40deg);
+}
+
+.vendors {
+  margin-bottom: 1rem;
+}
+
+.vendors h6 {
+  color: var(--secondary-color);
+  text-align: center;
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+
+.send-icon,
+.chat-icon {
+  color: var(--load-color);
+}
+
+.anchor {
+  text-align: center;
+  padding-top: 1rem;
+}
+
+.special-p {
+  cursor: pointer;
+  padding: 0.5rem;
+}
+
+.special-p:hover,
+.special-p:focus-visible {
+  opacity: 0.8;
+  transition: 0.3s;
+}

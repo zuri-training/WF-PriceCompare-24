@@ -1,552 +1,823 @@
+{% load static %}
+{% load social_share %}
 <!DOCTYPE html>
 <html lang="en">
-{% load social_share %}
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Human Hair Authenticated</title>
-    <link rel="stylesheet"
-        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- <link rel="stylesheet" href=" {% static '../css/gadgetHomepage.css' %} " /> -->
+    <link rel="stylesheet" href=" {% static 'css/hairhomepage.css' %} " />
+    <link rel="stylesheet" href=" {% static 'css/popup.css' %} " />
+    <link rel="stylesheet" href=" {% static 'css/humanHairMobileNav.css' %} " />
+    <link rel="stylesheet" href=" {% static 'css/humanHairAuth.css' %} " />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200"
+    />
+    <script src=" {% static 'script/popup.js' %} " defer></script>
+    <script src=" {% static 'script/sidebar.js' %} " defer></script>
+  </head>
 
-    <link rel="stylesheet" href="../css/gadgetPhones.css">
-    <link rel="stylesheet" href="../css/authMen.css">
-</head>
-
-<body>
+  <body>
     <header>
+      <section class="head_section">
+          <div class="icons">
+              <div id="menu-bar" class="fas fa-bars"></div>
+          </div>
+          <nav class="navbar">
+              <div class="user">
+                  <img src=" {% static 'images/model.png' %} " alt="profile picture" />
 
-        <section class="head_section">
-            <div class="logo">
-                Wallet<span>friendly</span>
-            </div>
-            <div class="search_bar">
-                <input type="search" placeholder="Search Product, brand" name="search" id="search_bar">
+                  <h4>John Doe</h4>
+              </div>
 
-            </div>
-            <div class="login">
+              <div class="links">
+                  <a href=" {% url 'index' %} ">Home</a>
 
-                <div>
-                    <span class="material-symbols-outlined">person</span>
-                    <button class="signInButton"> <a href="#"> Login </a></button>
-                </div>
-                <div>
-                    <span class="material-symbols-outlined">shopping_cart</span>
-                </div>
+                  <a href=" {% url 'aboutus' %} ">About</a>
 
+                  <a href=" {% url 'team' %} ">Team</a>
 
+                  <a href=" {% url 'faq' %} ">FAQ</a>
 
-            </div>
+                  <a href=" {% url 'contactus' %} ">Contact Us</a>
+              </div>
 
-        </section>
+              <div id="close" class="fas fa-times"></div>
+          </nav>
+          <div class="logo">
+              <a href=" {% url 'indexauth' %} ">Wallet<span>friendly</span></a>
+          </div>
+          <!-- <div class="search_bar">
+              <input type="search" placeholder="Search Product, brand" name="search" id="search_bar">
 
+          </div> -->
 
+          <div class="top-link">
+              <ul>
+                  <li><a href=" {% url 'aboutus' %} ">About</a></li>
+                  <li><a href=" {% url 'team' %} ">Team</a></li>
+                  <li><a href=" {% url 'faq' %} ">FAQs</a></li>
+                  <li><a href=" {% url 'contactus' %} ">Contact</a></li>
+              </ul>
+          </div>
+          <div class="login">
 
-        <nav id="nav_bar">
+              <div>
+                  <span class="material-symbols-outlined">person</span>
+                  <button class="signInButton"> <a href=" {% url 'indexauth' %} "> Logout </a></button>
+              </div>
+              <div>
+                  <span class="material-symbols-outlined">shopping_cart</span>
+              </div>
+          </div>
 
-            <div class="nav-links">
+      </section>
+      <nav id="nav_bar">
 
-                <ul>
+          <div class="nav-links">
 
-                    <li fashion> <a href="./fashion.html"> Fashion</a>
-                        <div class="subMenu1">
-                            <ul class="linkPages">
-                                <li><a href="./fashionMen.html">Men's Clothing</a></li>
-                                <li><a href="./fashionWomen.html">Women's Clothing</a></li>
-                                <li><a href="./fashionMen.html">Men's Shoes</a></li>
-                                <li><a href="./fashionWomen.html">Women's Shoes</a></li>
-                            </ul>
+              <ul>
 
-
-                        </div>
-                    </li>
-
-
-
-                    <li gadget> <a href="./gadgetHomepage.html"> Gadget</a>
-
-                        <div class="subMenu1">
-                            <ul class="linkPages">
-                                <li><a href="./gadgetPhones.html">Mobile Phones</a></li>
-                                <li><a href="./gadgetLaptops.html">Laptops</a></li>
-                                <li><a href="./gadgettv.html">Smart TVs</a></li>
-
-                            </ul>
-
-
-                        </div>
-
-                    </li>
-                    <li hair> <a href="./hairHomePage.html"> Hair</a>
-
-                        <div class="subMenu1">
-                            <ul class="linkPages">
-                                <li><a href="./humanHair.html">Human Hair</a></li>
-                                <li><a href="./boneStraight.html">Bone Straight</a></li>
-                                <li><a href="./hairAccessories.html">Accessories</a></li>
-
-                            </ul>
+                  <li fashion> <a href="#"> Fashion</a>
+                      <div class="subMenu1">
+                          <ul class="linkPages">
+                              <li><a href="#">Men's Clothing</a></li>
+                              <li><a href=" {% url 'fashionwomenauth' %} ">Women's Clothing</a></li>
+                              <li><a href="#">Men's Shoes</a></li>
+                              <li><a href=" {% url 'fashionwomenauth' %} ">Women's Shoes</a></li>
+                          </ul>
 
 
-                        </div>
+                      </div>
+                  </li>
 
-                    </li>
-                    <li compare>
-                        <a href="../template/compareGadgets.html"> Compare</a>
-                        <div class="subMenu1">
-                            <ul class="linkPages">
-                                <li><a href="../template/compareGadgets.html">By Price</a></li>
-                                <li><a href="../template/compareGadgets.html">By Brand</a></li>
-                                <li><a href="../template/compareGadgets.html">By Rating</a></li>
-                            </ul>
-                        </div>
-                    </li>
-                </ul>
-            </div>
 
-        </nav>
 
-    </header>
-    <main>
-        <section class="hero-section">
-            <img src="../images/men/Rectangle 18.png" alt="" />
-            <img src="../images/men/Rectangle 10.png" alt="" />
-            <img src="../images/men/Rectangle 11.png" alt="" />
-            <img src="../images/men/Rectangle 12.png" alt="" />
-            <img src="../images/men/Rectangle 13.png" alt="" />
-            <img src="../images/men/Rectangle 14.png" alt="" />
-        </section>
+                  <li gadget> <a href=" # "> Gadget</a>
 
-        <aside class="filter">
-            <h2>Filters</h2>
-            <input search type="text" placeholder="Search A-Z" name="" id="" />
-            <p search-text>
-                Search Alphabetically or apply some filters <br />
-                from below
-            </p>
-            <span>Search A-Z</span>
+                      <div class="subMenu1">
+                          <ul class="linkPages">
+                              <li><a href=" {% url 'gadgetPhonesauth' %} ">Mobile Phones</a></li>
+                              <li><a href=" {% url 'gadgetlaptopsuth' %} ">Laptops</a></li>
+                              <li><a href=" {% url 'gadgettvauth' %} ">Smart TVs</a></li>
 
-            <h2>Price</h2>
-            <div class="amount">
-                <input type="tel" placeholder="Min" name="min" id="min" />
-                to
-                <input type="tel" placeholder="Max" name="max" id="max" />
-            </div>
+                          </ul>
 
-            <div class="popular">
-                <h3>Popular Brands</h3>
-                <div>
-                    <a href="#"> Gap </a>
-                </div>
-                <div>
-                    <a href="#">Boohoo</a>
-                </div>
 
-                <div><a href="#">See more...</a></div>
-            </div>
+                      </div>
 
-            <div class="stores">
-                <h3>Stores</h3>
-                <div>
-                    <a href="#"> Fashionnova </a>
-                </div>
-                <div>
-                    <a href="#">Jumia</a>
-                </div>
-                <div>
-                    <a href="#">AliExpress</a>
-                </div>
-                <div><a href="#">See more...</a></div>
-            </div>
-            <div load-more><a href="">Load more</a></div>
-        </aside>
+                  </li>
+                  <li hair> <a href=" # "> Hair</a>
 
-        <div container>
-            <section class="men-content extra">
-                <h2>Straight Weaves</h2>
-                <div class="men-preview">
-                    <div class="men-box">
-                        <div>
-                            <img src="../images/human hair/image 33.png" alt="" />
-                        </div>
-                        <div>
-                            <h4>300% Raw Straight 4x4 Closure</h4>
-                            <div class="vendors">
-                                <h6>Joyposh:&#8358;150,000</h6>
-                                <h6>Naijabeauty:&#8358;152,500</h6>
-                                <h6>Yendy:&#8358;151,000<h6>
-                            </div>
-                            <p>Joyposh &#8358;150,000</p>
-                            <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
-                                </a>
-                                <a href="#">
-                                    <ion-icon name="chatbubbles"></ion-icon>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="men-box">
-                        <div>
-                            <img src="../images/human hair/image-22.png" alt="" />
-                        </div>
-                        <div>
-                            <h4>Double Drawn 3 x 6 Bob Wig</h4>
-                            <div class="vendors">
-                                <h6>Naijabeauty:&#8358;120,00</h6>
-                                <h6>Hairbyginika:&#8358;120,000</h6>
-                                <h6>Joyposh:&#8358;123,000</h6>
-                            </div>
-                            <p class="men-price">Naijabeauty &#8358;120,000</p>
-                            <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
-                                </a>
-                                <a href="#">
-                                    <ion-icon name="chatbubbles"></ion-icon>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="men-box">
-                        <div>
-                            <img src="../images/men/as.png" alt="" />
-                        </div>
-                        <div>
-                            <h4>Shorts</h4>
-                            <div class="vendors">
-                                <h6>Fashion Nova:&#8358;7,000</h6>
-                                <h6>AliExpress:&#8358;10,000</h6>
-                                <h6>Jumia:&#8358;8,500</h6>
-                            </div>
-                            <p>FashionNova &#8358;7,000</p>
-                            <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
-                                </a>
-                                <a href="#">
-                                    <ion-icon name="chatbubbles"></ion-icon>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div see_more>
-                    <a href="#">See more...</a>
-                </div>
-            </section>
+                      <div class="subMenu1">
+                          <ul class="linkPages">
+                              <li><a href="#">Human Hair</a></li>
+                              <li><a href=" {% url 'bonestraightauth' %} ">Bone Straight</a></li>
+                              <li><a href=" {% url 'hairaccessoriesauth' %} ">Accessories</a></li>
 
-            <section class="men-content extra">
-                <h2>Men's Trousers</h2>
-                <div class="men-preview">
-                    <div class="men-box">
-                        <div>
-                            <img src="../images/men/fgd.png" alt="" />
-                        </div>
-                        <div>
-                            <h4>Manton Crested Joggers</h4>
-                            <div class="vendors">
-                                <h6>Fashion Nova:&#8358;5,000</h6>
-                                <h6>AliExpress:&#8358;5,500</h6>
-                                <h6>Jumia:&#8358;6,000</h6>
-                            </div>
-                            <p>FashionNova &#8358;5,000</p>
-                            <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
-                                </a>
-                                <a href="#">
-                                    <ion-icon name="chatbubbles"></ion-icon>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="men-box">
-                        <div>
-                            <img src="../images/men/ef.png" alt="" />
-                        </div>
-                        <div>
-                            <h4>Men's Classical Trouser</h4>
-                            <div class="vendors">
-                                <h6>Fashion Nova:&#8358;12,000</h6>
-                                <h6>AliExpress:&#8358;10,000</h6>
-                                <h6>Jumia:&#8358;10,500</h6>
-                            </div>
-                            <p>Aliexpress &#8358;10,000</p>
-                            <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
-                                </a>
-                                <a href="#">
-                                    <ion-icon name="chatbubbles"></ion-icon>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="men-box">
-                        <div>
-                            <img src="../images/men/fdsz.png" alt="" />
-                        </div>
-                        <div>
-                            <h4>Men's Plain Trousers</h4>
-                            <div class="vendors">
-                                <h6>Fashion Nova:&#8358;8,500</h6>
-                                <h6>AliExpress:&#8358;8,000</h6>
-                                <h6>Jumia:&#8358;9,000</h6>
-                            </div>
-                            <p>Aliexpress &#8358;8,000</p>
-                            <div class="social-share">
-                                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                <a href=" {{facebook_url}} " target="_blank">
-                                <ion-icon name="send" class="send-icon"></ion-icon>
-                                </a>
-                                <a href="#">
-                                    <ion-icon name="chatbubbles"></ion-icon>
-                                </a>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div see_more>
-                    <a href="#">See more...</a>
-                </div>
-            </section>
+                          </ul>
 
-            <section class="shoes-section">
-                <h2>Men's shoe</h2>
-                <div class="shoes">
-                    <div class="shoes-box">
-                        <div>
-                            <img src="../images/men/weds.png" alt="" />
-                        </div>
-                        <div class="shoe-content">
-                            <h4>Classical Corporate Shoe Brown</h4>
-                            <div>
-                                <div class="vendors">
-                                    <h6>Fashion Nova:&#8358;50,000</h6>
-                                    <h6>AliExpress:&#8358;49,000</h6>
-                                    <h6>Jumia:&#8358;55,000</h6>
-                                    <p class="special-p">AliExpress &#8358;49,000</p>
-                                    <div class="social-share">
-                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
-                                        </a>
-                                        <a href="#">
-                                            <ion-icon name="chatbubbles"></ion-icon>
-                                        </a>
-                                    </div>
-                                </div>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shoes-box">
-                        <div>
-                            <img src="../images/men/qadc.png" alt="" />
-                        </div>
-                        <div class="shoe-content">
-                            <h4>Men's Shoe Casual Sneakers</h4>
-                            <div>
-                                <div class="vendors">
-                                    <h6>Fashion Nova:&#8358;8,000</h6>
-                                    <h6>AliExpress:&#8358;7,500</h6>
-                                    <h6>Jumia:&#8358;7,000</h6>
-                                    <p class="special-p">AliExpress &#8358;5,000</p>
-                                    <div class="social-share">
-                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
-                                        </a>
-                                        <a href="#">
-                                            <ion-icon name="chatbubbles"></ion-icon>
-                                        </a>
-                                    </div>
-                                </div>
+                      </div>
 
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div see_more>
-                    <a href="#">See more...</a>
-                </div>
-            </section>
+                  </li>
 
-            <section class="shoes-section">
-                <h2>Men's Sneakers</h2>
-                <div class="shoes">
-                    <div class="shoes-box">
-                        <div>
-                            <img src="../images/men/144041_1543587452 1.png" alt="" />
-                        </div>
-                        <div class="shoe-content">
-                            <h4>Nike Air Jordan 1</h4>
-                            <div>
-                                <div class="vendors">
-                                    <h6>Fashion Nova:&#8358;50,000</h6>
-                                    <h6>AliExpress:&#8358;49,000</h6>
-                                    <h6>Jumia:&#8358;55,000</h6>
-                                    <p class="special-p">AliExpress &#8358;49,000</p>
-                                    <div class="social-share">
-                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
-                                        </a>
-                                        <a href="#">
-                                            <ion-icon name="chatbubbles"></ion-icon>
-                                        </a>
-                                    </div>
-                                </div>
+                  <li compare> <a href=" {% url 'comparegadgets' %} "> Compare</a>
+                      <div class="subMenu1">
+                          <ul class="linkPages">
+                              <li><a href="#">By Price</a></li>
+                              <li><a href="#">By Brand</a></li>
+                              <li><a href="#">By Rating</a></li>
+                          </ul>
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </nav>
+  </header>
+    <!-- added id to main for styling -->
+    <main id="main">
+      <section
+        class="hero-section"
+        style="background-image: url('../images/humanHairAuth/hero-img.png')"
+      >
+        <h1 class="hero-section__title">Human Hair</h1>
+        <div class="search_bar">
+          <span class="material-symbols-outlined">search</span>
+          <input
+            type="search"
+            placeholder="Search Product, brand"
+            name="search"
+            id="search_bar"
+          />
+        </div>
+        <!-- <img src=" {% static '../images/human hair/Rectangle 9.png' %} " alt="" />
+				<img src=" {% static '../images/human hair/Rectangle 10.png' %} " alt="" />
+				<img src=" {% static '../images/human hair/Rectangle 11.png' %} " alt="" />
+				<img src=" {% static '../images/human hair/Rectangle 12.png' %} " alt="" />
+				<img src=" {% static '../images/human hair/Rectangle 13.png' %} " alt="" />
+				<img src=" {% static '../images/human hair/Rectangle 14.png' %} " alt="" /> -->
+      </section>
 
-                            </div>
-                        </div>
-                    </div>
-                    <div class="shoes-box">
-                        <div>
-                            <img src="../images/men/3023_1648550523 1.png" alt="" />
-                        </div>
-                        <div class="shoe-content">
-                            <h4>Van's Men Sneakers</h4>
-                            <div>
-                                <div class="vendors">
-                                    <h6>Fashion Nova:&#8358;12,000</h6>
-                                    <h6>AliExpress:&#8358;10,000</h6>
-                                    <h6>Jumia:&#8358;12,500</h6>
-                                    <p class="special-p">AliExpress &#8358;10,000</p>
-                                    <div class="social-share">
-                                        {% post_to_facebook object_or_url '<i name="send" ></i>' %}
-                                        <a href=" {{facebook_url}} " target="_blank">
-                                        <ion-icon name="send" class="send-icon"></ion-icon>
-                                        </a>
-                                        <a href="#">
-                                            <ion-icon name="chatbubbles"></ion-icon>
-                                        </a>
-                                    </div>
-                                </div>
+      <aside class="filter">
+        <h2>Filters</h2>
+        <input search type="text" placeholder="Search A-Z" name="" id="" />
+        <p search-text>
+          Search Alphabetically or apply some filters <br />
+          from below
+        </p>
+        <span>Search A-Z</span>
 
-                            </div>
-                        </div>
-                    </div>
-
-                    <div see_more>
-                        <a href="#">See more...</a>
-                    </div>
-                </div>
-            </section>
+        <h2>Price</h2>
+        <div class="amount">
+          <input type="tel" placeholder="Min" name="min" id="min" />
+          to
+          <input type="tel" placeholder="Max" name="max" id="max" />
         </div>
 
-        <section reviews>
-            <i class="fas fa-star"></i>
-        </section>
-    </main>
+        <div class="popular">
+          <h3>Popular Brands</h3>
+          <div>
+            <a href=" {% static '../template/humanHair.html' %} "> Human Hair Blend </a>
+          </div>
+          <div>
+            <a href="#">Synthetic</a>
+          </div>
+          <div>
+            <a href="#">Human hair/Bone straight</a>
+          </div>
+        </div>
 
-    <footer>
-        <section class="footerContainer">
+        <div class="stores">
+          <h3>Stores</h3>
+          <div>
+            <a href="https://www.naijabeautyhair.com/" target="_blank">
+              Naijabeautyhair
+            </a>
+          </div>
+          <div>
+            <a
+              href="https://www.instagram.com/yendyhairkulture/?hl=en"
+              target="_blank"
+              >Yendyhairkulture</a
+            >
+          </div>
+          <div>
+            <a
+              href="https://www.instagram.com/hairbyginika/?hl=en"
+              target="_blank"
+              >Hairbyginika</a
+            >
+          </div>
+        </div>
+      </aside>
 
-            <section class="Social_Icons">
-                <div class="footLogo">
-                    Wallet<span>friendly</span>
+      <div container>
+        <!-- <div class="popup">
+          <div class="close-btn">&times;</div>
+          <div class="form">
+            <h2>Log in</h2>
+            <div class="form-element">
+              <label for="email">Email</label>
+              <input type="text" id="email" placeholder="Enter email" />
+            </div>
+            <div class="form-element">
+              <label for="password">Password</label>
+              <input
+                type="password"
+                id="password"
+                placeholder="Enter password"
+              />
+            </div>
+            <div class="form-element">
+              <input type="checkbox" id="remember-me" />
+              <label for="remember-me">Remember me</label>
+            </div>
+            <div class="form-element">
+              <button>Sign in</button>
+            </div>
+            <div class="form-element">
+              <a href=" {% static '../template/forgotPassword.html' %} ">Forgot password?</a>
+            </div>
+            <div class="popup-signup">
+              Don't have an account?
+              <a href=" {% static '../template/createAccount.html' %} ">Sign up</a>
+            </div>
+          </div>
+        </div> -->
+        <section class="iPhone main-content">
+          <h2>Straight Weaves</h2>
+          <div class="preview">
+            <div class="hair-page__box">
+              <div>
+                <img
+                  src=" {% static 'images/human hair/image 33.png' %} "
+                  alt="300% Raw straight"
+                />
+              </div>
+              <div>
+                <h4>
+                  300% Raw straight <br />
+                  4 x 4 closure
+                </h4>
+                <div class="vendors">
+                  <h6>Joyposh:&#8358;150,000</h6>
+                  <h6>Naijabeauty:&#8358;152,500</h6>
+                  <h6>Yendyhair:&#8358;151,700</h6>
                 </div>
-                <div class="Icons">
-                    <ul>
-                        <li> <a href="#"> <span class="material-symbols-outlined">mail</span></a> </li>
-                        <li> <a href="#"> <img src="/twitter.png" alt=""> icons </a> </li>
-                        <li> <a href="#"> <img src="/instagram.png" alt=""> icons</a> </li>
-                        <li> <a href="#"> <img src="/youtube.png" alt=""> icons</a> </li>
-                    </ul>
-                    <ul>
-                        <li> <a href="#"> icons</a> </li>
-                        <li> <a href="#"> <img src="/twitter.png" alt=""> icons </a> </li>
-                        <li> <a href="#"> <img src="/instagram.png" alt=""> icons</a> </li>
-                        <li> <a href="#"> <img src="/youtube.png" alt=""> icons</a> </li>
-                    </ul>
-            </section>
-            <section categories>
-                <p><strong>Categories</strong></p>
-                <ul>
-                    <li><a href="#">Accessories</a></li>
-                    <li><a href="#">Bone Straight</a></li>
-                    <li><a href="#">Human Hairs</a></li>
-                    <li><a href="#">Laptops</a></li>
-                    <li><a href="#">Mobile Phones</a></li>
-                    <li><a href="#">Men's Wear</a></li>
-                    <li><a href="#">Men's Shoes</a></li>
-                    <li><a href="#">Women's Wear</a></li>
-                    <li><a href="#">Women's Shoes</a></li>
-                    <li><a href="#">Smart TVs</a></li>
-                </ul>
-            </section>
-            <section gadgetBrands>
-                <p><strong>Gadgets Brands</strong></p>
-                <ul>
-                    <li><a href="#">Apple TVs</a></li>
-                    <li><a href="#">Dell</a></li>
-                    <li><a href="#">Hisense</a></li>
-                    <li><a href="#">Infinix Smart TVs</a></li>
-                    <li><a href="#">iPhones</a></li>
-                    <li><a href="#">Oppo</a></li>
-                    <li><a href="#">Samsung</a></li>
-                    <li><a href="#">Spectre</a></li>
-                    <li><a href="#">Polystar</a></li>
-                    <li><a href="#">Watches</a></li>
-                </ul>
-            </section>
-            <section popularBrands>
-                <p><strong>Popular Brands</strong></p>
-                <ul>
-                    <li><a href="#">Amazon</a></li>
-                    <li><a href="#">Apple</a></li>
-                    <li><a href="#">Google</a></li>
-                    <li><a href="#">Lewi's</a></li>
-                    <li><a href="#">Microsoft</a></li>
-                    <li><a href="#">7up</a></li>
-                    <li><a href="#">Zara</a></li>
+                <p>Joyposh &#8358;150,000</p>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                                <a href=" {{facebook_url}} " target="_blank">
+                                <ion-icon name="send" class="send-icon"></ion-icon>
+                                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
 
-                </ul>
-            </section>
-            <section About>
-                <p><strong>About</strong></p>
-                <ul>
-                    <li><a href="#">About WalletFriendly</a></li>
-                    <li><a href="#">FAQ</a></li>
-                    <li><a href="#">Team</a></li>
-                    <li><a href="#">Jobs</a></li>
-                    <li><a href="#">Contact Us</a></li>
-                    <li><a href="#">Compare Prices</a></li>
-                    <li><a href="#">Latest News</a></li>
+            <div class="hair-page__box">
+              <div>
+                <img src=" {% static 'images/human hair/15A Grade.png' %} " alt="" />
+              </div>
+              <div>
+                <h4>Double Drawn 3 x 6 Bob Wig</h4>
+                <div class="vendors">
+                  <h6>Naijabeauty&#8358;120,000</h6>
+                  <h6>Hairbyginika:&#8358;120,500</h6>
+                  <h6>Joyposh:&#8358;123,000</h6>
+                </div>
+                <p>Naijabeauty &#8358;120,000</p>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                <a href=" {{facebook_url}} " target="_blank">
+                <ion-icon name="send" class="send-icon"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
 
-                </ul>
-            </section>
+            <div class="hair-page__box">
+              <div>
+                <img
+                  src=" {% static 'images/human hair/image 24-2.png' %} "
+                  alt="Water wave Compact Frontal Wig"
+                />
+              </div>
+              <div>
+                <h4>Head band Wig 10 ‘’</h4>
+                <div class="vendors">
+                  <h6>Naijabeauty:&#8358;82,000</h6>
+                  <h6>Joyposh:&#8358;80,000</h6>
+                  <h6>Hairbyginika:&#8358;87,000</h6>
+                </div>
+                <p>Joyposh &#8358;80,000</p>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                <a href=" {{facebook_url}} " target="_blank">
+                <ion-icon name="send" class="send-icon"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div see_more></div>
         </section>
 
-
-        <hr bottom>
-
-        <section bottom>
-
-            <div class="bottom">
-                <p> <strong>Copyright 2022,</strong>WalletFriendly © <strong>All Rights Reserved</strong></p>
+        <section class="samsung main-content">
+          <h2>Wavy and Curly {% static ' Hair</h2>' %} 
+          <div class="preview">
+            <div class="hair-page__box">
+              <div>
+                <img
+                  src=" {% static 'images/human hair/image 26.png' %} "
+                  alt="Double drawn Bone straight"
+                />
+              </div>
+              <div>
+                <h4>
+                  Water wave Compact<br />
+                  Frontal Wig
+                </h4>
+                <div class="vendors">
+                  <h6>Naijabeauty:&#8358;150,000</h6>
+                  <h6>Ifyposh:&#8358;138,500</h6>
+                  <h6>Hairbyginika:&#8358;148,000</h6>
+                </div>
+                <p>Ifyposh &#8358;138,500</p>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                <a href=" {{facebook_url}} " target="_blank">
+                <ion-icon name="send" class="send-icon"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
             </div>
-            <div class="contact">
-                <a href="#">Contact Us</a>
-                <div class="box"></div>
-                <a href="#">Privacy Policy</a>
-                <div class="box"></div>
-                <a href="#"> Terms of Service</a>
+
+            <div class="hair-page__box">
+              <div>
+                <img
+                  src=" {% static 'images/human hair/image 25.png' %} "
+                  alt="Layered Bone Straight Wig"
+                />
+              </div>
+              <div>
+                <h4>300% Raw Wavy 4x4 <br />Closure Wig</h4>
+                <div class="vendors">
+                  <h6>Yendyhairculture:&#8358;187,000</h6>
+                  <h6>Naijabeauty:&#8358;10,000</h6>
+                  <h6>Joyposh:&#8358;185,000</h6>
+                </div>
+                <p>Yendyhair &#8358;185,000</p>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                <a href=" {{facebook_url}} " target="_blank">
+                <ion-icon name="send" class="send-icon"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
             </div>
+
+            <div class="hair-page__box">
+              <div>
+                <img
+                  src=" {% static 'images/human hair/image 24.png' %} "
+                  alt="Double drawn Bone straight Hair Bundles"
+                />
+              </div>
+              <div>
+                <h4>
+                  Double Drawn Curl  {% static '<br' %}  />
+                  Closure Wig
+                </h4>
+                <div class="vendors">
+                  <h6>Hairbyginika:&#8358;90,500</h6>
+                  <h6>Naijabeauty:&#8358;91,500</h6>
+                  <h6>Yendyhairculture:&#8358;91,000</h6>
+                </div>
+                <p>Hairbyginika &#8358;120,000</p>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                <a href=" {{facebook_url}} " target="_blank">
+                <ion-icon name="send" class="send-icon"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div see_more></div>
         </section>
 
-    </footer>
+        <section class="samsung main-content">
+          <h2>Human Hair Blends</h2>
+          <div class="preview">
+            <div class="hair-page__box">
+              <div>
+                <img
+                  src=" {% static 'images/human hair/image 26 (2).png' %} "
+                  alt="Got2b Glue Set"
+                />
+              </div>
+              <div>
+                <h4>Side Part Bob Wig 10’’</h4>
+                <div class="vendors">
+                  <h6>Hairbyginika:&#8358;15,000</h6>
+                  <h6>Olasbeauty:&#8358;13,500</h6>
+                  <h6>Naijabeauty:&#8358;14,000</h6>
+                </div>
+                <p>Olasbeauty &#8358;60,000</p>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                <a href=" {{facebook_url}} " target="_blank">
+                <ion-icon name="send" class="send-icon"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
 
-    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
-    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
-</body>
+            <div class="hair-page__box">
+              <div>
+                <img
+                  src=" {% static 'images/human hair/image 25-1.png' %} "
+                  alt="Ghost bond"
+                />
+              </div>
+              <div>
+                <h4>Ombré Silky Straight 14’’</h4>
+                <div class="vendors">
+                  <h6>Yendyhairkulture:&#8358;13,000</h6>
+                  <h6>Naijabeauty:&#8358;11,500</h6>
+                  <h6>Dimaluxury:&#8358;12,000</h6>
+                </div>
+                <p>Naijabeauty &#8358;80,000</p>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                <a href=" {{facebook_url}} " target="_blank">
+                <ion-icon name="send" class="send-icon"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
 
+            <div class="hair-page__box">
+              <div>
+                <img
+                  src=" {% static 'images/human hair/image 24-1.png' %} "
+                  alt="Milky Way Human Hair Blend"
+                />
+              </div>
+              <div>
+                <h4>Milky Way Human Hair Blend</h4>
+                <div class="vendors">
+                  <h6>Olasbeauty:&#8358;21,500</h6>
+                  <h6>Hairbyginika:&#8358;23,500</h6>
+                  <h6>Yendyhairkulture:&#8358;22,700</h6>
+                </div>
+                <p>Olasbeauty &#8358;21,500</p>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                <a href=" {{facebook_url}} " target="_blank">
+                <ion-icon name="send" class="send-icon"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div see_more></div>
+        </section>
+
+        <section class="samsung main-content">
+          <h2>Hot Deals</h2>
+          <div class="preview hair-preview">
+            <div class="hair-page__box">
+              <div class="hot-deal-img">
+                <img
+                  src=" {% static 'images/human hair/image 47.png' %} "
+                  alt="Straightener + Hair Oil"
+                />
+              </div>
+              <div>
+                <h5>45% discount</h5>
+                <h4>Straightener + Hair Oil</h4>
+              </div>
+              <div class="anchor">
+                <a href="#" class="special-p">Naijabeauty: &#8358;8,500</a>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                <a href=" {{facebook_url}} " target="_blank">
+                <ion-icon name="send" class="send-icon"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+
+            <div class="hair-page__box">
+              <div class="hot-deal-img">
+                <img
+                  src=" {% static 'images/human hair/image 47-1.png' %} "
+                  alt="Pixie cut Frontal Lace Wig"
+                />
+              </div>
+              <div>
+                <h5>40% discount</h5>
+                <h4>Pixie cut Frontal Lace Wig</h4>
+              </div>
+              <div class="anchor">
+                <a href="#" class="special-p">Hairbyginika: &#8358;41,000</a>
+              </div>
+              <div class="social-share">
+                {% post_to_facebook object_or_url '<i name="send" ></i>' %}
+                <a href=" {{facebook_url}} " target="_blank">
+                <ion-icon name="send" class="send-icon"></ion-icon>
+                </a>
+                <a href="#">
+                  <ion-icon name="chatbubbles" class="chat-icon"></ion-icon>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div see_more></div>
+        </section>
+      </div>
+    </main>
+    <section reviews>
+      <div class="review-section">
+        <h2>Ratings and Reviews</h2>
+
+        <div class="overall-review">
+          <div class="numbers">
+            <p><span class="rate-num">4.5</span> out of 5</p>
+          </div>
+
+          <div class="review-container">
+            <div contain>
+              <div class="stars-container"></div>
+              <div class="progress-container">
+                <div class="progress-star">
+                  <div>
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill first"></div>
+                  </div>
+                </div>
+                <div class="progress-star">
+                  <div>
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill second"></div>
+                  </div>
+                </div>
+                <div class="progress-star">
+                  <div>
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill third"></div>
+                  </div>
+                </div>
+                <div class="progress-star">
+                  <div>
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill fourth"></div>
+                  </div>
+                </div>
+                <div class="progress-star">
+                  <div>
+                    <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                  </div>
+                  <div class="progress-bar">
+                    <div class="progress-bar-fill fifth"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="profile">
+          <div class="pro-contain">
+            <div class="profile-pic">
+              <img src=" {% static 'images/model.png' %} " alt="profile-pic" />
+            </div>
+            <div class="content">
+              <div>
+                <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+                <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+              </div>
+              <p>Joe</p>
+              <p>joelawrence@gmail.com</p>
+              <address>California, USA</address>
+              <h4>Great App for shopping</h4>
+            </div>
+          </div>
+          <div class="time">
+            <p>2 days ago...</p>
+          </div>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="pro-contain">
+          <div class="profile-pic">
+            <img src=" {% static 'images/model1.png' %} " alt="profile-pic" />
+          </div>
+          <div class="content">
+            <div>
+              <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+            </div>
+            <p>Mary</p>
+            <p>maryrandy@gmail.com</p>
+            <address>Lagos, Nigeria</address>
+            <h4>I've been using this app for so long and I love it</h4>
+          </div>
+        </div>
+        <div class="time">
+          <p>15 days ago...</p>
+        </div>
+      </div>
+      <div class="profile">
+        <div class="pro-contain">
+          <div class="profile-pic">
+            <img src=" {% static 'images/model2.png' %} " alt="profile-pic" />
+          </div>
+          <div class="content">
+            <div>
+              <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+              <img src=" {% static 'images/social media icon/star.svg' %} " alt="" />
+            </div>
+            <p>Bimbo</p>
+            <p>missbimbo@gmail.com</p>
+            <address>Abuja, Nigeria</address>
+            <h4>
+              I love it, very easy to use and have lots of affordable products
+            </h4>
+          </div>
+        </div>
+        <div class="time">
+          <p>1 month ago...</p>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <section class="footerContainer">
+
+          <section class="Social_Icons">
+              <div class="footLogo">
+                  Wallet<span>friendly</span>
+              </div>
+              <div class="Icons">
+                  <ul>
+                      <li> <a href="#"><img src=" {% static 'images/social media icon/mail.svg' %} " alt="mail icon"></a> </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/twitter.svg' %} " alt="twitter icon"> </a>
+                      </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/facebook.svg' %} " alt="facebook icon"> </a>
+                      </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/youtube.svg' %} " alt="youtube icon"> </a>
+                      </li>
+                  </ul>
+                  <ul>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/instagram.svg' %} " alt="instagram icon"></a>
+                      </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/telegram.svg' %} " alt="telegram icon"> </a>
+                      </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/tiktok.svg' %} " alt="tiktok icon"> </a>
+                      </li>
+                      <li> <a href="#"> <img src=" {% static 'images/social media icon/reddit.svg' %} " alt="reddit icon"></a> </li>
+                  </ul>
+          </section>
+          <section categories>
+              <p><strong>Categories</strong></p>
+              <ul>
+                  <li><a href=" {% url 'hairaccessories' %} ">Accessories</a></li>
+                  <li><a href=" {% url 'bonestraight' %} ">Bone Straight</a></li>
+                  <li><a href=" {% url 'humanhair' %} ">Human Hairs</a></li>
+                  <li><a href=" {% url 'laptop' %} ">Laptops</a></li>
+                  <li><a href=" {% url 'phones' %} ">Mobile Phones</a></li>
+                  <li><a href=" {% url 'fashionmen' %} ">Men's Wear</a></li>
+                  <li><a href=" {% url 'fashionmen' %} ">Men's Shoes</a></li>
+                  <li><a href=" {% url 'fashionwomen' %} ">Women's Wear</a></li>
+                  <li><a href=" {% url 'fashionwomen' %} ">Women's Shoes</a></li>
+                  <li><a href=" {% url 'tv' %} ">Smart TVs</a></li>
+              </ul>
+          </section>
+          <section gadgetBrands>
+              <p><strong>Gadgets Brands</strong></p>
+              <ul>
+                  <li><a href=" {% url 'tv' %} ">Apple TVs</a></li>
+                  <li><a href=" {% url 'laptop' %} ">Dell</a></li>
+                  <li><a href=" {% url 'tv' %} ">Hisense</a></li>
+                  <li><a href=" {% url 'tv' %} ">Infinix Smart TVs</a></li>
+                  <li><a href=" {% url 'phones' %} ">iPhones</a></li>
+                  <li><a href=" {% url 'phones' %} ">Oppo</a></li>
+                  <li><a href=" {% url 'phones' %} ">Samsung</a></li>
+                  <li><a href=" {% url 'fashion' %} ">Spectre</a></li>
+                  <li><a href=" {% url 'fashionmen' %} ">Polystar</a></li>
+                  <li><a href=" {% url 'fashionmen' %} ">Watches</a></li>
+              </ul>
+          </section>
+          <section popularBrands>
+              <p><strong>Popular Brands</strong></p>
+              <ul>
+                  <li><a href="http://www.amazon.com/" target="_blank">Amazon</a></li>
+                  <li><a href="https://www.apple.com/ng/" target="_blank">Apple</a></li>
+                  <li><a href="http://www.google.com/" target="_blank">Google</a></li>
+                  <li><a href="https://www.lewisstores.co.za/" target="_blank">Lewi's</a></li>
+                  <li><a href="https://www.microsoft.com/en-ng" target="_blank">Microsoft</a></li>
+                  <li><a href="https://www.7up.com/" target="_blank">7up</a></li>
+                  <li><a href="https://www.zara.com/" target="_blank">Zara</a></li>
+
+              </ul>
+          </section>
+          <section About>
+              <p><strong>About</strong></p>
+              <ul>
+                  <li><a href=" {% url 'aboutus' %} ">About WalletFriendly</a></li>
+                  <li><a href=" {% url 'faq' %} ">FAQ</a></li>
+                  <li><a href=" {% url 'team' %} ">Team</a></li>
+                  <li><a href=" {% url 'aboutus' %} ">Jobs</a></li>
+                  <li><a href=" {% url 'contactus' %} ">Contact Us</a></li>
+                  <li><a href=" {% url 'comparegadget' %} ">Compare Prices</a></li>
+                  <li><a href=" {% url 'trendingnews' %} ">Latest News</a></li>
+                  <li><a href=" {% url 'review' %} ">Reviews</a></li>
+                  <li><a href=" {% url 'documentation' %} ">Documentation</a></li>
+              </ul>
+          </section>
+      </section>
+
+
+      <hr bottom>
+
+      <section bottom>
+
+          <div class="bottom">
+              <p> <strong>Copyright 2022,</strong>WalletFriendly © <strong>All Rights Reserved</strong></p>
+          </div>
+      </section>
+
+  </footer>
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"
+    ></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"
+    ></script>
+  </body>
 </html>

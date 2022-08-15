@@ -28,10 +28,12 @@ body {
   font-family: sora;
   background-color: #f6f8fa;
 }
-
+a{
+	text-decoration: none;
+}
 header .head_section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: rgba(255, 255, 255);
   padding: 1em;
   align-items: center;
@@ -300,7 +302,7 @@ div[preview] .news-one img,
 }
 
 .box {
-  border: none;
+  border: 1px solid #f1f1f1;
   width: 13.5rem;
   background-color: var(--main-color);
   border-radius: 8px;
@@ -324,7 +326,7 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
-  border: 1px solid var(--secondary-color);
+  background: white;
   padding: 1.5rem 1rem;
   border-radius: 8px;
 }
@@ -419,114 +421,125 @@ footer {
 }
 
 .progress-container {
-  height: 6em;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  margin-top: 7px;
-  width: fit-content;
+	height: 6em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 7px;
+	width: fit-content;
+	align-items: end;
 }
 
 div.progress-bar {
-  height: 8px;
-  width: 16em;
-  background-color: var(--secondary-color);
+	height: 5px;
+	width: 325px;
+	border-bottom: 1px solid #1b29a9;
+}
+
+.progress-star {
+	display: flex;
+	align-items: center;
+	column-gap: 14.25px;
 }
 
 section[reviews] {
-  border-top: 1px solid gray;
-  max-width: 100%;
-  margin-top: 2em;
+	border-top: 1px solid gray;
+	max-width: 100%;
+	margin-top: 2em;
 }
 
 div.progress-bar-fill {
-  height: inherit;
-  width: 60%;
-  background-color: var(--load-color);
+	height: inherit;
+	width: 60%;
+	background-color: var(--load-color);
 }
 
 div.first {
-  width: 100%;
+	width: 100%;
 }
 
 div.second {
-  width: 80%;
+	width: 80%;
 }
 
 div.third {
-  width: 60%;
+	width: 60%;
 }
 
 div.fourth {
-  width: 40%;
+	width: 40%;
 }
 
 div.fifth {
-  width: 20%;
+	width: 20%;
 }
 
 .stars-container {
-  width: fit-content;
+	width: fit-content;
 }
 
 .stars-container .star {
-  display: flex;
-  justify-content: right;
-  gap: 5px;
-  padding-top: 5px;
+	display: flex;
+	justify-content: right;
+	gap: 5px;
+	padding-top: 5px;
 }
 
 div.review-section {
-  margin-top: 2em;
+	margin-top: 2em;
 }
 
 div.review-section div.overall-review {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
 div.review-section div.overall-review .review-container div[contain] {
-  display: flex;
+	display: flex;
 }
 
-i.fas {
-  color: gold;
+.rate-num {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	color: #949ffe;
 }
 
 div.profile-pic {
-  width: 2.3rem;
-  height: 2.3rem;
-  border-radius: 50%;
+	width: 2.3rem;
+	height: 2.3rem;
+	border-radius: 50%;
 }
 
 div.profile-pic img {
-  border-radius: 50%;
-  object-fit: cover;
-  width: 100%;
-  height: 100%;
+	border-radius: 50%;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
 }
 
 div.pro-contain {
-  display: flex;
-  padding-top: 1em;
-  gap: 1.4rem;
-  margin-top: 1.5em;
+	display: flex;
+	padding-top: 1em;
+	gap: 1.4rem;
+	margin-top: 1.5em;
 }
 
 div.profile {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
 }
 
 div.profile h4 {
-  color: var(--load-color);
+	color: var(--load-color);
 }
 
 div.time p {
-  color: var(--secondary-color)
+	color: var(--secondary-color);
 }
+
 
 .head_section .logo {
   font-size: 1.4rem;
@@ -636,3 +649,255 @@ main section.hero-section {
 
 
 /* ends here  */
+
+
+/*hamburger menu*/
+div.icons {
+ display: none;
+}
+header .icons div,
+header .icons a {
+  height: 2rem;
+  width: 2rem;
+  font-size: 1rem;
+  line-height: 2rem;
+  background: rgb(39, 38, 38);
+  color: #fff;
+  text-align: center;
+  border-radius: 50%;
+  cursor: pointer;
+  margin-right: .7rem;
+}
+header .icons div:hover,
+header .icons a:hover {
+  background: var(--secondary-color);
+  color: #fff;
+}
+header.active {
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.navbar {
+  position: fixed;
+  opacity: 0;
+  z-index: -10;
+}
+.navbar.active {
+  left: 0;
+  z-index: 1;
+  top: 0;
+  height: 100vh;
+  background: var(--main-color);
+  padding: 3rem;
+  width: 100%;
+  max-width: 20rem;
+  opacity: 1;
+}
+.navbar .user {
+  text-align: center;
+  margin: 3rem auto;
+}
+.navbar .user img {
+  height: 10rem;
+  width: 10rem;
+  border-radius: 50%;
+  border: .5rem solid var(--main-color);
+  object-fit: cover;
+  box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
+}
+.navbar .user h4 {
+  padding-top: .5rem;
+  color: #333;
+  font-weight: 500;
+  font-size: 1.4rem;
+}
+.navbar .links a {
+  display: block;
+  text-decoration: none;
+  border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
+  font-size: 1.2rem;
+  padding: 1rem 0;
+  color: #333;
+}
+.navbar .links a:last-child {
+  border: none;
+}
+.navbar .links a:hover {
+  letter-spacing: .2rem;
+  color: var(--secondary-color);
+}
+.navbar #close {
+  position: absolute;
+  top: 1rem;
+  right: 2rem;
+  font-size: 3rem;
+  cursor: pointer;
+  color: #333;
+}
+.navbar #close:hover {
+  color: var(--secondary-color);
+}
+/* ends here  */
+
+/* mobile screen footer */
+.Social_Icons div.Icons ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.Social_Icons div.Icons ul li {
+  padding: 5px;
+}
+
+div.Icons ul li {
+  list-style: none;
+}
+.categories,
+.about{
+  margin-top: 1rem;
+}
+.categories ul li,
+.about ul li {
+  list-style: none;
+  padding-top: 10px
+}
+
+.categories ul li a,
+.about ul li a {
+  text-decoration: none;
+  color: black;
+}
+.footerContainerResponsive{
+  display: none;
+}
+div.footLogoResponsive {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: var(--load-color);
+}
+
+.footLogoResponsive span {
+  color: black;
+}
+
+
+/* media query for responsiveness */
+@media screen and (max-width: 1024px) {
+	#main {
+		display: block;
+	}
+
+	.filter {
+		display: none;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	body {
+		padding: 0 2rem;
+	}
+.preview img{
+  max-width: 80%;
+}
+	.top-link {
+		display: none;
+	}
+
+	header .head_section {
+		justify-content: space-between;
+	}
+
+	footer .footerContainer {
+		display: grid;
+		row-gap: 1rem;
+		column-gap: 1rem;
+		grid-template-areas:
+			'a a a a'
+			'b c d e';
+	}
+
+	.Social_Icons {
+		grid-area: a;
+	}
+
+	section[categories] {
+		grid-area: b;
+	}
+
+	section[gadgetBrands] {
+		grid-area: c;
+	}
+
+	section[popularBrands] {
+		grid-area: d;
+	}
+
+	section[About] {
+		grid-area: e;
+	}
+
+	div.review-section div.overall-review {
+		display: block;
+		padding: 1rem 0;
+	}
+  div.icons{
+    display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+	body {
+		padding: 0 1rem;
+	}
+
+	main section.hero-section {
+		min-height: 16rem;
+	}
+
+	.hero-section__title {
+		padding: 4rem 0 2rem;
+	}
+
+	div.search_bar {
+		padding: 0 1rem;
+	}
+
+	
+	.preview {
+		flex-wrap: wrap;
+		justify-content: center;
+	}
+
+	.progress-star>div:nth-child(1) {
+		max-width: fit-content;
+		width: 100%;
+	}
+
+	.progress-container {
+		width: 100%;
+		max-width: fit-content;
+	}
+
+	footer .footerContainer {
+		display: flex;
+		flex-direction: column;
+		row-gap: 2rem;
+	}
+
+	div.login>div:nth-child(2){
+    display: none;
+  }
+  div.time p{
+    display: none;
+  }
+}
+
+@media screen and (max-width:425px){
+  div.login{
+    display: none;
+  }
+}

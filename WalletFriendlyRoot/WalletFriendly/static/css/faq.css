@@ -1,0 +1,441 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+:root {
+    --main-color: #fefefe;
+    --load-color: #151f7f;
+    --secondary-color: #949efe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0 auto;
+    width: 80vw;
+    font-family: "sora", sans-serif;
+    background-color: rgba(246, 248, 250, 1);
+}
+
+header .head_section {
+    display: flex;
+    justify-content: space-evenly;
+    background-color: rgba(255, 255, 255);
+    padding: 1em;
+    align-items: center;
+    background-color: rgba(246, 248, 250, 1);
+}
+
+header .head_section .top-link ul li {
+    padding: 0 1em 0 1em;
+    display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+    color: rgba(0, 0, 0, 0.424);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+header .search_bar #search_bar {
+    height: 2.4em;
+    width: 23em;
+    border-radius: 3px;
+    outline: none;
+    border: .6px solid rgba(128, 128, 128, .5);
+    padding: 0 .5em;
+}
+
+
+div.login {
+    display: flex;
+    align-content: center;
+    width: 8em;
+    justify-content: space-between
+}
+
+div.login>div {
+    display: flex;
+}
+
+div.login>div button {
+    background: none;
+    border: none;
+}
+
+div.login>div a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.nav-links ul {
+    display: flex;
+    justify-content: space-around;
+    background-color: var(--secondary-color);
+    padding: 10px;
+    border-radius: 8px;
+}
+
+.nav-links ul li {
+    /* position: relative; */
+    text-decoration: none;
+}
+
+.nav-links ul li {
+    list-style: none;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: var(--main-color);
+}
+
+.nav-links ul div ul li a {
+    text-decoration: none;
+    width: 2rem;
+    color: var(--main-color);
+}
+
+.nav-links ul div ul li {
+    margin: 10px 0px;
+    border-bottom: 1px solid #7c84ce;
+}
+
+.nav-links ul div ul {
+    position: relative;
+    top: .3rem;
+    left: -40px;
+    display: block;
+    width: 11rem;
+}
+
+.nav-links ul div {
+    display: none;
+    position: absolute;
+    width: 2rem;
+    top: 5.7rem;
+    z-index: 1;
+}
+
+.nav-links ul li:hover div,
+.nav-links ul li:active div {
+    display: block;
+}
+
+.navLinks ul li {
+    list-style: none;
+    width: 100%;
+    text-align: center;
+    padding: .5em;
+}
+
+.head_section .logo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--load-color);
+}
+
+.head_section .logo span {
+    color: black;
+}
+
+
+.faq_container h1 {
+    text-align: center;
+
+}
+
+.faq_container h1 {
+    padding: 1em;
+    color: var(--load-color);
+
+}
+
+.faq_container section.questions {
+    width: 100%;
+
+    display: block;
+}
+
+div.question-container {
+    width: 50%;
+
+}
+
+hr[bottom] {
+    margin: 3em 0;
+}
+
+.bottom {
+    text-align: center;
+}
+
+div.question-container:nth-of-type(odd) {
+
+    text-align: right;
+    margin: 0 auto;
+    margin-right: 0;
+    padding: .5em;
+
+}
+
+div.question-container h3 {
+    color: var(--load-color);
+    padding: .8em 0;
+}
+
+div.question-container p {
+    color: var(--secondary-color)
+}
+
+
+
+
+
+
+footer .footerContainer {
+    display: flex;
+    margin-top: 5rem;
+    justify-content: space-between;
+
+
+}
+
+div.footLogo img {
+    width: 120px;
+}
+
+div.footLogo {
+    font-size: 1.4rem;
+    font-weight: 700;
+    color: var(--load-color);
+}
+
+.footLogo span {
+    color: black;
+}
+
+.Social_Icons div.Icons ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Social_Icons div.Icons ul li {
+    padding: 5px;
+}
+
+div.Icons ul li {
+    list-style: none;
+}
+
+section[categories] ul li,
+[gadgetBrands] ul li,
+[popularBrands] ul li,
+[about] ul li {
+    list-style: none;
+    padding-top: 10px;
+}
+
+section[categories] ul li a,
+[gadgetBrands] ul li a,
+[popularBrands] ul li a,
+[about] ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+
+@media screen and (max-720px) {
+
+    div.question-container {
+        width: 80%;
+        padding: 0;
+    }
+
+}
+
+
+@media screen and (max-width: 615px) {
+
+    div.question-container:nth-of-type(odd) {
+        text-align: left;
+
+    }
+
+    div.question-container {
+        width: 100%;
+
+    }
+
+}
+
+div.icons {
+    display: none;
+}
+
+header .icons div,
+
+header .icons a {
+
+    height: 2rem;
+
+    width: 2rem;
+
+    font-size: 1rem;
+
+    line-height: 2rem;
+
+    background: rgb(39, 38, 38);
+
+    color: #fff;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    margin-right: .7rem;
+
+}
+
+header .icons div:hover,
+
+header .icons a:hover {
+
+    background: var(--secondary-color);
+
+    color: #fff;
+
+
+}
+
+header.active {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 100;
+
+}
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: -120%;
+
+    height: 100%;
+
+    background: var(--main-color);
+
+    padding: 3rem;
+
+    width: 23rem;
+
+}
+
+.navbar.active {
+
+    left: 0;
+
+    z-index: 1;
+
+}
+
+.navbar .user {
+
+    text-align: center;
+
+    margin: 3rem auto;
+
+}
+
+.navbar .user img {
+
+    height: 10rem;
+
+    width: 10rem;
+
+    border-radius: 50%;
+
+    border: .5rem solid var(--main-color);
+
+    object-fit: cover;
+
+    box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
+
+}
+
+.navbar .user h4 {
+
+    padding-top: .5rem;
+
+    color: #333;
+
+    font-weight: 500;
+
+    font-size: 1.4rem;
+
+}
+
+.navbar .links a {
+
+    display: block;
+    text-decoration: none;
+
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
+
+    font-size: 1.2rem;
+
+    padding: 1rem 0;
+
+    color: #333;
+
+}
+
+.navbar .links a:last-child {
+
+    border: none;
+
+}
+
+.navbar .links a:hover {
+
+    letter-spacing: .2rem;
+
+    color: var(--secondary-color);
+
+}
+
+.navbar #close {
+
+    position: absolute;
+
+    top: 1rem;
+
+    right: 2rem;
+
+    font-size: 3rem;
+
+    cursor: pointer;
+
+    color: #333;
+
+}
+
+.navbar #close:hover {
+
+    color: var(--secondary-color);
+
+}

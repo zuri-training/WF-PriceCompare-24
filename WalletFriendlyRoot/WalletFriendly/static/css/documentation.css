@@ -34,6 +34,7 @@ header .head_section {
     background-color: rgba(255, 255, 255);
     padding: 1em;
     align-items: center;
+
 }
 
 header .search_bar #search_bar {
@@ -341,10 +342,11 @@ main {
     margin: 0 auto;
 }
 
-main h2 {
+main h1 {
     color: var(--load-color);
-    width: 50%;
+    text-align: center;
     padding-bottom: 5rem;
+    font-size: 1.5rem;
 }
 
 .section {
@@ -367,6 +369,10 @@ main h2 {
 
 main img {
     width: 421px;
+}
+
+a {
+    text-decoration: none;
 }
 
 .branch {
@@ -493,4 +499,276 @@ header .head_section .top-link ul li a {
 
 .head_section .logo span {
     color: black;
+}
+
+.rating {
+    display: inline-block;
+    width: 100%;
+    padding-top: 1rem;
+    text-align: center;
+    color: var(--load-color);
+    font-size: 1.3rem;
+}
+
+.rating h6 {
+    color: var(--load-color);
+    font-size: 1rem;
+}
+
+.like,
+.dislike {
+    display: inline-block;
+    cursor: pointer;
+    margin: 10px;
+    font-size: 4rem;
+}
+
+.like {
+    color: #40C0E7;
+    padding-right: 4rem;
+}
+
+.dislike {
+    color: #F44336;
+
+}
+
+.dislike:hover,
+.like:hover {
+    color: var(--load-color);
+    transition: all .2s ease-in-out;
+    transform: scale(1.1);
+}
+
+.active {
+    color: var(--load-color);
+}
+
+@media screen and (min-width:600px) and (max-width:900px) {
+    body {
+        max-width: 100%;
+        padding: 1rem;
+    }
+
+    main img {
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:600px) {
+    body {
+
+        padding: 1rem;
+        max-width: 100%;
+    }
+
+    header .head_section {
+        justify-content: space-between;
+    }
+
+    header .head_section .top-link {
+        display: none;
+    }
+
+    .head_section .logo {
+        font-size: 1rem;
+        font-weight: 700;
+        color: var(--load-color);
+    }
+
+    main {
+        width: 100%;
+    }
+
+    main h1 {
+        font-size: 1rem;
+        padding-bottom: 2.5rem;
+    }
+
+    main img {
+        width: 100%;
+    }
+
+    .section,
+    .branch,
+    .box-wrapper {
+        flex-direction: column;
+    }
+
+    .section h3,
+    .branch h3,
+    .branch h4 {
+        font-size: 0.7rem;
+    }
+
+    #cli {
+        width: 100%;
+    }
+}
+
+
+div.icons {
+    display: none;
+}
+
+header .icons div,
+
+header .icons a {
+
+    height: 2rem;
+
+    width: 2rem;
+
+    font-size: 1rem;
+
+    line-height: 2rem;
+
+    background: rgb(39, 38, 38);
+
+    color: #fff;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    margin-right: .7rem;
+
+}
+
+header .icons div:hover,
+
+header .icons a:hover {
+
+    background: var(--secondary-color);
+
+    color: #fff;
+
+
+}
+
+header.active {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 100;
+
+}
+
+.navbar {
+
+    position: fixed;
+
+    top: 0;
+
+    left: -120%;
+
+    height: 100%;
+
+    background: var(--main-color);
+
+    padding: 3rem;
+
+    width: 23rem;
+
+}
+
+.navbar.active {
+
+    left: 0;
+
+    z-index: 1;
+
+}
+
+.navbar .user {
+
+    text-align: center;
+
+    margin: 3rem auto;
+
+}
+
+.navbar .user img {
+
+    height: 10rem;
+
+    width: 10rem;
+
+    border-radius: 50%;
+
+    border: .5rem solid var(--main-color);
+
+    object-fit: cover;
+
+    box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
+
+}
+
+.navbar .user h4 {
+
+    padding-top: .5rem;
+
+    color: #333;
+
+    font-weight: 500;
+
+    font-size: 1.4rem;
+
+}
+
+.navbar .links a {
+
+    display: block;
+    text-decoration: none;
+
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
+
+    font-size: 1.2rem;
+
+    padding: 1rem 0;
+
+    color: #333;
+
+}
+
+.navbar .links a:last-child {
+
+    border: none;
+
+}
+
+.navbar .links a:hover {
+
+    letter-spacing: .2rem;
+
+    color: var(--secondary-color);
+
+}
+
+.navbar #close {
+
+    position: absolute;
+
+    top: 1rem;
+
+    right: 2rem;
+
+    font-size: 3rem;
+
+    cursor: pointer;
+
+    color: #333;
+
+}
+
+.navbar #close:hover {
+
+    color: var(--secondary-color);
+
 }
