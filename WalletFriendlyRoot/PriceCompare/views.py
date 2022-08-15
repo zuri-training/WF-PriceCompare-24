@@ -117,7 +117,29 @@ def review(request):
     return render(request, 'review.html')
 
 def contactus(request):
-    return render(request, 'contactUs.html')
+            # check if form has been submitted
+    if request.method == 'GET':
+         form = EmailForm()
+    else:
+        form = EmailForm(request.POST)
+        # check if data from the form is clean
+        if form.is_valid():
+            cd = form.cleaned_data
+            name=cd['name']
+            subject = "Inquiry from a customer"
+            message = cd['message']
+            Email=cd['email']
+            #form = EmailForm(request.POST)
+        try:
+            send_mail(subject, message, Email, ['walletfriendlyofficial@gmail.com',])
+        except BadHeaderError:
+                return HttpResponse('Invalid header found.')
+        return redirect('success')
+
+    return render(request, 'contactUs.html', {
+        'form': form,
+        #'messageSent': messageSent,
+    })
 
 def aboutus(request):
     return render(request, 'AboutUs.html')

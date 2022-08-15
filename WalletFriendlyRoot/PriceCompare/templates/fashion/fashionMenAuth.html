@@ -93,19 +93,16 @@
 
 
 
-                    <li gadget> <a href=" # "> Gadget</a>
-
+                    <li gadget>
+                        <a href=" {% url 'gadget' %} "> Gadget</a>
+    
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href=" {% url 'gadgetPhonesauth' %} ">Mobile Phones</a></li>
-                                <li><a href=" {% url 'gadgetlaptopsuth' %} ">Laptops</a></li>
-                                <li><a href=" {% url 'gadgettvauth' %} ">Smart TVs</a></li>
-
+                                <li><a href=" {% url 'phones' %} ">Mobile Phones</a></li>
+                                <li><a href=" {% url 'laptop' %} ">Laptops</a></li>
+                                <li><a href=" {% url 'tv' %} ">Smart TVs</a></li>
                             </ul>
-
-
                         </div>
-
                     </li>
                     <li hair> <a href=" # "> Hair</a>
 
@@ -122,7 +119,7 @@
 
                     </li>
 
-                    <li compare> <a href=" {% url 'comparegadgets' %} "> Compare</a>
+                    <li compare> <a href=" {% url 'comparegadget' %} "> Compare</a>
                         <div class="subMenu1">
                             <ul class="linkPages">
                                 <li><a href="#">By Price</a></li>

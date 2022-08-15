@@ -96,9 +96,9 @@
 
                         <div class="subMenu1">
                             <ul class="linkPages">
-                                <li><a href=" {% url 'gadgetPhonesauth' %} ">Mobile Phones</a></li>
-                                <li><a href=" {% url 'gadgetlaptopsuth' %} ">Laptops</a></li>
-                                <li><a href=" {% url 'gadgettvauth' %} ">Smart TVs</a></li>
+                                <li><a href=" {% url 'phoneauth' %} ">Mobile Phones</a></li>
+                                <li><a href=" {% url 'laptopauth' %} ">Laptops</a></li>
+                                <li><a href=" {% url 'tvauth' %} ">Smart TVs</a></li>
 
                             </ul>
 
@@ -121,7 +121,7 @@
 
                     </li>
 
-                    <li compare> <a href=" {% url 'comparegadgets' %} "> Compare</a>
+                    <li compare> <a href=" {% url 'comparegadget' %} "> Compare</a>
                         <div class="subMenu1">
                             <ul class="linkPages">
                                 <li><a href="#">By Price</a></li>
@@ -165,10 +165,10 @@
             <div class="popular">
                 <h3>Popular Brands</h3>
                 <div>
-                    <a href=" {% static '../template/gadgetPhones.html' %} "> Apple </a>
+                    <a href=" {% url 'phonesauth' %} "> Apple </a>
                 </div>
                 <div>
-                    <a href=" {% static '../template/gadgetPhones.html' %} ">Samsung</a>
+                    <a href=" {% url 'phonesauth' %} ">Samsung</a>
                 </div>
             </div>
 
