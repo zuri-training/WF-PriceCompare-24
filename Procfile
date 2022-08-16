@@ -1,0 +1,1 @@
+web: gunicorn WalletFriendly.wsgi --log-file -
