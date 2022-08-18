@@ -911,6 +911,7 @@ a.compare-btn {
 div.compare {
   padding-bottom: 2.5rem;
   text-align: center;
+  margin-top: 2rem;
 }
 
 .box img:hover {

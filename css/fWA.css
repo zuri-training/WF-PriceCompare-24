@@ -369,6 +369,13 @@ header.active {
     padding: 0 2rem;
   }
 
+  .men-preview {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2rem;
+    gap: 1em;
+  }
+
   .top-link {
     display: none;
   }
