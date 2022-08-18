@@ -1,18 +1,11 @@
 @media screen and (max-width: 1024px) {
-
-    /* #main {
+    #main {
         display: block;
-    } */
-    body {
-        width: 100%;
-        margin: 0 auto;
     }
 
     .filter {
         display: none;
     }
-
-
 }
 
 @media screen and (max-width: 768px) {
@@ -22,10 +15,6 @@
 
     .top-link {
         display: none;
-    }
-
-    div.icons {
-        display: block;
     }
 
     header .head_section {
@@ -65,6 +54,10 @@
         display: block;
         padding: 1rem 0;
     }
+
+    div.icons {
+        display: block;
+    }
 }
 
 @media screen and (max-width: 600px) {
@@ -93,11 +86,6 @@
         justify-content: center;
     }
 
-    .box {
-        width: 100%;
-        margin: 0 auto;
-    }
-
     .progress-star>div:nth-child(1) {
         max-width: fit-content;
         width: 100%;
@@ -114,8 +102,17 @@
         row-gap: 2rem;
     }
 
-    .search_bar {
+    div.login>div:nth-child(2) {
+        display: none;
+    }
 
-        bottom: 3em;
+    div.time p {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    div.login {
+        display: none;
     }
 }
