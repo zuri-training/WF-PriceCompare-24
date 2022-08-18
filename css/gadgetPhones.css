@@ -393,6 +393,8 @@ aside.filter {
 div[container] {
     grid-area: box;
     width: 100%;
+    background-color: white;
+    border: none;
 }
 
 section[reviews] {
@@ -430,6 +432,7 @@ h3 {
 div[preview] {
     display: flex;
     flex-direction: column;
+
 }
 
 .preview .box div img {
@@ -448,9 +451,9 @@ div[preview] .news-one img,
 }
 
 .box {
-    border: none;
+    border: 1px solid rgb(193, 194, 196);
     width: 13.5rem;
-    background-color: var(--main-color);
+    background-color: white;
     border-radius: 8px;
 }
 
@@ -472,7 +475,7 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
-    border: 1px solid var(--secondary-color);
+
     padding: 1.5rem 1rem;
     border-radius: 8px;
 }
@@ -822,6 +825,20 @@ section[reviews] {
     border-top: 1px solid gray;
     max-width: 100%;
     margin-top: 2em;
+}
+
+.rate-num {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #949ffe;
+}
+
+.progress-star {
+    display: flex;
+    align-items: center;
+    column-gap: 14.25px;
+    width: 100%;
 }
 
 div.progress-bar-fill {

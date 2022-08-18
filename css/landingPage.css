@@ -87,14 +87,6 @@ div.login {
     justify-content: space-between
 }
 
-div.logout {
-    display: flex;
-
-    align-content: center;
-    width: 8em;
-    justify-content: space-between
-}
-
 div.login>div {
     display: flex;
 
@@ -468,6 +460,7 @@ aside.filter {
 div[container] {
     grid-area: box;
     width: 100%;
+    background-color: white;
 
 }
 
@@ -542,7 +535,7 @@ div[preview] .news-one img,
 
 .box {
 
-    border: none;
+    border: 1px solid rgba(128, 128, 128, .5);
     width: 13.5rem;
     background-color: var(--main-color);
     border-radius: 8px;
@@ -568,7 +561,7 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
-    border: 1px solid var(--secondary-color);
+
     padding: 1.5rem 1rem;
     border-radius: 8px;
 }
@@ -895,7 +888,7 @@ footer {
     flex-direction: column;
     justify-content: space-between;
     margin-top: 7px;
-
+    align-items: end;
     width: fit-content;
 }
 
@@ -903,7 +896,15 @@ div.progress-bar {
     height: 8px;
     width: 16em;
     background-color: var(--secondary-color);
+    border-bottom: 1px solid var(--load-color);
 
+}
+
+.progress-star {
+    display: flex;
+    align-items: center;
+    column-gap: 14.25px;
+    width: 100%;
 }
 
 section[reviews] {
@@ -969,11 +970,12 @@ div.review-section div.overall-review .review-container div[contain] {
 
 }
 
-i.fas {
-    color: gold;
-    ;
+.rate-num {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #949ffe;
 }
-
 
 div.profile-pic {
     width: 2.3rem;
@@ -990,6 +992,7 @@ div.profile-pic img {
 }
 
 div.pro-contain {
+    width: 100%;
     display: flex;
     padding-top: 1em;
     gap: 1.4rem;
@@ -1273,7 +1276,7 @@ main section.hero-section {
 }
 
 .box:nth-child(3)>:nth-child(1) img {
-   transform: scale(0.8);
+    transform: scale(0.8);
 }
 
 

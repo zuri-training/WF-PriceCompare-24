@@ -1,0 +1,501 @@
+@import url('https://fonts.googleapis.com/css2?family=Sora:wght@400;500;600;700&display=swap');
+
+:root {
+    --main-color: #fefefe;
+    --load-color: #151f7f;
+    --secondary-color: #949efe;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Sora", sans-serif;
+    position: relative;
+    background-color: rgba(246, 248, 250, 1);
+}
+
+.material-symbols-outlined {
+    color: var(--mainColor);
+}
+
+body {
+    margin: 0 auto;
+    max-width: 80%;
+    justify-content: center;
+    font-family: sora;
+}
+
+header .head_section {
+    display: flex;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255);
+    padding: 1em;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+    color: var(--load-color);
+    font-size: 1.3rem;
+    font-weight: 700;
+}
+
+a span {
+    color: black;
+
+}
+
+div.login {
+    display: flex;
+
+    align-content: center;
+    width: 8em;
+    justify-content: space-between
+}
+
+div.login>div {
+    display: flex;
+
+
+}
+
+div.login>div button {
+    background: none;
+    border: none;
+}
+
+div.login>div a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+div.logout>div a {
+    text-decoration: none;
+    color: black;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+header .head_section .top-link ul li {
+    padding: 0 1em 0 1em;
+    display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+    color: rgba(0, 0, 0, 0.424);
+    font-weight: 500;
+    text-decoration: none;
+}
+
+.progress-container {
+    height: 6em;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 7px;
+    width: fit-content;
+    align-items: end;
+}
+
+div.progress-bar {
+    height: 5px;
+    width: 325px;
+    border-bottom: 1px solid #1b29a9;
+}
+
+.progress-star {
+    display: flex;
+    align-items: center;
+    column-gap: 14.25px;
+    width: 100%;
+}
+
+section[reviews] {
+
+    max-width: 100%;
+    margin-top: 2em;
+}
+
+div.icons {
+    display: none;
+}
+
+div.progress-bar-fill {
+    height: inherit;
+    width: 60%;
+    background-color: var(--load-color);
+}
+
+div.first {
+    width: 100%;
+}
+
+div.second {
+    width: 80%;
+}
+
+div.third {
+    width: 60%;
+}
+
+div.fourth {
+    width: 40%;
+}
+
+div.fifth {
+    width: 20%;
+}
+
+.stars-container {
+    width: fit-content;
+}
+
+.stars-container .star {
+    display: flex;
+    justify-content: right;
+    gap: 5px;
+    padding-top: 5px;
+}
+
+div.review-section {
+    margin-top: 2em;
+}
+
+div.review-section div.overall-review {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+div.review-section div.overall-review .review-container div[contain] {
+    display: flex;
+}
+
+.rate-num {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #949ffe;
+}
+
+div.profile-pic {
+    width: 2.3rem;
+    height: 2.3rem;
+    border-radius: 50%;
+}
+
+div.profile-pic img {
+    border-radius: 50%;
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+}
+
+div.pro-contain {
+    width: 100%;
+    display: flex;
+    padding-top: 1em;
+    gap: 1.4rem;
+    margin-top: 1.5em;
+}
+
+div.profile {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+}
+
+div.profile h4 {
+    color: var(--load-color);
+}
+
+div.time p {
+    color: var(--secondary-color);
+}
+
+header .icons div,
+
+header .icons a {
+
+    height: 2rem;
+
+    width: 2rem;
+
+    font-size: 1rem;
+
+    line-height: 2rem;
+
+    background: rgb(39, 38, 38);
+
+    color: #fff;
+
+    text-align: center;
+
+    border-radius: 50%;
+
+    cursor: pointer;
+
+    margin-right: .7rem;
+
+}
+
+header .icons div:hover,
+
+header .icons a:hover {
+
+    background: var(--secondary-color);
+
+    color: #fff;
+
+
+}
+
+header.active {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    z-index: 100;
+
+}
+
+.navbar {
+
+    position: fixed;
+    opacity: 0;
+    z-index: -10;
+}
+
+.navbar.active {
+
+    left: 0;
+
+    z-index: 1;
+    top: 0;
+
+    height: 100%;
+
+    background: var(--main-color);
+
+    padding: 3rem;
+    width: 100%;
+    max-width: 20rem;
+    opacity: 1;
+
+}
+
+.navbar .user {
+
+    text-align: center;
+
+    margin: 3rem auto;
+
+}
+
+.navbar .user img {
+
+    height: 10rem;
+
+    width: 10rem;
+
+    border-radius: 50%;
+
+    border: .5rem solid var(--main-color);
+
+    object-fit: cover;
+
+    box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
+
+}
+
+.navbar .user h4 {
+
+    padding-top: .5rem;
+
+    color: #333;
+
+    font-weight: 500;
+
+    font-size: 1.4rem;
+
+}
+
+.navbar .links a {
+
+    display: block;
+    text-decoration: none;
+
+    border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
+
+    font-size: 1.2rem;
+
+    padding: 1rem 0;
+
+    color: #333;
+
+}
+
+.navbar .links a:last-child {
+
+    border: none;
+
+}
+
+.navbar .links a:hover {
+
+    letter-spacing: .2rem;
+
+    color: var(--secondary-color);
+
+}
+
+.navbar #close {
+
+    position: absolute;
+
+    top: 1rem;
+
+    right: 2rem;
+
+    font-size: 3rem;
+
+    cursor: pointer;
+
+    color: #333;
+
+}
+
+.navbar #close:hover {
+
+    color: var(--secondary-color);
+
+}
+
+/* media query for responsiveness */
+@media screen and (max-width: 1024px) {
+    #main {
+        display: block;
+    }
+
+    .filter {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    body {
+        padding: 0 2rem;
+    }
+
+    .top-link {
+        display: none;
+    }
+
+    header .head_section {
+        justify-content: space-between;
+    }
+
+    footer .footerContainer {
+        display: grid;
+        row-gap: 1rem;
+        column-gap: 1rem;
+        grid-template-areas:
+            'a a a a'
+            'b c d e';
+    }
+
+    .Social_Icons {
+        grid-area: a;
+    }
+
+    section[categories] {
+        grid-area: b;
+    }
+
+    section[gadgetBrands] {
+        grid-area: c;
+    }
+
+    section[popularBrands] {
+        grid-area: d;
+    }
+
+    section[About] {
+        grid-area: e;
+    }
+
+    div.review-section div.overall-review {
+        display: block;
+        padding: 1rem 0;
+    }
+
+    div.icons {
+        display: block;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    body {
+        padding: 0 1rem;
+    }
+
+    main section.hero-section {
+        min-height: 16rem;
+    }
+
+    .hero-section__title {
+        padding: 4rem 0 2rem;
+    }
+
+    div.search_bar {
+        padding: 0 1rem;
+    }
+
+    /* .hair-page__box {
+		width: 260px;
+	} */
+
+    .preview {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .progress-star>div:nth-child(1) {
+        max-width: fit-content;
+        width: 100%;
+    }
+
+    .progress-container {
+        width: 100%;
+        max-width: fit-content;
+    }
+
+    footer .footerContainer {
+        display: flex;
+        flex-direction: column;
+        row-gap: 2rem;
+    }
+
+    div.login>div:nth-child(2) {
+        display: none;
+    }
+
+    div.time p {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    div.login {
+        display: none;
+    }
+}
