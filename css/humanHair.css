@@ -78,7 +78,9 @@ div.login > div a {
   font-size: 14px;
   font-weight: 600;
 }
-
+.a-login{
+  margin-right: 2rem;
+}
 .nav-links ul {
   display: flex;
   justify-content: space-around;

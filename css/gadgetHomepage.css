@@ -440,6 +440,7 @@ div.progress-bar {
 	display: flex;
 	align-items: center;
 	column-gap: 14.25px;
+	width: 100%;
 }
 
 section[reviews] {
@@ -520,6 +521,7 @@ div.profile-pic img {
 }
 
 div.pro-contain {
+	width: 100%;
 	display: flex;
 	padding-top: 1em;
 	gap: 1.4rem;
@@ -539,7 +541,6 @@ div.profile h4 {
 div.time p {
 	color: var(--secondary-color);
 }
-
 
 .head_section .logo {
   font-size: 1.4rem;
@@ -593,7 +594,7 @@ div.compare {
 }
 
 main .hero-section {
-   background: url(../display.jpg);
+   background: url(../images/display.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 22rem;
@@ -887,7 +888,6 @@ div.footLogoResponsive {
 		flex-direction: column;
 		row-gap: 2rem;
 	}
-
 	div.login>div:nth-child(2){
     display: none;
   }

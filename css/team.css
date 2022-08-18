@@ -263,6 +263,11 @@ div.icons {
 
   }
 }
+@media screen and (max-width:600px){
+  div.login{
+    display: none;
+  }
+}
 @media (max-width:560px) {
   h3 {
     font-size: .8rem;

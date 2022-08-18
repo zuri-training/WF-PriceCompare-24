@@ -289,6 +289,12 @@ img{
     font-size: 14px;
   }
 }
+
+@media screen and (max-width:425px) {
+	div.login {
+		display: none;
+	}
+}
 @media (max-width:352px){
   body{
     max-width: 100%;

@@ -72,7 +72,9 @@ div.login {
 	max-width: fit-content;
 	justify-content: space-between;
 }
-
+.a-login{
+	margin-right: 2rem;
+}
 div.login>div {
 	display: flex;
 }
