@@ -240,6 +240,7 @@ div[container] {
   width: 100%;
 }
 
+/* review style */
 section.reviews {
   grid-area: reviews;
 }
@@ -292,7 +293,7 @@ div[preview] {
 
 .preview .box div img {
   width: 13em;
-  height: 12rem;
+  height: 12em;
 }
 
 div[preview] .news-one img,
@@ -307,7 +308,7 @@ div[preview] .news-one img,
 }
 
 .box {
-  border: none;
+  border: 1px solid #f1f1f1;
   width: 13.5rem;
   background-color: var(--main-color);
   border-radius: 8px;
@@ -446,6 +447,7 @@ div.progress-bar {
   display: flex;
   align-items: center;
   column-gap: 14.25px;
+  width: 100%;
 }
 
 section[reviews] {
@@ -611,7 +613,7 @@ main .hero-section {
   align-items: center;
 }
 
-/* edited the search bar code  */
+/* search bar code  */
 
 div.search_bar {
   width: 100%;
@@ -692,17 +694,20 @@ header.active {
 
 .navbar {
   position: fixed;
-  top: 0;
-  left: -120%;
-  height: 100%;
-  background: var(--main-color);
-  padding: 3rem;
-  width: 23rem;
+  opacity: 0;
+  z-index: -10;
 }
 
 .navbar.active {
   left: 0;
   z-index: 1;
+  top: 0;
+  height: 100vh;
+  background: var(--main-color);
+  padding: 3rem;
+  width: 100%;
+  max-width: 20rem;
+  opacity: 1;
 }
 
 .navbar .user {
@@ -759,7 +764,6 @@ header.active {
 
 /* ends here  */
 
-<<<<<<< HEAD
 /* mobile screen footer */
 .Social_Icons div.Icons ul {
   display: flex;
@@ -824,6 +828,10 @@ div.footLogoResponsive {
     padding: 0 2rem;
   }
 
+  .preview img {
+    max-width: 80%;
+  }
+
   .top-link {
     display: none;
   }
@@ -864,6 +872,10 @@ div.footLogoResponsive {
   div.review-section div.overall-review {
     display: block;
     padding: 1rem 0;
+  }
+
+  div.icons {
+    display: block;
   }
 }
 
@@ -906,10 +918,18 @@ div.footLogoResponsive {
     row-gap: 2rem;
   }
 
-=======
-@media screen and (max-width: 768px) {
->>>>>>> origin/Development_FE
-  div.icons {
-    display: block;
+  div.login>div:nth-child(2) {
+    display: none;
+  }
+
+  div.time p {
+    display: none;
   }
 }
+
+@media screen and (max-width:425px) {
+  div.login {
+    display: none;
+  }
+}
+

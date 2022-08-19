@@ -157,6 +157,125 @@ textarea {
 
 
 
+.progress-container {
+	height: 6em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 7px;
+	width: fit-content;
+	align-items: end;
+}
+
+div.progress-bar {
+	height: 5px;
+	width: 325px;
+	border-bottom: 1px solid #1b29a9;
+}
+
+.progress-star {
+	display: flex;
+	align-items: center;
+	column-gap: 14.25px;
+}
+
+section[reviews] {
+	border-top: 1px solid gray;
+	max-width: 100%;
+	margin-top: 2em;
+}
+
+div.progress-bar-fill {
+	height: inherit;
+	width: 60%;
+	background-color: var(--load-color);
+}
+
+div.first {
+	width: 100%;
+}
+
+div.second {
+	width: 80%;
+}
+
+div.third {
+	width: 60%;
+}
+
+div.fourth {
+	width: 40%;
+}
+
+div.fifth {
+	width: 20%;
+}
+
+.stars-container {
+	width: fit-content;
+}
+
+.stars-container .star {
+	display: flex;
+	justify-content: right;
+	gap: 5px;
+	padding-top: 5px;
+}
+
+div.review-section {
+	margin-top: 2em;
+}
+
+div.review-section div.overall-review {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+div.review-section div.overall-review .review-container div[contain] {
+	display: flex;
+}
+
+.rate-num {
+	font-weight: 700;
+	font-size: 32px;
+	line-height: 48px;
+	color: #949ffe;
+}
+
+div.profile-pic {
+	width: 2.3rem;
+	height: 2.3rem;
+	border-radius: 50%;
+}
+
+div.profile-pic img {
+	border-radius: 50%;
+	object-fit: cover;
+	width: 100%;
+	height: 100%;
+}
+
+div.pro-contain {
+	display: flex;
+	padding-top: 1em;
+	gap: 1.4rem;
+	margin-top: 1.5em;
+}
+
+div.profile {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-end;
+}
+
+div.profile h4 {
+	color: var(--load-color);
+}
+
+div.time p {
+	color: var(--secondary-color);
+}
 
 
 
