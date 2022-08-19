@@ -48,6 +48,7 @@ header .search_bar #search_bar {
     padding: 0 .5em;
 }
 
+
 /* #search_bar {
    position: absolute;
     z-index: 1;
@@ -426,6 +427,8 @@ aside.filter {
 div[container] {
     grid-area: box;
     width: 100%;
+    
+
 
 }
 
@@ -500,7 +503,9 @@ div[preview] .news-one img,
     flex-direction: column;
     justify-content: flex-end;
     padding: 0 1rem;
+    
 }
+
 
 .box h4 {
 
@@ -522,7 +527,7 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
-    border: 1px solid var(--secondary-color);
+    border: 1px solid white;
     padding: 1.5rem 1rem;
     border-radius: 8px;
 }
@@ -909,9 +914,9 @@ header .head_section .top-link ul li a {
 }
 
 main .hero-section {
-    background: url(../images/phone.jpg);
-    background-repeat: no-repeat;
-    background-size: cover;
+    background: url(../images/phone.jpg) !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
     min-height: 22rem;
     /* z-index: -1; */
     /* margin-bottom: -11em; */
