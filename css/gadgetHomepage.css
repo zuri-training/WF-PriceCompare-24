@@ -440,6 +440,7 @@ div.progress-bar {
 	display: flex;
 	align-items: center;
 	column-gap: 14.25px;
+	width: 100%;
 }
 
 section[reviews] {
@@ -520,6 +521,7 @@ div.profile-pic img {
 }
 
 div.pro-contain {
+	width: 100%;
 	display: flex;
 	padding-top: 1em;
 	gap: 1.4rem;
