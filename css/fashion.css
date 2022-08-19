@@ -494,9 +494,11 @@ section[reviews] {
 }
 
 div.progress-bar-fill {
-	height: inherit;
-	width: 60%;
-	background-color: var(--load-color);
+
+    height: inherit;
+    width: 60%;
+    border-bottom: 1px solid var(--load-color);
+
 }
 
 div.first {
