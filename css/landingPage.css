@@ -895,7 +895,7 @@ footer {
 div.progress-bar {
     height: 8px;
     width: 16em;
-    background-color: var(--secondary-color);
+
     border-bottom: 1px solid var(--load-color);
 
 }
