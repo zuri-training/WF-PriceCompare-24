@@ -260,7 +260,11 @@ div.icons {
   header {
       max-width: 90%;
       margin: auto;
-
+    }
+  }
+  @media screen and (max-width:600px){
+    div.login{
+      display: none;
   }
 }
 @media (max-width:560px) {

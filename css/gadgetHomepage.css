@@ -302,7 +302,7 @@ div[preview] .news-one img,
 }
 
 .box {
-  border: 1px solid #f1f1f1;
+  border: 1px solid #f1f1f1;;
   width: 13.5rem;
   background-color: var(--main-color);
   border-radius: 8px;
@@ -440,6 +440,7 @@ div.progress-bar {
 	display: flex;
 	align-items: center;
 	column-gap: 14.25px;
+	width: 100%;
 }
 
 section[reviews] {
@@ -520,6 +521,7 @@ div.profile-pic img {
 }
 
 div.pro-contain {
+	width: 100%;
 	display: flex;
 	padding-top: 1em;
 	gap: 1.4rem;

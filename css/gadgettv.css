@@ -653,7 +653,7 @@ hr[bottom] {
 
 .hair-page__box div {
     overflow-y: hidden;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .hair-page__box img {
@@ -700,7 +700,7 @@ hr[bottom] {
 .login__input-box {
     padding: 0 0 32px;
 }
-
+/* 
 #email-phone,
 #password {
     display: block;
@@ -712,7 +712,7 @@ hr[bottom] {
     width: 100%;
     max-width: 590px;
     margin: 0 auto;
-}
+} */
 
 .password--link {
     display: block;
@@ -821,6 +821,7 @@ div.progress-bar {
     display: flex;
     align-items: center;
     column-gap: 14.25px;
+    width: 100%;
 }
 
 
@@ -1075,74 +1076,66 @@ header.active {
     left: 0;
     z-index: 100;
 }
-
 .navbar {
     position: fixed;
-    top: 0;
-    left: -120%;
-    height: 100%;
-    background: var(--main-color);
-    padding: 3rem;
-    width: 23rem;
-}
-
-.navbar.active {
+    opacity: 0;
+    z-index: -10;
+  }
+  .navbar.active {
     left: 0;
     z-index: 1;
-}
-
-.navbar .user {
+    top: 0;
+    height: 100vh;
+    background: var(--main-color);
+    padding: 3rem;
+    width: 100%;
+    max-width: 20rem;
+    opacity: 1;
+  }
+  .navbar .user {
     text-align: center;
     margin: 3rem auto;
-}
-
-.navbar .user img {
+  }
+  .navbar .user img {
     height: 10rem;
     width: 10rem;
     border-radius: 50%;
     border: .5rem solid var(--main-color);
     object-fit: cover;
     box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
-}
-
-.navbar .user h4 {
+  }
+  .navbar .user h4 {
     padding-top: .5rem;
     color: #333;
     font-weight: 500;
     font-size: 1.4rem;
-}
-
-.navbar .links a {
+  }
+  .navbar .links a {
     display: block;
     text-decoration: none;
     border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
     font-size: 1.2rem;
     padding: 1rem 0;
     color: #333;
-}
-
-.navbar .links a:last-child {
+  }
+  .navbar .links a:last-child {
     border: none;
-}
-
-.navbar .links a:hover {
+  }
+  .navbar .links a:hover {
     letter-spacing: .2rem;
     color: var(--secondary-color);
-}
-
-.navbar #close {
+  }
+  .navbar #close {
     position: absolute;
     top: 1rem;
     right: 2rem;
     font-size: 3rem;
     cursor: pointer;
     color: #333;
-}
-
-.navbar #close:hover {
+  }
+  .navbar #close:hover {
     color: var(--secondary-color);
-}
-
+  }
 
 /* ends here  */
 
@@ -1243,12 +1236,6 @@ header.active {
     .progress-star>div:nth-child(1) {
         max-width: fit-content;
         width: 100%;
-    }
-
-    .progress-star {
-        display: flex;
-        align-items: center;
-        column-gap: 14.25px;
     }
 
     .progress-container {
