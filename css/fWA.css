@@ -1,3 +1,9 @@
+:root {
+  --main-color: #fefefe;
+  --load-color: #151f7f;
+  --secondary-color: #949efe;
+}
+
 .men-content {
   border: 1px solid var(--secondary-color);
   padding: 1rem;
@@ -38,7 +44,7 @@
 }
 
 .men-box {
-  border: none;
+  border: 1px solid#fefefe;
   width: 13.5rem;
   background-color: var(--main-color);
   border-radius: 8px;
