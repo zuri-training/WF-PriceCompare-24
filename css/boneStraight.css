@@ -16,7 +16,6 @@
 body {
   font-family: "Sora", sans-serif;
   position: relative;
-  background-color: var(--main-color);
 }
 
 .material-symbols-outlined {
@@ -618,10 +617,14 @@ hr[bottom] {
 
 .hair-preview {
   justify-content: space-around !important;
+  border: 1px;
 }
 
 .hair-page__box {
   width: 211px;
+  padding: 54.5px 0;
+  border: 1px solid #f1f1f1;
+  border-radius: 8px;
 }
 
 .hair-page__box div {

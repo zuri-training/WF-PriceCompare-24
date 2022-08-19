@@ -308,10 +308,11 @@ div[preview] .news-one img,
 }
 
 .box {
-  border: none;
+  border: 1px solid #949efe;
   width: 13.5rem;
   background-color: var(--main-color);
   border-radius: 8px;
+  padding: 4px;
 }
 
 .box h4 {
