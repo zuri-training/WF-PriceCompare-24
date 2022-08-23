@@ -23,7 +23,7 @@ body {
 
 body {
   margin: 0 auto;
-  max-width: max-content;
+  max-width: 78%;
   justify-content: center;
   font-family: sora;
   background-color: #f6f8fa;
@@ -485,6 +485,7 @@ div.progress-bar {
 	display: flex;
 	align-items: center;
 	column-gap: 14.25px;
+	width: 100%;
 }
 
 section[reviews] {
@@ -494,11 +495,9 @@ section[reviews] {
 }
 
 div.progress-bar-fill {
-
-    height: inherit;
-    width: 60%;
-    border-bottom: 1px solid var(--load-color);
-
+	height: inherit;
+	width: 60%;
+	background-color: var(--load-color);
 }
 
 div.first {
@@ -567,6 +566,7 @@ div.profile-pic img {
 }
 
 div.pro-contain {
+	width: 100%;
 	display: flex;
 	padding-top: 1em;
 	gap: 1.4rem;
@@ -586,6 +586,7 @@ div.profile h4 {
 div.time p {
 	color: var(--secondary-color);
 }
+
 
 
 .head_section .logo {
