@@ -12,28 +12,37 @@
     box-sizing: border-box;
 }
 
-
 body {
     font-family: "Sora", sans-serif;
     position: relative;
-    justify-content: center;
-    margin: 0 auto;
-    max-width: max-content;
-    background-color: rgba(246, 248, 250, 1);
 }
-
 
 .material-symbols-outlined {
     color: var(--mainColor);
 }
 
+body {
+    margin: 0 auto;
+    max-width: max-content;
+    justify-content: center;
+    font-family: sora;
+    background-color: #f6f8fa;
+}
+
+a {
+    text-decoration: none;
+}
 
 header .head_section {
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
     background-color: rgba(255, 255, 255);
     padding: 1em;
     align-items: center;
+}
+
+.linkPages {
+    z-index: 1;
 }
 
 header .search_bar #search_bar {
@@ -45,23 +54,14 @@ header .search_bar #search_bar {
     padding: 0 .5em;
 }
 
-/* #search_bar {
-   position: absolute;
-    z-index: 1;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-} */
-
-/* header .head_section .logo img {
-  width: 70px;
-  height: 55px;
-  object-fit: contain;
-} */
+header .head_section .logo img {
+    width: 70px;
+    height: 55px;
+    object-fit: contain;
+}
 
 div.login {
     display: flex;
-
     align-content: center;
     width: 8em;
     justify-content: space-between
@@ -69,8 +69,6 @@ div.login {
 
 div.login>div {
     display: flex;
-
-
 }
 
 div.login>div button {
@@ -85,15 +83,12 @@ div.login>div a {
     font-weight: 600;
 }
 
-
 .nav-links ul {
     display: flex;
     justify-content: space-around;
     background-color: var(--secondary-color);
     padding: 10px;
     border-radius: 8px;
-
-
 }
 
 .nav-links ul li {
@@ -103,8 +98,6 @@ div.login>div a {
 
 .nav-links ul li {
     list-style: none;
-
-
 }
 
 .nav-links ul li a {
@@ -116,8 +109,6 @@ div.login>div a {
     text-decoration: none;
     width: 2rem;
     color: var(--main-color);
-
-
 }
 
 .nav-links ul div ul li {
@@ -131,8 +122,6 @@ div.login>div a {
     left: -40px;
     display: block;
     width: 11rem;
-
-
 }
 
 .nav-links ul div {
@@ -140,19 +129,12 @@ div.login>div a {
     position: absolute;
     width: 2rem;
     top: 5.7rem;
-
-
 }
 
 .nav-links ul li:hover div,
 .nav-links ul li:active div {
     display: block;
-
 }
-
-
-
-
 
 .navLinks ul li {
     list-style: none;
@@ -161,193 +143,33 @@ div.login>div a {
     padding: .5em;
 }
 
-section[heroSection] {
-    padding-top: 1em;
+header .head_section .top-link ul li {
+    padding: 0 1em 0 1em;
+    display: inline-block;
 }
 
-section[heroSection] {
-
-    display: flex;
-    gap: 3rem;
-    justify-content: space-between;
-    width: 100%;
-
+header .head_section .top-link ul li a {
+    color: rgba(0, 0, 0, 0.424);
+    font-weight: 500;
+    text-decoration: none;
 }
 
-section[heroSection] div {
-
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-
-}
-
-div[firstBox],
-div[secondBox] {
-    border: 1px solid var(--secondary-color);
-    border-radius: 8px;
-}
-
-img[pop1],
-img[pop2],
-img[pop3] {
-    padding: 1em;
-}
-
-img[pop3] {
-    height: 16em;
-}
-
-p#brand {
-    color: var(--load-color);
-    font-size: larger;
-    font-weight: 800;
-}
-
-section[heroSection] div[firstBox],
-div[secondBox] {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-
-}
-
-
-section[heroSection] div[firstBox] #img1 {
-    width: 80%;
-    margin: 0 auto;
-    padding: 1em;
-    height: 100%;
-    object-fit: contain;
-
-}
-
-div[firstBox]>div {
-
-    justify-content: center;
-    align-items: center;
-
-}
-
-section[heroSection] div[firstBox]>div {
-
-    padding: 1em;
-}
-
-div[secondBox] div p {
-    font-size: 13px;
-    width: 100%;
-}
-
-div[firstBox] div div p[cross] {
-    position: relative;
-}
-
-div[firstBox] div div p[cross]::before {
-    content: '';
-    position: absolute;
-    width: 100%;
-    top: .5em;
-    height: 2px;
-    background-color: red;
-}
-
-div[firstBox] h2 {
-    text-align: center;
-}
-
-div[firstBox]>div>div {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    max-width: fit-content;
-
-}
-
-section[heroSection] div[secondBox] #image-one img,
-section[heroSection] div[secondBox] #image-two img {
-    width: 8rem;
-    margin: 0 auto;
-    /* margin-bottom: 5em; */
-}
-
-section[heroSection] div[secondBox] #image-one h5 {
-    font-size: 13px;
-    font-weight: bolder;
-}
-
-section[heroSection] div[secondBox] {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: space-around; */
-
-    gap: 3rem;
-
-
-}
-
-
-
-div[secondBox] #image-two div {
-
-    display: block;
-}
-
-div[secondBox] #image-two img {
-    padding-bottom: 1.5em;
-}
-
-div[secondBox] #image-one,
-#image-two {
-    /* display: flex; */
-    flex-direction: column;
-    justify-content: center;
-
-
-
-}
-
-div[secondBox] #image-one {
-    padding-left: .2em;
-
-}
-
-#image-one div[specs] {
-    display: flex;
-    justify-content: space-between;
-
-    width: 100%;
-}
-
-div[specs]>div {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    width: fit-content;
-    justify-content: left;
-
-}
-
-#image-one div[specs] div h5 {
-    text-align: left;
-    justify-content: left;
-    font-size: 16px;
-}
-
-
+/* main seaction */
 main {
     display: grid;
     grid-template-areas:
         'slider slider slider slider slider'
         'filter box box box box'
+        'reviews reviews reviews reviews reviews'
     ;
     gap: 3rem;
     justify-content: center;
     font-family: 'Sora', sans-serif;
-
-
-
+    display: grid;
+    grid-template-areas:
+        "slider slider slider slider slider"
+        "filter box box box box"
+        "reviews reviews reviews reviews reviews";
     margin-top: 2rem;
     gap: 3rem;
     justify-content: center;
@@ -357,23 +179,18 @@ main .hero-section {
     grid-area: slider;
     display: flex;
     width: 100%;
-
 }
 
 main .hero-section img {
-
-    max-width: 11em;
-
+    width: 11em;
 }
 
 aside.filter {
-
     grid-area: filter;
     height: fit-content;
     width: 18em;
     position: sticky;
     top: 0;
-
 }
 
 .filter h2 {
@@ -403,13 +220,11 @@ aside.filter {
 }
 
 .filter div.amount input {
-
     width: 100px;
     text-align: center;
     padding: .7em;
     border-radius: 10px;
     border: 1px solid rgb(73, 70, 70);
-
 }
 
 .filter div.amount {
@@ -423,10 +238,9 @@ aside.filter {
 div[container] {
     grid-area: box;
     width: 100%;
-
 }
 
-section[reviews] {
+section.reviews {
     grid-area: reviews;
 }
 
@@ -435,7 +249,6 @@ h3 {
     color: white;
     padding: 6px;
     border-radius: 8px;
-
 }
 
 .popular {
@@ -444,11 +257,8 @@ h3 {
 
 .popular div a,
 .stores div a {
-
-
     text-decoration: none;
     color: black;
-
 }
 
 .popular div,
@@ -456,8 +266,20 @@ h3 {
     padding: 4px 15px;
 }
 
-.preview .box div img {
+aside.filter div[load-more] {
+    background-color: var(--load-color);
+    width: 100%;
+    padding: 10px;
+    border-radius: 8px;
+    text-align: center;
+}
 
+aside.filter div[load-more] a {
+    color: white;
+    text-decoration: none;
+}
+
+.preview .box div img {
     width: 10em;
     margin: 0 auto;
     display: block;
@@ -466,12 +288,10 @@ h3 {
 div[preview] {
     display: flex;
     flex-direction: column;
-
 }
 
 .preview .box div img {
-    max-width: 13em;
-    padding-bottom: 2rem;
+    width: 13em;
 }
 
 div[preview] .news-one img,
@@ -480,33 +300,27 @@ div[preview] .news-one img,
 }
 
 .preview {
-
     display: flex;
     justify-content: space-between;
     gap: 1em;
-
-
 }
 
 .box {
-    border: none;
+    border: 1px solid #f1f1f1;
     width: 13.5rem;
     background-color: var(--main-color);
     border-radius: 8px;
     display: flex;
     flex-direction: column;
     justify-content: flex-end;
-    padding: 0 1rem;
 }
 
 .box h4 {
-
     color: var(--load-color);
     text-align: center;
-    font-size: 16px;
+    font-size: .9rem;
     font-weight: bolder;
-    padding: 1em;
-
+    padding-bottom: 1em;
 }
 
 .box p {
@@ -519,7 +333,7 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
-    border: 1px solid var(--secondary-color);
+    background: white;
     padding: 1.5rem 1rem;
     border-radius: 8px;
 }
@@ -527,9 +341,7 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
-
     margin-top: 3rem;
-
 }
 
 .iPhone h2,
@@ -545,7 +357,6 @@ div[preview] .news-one img,
 
 .hot-deals .box {
     width: 100%;
-    padding: 0 1rem;
 }
 
 .hot-deals .box img {
@@ -556,38 +367,14 @@ div[preview] .news-one img,
 div[see_more] {
     text-align: right;
     padding: 2em 0 1em;
-
 }
 
 div[see_more] a {
-
     text-decoration: none;
     color: var(--load-color);
 }
 
-span[sub] {
-    color: var(--load-color);
-    /* color: #fff; */
-    font-size: 16px;
-    font-weight: 400;
-}
-
-
-p[hot-price] {
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    color: var(--load-color);
-    font-weight: 800;
-}
-
 /*footer section*/
-
-footer {
-    margin-top: 5em;
-    border-top: 1px solid gray;
-}
-
 footer .footerContainer {
     display: flex;
     margin-top: 5rem;
@@ -626,59 +413,48 @@ section[categories] ul li a,
 [about] ul li a {
     text-decoration: none;
     color: black;
-
 }
 
 section[bottom] {
     text-align: center;
 }
 
-section[bottom] .contact {
-    display: flex;
-    align-items: center;
-}
-
-section[bottom] .contact a {
-    padding: 0 10px;
-    text-decoration: none;
-}
-
-.contact div.box {
-    width: 8px;
-    height: 8px;
-    background-color: black;
-
-}
-
 hr[bottom] {
     margin: 3em 0;
 }
 
-/* review section */
+footer {
+    margin-top: 5em;
+    border-top: 1px solid gray;
+}
 
 .progress-container {
-
     height: 6em;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     margin-top: 7px;
-
     width: fit-content;
+    align-items: end;
 }
 
 div.progress-bar {
-    height: 8px;
-    width: 16em;
-    background-color: var(--secondary-color);
+    height: 5px;
+    width: 325px;
+    border-bottom: 1px solid #1b29a9;
+}
 
+.progress-star {
+    display: flex;
+    align-items: center;
+    column-gap: 14.25px;
+    width: 100%;
 }
 
 section[reviews] {
     border-top: 1px solid gray;
     max-width: 100%;
     margin-top: 2em;
-
 }
 
 div.progress-bar-fill {
@@ -708,9 +484,7 @@ div.fifth {
 }
 
 .stars-container {
-
     width: fit-content;
-
 }
 
 .stars-container .star {
@@ -730,22 +504,21 @@ div.review-section div.overall-review {
     align-items: flex-end;
 }
 
-
 div.review-section div.overall-review .review-container div[contain] {
     display: flex;
 }
 
-i.fas {
-    color: gold;
-    ;
+.rate-num {
+    font-weight: 700;
+    font-size: 32px;
+    line-height: 48px;
+    color: #949ffe;
 }
-
 
 div.profile-pic {
     width: 2.3rem;
     height: 2.3rem;
     border-radius: 50%;
-
 }
 
 div.profile-pic img {
@@ -756,15 +529,11 @@ div.profile-pic img {
 }
 
 div.pro-contain {
+    width: 100%;
     display: flex;
     padding-top: 1em;
     gap: 1.4rem;
     margin-top: 1.5em;
-
-}
-
-a {
-    text-decoration: none;
 }
 
 div.profile {
@@ -778,8 +547,9 @@ div.profile h4 {
 }
 
 div.time p {
-    color: var(--secondary-color)
+    color: var(--secondary-color);
 }
+
 
 .head_section .logo {
     font-size: 1.4rem;
@@ -805,7 +575,6 @@ div.footLogo {
     color: var(--load-color)
 }
 
-/* This is the compare button*/
 a.compare-btn {
     text-decoration: none;
     color: white;
@@ -820,87 +589,11 @@ div.compare {
     text-align: center;
 }
 
+
+
 .box img:hover {
     transform: scale(1.025, 1.025);
     transition: transform 200ms ease-in-out;
-}
-
-/* authentication styles */
-
-.vendors {
-    margin-bottom: 1rem;
-}
-
-.vendors h6 {
-    color: var(--secondary-color);
-    text-align: center;
-    font-size: 12px;
-    line-height: 1.7;
-}
-
-.send-icon {
-    transform: rotate(-40deg);
-
-}
-
-.send-icon,
-.chat-icon {
-    color: var(--secondary-color);
-}
-
-.social-share {
-    display: flex;
-    justify-content: space-between;
-    padding: 1rem 0;
-}
-
-.social-share a {
-    text-decoration: none;
-}
-
-.send-icon,
-.chat-icon {
-    color: var(--load-color);
-}
-
-.anchor {
-    text-align: center;
-    padding-top: 1rem;
-}
-
-.special-p {
-    cursor: pointer;
-    padding: 0.5rem;
-    text-align: center;
-    border: none;
-    width: 86%;
-    margin: 0 auto;
-    border-radius: 8px;
-    background-color: var(--load-color);
-    color: var(--main-color) !important;
-    font-size: 10px;
-}
-
-.special-p:hover,
-.special-p:focus-visible {
-    opacity: 0.8;
-    transition: .3s;
-}
-
-.box_content {
-    width: 100%;
-    height: 50%;
-}
-
-header .head_section .top-link ul li {
-    padding: 0 1em 0 1em;
-    display: inline-block;
-}
-
-header .head_section .top-link ul li a {
-    color: rgba(0, 0, 0, 0.424);
-    font-weight: 500;
-    text-decoration: none;
 }
 
 .hero-section .display {
@@ -910,18 +603,15 @@ header .head_section .top-link ul li a {
 }
 
 main .hero-section {
-    background: url(../images/accesories/bg-img.png);
+    background: url('../images/accesories/bg-img.png');
     background-repeat: no-repeat;
     background-size: cover;
     min-height: 22rem;
-    /* z-index: -1; */
-    /* margin-bottom: -11em; */
     position: relative;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
-
 
 /* edited the search bar code  */
 
@@ -966,180 +656,224 @@ main section.hero-section {
     top: .3em;
 }
 
-a {
-    text-decoration: none;
-}
 
-.linkPages {
-    z-index: 1;
-}
+/* ends here  */
 
+
+/*hamburger menu*/
 div.icons {
     display: none;
 }
 
 header .icons div,
-
 header .icons a {
-
     height: 2rem;
-
     width: 2rem;
-
     font-size: 1rem;
-
     line-height: 2rem;
-
     background: rgb(39, 38, 38);
-
     color: #fff;
-
     text-align: center;
-
     border-radius: 50%;
-
     cursor: pointer;
-
     margin-right: .7rem;
-
 }
 
 header .icons div:hover,
-
 header .icons a:hover {
-
     background: var(--secondary-color);
-
     color: #fff;
-
-
 }
 
 header.active {
-
     position: fixed;
-
     top: 0;
-
     left: 0;
-
     z-index: 100;
-
 }
 
 .navbar {
-
     position: fixed;
-
-    top: 0;
-
-    left: -120%;
-
-    height: 100%;
-
-    background: var(--main-color);
-
-    padding: 3rem;
-
-    width: 23rem;
-
+    opacity: 0;
+    z-index: -10;
 }
 
 .navbar.active {
-
     left: 0;
-
     z-index: 1;
-
+    top: 0;
+    height: 100vh;
+    background: var(--main-color);
+    padding: 3rem;
+    width: 100%;
+    max-width: 20rem;
+    opacity: 1;
 }
 
 .navbar .user {
-
     text-align: center;
-
     margin: 3rem auto;
-
 }
 
 .navbar .user img {
-
     height: 10rem;
-
     width: 10rem;
-
     border-radius: 50%;
-
     border: .5rem solid var(--main-color);
-
     object-fit: cover;
-
     box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
-
 }
 
 .navbar .user h4 {
-
     padding-top: .5rem;
-
     color: #333;
-
     font-weight: 500;
-
     font-size: 1.4rem;
-
 }
 
 .navbar .links a {
-
     display: block;
     text-decoration: none;
-
     border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
-
     font-size: 1.2rem;
-
     padding: 1rem 0;
-
     color: #333;
-
 }
 
 .navbar .links a:last-child {
-
     border: none;
-
 }
 
 .navbar .links a:hover {
-
     letter-spacing: .2rem;
-
     color: var(--secondary-color);
-
 }
 
 .navbar #close {
-
     position: absolute;
-
     top: 1rem;
-
     right: 2rem;
-
     font-size: 3rem;
-
     cursor: pointer;
-
     color: #333;
-
 }
 
 .navbar #close:hover {
-
     color: var(--secondary-color);
-
 }
 
+/* ends here  */
+
+/* mobile screen footer */
+.Social_Icons div.Icons ul {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+.Social_Icons div.Icons ul li {
+    padding: 5px;
+}
+
+div.Icons ul li {
+    list-style: none;
+}
+
+.categories,
+.about {
+    margin-top: 1rem;
+}
+
+.categories ul li,
+.about ul li {
+    list-style: none;
+    padding-top: 10px
+}
+
+.categories ul li a,
+.about ul li a {
+    text-decoration: none;
+    color: black;
+}
+
+.footerContainerResponsive {
+    display: none;
+}
+
+div.footLogoResponsive {
+    font-size: 1.4rem;
+    margin-top: 1rem;
+    font-weight: 700;
+    color: var(--load-color);
+}
+
+.footLogoResponsive span {
+    color: black;
+}
+
+/* authentication styles */
+
+.vendors {
+    margin-bottom: 1rem;
+}
+
+.vendors h6 {
+    color: var(--secondary-color);
+    text-align: center;
+    font-size: 0.9rem;
+    line-height: 1.7;
+}
+
+.send-icon {
+    transform: rotate(-40deg);
+}
+
+.send-icon,
+.chat-icon {
+    color: var(--load-color);
+}
+
+.social-share {
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 1rem;
+}
+
+.social-share a {
+    text-decoration: none;
+}
+
+.anchor {
+    text-align: center;
+    padding-top: 1rem;
+}
+
+.special-p {
+    cursor: pointer;
+    padding: 0.5rem;
+    text-align: center;
+    border: none;
+    width: 86%;
+    margin: 0 auto;
+    border-radius: 8px;
+    background-color: var(--load-color);
+    color: var(--main-color) !important;
+    font-size: 10px;
+}
+
+.special-p:hover,
+.special-p:focus-visible {
+    opacity: 0.8;
+    transition: .3s;
+}
+
+.box_content {
+    width: 100%;
+    height: 50%;
+}
+
+
+/* media query for responsiveness */
 @media screen and (max-width: 1024px) {
     #main {
         display: block;
@@ -1148,15 +882,15 @@ header.active {
     .filter {
         display: none;
     }
-
-    .hamburger {
-        padding: 0 1em;
-    }
 }
 
 @media screen and (max-width: 768px) {
     body {
         padding: 0 2rem;
+    }
+
+    .preview img {
+        max-width: 80%;
     }
 
     .top-link {
@@ -1245,10 +979,17 @@ header.active {
         row-gap: 2rem;
     }
 
-    .iPhone,
-    .samsung,
-    .tecno,
-    .hot-deals {
-        border: none;
+    div.login>div:nth-child(2) {
+        display: none;
+    }
+
+    div.time p {
+        display: none;
+    }
+}
+
+@media screen and (max-width:425px) {
+    div.login {
+        display: none;
     }
 }

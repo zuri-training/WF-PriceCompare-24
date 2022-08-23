@@ -15,7 +15,6 @@
 body {
   font-family: "Sora", sans-serif;
   position: relative;
-  background-color: rgba(246, 248, 250, 1);
 }
 
 .material-symbols-outlined {
@@ -27,14 +26,23 @@ body {
   max-width: max-content;
   justify-content: center;
   font-family: sora;
+  background-color: #f6f8fa;
+}
+
+a {
+  text-decoration: none;
 }
 
 header .head_section {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   background-color: rgba(255, 255, 255);
   padding: 1em;
   align-items: center;
+}
+
+.linkPages {
+  z-index: 1;
 }
 
 header .search_bar #search_bar {
@@ -135,6 +143,17 @@ div.login>div a {
   padding: .5em;
 }
 
+header .head_section .top-link ul li {
+  padding: 0 1em 0 1em;
+  display: inline-block;
+}
+
+header .head_section .top-link ul li a {
+  color: rgba(0, 0, 0, 0.424);
+  font-weight: 500;
+  text-decoration: none;
+}
+
 /* main seaction */
 main {
   display: grid;
@@ -164,7 +183,6 @@ main .hero-section {
 
 main .hero-section img {
   width: 11em;
-  height: 15.5rem;
 }
 
 aside.filter {
@@ -274,7 +292,6 @@ div[preview] {
 
 .preview .box div img {
   width: 13em;
-  height: 14.5rem;
 }
 
 div[preview] .news-one img,
@@ -289,10 +306,13 @@ div[preview] .news-one img,
 }
 
 .box {
-  border: none;
+  border: 1px solid #f1f1f1;
   width: 13.5rem;
   background-color: var(--main-color);
   border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
 }
 
 .box h4 {
@@ -301,7 +321,6 @@ div[preview] .news-one img,
   font-size: .9rem;
   font-weight: bolder;
   padding-bottom: 1em;
-  height: 3rem;
 }
 
 .box p {
@@ -314,7 +333,7 @@ div[preview] .news-one img,
 .samsung,
 .tecno,
 .hot-deals {
-  border: 1px solid var(--secondary-color);
+  background: white;
   padding: 1.5rem 1rem;
   border-radius: 8px;
 }
@@ -416,12 +435,20 @@ footer {
   justify-content: space-between;
   margin-top: 7px;
   width: fit-content;
+  align-items: end;
 }
 
 div.progress-bar {
-  height: 8px;
-  width: 16em;
-  background-color: var(--secondary-color);
+  height: 5px;
+  width: 325px;
+  border-bottom: 1px solid #1b29a9;
+}
+
+.progress-star {
+  display: flex;
+  align-items: center;
+  column-gap: 14.25px;
+  width: 100%;
 }
 
 section[reviews] {
@@ -481,8 +508,11 @@ div.review-section div.overall-review .review-container div[contain] {
   display: flex;
 }
 
-i.fas {
-  color: gold;
+.rate-num {
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 48px;
+  color: #949ffe;
 }
 
 div.profile-pic {
@@ -499,6 +529,7 @@ div.profile-pic img {
 }
 
 div.pro-contain {
+  width: 100%;
   display: flex;
   padding-top: 1em;
   gap: 1.4rem;
@@ -516,8 +547,9 @@ div.profile h4 {
 }
 
 div.time p {
-  color: var(--secondary-color)
+  color: var(--secondary-color);
 }
+
 
 .head_section .logo {
   font-size: 1.4rem;
@@ -557,40 +589,11 @@ div.compare {
   text-align: center;
 }
 
-/*hair home page additional style*/
-.hair-preview {
-  justify-content: space-around !important;
-}
 
-.hair-page__box {
-  width: 211px;
-}
 
-.hair-page__box div {
-  text-align: center;
-}
-
-.hair-page__box img {
-  width: 144px !important;
-}
-
-.hot-deal-img img {
-  width: 183px !important;
-}
-
-.linkPages {
-  z-index: 1;
-}
-
-header .head_section .top-link ul li {
-  padding: 0 1em 0 1em;
-  display: inline-block;
-}
-
-header .head_section .top-link ul li a {
-  color: rgba(0, 0, 0, 0.424);
-  font-weight: 500;
-  text-decoration: none;
+.box img:hover {
+  transform: scale(1.025, 1.025);
+  transition: transform 200ms ease-in-out;
 }
 
 .hero-section .display {
@@ -600,18 +603,15 @@ header .head_section .top-link ul li a {
 }
 
 main .hero-section {
-  background: url(../images/accesories/bg-img.png);
+  background: url('../images/accesories/bg-img.png');
   background-repeat: no-repeat;
   background-size: cover;
   min-height: 22rem;
-  /* z-index: -1; */
-  /* margin-bottom: -11em; */
   position: relative;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-
 
 /* edited the search bar code  */
 
@@ -656,185 +656,163 @@ main section.hero-section {
   top: .3em;
 }
 
-section[categories] ul li a:hover,
-[gadgetBrands] ul li a:hover,
-[popularBrands] ul li a:hover,
-[about] ul li a:hover {
-  color: var(--load-color);
-  font-weight: 600;
-  transition: .3s;
-}
 
+/* ends here  */
+
+
+/*hamburger menu*/
 div.icons {
   display: none;
 }
 
 header .icons div,
-
 header .icons a {
-
   height: 2rem;
-
   width: 2rem;
-
   font-size: 1rem;
-
   line-height: 2rem;
-
   background: rgb(39, 38, 38);
-
   color: #fff;
-
   text-align: center;
-
   border-radius: 50%;
-
   cursor: pointer;
-
   margin-right: .7rem;
-
 }
 
 header .icons div:hover,
-
 header .icons a:hover {
-
   background: var(--secondary-color);
-
   color: #fff;
-
-
 }
 
 header.active {
-
   position: fixed;
-
   top: 0;
-
   left: 0;
-
   z-index: 100;
-
 }
 
 .navbar {
-
   position: fixed;
-
-  top: 0;
-
-  left: -120%;
-
-  height: 100%;
-
-  background: var(--main-color);
-
-  padding: 3rem;
-
-  width: 23rem;
-
+  opacity: 0;
+  z-index: -10;
 }
 
 .navbar.active {
-
   left: 0;
-
   z-index: 1;
-
+  top: 0;
+  height: 100vh;
+  background: var(--main-color);
+  padding: 3rem;
+  width: 100%;
+  max-width: 20rem;
+  opacity: 1;
 }
 
 .navbar .user {
-
   text-align: center;
-
   margin: 3rem auto;
-
 }
 
 .navbar .user img {
-
   height: 10rem;
-
   width: 10rem;
-
   border-radius: 50%;
-
   border: .5rem solid var(--main-color);
-
   object-fit: cover;
-
   box-shadow: 4rem 2rem 0 -3rem var(--secondary-color), -4rem -2rem 0 -3rem var(--secondary-color);
-
 }
 
 .navbar .user h4 {
-
   padding-top: .5rem;
-
   color: #333;
-
   font-weight: 500;
-
   font-size: 1.4rem;
-
 }
 
 .navbar .links a {
-
   display: block;
   text-decoration: none;
-
   border-bottom: .1rem solid rgba(0, 0, 0, 0.3);
-
   font-size: 1.2rem;
-
   padding: 1rem 0;
-
   color: #333;
-
 }
 
 .navbar .links a:last-child {
-
   border: none;
-
 }
 
 .navbar .links a:hover {
-
   letter-spacing: .2rem;
-
   color: var(--secondary-color);
-
 }
 
 .navbar #close {
-
   position: absolute;
-
   top: 1rem;
-
   right: 2rem;
-
   font-size: 3rem;
-
   cursor: pointer;
-
   color: #333;
-
 }
 
 .navbar #close:hover {
-
   color: var(--secondary-color);
-
 }
 
-a {
+/* ends here  */
+
+/* mobile screen footer */
+.Social_Icons div.Icons ul {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px;
+}
+
+.Social_Icons div.Icons ul li {
+  padding: 5px;
+}
+
+div.Icons ul li {
+  list-style: none;
+}
+
+.categories,
+.about {
+  margin-top: 1rem;
+}
+
+.categories ul li,
+.about ul li {
+  list-style: none;
+  padding-top: 10px
+}
+
+.categories ul li a,
+.about ul li a {
   text-decoration: none;
+  color: black;
 }
 
+.footerContainerResponsive {
+  display: none;
+}
+
+div.footLogoResponsive {
+  font-size: 1.4rem;
+  margin-top: 1rem;
+  font-weight: 700;
+  color: var(--load-color);
+}
+
+.footLogoResponsive span {
+  color: black;
+}
+
+
+/* media query for responsiveness */
 @media screen and (max-width: 1024px) {
   #main {
     display: block;
@@ -843,15 +821,15 @@ a {
   .filter {
     display: none;
   }
-
-  .hamburger {
-    padding: 0 1em;
-  }
 }
 
 @media screen and (max-width: 768px) {
   body {
     padding: 0 2rem;
+  }
+
+  .preview img {
+    max-width: 80%;
   }
 
   .top-link {
@@ -940,10 +918,17 @@ a {
     row-gap: 2rem;
   }
 
-  .iPhone,
-  .samsung,
-  .tecno,
-  .hot-deals {
-    border: none;
+  div.login>div:nth-child(2) {
+    display: none;
+  }
+
+  div.time p {
+    display: none;
+  }
+}
+
+@media screen and (max-width:425px) {
+  div.login {
+    display: none;
   }
 }
