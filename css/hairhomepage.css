@@ -376,7 +376,9 @@ div[see_more] a {
 	text-decoration: none;
 	color: var(--load-color);
 }
-
+.a-login{
+	margin-right: 2rem;
+}
 /*footer section*/
 footer .footerContainer {
 	display: flex;
