@@ -538,9 +538,9 @@ hr[bottom] {
 }
 
 @media screen and (max-width: 600px) {
-	body {
+	.body {
 		padding: 0 1rem;
-        width: 100vh;
+        width: 100%;
 	}
 
 	main section.hero-section {
@@ -587,6 +587,14 @@ hr[bottom] {
 	div.time p {
 		display: none;
 	}
+
+   .main-para {
+    padding: 0;
+   }
+
+   input, textarea {
+    width: 100%;
+   }
 }
 
 @media screen and (max-width:425px) {
